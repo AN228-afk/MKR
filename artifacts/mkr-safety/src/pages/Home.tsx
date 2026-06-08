@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { motion } from "framer-motion";
-import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
@@ -12,6 +13,18 @@ import hero2 from "@assets/MKR_1_of_child_1780926061320.png";
 import img2 from "@assets/MKR_2_1780926061320.png";
 import img5 from "@assets/MKR_5_1780926061320.png";
 import img4 from "@assets/MKR_4_1780926061320.png";
+import img6 from "@assets/2_1780926045097.png";
+import img7 from "@assets/6_1780926045097.jpg";
+
+const heroSlides = [
+  { src: hero1, alt: "Invisible grills on luxury apartment balcony with panoramic Bangalore city view", label: "Balcony Invisible Grills" },
+  { src: hero2, alt: "Child safely enjoying the view through MKR invisible grills on high-rise balcony", label: "Child Safety Grills" },
+  { src: img2, alt: "Premium villa balcony with near-invisible stainless steel cable grills", label: "Villa Invisible Grills" },
+  { src: img4, alt: "Window invisible grills with lush greenery view preserved completely", label: "Window Invisible Grills" },
+  { src: img5, alt: "Elegant staircase invisible grill cable system in modern interior", label: "Staircase Grills" },
+  { src: img6, alt: "Balcony with invisible grills and planter arrangement, Bangalore apartment", label: "Balcony Grills" },
+  { src: img7, alt: "Apartment balcony with stainless steel invisible grills at dusk", label: "Premium Installations" },
+];
 
 const homeFaqs = [
   {
@@ -70,6 +83,30 @@ const faqSchema = {
 };
 
 export default function Home() {
+  const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDirection(1);
+      setCurrent((prev) => (prev + 1) % heroSlides.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const goTo = (idx: number) => {
+    setDirection(idx > current ? 1 : -1);
+    setCurrent(idx);
+  };
+  const prev = () => {
+    setDirection(-1);
+    setCurrent((p) => (p - 1 + heroSlides.length) % heroSlides.length);
+  };
+  const next = () => {
+    setDirection(1);
+    setCurrent((p) => (p + 1) % heroSlides.length);
+  };
+
   return (
     <Layout>
       <SEOHead
@@ -79,20 +116,66 @@ export default function Home() {
         schema={[localBusinessSchema, faqSchema]}
       />
 
-      {/* Hero Section */}
+      {/* Hero Slideshow Section */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-primary">
+        {/* Slideshow Background */}
         <div className="absolute inset-0">
-          <img
-            src={hero1}
-            alt="Invisible grills on apartment balcony in Bangalore with panoramic city view"
-            className="w-full h-full object-cover opacity-30"
-            width={1200}
-            height={800}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary/40" />
+          <AnimatePresence initial={false} custom={direction} mode="sync">
+            <motion.img
+              key={current}
+              src={heroSlides[current].src}
+              alt={heroSlides[current].alt}
+              custom={direction}
+              variants={{
+                enter: (d: number) => ({ x: d > 0 ? "8%" : "-8%", opacity: 0, scale: 1.04 }),
+                center: { x: 0, opacity: 0.35, scale: 1, transition: { duration: 0.9, ease: "easeOut" } },
+                exit: (d: number) => ({ x: d > 0 ? "-8%" : "8%", opacity: 0, scale: 0.97, transition: { duration: 0.7, ease: "easeIn" } }),
+              }}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              className="absolute inset-0 w-full h-full object-cover"
+              width={1200}
+              height={800}
+            />
+          </AnimatePresence>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/50" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        {/* Slide Label Pill */}
+        <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 hidden sm:block">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={current}
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 8 }}
+              transition={{ duration: 0.35 }}
+              className="px-4 py-1.5 bg-secondary/90 text-secondary-foreground text-xs font-bold rounded-full uppercase tracking-widest shadow"
+            >
+              {heroSlides[current].label}
+            </motion.span>
+          </AnimatePresence>
+        </div>
+
+        {/* Prev / Next arrows */}
+        <button
+          onClick={prev}
+          aria-label="Previous slide"
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all backdrop-blur-sm"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={next}
+          aria-label="Next slide"
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all backdrop-blur-sm"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -135,6 +218,22 @@ export default function Home() {
                   <div className="text-2xl font-bold text-secondary">{num}</div>
                   <div className="text-xs text-primary-foreground/70">{label}</div>
                 </div>
+              ))}
+            </div>
+
+            {/* Dot indicators */}
+            <div className="flex items-center gap-2 mt-8">
+              {heroSlides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => goTo(i)}
+                  aria-label={`Go to slide ${i + 1}`}
+                  className={`rounded-full transition-all duration-300 ${
+                    i === current
+                      ? "w-6 h-2 bg-secondary"
+                      : "w-2 h-2 bg-primary-foreground/30 hover:bg-primary-foreground/60"
+                  }`}
+                />
               ))}
             </div>
           </motion.div>
