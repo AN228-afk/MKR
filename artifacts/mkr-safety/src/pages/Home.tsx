@@ -128,7 +128,7 @@ export default function Home() {
               custom={direction}
               variants={{
                 enter: (d: number) => ({ x: d > 0 ? "8%" : "-8%", opacity: 0, scale: 1.04 }),
-                center: { x: 0, opacity: 0.35, scale: 1, transition: { duration: 0.9, ease: "easeOut" } },
+                center: { x: 0, opacity: 0.75, scale: 1, transition: { duration: 0.9, ease: "easeOut" } },
                 exit: (d: number) => ({ x: d > 0 ? "-8%" : "8%", opacity: 0, scale: 0.97, transition: { duration: 0.7, ease: "easeIn" } }),
               }}
               initial="enter"
@@ -139,7 +139,7 @@ export default function Home() {
               height={800}
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/30" />
         </div>
 
         {/* Slide Label Pill */}
@@ -266,10 +266,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Balcony Grills", href: "/balcony-invisible-grills", desc: "Open balconies secured with near-invisible cables", img: hero1 },
-              { title: "Window Grills", href: "/window-invisible-grills", desc: "Maximum light, maximum safety for every window", img: img4 },
-              { title: "Staircase Grills", href: "/staircase-invisible-grills", desc: "Elegant vertical cable systems for staircases", img: img5 },
-              { title: "Villa Grills", href: "/villa-invisible-grills", desc: "Bespoke solutions for independent villas", img: img2 },
+              { title: "Balcony Invisible Grills", href: "/balcony-invisible-grills", desc: "Open balconies secured with near-invisible cables", img: hero1 },
+              { title: "Window Invisible Grills", href: "/window-invisible-grills", desc: "Maximum light, maximum safety for every window", img: img4 },
+              { title: "Staircase Invisible Grills", href: "/staircase-invisible-grills", desc: "Elegant vertical cable systems for staircases", img: img5 },
+              { title: "Villa Invisible Grills", href: "/villa-invisible-grills", desc: "Bespoke solutions for independent villas", img: img2 },
             ].map(({ title, href, desc, img }) => (
               <Link key={href} href={href} data-testid={`card-service-${href}`}>
                 <div className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all">
