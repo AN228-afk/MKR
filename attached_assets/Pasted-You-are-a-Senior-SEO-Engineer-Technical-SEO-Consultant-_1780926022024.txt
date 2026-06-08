@@ -1,0 +1,218 @@
+You are a Senior SEO Engineer, Technical SEO Consultant, UX Expert, and React Developer.
+Build a world-class, enterprise-grade SEO foundation for a premium Invisible Grills company website.
+
+Company Name: MKR Safety Solutions
+
+Industry: Invisible Grills & Safety Solutions
+
+Location: Bangalore, Karnataka, India
+
+Target Audience:
+
+Apartment Owners
+Villa Owners
+Builders
+Architects
+Interior Designers
+Parents Seeking Child Safety Solutions
+Commercial Property Owners
+Goal:
+Generate maximum organic traffic from Google and rank on Page 1 for Invisible Grill keywords in Bangalore and nearby locations.
+PRIMARY SEO KEYWORDS
+Invisible Grills Bangalore
+Invisible Grill Installation Bangalore
+Balcony Invisible Grills Bangalore
+Window Invisible Grills Bangalore
+Staircase Invisible Grills Bangalore
+Terrace Invisible Grills Bangalore
+Villa Invisible Grills Bangalore
+Child Safety Invisible Grills
+Stainless Steel Invisible Grills
+Invisible Grills Near Me
+Safety Grills Bangalore
+Premium Invisible Grills Bangalore
+WEBSITE STRUCTURE
+Create a complete SEO silo structure.
+Core Pages
+/
+/about-us
+/contact-us
+/gallery
+/faqs
+/projects
+/reviews
+Service Pages
+/invisible-grills-bangalore
+/balcony-invisible-grills
+/window-invisible-grills
+/staircase-invisible-grills
+/terrace-invisible-grills
+/villa-invisible-grills
+/school-safety-grills
+/child-safety-grills
+Location Pages
+/invisible-grills-whitefield
+/invisible-grills-sarjapur-road
+/invisible-grills-electronic-city
+/invisible-grills-hsr-layout
+/invisible-grills-bellandur
+/invisible-grills-marathahalli
+/invisible-grills-koramangala
+/invisible-grills-jayanagar
+/invisible-grills-indiranagar
+/invisible-grills-yelahanka
+/invisible-grills-hebbal
+/invisible-grills-kr-puram
+Blog Pages
+/blog
+/blog/benefits-of-invisible-grills
+/blog/invisible-grills-vs-traditional-grills
+/blog/child-safety-for-apartments
+/blog/balcony-safety-guide
+/blog/how-invisible-grills-work
+/blog/best-invisible-grills-in-bangalore
+/blog/invisible-grill-maintenance-guide
+/blog/why-choose-316-grade-steel-grills
+ON-PAGE SEO
+For every page generate:
+Unique SEO Title
+Unique Meta Description
+Canonical URL
+Open Graph Tags
+Twitter Cards
+H1
+H2 Structure
+FAQ Section
+Internal Linking Strategy
+Image Alt Tags
+Keyword Placement Strategy
+Schema Markup
+No duplicate metadata.
+CONTENT REQUIREMENTS
+Each service page:
+1500–2500 words
+Unique content
+Benefits
+Features
+Installation Process
+FAQs
+Call-To-Action
+Customer Trust Signals
+Internal Links
+Each location page:
+1000–1500 words
+Localized content
+Nearby landmark references
+Service area content
+FAQ section
+Google Maps integration
+Local SEO optimization
+TECHNICAL SEO
+Generate:
+Dynamic sitemap.xml
+Automatically include:
+Services
+Locations
+Blogs
+Projects
+Gallery
+Include:
+Last Modified
+Priority
+Change Frequency
+robots.txt
+Optimized for:
+Google
+Bing
+Yahoo
+Include sitemap location.
+Canonical System
+Automatically generate canonical tags.
+Breadcrumb Navigation
+Generate breadcrumb schema.
+Internal Linking Engine
+Create automatic contextual links between:
+Services ↔ Locations
+
+Locations ↔ Blogs
+
+Blogs ↔ Services
+
+Projects ↔ Services
+
+ADVANCED SCHEMA MARKUP
+Generate JSON-LD for:
+Local Business
+Organization
+Website
+Service
+FAQ
+Breadcrumb
+Review
+Aggregate Rating
+Contact Point
+LOCAL SEO
+Generate optimization for:
+Bangalore
+Whitefield
+Sarjapur Road
+Electronic City
+HSR Layout
+Bellandur
+Marathahalli
+Koramangala
+Jayanagar
+Indiranagar
+Hebbal
+KR Puram
+Yelahanka
+PERFORMANCE SEO
+Target:
+Lighthouse SEO 100
+Performance 95+
+Accessibility 100
+Best Practices 100
+Implement:
+Lazy Loading
+Image Optimization
+WebP Images
+Preload Critical Assets
+Font Optimization
+Core Web Vitals Optimization
+Mobile First Design
+REACT + VITE IMPLEMENTATION
+Generate:
+Dynamic SEO Components
+React Helmet Integration
+Dynamic Sitemap Generator
+Robots.txt Generator
+SEO Utilities
+Structured Data Components
+Reusable Layout Components
+Folder Structure:
+src/
+components/
+pages/
+services/
+seo/
+schema/
+utils/
+
+CONVERSION OPTIMIZATION
+Include:
+Sticky Quote Button
+Floating Call Button
+Inquiry Form
+Project Showcase
+Trust Badges
+Testimonials
+FAQ Section
+WhatsApp Integration
+Lead Capture Forms
+FINAL GOAL
+Build a premium enterprise-level SEO architecture capable of ranking for high-intent Invisible Grill keywords in Bangalore while maintaining excellent user experience, fast performance, mobile responsiveness, and high conversion rates.
+Generate production-ready React + Vite code, complete SEO setup, sitemap.xml, robots.txt, schema markup, and scalable architecture.
+
+
+
+

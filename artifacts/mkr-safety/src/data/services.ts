@@ -1,0 +1,211 @@
+export interface Service {
+  title: string;
+  slug: string;
+  description: string;
+  price: string;
+  icon: string;
+  features: string[];
+  image: string;
+}
+
+export const services: Service[] = [
+  {
+    title: "Balcony Invisible Grills",
+    slug: "balcony-invisible-grills",
+    description: "Transform your balcony into a safe, open space with ultra-fine 316-grade stainless steel cables that blend seamlessly with any architectural design.",
+    price: "₹120–180/sq ft",
+    icon: "Shield",
+    features: ["3mm cable spacing", "250kg load tested", "Weather resistant", "Custom fit"],
+    image: "MKR_3",
+  },
+  {
+    title: "Window Invisible Grills",
+    slug: "window-invisible-grills",
+    description: "Protect your windows without obstructing natural light or the outside view. Precision-installed cables fit any window shape and size.",
+    price: "₹100–160/sq ft",
+    icon: "Wind",
+    features: ["Maximum light transmission", "Child safe", "Easy cleaning", "Anti-rust coating"],
+    image: "MKR_4",
+  },
+  {
+    title: "Staircase Invisible Grills",
+    slug: "staircase-invisible-grills",
+    description: "Elegant vertical cable systems for staircases that enhance aesthetics while providing essential fall protection for children and elderly.",
+    price: "₹150–220/sq ft",
+    icon: "ArrowUp",
+    features: ["Vertical cable design", "Floor-to-ceiling fit", "Aesthetic integration", "High tensile strength"],
+    image: "MKR_5",
+  },
+  {
+    title: "Terrace Invisible Grills",
+    slug: "terrace-invisible-grills",
+    description: "Secure your rooftop terrace with robust cable systems that withstand Bangalore's climate while preserving panoramic views.",
+    price: "₹130–200/sq ft",
+    icon: "Home",
+    features: ["360-degree perimeter coverage", "UV resistant", "Marine grade steel", "Free site survey"],
+    image: "img2",
+  },
+  {
+    title: "Villa Invisible Grills",
+    slug: "villa-invisible-grills",
+    description: "Bespoke invisible grill solutions for villas and independent houses. Designed to complement premium architecture and landscaping.",
+    price: "₹140–210/sq ft",
+    icon: "Building",
+    features: ["Custom architectural fit", "Premium finish", "Large area coverage", "Dedicated project manager"],
+    image: "img2",
+  },
+  {
+    title: "Child Safety Grills",
+    slug: "child-safety-grills",
+    description: "Purpose-built child safety invisible grills with tighter cable spacing (under 3mm) specifically designed to prevent toddler falls and accidents.",
+    price: "₹130–190/sq ft",
+    icon: "Baby",
+    features: ["2.5mm ultra-tight spacing", "BIS compliant", "Toddler tested", "Peace of mind guaranteed"],
+    image: "child",
+  },
+  {
+    title: "School Safety Grills",
+    slug: "school-safety-grills",
+    description: "Institutional-grade invisible grills for schools, colleges, and educational institutions. Bulk pricing available for large projects.",
+    price: "Custom quote",
+    icon: "GraduationCap",
+    features: ["Institutional bulk pricing", "Rapid installation", "Safety certified", "5+ year maintenance"],
+    image: "img7",
+  },
+  {
+    title: "Invisible Grills Bangalore",
+    slug: "invisible-grills-bangalore",
+    description: "Bangalore's leading invisible grill installation service. Serving 12+ major neighborhoods with 1000+ successful installations.",
+    price: "₹100–220/sq ft",
+    icon: "MapPin",
+    features: ["Same-day site visit", "Free estimate", "10-year warranty", "500+ happy customers"],
+    image: "MKR_1",
+  },
+];
+
+export const locations = [
+  { name: "Whitefield", slug: "whitefield", landmarks: "ITPL, Phoenix Marketcity, Whitefield Metro" },
+  { name: "Sarjapur Road", slug: "sarjapur-road", landmarks: "Wipro Campus, Prestige Ferns Residency, Sobha Habitech" },
+  { name: "Electronic City", slug: "electronic-city", landmarks: "Infosys Campus, HCL, Electronic City Phase 1 & 2" },
+  { name: "HSR Layout", slug: "hsr-layout", landmarks: "BDA Complex, Agara Lake, HSR Club Road" },
+  { name: "Bellandur", slug: "bellandur", landmarks: "Bellandur Lake, Adarsh Palm Retreat, Outer Ring Road" },
+  { name: "Marathahalli", slug: "marathahalli", landmarks: "Marathahalli Bridge, Innovative Film City, BEML Layout" },
+  { name: "Koramangala", slug: "koramangala", landmarks: "Forum Mall, Koramangala Water Tank, 80 Feet Road" },
+  { name: "Jayanagar", slug: "jayanagar", landmarks: "Jayanagar Shopping Complex, Lalbagh, 4th Block" },
+  { name: "Indiranagar", slug: "indiranagar", landmarks: "100 Feet Road, CMH Road, Defence Colony" },
+  { name: "Yelahanka", slug: "yelahanka", landmarks: "Yelahanka New Town, CRPF Campus, Shivakote" },
+  { name: "Hebbal", slug: "hebbal", landmarks: "Hebbal Flyover, Manyata Tech Park, Hebbal Lake" },
+  { name: "KR Puram", slug: "kr-puram", landmarks: "KR Puram Bridge, BEML Township, Tin Factory" },
+];
+
+export const blogPosts = [
+  {
+    title: "10 Benefits of Invisible Grills for Apartment Owners",
+    slug: "benefits-of-invisible-grills",
+    excerpt: "Discover why thousands of Bangalore families are switching from traditional iron grills to modern invisible cable grills.",
+    date: "2024-12-01",
+    readTime: "5 min read",
+    keyword: "invisible grills benefits",
+  },
+  {
+    title: "Invisible Grills vs Traditional Grills: Complete Comparison",
+    slug: "invisible-grills-vs-traditional-grills",
+    excerpt: "An in-depth comparison of invisible cable grills versus traditional iron grills — cost, safety, aesthetics, and maintenance.",
+    date: "2024-11-20",
+    readTime: "7 min read",
+    keyword: "invisible grills vs traditional grills",
+  },
+  {
+    title: "Child Safety Guide for High-Rise Apartment Parents",
+    slug: "child-safety-for-apartments",
+    excerpt: "Essential safety checklist every parent living in a high-rise should follow, including balcony and window protection.",
+    date: "2024-11-10",
+    readTime: "6 min read",
+    keyword: "child safety apartments",
+  },
+  {
+    title: "Complete Balcony Safety Guide for Bangalore Homes",
+    slug: "balcony-safety-guide",
+    excerpt: "From invisible grills to planters and furniture placement — your complete guide to making balconies safe for the whole family.",
+    date: "2024-10-28",
+    readTime: "8 min read",
+    keyword: "balcony safety guide bangalore",
+  },
+  {
+    title: "How Invisible Grills Work: Technology Explained",
+    slug: "how-invisible-grills-work",
+    excerpt: "A detailed breakdown of the stainless steel cable system, tensioning mechanism, and installation process behind invisible grills.",
+    date: "2024-10-15",
+    readTime: "5 min read",
+    keyword: "how invisible grills work",
+  },
+  {
+    title: "Best Invisible Grills in Bangalore: 2024 Buyer's Guide",
+    slug: "best-invisible-grills-in-bangalore",
+    excerpt: "How to choose the right invisible grill provider in Bangalore — what to look for in quality, warranty, and pricing.",
+    date: "2024-10-01",
+    readTime: "9 min read",
+    keyword: "best invisible grills bangalore",
+  },
+  {
+    title: "Invisible Grill Maintenance Guide",
+    slug: "invisible-grill-maintenance-guide",
+    excerpt: "Simple monthly and annual maintenance tips to keep your invisible grills in perfect condition for years to come.",
+    date: "2024-09-20",
+    readTime: "4 min read",
+    keyword: "invisible grill maintenance",
+  },
+  {
+    title: "Why 316 Grade Steel Makes the Best Invisible Grills",
+    slug: "why-choose-316-grade-steel-grills",
+    excerpt: "Understanding the technical difference between 304 and 316 grade marine stainless steel and why it matters for your home.",
+    date: "2024-09-05",
+    readTime: "6 min read",
+    keyword: "316 grade steel invisible grills",
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Priya M.",
+    location: "Whitefield",
+    rating: 5,
+    text: "The grills are so thin you barely notice them. My kids are safe and the view from our 14th floor is absolutely breathtaking. Best investment we made after buying the apartment.",
+    service: "Balcony Invisible Grills",
+  },
+  {
+    name: "Rajesh K.",
+    location: "Koramangala",
+    rating: 5,
+    text: "Professional installation, completed in just 4 hours. The team was punctual, clean, and the finish is impeccable. Best decision for our 12th floor apartment.",
+    service: "Window Invisible Grills",
+  },
+  {
+    name: "Anitha S.",
+    location: "HSR Layout",
+    rating: 5,
+    text: "Worth every rupee. 316 grade steel means zero rust after 3 years of Bangalore rains. We've recommended MKR to 4 families in our building already.",
+    service: "Balcony & Window Grills",
+  },
+  {
+    name: "Vikram N.",
+    location: "Indiranagar",
+    rating: 5,
+    text: "MKR team was on time, professional, and the finish is impeccable. Our staircase looks modern now and the kids are safe on all three floors.",
+    service: "Staircase Invisible Grills",
+  },
+  {
+    name: "Deepa R.",
+    location: "Electronic City",
+    rating: 5,
+    text: "As a mother of two toddlers on the 8th floor, invisible grills were non-negotiable. MKR delivered exactly what I needed — complete peace of mind.",
+    service: "Child Safety Grills",
+  },
+  {
+    name: "Suresh B.",
+    location: "Bellandur",
+    rating: 5,
+    text: "Our villa has 6 balconies and MKR handled the entire project in 2 days. The uniformity and quality across all areas is outstanding.",
+    service: "Villa Invisible Grills",
+  },
+];

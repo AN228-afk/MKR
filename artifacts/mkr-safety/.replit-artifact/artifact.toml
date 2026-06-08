@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MKR Safety Solutions"
+version = "1.0.0"
+id = "artifacts/mkr-safety"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24843
+
+[services.development]
+run = "pnpm --filter @workspace/mkr-safety run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mkr-safety", "run", "build" ]
+publicDir = "artifacts/mkr-safety/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24843"
+BASE_PATH = "/"
