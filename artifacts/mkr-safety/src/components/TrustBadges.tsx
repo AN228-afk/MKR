@@ -1,4 +1,5 @@
 import { Shield, Star, Clock, Wrench, Award } from "lucide-react";
+import { StaggerList, StaggerItem } from "./Animated";
 
 const badges = [
   { icon: Shield, label: "1000+ Installs", sub: "Completed Projects" },
@@ -12,17 +13,19 @@ export function TrustBadges({ dark = false }: { dark?: boolean }) {
   return (
     <div className={`py-8 ${dark ? "bg-primary" : "bg-muted"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {badges.map(({ icon: Icon, label, sub }) => (
-            <div key={label} className="flex flex-col items-center text-center gap-2 py-4">
-              <Icon className={`w-6 h-6 ${dark ? "text-secondary" : "text-secondary"}`} />
-              <div>
-                <div className={`font-bold text-base ${dark ? "text-primary-foreground" : "text-foreground"}`}>{label}</div>
-                <div className={`text-xs ${dark ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{sub}</div>
+            <StaggerItem key={label}>
+              <div className="flex flex-col items-center text-center gap-2 py-4">
+                <Icon className={`w-6 h-6 ${dark ? "text-secondary" : "text-secondary"}`} />
+                <div>
+                  <div className={`font-bold text-base ${dark ? "text-primary-foreground" : "text-foreground"}`}>{label}</div>
+                  <div className={`text-xs ${dark ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{sub}</div>
+                </div>
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerList>
       </div>
     </div>
   );
