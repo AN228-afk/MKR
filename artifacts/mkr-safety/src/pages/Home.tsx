@@ -6,6 +6,7 @@ import { FadeUp, FadeLeft, FadeRight, ScaleIn, StaggerList, StaggerItem } from "
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
+import { PriceCalculator } from "@/components/PriceCalculator";
 import { InquiryForm } from "@/components/InquiryForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { testimonials, services, blogPosts } from "@/data/services";
@@ -262,6 +263,8 @@ export default function Home() {
       </section>
 
       <TrustBadges />
+
+      <PriceCalculator />
 
       {/* Services Grid */}
       <section className="py-16 bg-white">
