@@ -305,50 +305,56 @@ export default function Home() {
                 waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
               },
             ].map(({ title, href, desc, img, waMsg }) => (
-              <div key={href} className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all flex flex-col">
-                <Link href={href} data-testid={`card-service-${href}`}>
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={img}
-                      alt={`${title} in Bangalore by MKR Safety Solutions`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width={400}
-                      height={300}
-                    />
-                    <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/30 transition-colors" />
-                    <div className="absolute bottom-3 left-3 text-white font-bold text-sm leading-tight pr-2">{title}</div>
-                  </div>
-                </Link>
-                <div className="p-4 flex flex-col flex-1">
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
-                  <div className="mt-4 flex items-center justify-between">
-                    <Link href={href} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
-                      Learn more <ArrowRight className="w-3 h-3" />
-                    </Link>
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="WhatsApp"
-                        className="w-7 h-7 flex items-center justify-center rounded-full bg-green-500 text-white hover:bg-green-600 transition-colors"
-                      >
-                        <MessageCircle className="w-3.5 h-3.5" />
-                      </a>
-                      <a
-                        href="tel:+917780114547"
-                        aria-label="Call"
-                        className="w-7 h-7 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-80 transition-colors"
-                      >
-                        <Phone className="w-3.5 h-3.5" />
-                      </a>
+              <StaggerItem key={href}>
+                <motion.div
+                  whileHover={{ y: -4, boxShadow: "0 12px 32px rgba(0,0,0,0.1)" }}
+                  transition={{ duration: 0.2 }}
+                  className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all flex flex-col h-full"
+                >
+                  <Link href={href} data-testid={`card-service-${href}`}>
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={img}
+                        alt={`${title} in Bangalore by MKR Safety Solutions`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                        width={400}
+                        height={300}
+                      />
+                      <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/30 transition-colors" />
+                      <div className="absolute bottom-3 left-3 text-white font-bold text-sm leading-tight pr-2">{title}</div>
+                    </div>
+                  </Link>
+                  <div className="p-4 flex flex-col flex-1">
+                    <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
+                    <div className="mt-4 flex items-center justify-between">
+                      <Link href={href} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
+                        Learn more <ArrowRight className="w-3 h-3" />
+                      </Link>
+                      <div className="flex items-center gap-2">
+                        <a
+                          href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="WhatsApp"
+                          className="w-7 h-7 flex items-center justify-center rounded-full bg-green-500 text-white hover:bg-green-600 transition-colors"
+                        >
+                          <MessageCircle className="w-3.5 h-3.5" />
+                        </a>
+                        <a
+                          href="tel:+917780114547"
+                          aria-label="Call"
+                          className="w-7 h-7 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-80 transition-colors"
+                        >
+                          <Phone className="w-3.5 h-3.5" />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerList>
           <div className="text-center mt-8">
             <Link href="/invisible-grills-bangalore" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
               View All Services <ArrowRight className="w-4 h-4" />
@@ -361,11 +367,11 @@ export default function Home() {
       <section className="py-16 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <FadeLeft>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                 Why 1000+ Bangalore Families Choose MKR
               </h2>
-              <div className="space-y-4">
+              <StaggerList className="space-y-4">
                 {[
                   { title: "316 Grade Marine Stainless Steel", desc: "The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity." },
                   { title: "250kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed." },
@@ -373,40 +379,52 @@ export default function Home() {
                   { title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and provide a transparent quote — no obligation required." },
                   { title: "10-Year Warranty", desc: "Every installation is backed by a full decade of warranty covering cables, anchors, and fittings." },
                 ].map(({ title, desc }) => (
-                  <div key={title} className="flex gap-3">
-                    <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                    <div>
-                      <div className="font-semibold text-foreground text-sm">{title}</div>
-                      <div className="text-muted-foreground text-sm mt-0.5">{desc}</div>
+                  <StaggerItem key={title}>
+                    <div className="flex gap-3">
+                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <div>
+                        <div className="font-semibold text-foreground text-sm">{title}</div>
+                        <div className="text-muted-foreground text-sm mt-0.5">{desc}</div>
+                      </div>
                     </div>
-                  </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerList>
               <div className="mt-8">
                 <Link href="/about-us" className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all">
                   About MKR Safety Solutions <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-            </div>
-            <div className="relative">
-              <img
-                src={hero2}
-                alt="Child safely watching city view through MKR invisible grills on Bangalore apartment balcony"
-                className="rounded-2xl w-full object-cover shadow-xl"
-                loading="lazy"
-                width={600}
-                height={500}
-              />
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg border border-border">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+            </FadeLeft>
+            <FadeRight delay={0.15}>
+              <div className="relative">
+                <motion.img
+                  src={hero2}
+                  alt="Child safely watching city view through MKR invisible grills on Bangalore apartment balcony"
+                  className="rounded-2xl w-full object-cover shadow-xl"
+                  loading="lazy"
+                  width={600}
+                  height={500}
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                />
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg border border-border"
+                >
+                  <div className="flex items-center gap-2">
+                    <div className="flex">
+                      {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+                    </div>
+                    <span className="text-sm font-semibold">4.9 / 5</span>
                   </div>
-                  <span className="text-sm font-semibold">4.9 / 5</span>
-                </div>
-                <p className="text-xs text-muted-foreground mt-1">Based on 500+ Google Reviews</p>
+                  <p className="text-xs text-muted-foreground mt-1">Based on 500+ Google Reviews</p>
+                </motion.div>
               </div>
-            </div>
+            </FadeRight>
           </div>
         </div>
       </section>
@@ -451,11 +469,11 @@ export default function Home() {
       {/* Locations */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <FadeUp className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-3">Serving All Major Areas in Bangalore</h2>
             <p className="text-primary-foreground/70">Same-day site visits available across 12+ neighborhoods</p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
+          </FadeUp>
+          <StaggerList className="flex flex-wrap justify-center gap-3">
             {[
               ["Whitefield", "/invisible-grills-whitefield"],
               ["Koramangala", "/invisible-grills-koramangala"],
@@ -470,23 +488,26 @@ export default function Home() {
               ["Yelahanka", "/invisible-grills-yelahanka"],
               ["KR Puram", "/invisible-grills-kr-puram"],
             ].map(([area, href]) => (
-              <Link
-                key={href}
-                href={href}
-                className="px-4 py-2 border border-primary-foreground/30 rounded-full text-sm text-primary-foreground/90 hover:border-secondary hover:text-secondary transition-all"
-                data-testid={`link-location-${area}`}
-              >
-                {area}
-              </Link>
+              <StaggerItem key={href}>
+                <motion.div whileHover={{ scale: 1.08 }} transition={{ duration: 0.15 }}>
+                  <Link
+                    href={href}
+                    className="block px-4 py-2 border border-primary-foreground/30 rounded-full text-sm text-primary-foreground/90 hover:border-secondary hover:text-secondary transition-all"
+                    data-testid={`link-location-${area}`}
+                  >
+                    {area}
+                  </Link>
+                </motion.div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerList>
         </div>
       </section>
 
       {/* Blog Preview */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center mb-10">
+          <FadeUp className="flex justify-between items-center mb-10">
             <div>
               <h2 className="text-3xl font-bold text-foreground">Latest from Our Blog</h2>
               <p className="text-muted-foreground mt-1">Expert tips on invisible grills and home safety</p>
@@ -494,64 +515,76 @@ export default function Home() {
             <Link href="/blog" className="hidden sm:flex items-center gap-2 text-secondary font-semibold">
               All Posts <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          </FadeUp>
+          <StaggerList className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {blogPosts.slice(0, 3).map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`}>
-                <article className="border border-border rounded-xl p-6 hover:shadow-md transition-shadow h-full">
-                  <div className="text-xs text-muted-foreground mb-2">{post.date} · {post.readTime}</div>
-                  <h3 className="font-semibold text-foreground text-base mb-2 leading-snug">{post.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
-                  <span className="inline-flex items-center gap-1 mt-4 text-xs font-semibold text-secondary">
-                    Read more <ArrowRight className="w-3 h-3" />
-                  </span>
-                </article>
-              </Link>
+              <StaggerItem key={post.slug}>
+                <motion.div whileHover={{ y: -4, boxShadow: "0 8px 28px rgba(0,0,0,0.08)" }} transition={{ duration: 0.2 }}>
+                  <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`}>
+                    <article className="border border-border rounded-xl p-6 hover:shadow-md transition-shadow h-full">
+                      <div className="text-xs text-muted-foreground mb-2">{post.date} · {post.readTime}</div>
+                      <h3 className="font-semibold text-foreground text-base mb-2 leading-snug">{post.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
+                      <span className="inline-flex items-center gap-1 mt-4 text-xs font-semibold text-secondary">
+                        Read more <ArrowRight className="w-3 h-3" />
+                      </span>
+                    </article>
+                  </Link>
+                </motion.div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerList>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-secondary/10 border-t border-secondary/20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Secure Your Home?</h2>
-          <p className="text-muted-foreground mb-8">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact-us" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
-              Book Free Site Visit
-            </Link>
-            <a href="tel:+917780114547" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors">
-              <Phone className="w-4 h-4" /> Call +91 77801 14547
-            </a>
+      <ScaleIn>
+        <section className="py-16 bg-secondary/10 border-t border-secondary/20">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Secure Your Home?</h2>
+            <p className="text-muted-foreground mb-8">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                <Link href="/contact-us" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
+                  Book Free Site Visit
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                <a href="tel:+917780114547" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
+                  <Phone className="w-4 h-4" /> Call +91 77801 14547
+                </a>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ScaleIn>
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <FadeUp className="text-center mb-10">
             <h2 className="text-3xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
             <p className="text-muted-foreground">Everything you need to know about invisible grills in Bangalore</p>
-          </div>
-          <Accordion type="single" collapsible className="space-y-3">
-            {homeFaqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-4">
-                <AccordionTrigger className="text-left font-medium text-sm py-4 hover:no-underline">
-                  {faq.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm pb-4 leading-relaxed">
-                  {faq.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-          <div className="text-center mt-8">
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <Accordion type="single" collapsible className="space-y-3">
+              {homeFaqs.map((faq, i) => (
+                <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-4">
+                  <AccordionTrigger className="text-left font-medium text-sm py-4 hover:no-underline">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-sm pb-4 leading-relaxed">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </FadeUp>
+          <FadeUp delay={0.2} className="text-center mt-8">
             <Link href="/faqs" className="inline-flex items-center gap-2 text-secondary font-semibold">
               View All FAQs <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </FadeUp>
         </div>
       </section>
     </Layout>
