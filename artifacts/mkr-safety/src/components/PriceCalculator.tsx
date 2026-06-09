@@ -39,7 +39,7 @@ export function PriceCalculator() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-4 uppercase tracking-wide">
             <Calculator className="w-3 h-3" /> Instant Price Calculator
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground mb-2">
+          <h2 className="text-xl sm:text-2xl font-semibold text-primary-foreground mb-2">
             Get Your Quote in Seconds
           </h2>
           <p className="text-primary-foreground/70 max-w-xl mx-auto">
