@@ -187,13 +187,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-1">
-              <img
-                src={logoPath}
-                alt="MKR Safety Solutions"
-                className="h-12 w-auto object-contain mb-4 brightness-0 invert"
-                width={120}
-                height={48}
-              />
+              <div className="inline-block bg-white rounded-xl px-3 py-2 mb-4">
+                <img
+                  src={logoPath}
+                  alt="MKR Safety Solutions"
+                  className="h-10 w-auto object-contain"
+                  width={120}
+                  height={40}
+                />
+              </div>
               <p className="text-sm text-primary-foreground/80 leading-relaxed mb-4">
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
               </p>
@@ -244,6 +246,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2">
                 {[
                   ["About Us", "/about-us"],
+                  ["Pricing", "/pricing"],
                   ["Projects", "/projects"],
                   ["Gallery", "/gallery"],
                   ["Customer Reviews", "/reviews"],

@@ -13,6 +13,7 @@ import Projects from "@/pages/Projects";
 import Reviews from "@/pages/Reviews";
 import Blog from "@/pages/Blog";
 
+import Pricing from "@/pages/Pricing";
 import InvisibleGrillsBangalore from "@/pages/services/InvisibleGrillsBangalore";
 import BalconyGrills from "@/pages/services/BalconyGrills";
 import WindowGrills from "@/pages/services/WindowGrills";
@@ -62,6 +63,7 @@ function Router() {
       <Route path="/projects" component={Projects} />
       <Route path="/reviews" component={Reviews} />
       <Route path="/blog" component={Blog} />
+      <Route path="/pricing" component={Pricing} />
 
       {/* Service Pages */}
       <Route path="/invisible-grills-bangalore" component={InvisibleGrillsBangalore} />
