@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
 import logoPath from "@assets/MKR_PHOTO_1780926061320.jpeg";
+
+const taglines = ["Invisible Grills", "Child Safety Experts", "10-Year Warranty", "Free Site Visit"];
 
 const services = [
   { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
@@ -29,20 +32,50 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [location] = useLocation();
+  const [tagIdx, setTagIdx] = useState(0);
+
+  useEffect(() => {
+    const t = setInterval(() => setTagIdx((i) => (i + 1) % taglines.length), 2800);
+    return () => clearInterval(t);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-2.5">
               <img
                 src={logoPath}
                 alt="MKR Safety Solutions - Invisible Grills Bangalore"
-                className="h-10 md:h-12 w-auto object-contain"
+                className="h-10 md:h-12 w-auto object-contain flex-shrink-0"
                 width={120}
                 height={48}
               />
+              <div className="lg:hidden flex flex-col leading-tight overflow-hidden">
+                <motion.span
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-sm font-bold text-foreground whitespace-nowrap"
+                >
+                  MKR Safety Solutions
+                </motion.span>
+                <div className="h-4 overflow-hidden">
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={tagIdx}
+                      initial={{ y: 14, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: -14, opacity: 0 }}
+                      transition={{ duration: 0.35 }}
+                      className="block text-[10px] font-semibold text-secondary uppercase tracking-wide whitespace-nowrap"
+                    >
+                      {taglines[tagIdx]}
+                    </motion.span>
+                  </AnimatePresence>
+                </div>
+              </div>
             </Link>
 
             <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
