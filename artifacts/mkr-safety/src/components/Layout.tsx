@@ -84,12 +84,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
             <div className="flex items-center gap-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+917780114547"
                 className="hidden md:flex items-center gap-2 text-sm text-foreground hover:text-secondary transition-colors"
                 aria-label="Call MKR Safety Solutions"
               >
                 <Phone className="w-4 h-4" />
-                <span className="font-medium">+91 98765 43210</span>
+                <span className="font-medium">+91 77801 14547</span>
               </a>
               <Link
                 href="/contact-us"
@@ -165,7 +165,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
               </p>
               <div className="flex flex-col gap-1 text-sm text-primary-foreground/80">
-                <a href="tel:+919876543210" className="hover:text-secondary transition-colors">+91 98765 43210</a>
+                <a href="tel:+917780114547" className="hover:text-secondary transition-colors">+91 77801 14547</a>
                 <a href="mailto:info@mkrsafetysolutions.com" className="hover:text-secondary transition-colors">info@mkrsafetysolutions.com</a>
                 <span>Bangalore, Karnataka, India</span>
               </div>

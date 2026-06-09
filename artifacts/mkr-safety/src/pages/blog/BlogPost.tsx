@@ -111,8 +111,8 @@ export function BlogPostPage({ data }: { data: BlogPostData }) {
             <div className="bg-primary text-primary-foreground rounded-xl p-6">
               <h3 className="font-bold mb-2">Need Invisible Grills?</h3>
               <p className="text-sm text-primary-foreground/80 mb-4">Free site visit. No obligation. Our team will assess your space and provide a transparent quote.</p>
-              <a href="tel:+919876543210" className="block text-center px-4 py-2.5 bg-secondary text-secondary-foreground font-semibold rounded-lg text-sm hover:opacity-90 transition-opacity">
-                Call +91 98765 43210
+              <a href="tel:+917780114547" className="block text-center px-4 py-2.5 bg-secondary text-secondary-foreground font-semibold rounded-lg text-sm hover:opacity-90 transition-opacity">
+                Call +91 77801 14547
               </a>
             </div>
           </aside>

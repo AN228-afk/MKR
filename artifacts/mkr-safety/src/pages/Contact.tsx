@@ -40,8 +40,8 @@ export default function Contact() {
                 <h2 className="text-xl font-bold text-foreground mb-6">Reach Us Directly</h2>
                 <div className="space-y-4">
                   {[
-                    { icon: Phone, label: "Phone", value: "+91 98765 43210", href: "tel:+919876543210" },
-                    { icon: MessageCircle, label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/919876543210" },
+                    { icon: Phone, label: "Phone", value: "+91 77801 14547", href: "tel:+917780114547" },
+                    { icon: MessageCircle, label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/917780114547" },
                     { icon: Mail, label: "Email", value: "info@mkrsafetysolutions.com", href: "mailto:info@mkrsafetysolutions.com" },
                     { icon: MapPin, label: "Location", value: "Bangalore, Karnataka, India", href: undefined },
                     { icon: Clock, label: "Hours", value: "Mon–Sat: 9 AM – 7 PM", href: undefined },

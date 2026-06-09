@@ -27,7 +27,7 @@ const schema = {
     "@type": "LocalBusiness",
     name: "MKR Safety Solutions",
     url: "https://mkrsafetysolutions.com",
-    telephone: "+91-98765-43210",
+    telephone: "+91-77801-14547",
     address: { "@type": "PostalAddress", addressLocality: "Bangalore", addressRegion: "Karnataka", addressCountry: "IN" },
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "500" },
   },
@@ -75,7 +75,7 @@ export default function InvisibleGrillsBangalore() {
               <Link href="/contact-us" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity inline-flex items-center gap-2">
                 Get Free Quote <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="tel:+919876543210" className="px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all inline-flex items-center gap-2">
+              <a href="tel:+917780114547" className="px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all inline-flex items-center gap-2">
                 <Phone className="w-4 h-4" /> Call Now
               </a>
             </div>
@@ -179,8 +179,8 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 10-year warranty. Call or WhatsApp us now.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-            <a href="tel:+919876543210" className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
-              <Phone className="w-4 h-4" /> Call +91 98765 43210
+            <a href="tel:+917780114547" className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+              <Phone className="w-4 h-4" /> Call +91 77801 14547
             </a>
           </div>
         </div>

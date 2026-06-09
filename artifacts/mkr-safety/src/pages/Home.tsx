@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
@@ -16,14 +16,65 @@ import img4 from "@assets/MKR_4_1780926061320.png";
 import img6 from "@assets/2_1780926045097.png";
 import img7 from "@assets/6_1780926045097.jpg";
 
+const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
+
 const heroSlides = [
-  { src: hero1, alt: "Invisible grills on luxury apartment balcony with panoramic Bangalore city view", label: "Balcony Invisible Grills" },
-  { src: hero2, alt: "Child safely enjoying the view through MKR invisible grills on high-rise balcony", label: "Child Safety Grills" },
-  { src: img2, alt: "Premium villa balcony with near-invisible stainless steel cable grills", label: "Villa Invisible Grills" },
-  { src: img4, alt: "Window invisible grills with lush greenery view preserved completely", label: "Window Invisible Grills" },
-  { src: img5, alt: "Elegant staircase invisible grill cable system in modern interior", label: "Staircase Grills" },
-  { src: img6, alt: "Balcony with invisible grills and planter arrangement, Bangalore apartment", label: "Balcony Grills" },
-  { src: img7, alt: "Apartment balcony with stainless steel invisible grills at dusk", label: "Premium Installations" },
+  {
+    src: hero1,
+    alt: "Invisible grills on luxury apartment balcony with panoramic Bangalore city view",
+    label: "Balcony Invisible Grills",
+    heading: "Protect Your Balcony.",
+    accent: "Keep The View Forever.",
+    sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested to 250 kg/m.",
+  },
+  {
+    src: hero2,
+    alt: "Child safely enjoying the view through MKR invisible grills on high-rise balcony",
+    label: "Child Safety Grills",
+    heading: "Your Child Deserves",
+    accent: "A Safe, Open World.",
+    sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by 500+ Bangalore families in high-rise apartments.",
+  },
+  {
+    src: img2,
+    alt: "Premium villa balcony with near-invisible stainless steel cable grills",
+    label: "Villa Invisible Grills",
+    heading: "Luxury Villas Deserve",
+    accent: "Invisible Protection.",
+    sub: "Bespoke cable grill systems designed for large villa balconies and terraces — seamlessly blending with premium architecture.",
+  },
+  {
+    src: img4,
+    alt: "Window invisible grills with lush greenery view preserved completely",
+    label: "Window Invisible Grills",
+    heading: "Maximum Light.",
+    accent: "Maximum Safety.",
+    sub: "Window invisible grills that let air, light and views flow freely. No more dark iron bars ruining your interior design.",
+  },
+  {
+    src: img5,
+    alt: "Elegant staircase invisible grill cable system in modern interior",
+    label: "Staircase Invisible Grills",
+    heading: "Staircases That Look",
+    accent: "Clean & Modern.",
+    sub: "Vertical SS cable systems for open staircases that look stunning in contemporary homes while keeping children safe.",
+  },
+  {
+    src: img6,
+    alt: "Balcony with invisible grills and planter arrangement, Bangalore apartment",
+    label: "1000+ Installations",
+    heading: "Bangalore's Most",
+    accent: "Trusted Grill Brand.",
+    sub: "4.9★ Google rating across 500+ reviews. Every installation backed by a 10-year warranty and lifetime customer support.",
+  },
+  {
+    src: img7,
+    alt: "Apartment balcony with stainless steel invisible grills at dusk",
+    label: "10-Year Warranty",
+    heading: "316 Marine SS Steel.",
+    accent: "Zero Rust. Ever.",
+    sub: "The same grade used in marine environments. Resistant to Bangalore humidity, rain, and coastal conditions — guaranteed.",
+  },
 ];
 
 const homeFaqs = [
@@ -55,7 +106,7 @@ const localBusinessSchema = {
   name: "MKR Safety Solutions",
   description: "Premium invisible grill installation in Bangalore. Balcony, window, staircase, terrace, and villa grills. 316-grade marine SS cables. 10-year warranty.",
   url: "https://mkrsafetysolutions.com",
-  telephone: "+91-98765-43210",
+  telephone: "+91-77801-14547",
   email: "info@mkrsafetysolutions.com",
   address: {
     "@type": "PostalAddress",
@@ -94,18 +145,6 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
-  const goTo = (idx: number) => {
-    setDirection(idx > current ? 1 : -1);
-    setCurrent(idx);
-  };
-  const prev = () => {
-    setDirection(-1);
-    setCurrent((p) => (p - 1 + heroSlides.length) % heroSlides.length);
-  };
-  const next = () => {
-    setDirection(1);
-    setCurrent((p) => (p + 1) % heroSlides.length);
-  };
 
   return (
     <Layout>
@@ -120,26 +159,20 @@ export default function Home() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-primary">
         {/* Slideshow Background */}
         <div className="absolute inset-0">
-          <AnimatePresence initial={false} custom={direction} mode="sync">
+          <AnimatePresence initial={false} mode="sync">
             <motion.img
               key={current}
               src={heroSlides[current].src}
               alt={heroSlides[current].alt}
-              custom={direction}
-              variants={{
-                enter: (d: number) => ({ x: d > 0 ? "8%" : "-8%", opacity: 0, scale: 1.04 }),
-                center: { x: 0, opacity: 0.75, scale: 1, transition: { duration: 0.9, ease: "easeOut" } },
-                exit: (d: number) => ({ x: d > 0 ? "-8%" : "8%", opacity: 0, scale: 0.97, transition: { duration: 0.7, ease: "easeIn" } }),
-              }}
-              initial="enter"
-              animate="center"
-              exit="exit"
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 0.85, scale: 1, transition: { duration: 1.1, ease: "easeOut" } }}
+              exit={{ opacity: 0, transition: { duration: 0.6 } }}
               className="absolute inset-0 w-full h-full object-cover"
               width={1200}
               height={800}
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/20" />
         </div>
 
         {/* Slide Label Pill */}
@@ -158,53 +191,45 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        {/* Prev / Next arrows */}
-        <button
-          onClick={prev}
-          aria-label="Previous slide"
-          className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all backdrop-blur-sm"
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </button>
-        <button
-          onClick={next}
-          aria-label="Next slide"
-          className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all backdrop-blur-sm"
-        >
-          <ChevronRight className="w-5 h-5" />
-        </button>
-
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-6 uppercase tracking-wider">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wider">
               <Shield className="w-3 h-3" /> Bangalore's Most Trusted Invisible Grill Company
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-              Protect Your Family.<br />
-              <span className="text-secondary">Never Block The View.</span>
-            </h1>
-            <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-lg">
-              Ultra-fine 316-grade marine stainless steel cables that are nearly invisible from a distance — installed on balconies, windows, staircases and terraces across Bangalore.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current}
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -14 }}
+                transition={{ duration: 0.5 }}
+              >
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-4">
+                  {heroSlides[current].heading}<br />
+                  <span className="text-secondary">{heroSlides[current].accent}</span>
+                </h1>
+                <p className="text-sm sm:text-base text-primary-foreground/80 leading-relaxed mb-7 max-w-lg">
+                  {heroSlides[current].sub}
+                </p>
+              </motion.div>
+            </AnimatePresence>
+
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact-us"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-all text-base"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-all text-sm"
                 data-testid="button-hero-quote"
               >
                 Get Free Quote
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore."
+                href={WA}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all text-base"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all text-sm"
                 data-testid="button-hero-whatsapp"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -212,31 +237,15 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-6 mt-10">
+            <div className="flex flex-wrap gap-6 mt-8">
               {[["1000+", "Installations"], ["4.9★", "Google Rating"], ["10 Yr", "Warranty"]].map(([num, label]) => (
                 <div key={label}>
-                  <div className="text-2xl font-bold text-secondary">{num}</div>
+                  <div className="text-xl font-bold text-secondary">{num}</div>
                   <div className="text-xs text-primary-foreground/70">{label}</div>
                 </div>
               ))}
             </div>
-
-            {/* Dot indicators */}
-            <div className="flex items-center gap-2 mt-8">
-              {heroSlides.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  aria-label={`Go to slide ${i + 1}`}
-                  className={`rounded-full transition-all duration-300 ${
-                    i === current
-                      ? "w-6 h-2 bg-secondary"
-                      : "w-2 h-2 bg-primary-foreground/30 hover:bg-primary-foreground/60"
-                  }`}
-                />
-              ))}
-            </div>
-          </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -266,13 +275,37 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Balcony Invisible Grills", href: "/balcony-invisible-grills", desc: "Open balconies secured with near-invisible cables", img: hero1 },
-              { title: "Window Invisible Grills", href: "/window-invisible-grills", desc: "Maximum light, maximum safety for every window", img: img4 },
-              { title: "Staircase Invisible Grills", href: "/staircase-invisible-grills", desc: "Elegant vertical cable systems for staircases", img: img5 },
-              { title: "Villa Invisible Grills", href: "/villa-invisible-grills", desc: "Bespoke solutions for independent villas", img: img2 },
-            ].map(({ title, href, desc, img }) => (
-              <Link key={href} href={href} data-testid={`card-service-${href}`}>
-                <div className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all">
+              {
+                title: "Balcony Invisible Grills",
+                href: "/balcony-invisible-grills",
+                desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
+                img: hero1,
+                waMsg: "Hi, I need Balcony Invisible Grills in Bangalore. Please share details.",
+              },
+              {
+                title: "Window Invisible Grills",
+                href: "/window-invisible-grills",
+                desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
+                img: img4,
+                waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
+              },
+              {
+                title: "Staircase Invisible Grills",
+                href: "/staircase-invisible-grills",
+                desc: "Elegant vertical cable railings for open staircases — child-safe, pet-safe, and stunning in modern interiors.",
+                img: img5,
+                waMsg: "Hi, I need Staircase Invisible Grills in Bangalore. Please share details.",
+              },
+              {
+                title: "Villa Invisible Grills",
+                href: "/villa-invisible-grills",
+                desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
+                img: img2,
+                waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
+              },
+            ].map(({ title, href, desc, img, waMsg }) => (
+              <div key={href} className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all flex flex-col">
+                <Link href={href} data-testid={`card-service-${href}`}>
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={img}
@@ -283,16 +316,36 @@ export default function Home() {
                       height={300}
                     />
                     <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/30 transition-colors" />
-                    <div className="absolute bottom-3 left-3 text-white font-bold text-base">{title}</div>
+                    <div className="absolute bottom-3 left-3 text-white font-bold text-sm leading-tight pr-2">{title}</div>
                   </div>
-                  <div className="p-4">
-                    <p className="text-sm text-muted-foreground">{desc}</p>
-                    <span className="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-secondary">
+                </Link>
+                <div className="p-4 flex flex-col flex-1">
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
+                  <div className="mt-4 flex items-center justify-between">
+                    <Link href={href} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
                       Learn more <ArrowRight className="w-3 h-3" />
-                    </span>
+                    </Link>
+                    <div className="flex items-center gap-2">
+                      <a
+                        href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                        className="w-7 h-7 flex items-center justify-center rounded-full bg-green-500 text-white hover:bg-green-600 transition-colors"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5" />
+                      </a>
+                      <a
+                        href="tel:+917780114547"
+                        aria-label="Call"
+                        className="w-7 h-7 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-80 transition-colors"
+                      >
+                        <Phone className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
           <div className="text-center mt-8">
@@ -467,8 +520,8 @@ export default function Home() {
             <Link href="/contact-us" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
               Book Free Site Visit
             </Link>
-            <a href="tel:+919876543210" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors">
-              <Phone className="w-4 h-4" /> Call +91 98765 43210
+            <a href="tel:+917780114547" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors">
+              <Phone className="w-4 h-4" /> Call +91 77801 14547
             </a>
           </div>
         </div>

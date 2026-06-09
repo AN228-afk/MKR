@@ -8,6 +8,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle } from "lucide-react";
 
+const WA_NUMBER = "917780114547";
+
 const inquirySchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   phone: z.string().min(10, "Enter a valid phone number"),
@@ -44,7 +46,20 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
   });
 
   function onSubmit(data: InquiryForm) {
-    console.log("Inquiry submitted:", data);
+    const lines = [
+      `Hi, I need invisible grills in Bangalore.`,
+      `Name: ${data.name}`,
+      `Phone: ${data.phone}`,
+      `Email: ${data.email}`,
+      `Service: ${data.service}`,
+      `Location: ${data.location}`,
+      data.message ? `Details: ${data.message}` : null,
+      `Please share a free quote.`,
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lines)}`;
+    window.open(waUrl, "_blank");
     setSubmitted(true);
   }
 
@@ -53,8 +68,8 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
       <div className="flex flex-col items-center justify-center py-10 text-center gap-4">
         <CheckCircle className="w-12 h-12 text-green-500" />
         <div>
-          <h3 className="text-lg font-semibold text-foreground">Thank you! We'll contact you soon.</h3>
-          <p className="text-muted-foreground text-sm mt-1">Our team will call or WhatsApp you within 2 hours to schedule your free site visit.</p>
+          <h3 className="text-lg font-semibold text-foreground">Opening WhatsApp…</h3>
+          <p className="text-muted-foreground text-sm mt-1">Your enquiry details have been sent to our team on WhatsApp. We'll respond within 2 hours.</p>
         </div>
       </div>
     );
@@ -64,7 +79,7 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
     <div>
       {title && <h2 className="text-xl font-bold text-foreground mb-6">{title}</h2>}
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className={`space-y-4 ${compact ? "" : ""}`}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <div className={`grid gap-4 ${compact ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
             <FormField control={form.control} name="name" render={({ field }) => (
               <FormItem>
@@ -79,7 +94,7 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <Input placeholder="+91 98765 43210" type="tel" data-testid="input-phone" {...field} />
+                  <Input placeholder="+91 77801 14547" type="tel" data-testid="input-phone" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -141,9 +156,10 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
           <button
             type="submit"
             data-testid="button-submit-inquiry"
-            className="w-full py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity text-sm"
+            className="w-full py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors text-sm flex items-center justify-center gap-2"
           >
-            Get Free Quote & Site Visit
+            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.522 5.836L.044 23.956l6.284-1.648A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.93 0-3.74-.52-5.29-1.43l-.38-.22-3.73.98.99-3.64-.25-.39A9.946 9.946 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Send via WhatsApp
           </button>
           <p className="text-xs text-muted-foreground text-center">Free site visit. No obligation. Response within 2 hours.</p>
         </form>

@@ -1,12 +1,12 @@
 import { Phone, MessageCircle } from "lucide-react";
 
-const PHONE = "+919876543210";
-const WHATSAPP_URL = "https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20invisible%20grills%20for%20my%20home%20in%20Bangalore.%20Please%20send%20me%20a%20free%20quote.";
+const PHONE = "+917780114547";
+const WHATSAPP_URL = "https://wa.me/917780114547?text=Hi%2C%20I%20am%20interested%20in%20invisible%20grills%20for%20my%20home%20in%20Bangalore.%20Please%20send%20me%20a%20free%20quote.";
 
 export function FloatingCTA() {
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
+      <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3 items-end hidden sm:flex">
         <a
           href={`tel:${PHONE}`}
           data-testid="button-float-call"
@@ -14,7 +14,7 @@ export function FloatingCTA() {
           aria-label="Call MKR Safety Solutions"
         >
           <Phone className="w-4 h-4" />
-          <span className="hidden sm:inline">Call Now</span>
+          <span>Call Now</span>
         </a>
         <a
           href={WHATSAPP_URL}
@@ -25,7 +25,7 @@ export function FloatingCTA() {
           aria-label="Chat on WhatsApp with MKR Safety Solutions"
         >
           <MessageCircle className="w-4 h-4" />
-          <span className="hidden sm:inline">WhatsApp</span>
+          <span>WhatsApp</span>
         </a>
       </div>
 
