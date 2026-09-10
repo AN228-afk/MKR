@@ -25,6 +25,7 @@ const navLinks = [
   { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blog" },
   { label: "Reviews", href: "/reviews" },
+  { label: "Store Locator", href: "/store-locator" },
   { label: "Contact", href: "/contact-us" },
 ];
 

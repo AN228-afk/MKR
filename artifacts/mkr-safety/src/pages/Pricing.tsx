@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -75,13 +76,14 @@ export default function Pricing() {
               All-inclusive pricing starting at ₹90/sq ft. Materials, installation, load testing, and 10-year warranty — everything included.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="tel:+917780114547" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
                 <Phone className="w-4 h-4" /> Call for Exact Quote
               </a>
               <a
                 href="https://wa.me/917780114547?text=Hi%2C%20I%20want%20to%20know%20the%20price%20of%20invisible%20grills%20for%20my%20home%20in%20Bangalore."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackGoogleAdsConversion}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all"
               >
                 <MessageCircle className="w-4 h-4" /> WhatsApp Us
@@ -221,10 +223,10 @@ export default function Pricing() {
             <h2 className="text-2xl font-bold text-foreground mb-3">Ready for an Exact Quote?</h2>
             <p className="text-muted-foreground mb-6">Book a free site visit — our team measures your space and provides a transparent, itemised quote within 24 hours. No obligation.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
+              <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
                 Book Free Site Visit
               </Link>
-              <a href="tel:+917780114547" className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> Call +91 77801 14547
               </a>
             </div>

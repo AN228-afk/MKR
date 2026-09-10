@@ -78,7 +78,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
             alt={data.heroAlt}
             initial={{ scale: 1.06, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.28 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="w-full h-full object-cover"
             width={1200}
             height={600}
@@ -184,7 +184,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
                   className="bg-muted rounded-xl p-5 border border-border h-full"
                 >
                   <div className="flex items-center gap-1 mb-3">
-                    {[1,2,3,4,5].map(s => <Star key={s} className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />)}
+                    {[1, 2, 3, 4, 5].map(s => <Star key={s} className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />)}
                   </div>
                   <p className="text-sm text-foreground leading-relaxed mb-3">"{t.text}"</p>
                   <div className="text-xs text-muted-foreground">{t.name} · {t.location}</div>

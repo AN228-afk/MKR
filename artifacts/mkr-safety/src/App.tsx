@@ -12,6 +12,7 @@ import FAQs from "@/pages/FAQs";
 import Projects from "@/pages/Projects";
 import Reviews from "@/pages/Reviews";
 import Blog from "@/pages/Blog";
+import StoreLocator from "@/pages/StoreLocator";
 
 import Pricing from "@/pages/Pricing";
 import InvisibleGrillsBangalore from "@/pages/services/InvisibleGrillsBangalore";
@@ -47,7 +48,7 @@ import {
   BestGrillsBlogPost,
   MaintenanceBlogPost,
   SteelGradeBlogPost,
-} from "@/pages/blog";
+} from "@/pages/blog/index";
 
 const queryClient = new QueryClient();
 
@@ -63,6 +64,7 @@ function Router() {
       <Route path="/projects" component={Projects} />
       <Route path="/reviews" component={Reviews} />
       <Route path="/blog" component={Blog} />
+      <Route path="/store-locator" component={StoreLocator} />
       <Route path="/pricing" component={Pricing} />
 
       {/* Service Pages */}

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Calculator, MessageCircle, ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
 import { FadeUp } from "./Animated";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const SPACE_TYPES = [
   { id: "balcony", label: "Balcony", icon: "🏠", min3: 90, max3: 130, min25: 110, max25: 150 },
@@ -60,11 +61,10 @@ export function PriceCalculator() {
                   onClick={() => setSpaceId(s.id)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`flex flex-col items-center gap-1.5 py-3 px-2 rounded-xl border transition-all text-sm font-medium ${
-                    spaceId === s.id
+                  className={`flex flex-col items-center gap-1.5 py-3 px-2 rounded-xl border transition-all text-sm font-medium ${spaceId === s.id
                       ? "bg-secondary text-secondary-foreground border-secondary shadow-lg"
                       : "border-white/20 text-primary-foreground/80 hover:border-secondary/50"
-                  }`}
+                    }`}
                 >
                   <span className="text-xl">{s.icon}</span>
                   <span className="text-xs leading-tight text-center">{s.label}</span>
@@ -85,11 +85,10 @@ export function PriceCalculator() {
                   onClick={() => setCable(c)}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${
-                    cable === c
+                  className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${cable === c
                       ? "bg-secondary text-secondary-foreground border-secondary"
                       : "border-white/20 text-primary-foreground hover:border-secondary/50"
-                  }`}
+                    }`}
                 >
                   <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 mt-0.5 flex items-center justify-center ${cable === c ? "border-secondary-foreground bg-secondary-foreground/20" : "border-white/40"}`}>
                     {cable === c && <div className="w-2 h-2 rounded-full bg-secondary-foreground" />}
@@ -174,6 +173,7 @@ export function PriceCalculator() {
                     href={`https://wa.me/917780114547?text=${waText}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={trackGoogleAdsConversion}
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     className="flex items-center justify-center gap-2 px-5 py-3 bg-green-500 text-white font-semibold rounded-xl text-sm hover:bg-green-600 transition-colors"
@@ -183,6 +183,7 @@ export function PriceCalculator() {
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                     <Link
                       href="/contact-us"
+                      onClick={trackGoogleAdsConversion}
                       className="flex items-center justify-center gap-2 px-5 py-3 border border-primary text-primary font-semibold rounded-xl text-sm hover:bg-primary/5 transition-colors"
                     >
                       Book Free Site Visit <ArrowRight className="w-3.5 h-3.5" />

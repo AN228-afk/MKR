@@ -3,13 +3,14 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 export default function Contact() {
   return (
     <Layout>
       <SEOHead
         title="Contact MKR Safety Solutions | Free Quote for Invisible Grills Bangalore"
-        description="Get a free quote for invisible grills in Bangalore. Call, WhatsApp, or fill our form. Same-day site visit available. MKR Safety Solutions, Bangalore."
+        description="Contact MKR Safety Solutions in Bangalore for a free quote on invisible grills, same-day WhatsApp support, and expert safety grill installation across major neighborhoods."
         canonical="https://mkrsafetysolutions.com/contact-us"
       />
 
@@ -53,7 +54,13 @@ export default function Contact() {
                       <div>
                         <div className="text-xs text-muted-foreground font-medium uppercase tracking-wide">{label}</div>
                         {href ? (
-                          <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className="text-foreground font-medium hover:text-secondary transition-colors">
+                          <a
+                            href={href}
+                            target={href.startsWith("http") ? "_blank" : undefined}
+                            rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                            onClick={label === "Phone" || label === "WhatsApp" ? trackGoogleAdsConversion : undefined}
+                            className="text-foreground font-medium hover:text-secondary transition-colors"
+                          >
                             {value}
                           </a>
                         ) : (

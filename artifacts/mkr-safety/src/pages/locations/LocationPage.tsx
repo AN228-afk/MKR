@@ -85,7 +85,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
             alt={`Invisible grills installation in ${data.area} Bangalore`}
             initial={{ scale: 1.06, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.22 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="w-full h-full object-cover"
             width={1200}
             height={600}

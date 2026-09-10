@@ -1,5 +1,6 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const PHONE = "+917780114547";
 const WHATSAPP_URL = "https://wa.me/917780114547?text=Hi%2C%20I%20am%20interested%20in%20invisible%20grills%20for%20my%20home%20in%20Bangalore.%20Please%20send%20me%20a%20free%20quote.";
@@ -13,6 +14,7 @@ export function FloatingCTA() {
           href={`tel:${PHONE}`}
           data-testid="button-float-call"
           aria-label="Call MKR Safety Solutions"
+          onClick={trackGoogleAdsConversion}
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -29,6 +31,7 @@ export function FloatingCTA() {
           rel="noopener noreferrer"
           data-testid="button-float-whatsapp"
           aria-label="Chat on WhatsApp"
+          onClick={trackGoogleAdsConversion}
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.55, duration: 0.5 }}
@@ -47,6 +50,7 @@ export function FloatingCTA() {
           data-testid="button-mobile-call"
           className="flex-1 flex items-center justify-center gap-2 py-4 text-primary font-semibold text-sm border-r border-border"
           aria-label="Call MKR Safety Solutions"
+          onClick={trackGoogleAdsConversion}
         >
           <Phone className="w-4 h-4" />
           Call Now
@@ -58,6 +62,7 @@ export function FloatingCTA() {
           data-testid="button-mobile-whatsapp"
           className="flex-1 flex items-center justify-center gap-2 py-4 bg-green-500 text-white font-semibold text-sm"
           aria-label="Chat on WhatsApp"
+          onClick={trackGoogleAdsConversion}
         >
           <MessageCircle className="w-4 h-4" />
           WhatsApp

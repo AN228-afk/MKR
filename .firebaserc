@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "mkr-1-34060"
+  },
+  "targets": {
+    "mkr-1-34060": {
+      "hosting": {
+        "mkr-safety": [
+          "mkr-1-34060"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

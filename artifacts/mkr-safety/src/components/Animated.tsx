@@ -15,7 +15,7 @@ export function FadeUp({ children, delay = 0, className = "" }: Props) {
       initial={{ opacity: 0, y: 32 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={vp}
-      transition={{ duration: 0.65, delay, ease: "easeOut" }}
+      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -29,7 +29,7 @@ export function FadeLeft({ children, delay = 0, className = "" }: Props) {
       initial={{ opacity: 0, x: -36 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={vp}
-      transition={{ duration: 0.65, delay, ease: "easeOut" }}
+      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -43,7 +43,7 @@ export function FadeRight({ children, delay = 0, className = "" }: Props) {
       initial={{ opacity: 0, x: 36 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={vp}
-      transition={{ duration: 0.65, delay, ease: "easeOut" }}
+      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -57,7 +57,7 @@ export function ScaleIn({ children, delay = 0, className = "" }: Props) {
       initial={{ opacity: 0, scale: 0.92 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={vp}
-      transition={{ duration: 0.6, delay, ease: "easeOut" }}
+      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -72,7 +72,7 @@ const listVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 22 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as any } },
 };
 
 export function StaggerList({ children, className = "" }: { children: ReactNode; className?: string }) {
@@ -109,7 +109,7 @@ export function CountUp({ target, suffix = "", duration = 1.8 }: { target: numbe
         initial={{ "--val": 0 } as Record<string, number>}
         whileInView={{ "--val": target } as Record<string, number>}
         viewport={vp}
-        transition={{ duration, ease: "easeOut" }}
+        transition={{ duration, ease: [0.22, 1, 0.36, 1] }}
         style={{ fontVariantNumeric: "tabular-nums" }}
         onUpdate={(latest) => {
           const el = document.querySelector(`[data-count="${target}${suffix}"]`);

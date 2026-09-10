@@ -14,9 +14,9 @@ This script matches the ACTUAL structure of the mkr-safety repo:
 6. Deploys to Firebase Hosting (firebase deploy --only hosting:mkr-safety).
 
 Required GitHub Secrets:
-  ANTHROPIC_API_KEY - your Anthropic API key
-  FIREBASE_TOKEN     - reuse the SAME secret your existing
-                       firebase-deploy.yml already uses
+  ANTHROPIC_API_KEY        - your Anthropic API key
+  FIREBASE_SERVICE_ACCOUNT - full JSON content of your Firebase service account key
+                             (you already have this secret set up)
 """
 
 import os
@@ -40,7 +40,7 @@ SERVICES_FILE = os.path.join(APP_DIR, "src", "data", "services.ts")
 APP_TSX_FILE = os.path.join(APP_DIR, "src", "App.tsx")
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-FIREBASE_TOKEN = os.environ["FIREBASE_TOKEN"]
+FIREBASE_SERVICE_ACCOUNT = os.environ["FIREBASE_SERVICE_ACCOUNT"]
 
 SEED_TOPICS = [
     "invisible grill for balcony",
@@ -311,12 +311,17 @@ def build_site():
 
 
 def deploy_site():
-    run("npm install -g firebase-tools@latest")
-    run(
-        f'firebase deploy --only hosting --project mkr-1-34060 '
-        f'--token "{FIREBASE_TOKEN}" --non-interactive',
-        cwd=REPO_ROOT,
-    )
+    key_path = os.path.join(REPO_ROOT, "firebase-service-account.json")
+    with open(key_path, "w") as f:
+        f.write(FIREBASE_SERVICE_ACCOUNT)
+
+    env = os.environ.copy()
+    env["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+
+    run("npm install -g firebase-tools@latest", env=env)
+    run("firebase deploy --only hosting:mkr-safety --project mkr-1-34060", cwd=REPO_ROOT, env=env)
+
+    os.remove(key_path)
 
 
 # ---------------------------------------------------------------------------

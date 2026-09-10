@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { FadeUp, FadeLeft, FadeRight, ScaleIn, StaggerList, StaggerItem } from "@/components/Animated";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
@@ -167,7 +168,7 @@ export default function Home() {
               src={heroSlides[current].src}
               alt={heroSlides[current].alt}
               initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 0.85, scale: 1, transition: { duration: 1.1, ease: "easeOut" } }}
+              animate={{ opacity: 0.85, scale: 1, transition: { duration: 1.1, ease: [0.22, 1, 0.36, 1] } }}
               exit={{ opacity: 0, transition: { duration: 0.6 } }}
               className="absolute inset-0 w-full h-full object-cover"
               width={1200}
@@ -233,6 +234,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all text-sm"
                 data-testid="button-hero-whatsapp"
+                onClick={trackGoogleAdsConversion}
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp Us
@@ -548,12 +550,12 @@ export default function Home() {
             <p className="text-muted-foreground mb-8">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact-us" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
+                <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
                   Book Free Site Visit
                 </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <a href="tel:+917780114547" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
+                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
                   <Phone className="w-4 h-4" /> Call +91 77801 14547
                 </a>
               </motion.div>
