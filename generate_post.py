@@ -155,6 +155,8 @@ Respond ONLY with valid JSON, no other text, no markdown fences.
         },
         timeout=90,
     )
+    if response.status_code != 200:
+        print(f"Anthropic API error {response.status_code}: {response.text}")
     response.raise_for_status()
     data = response.json()
     text = "".join(
