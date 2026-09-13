@@ -195,6 +195,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "invisible grill vs iron grill",
   },
+  {
+    title: "Invisible Grill Cost in Bangalore: A Complete Pricing Guide for 2024",
+    slug: "invisible-grill-cost-bangalore",
+    excerpt: "Confused about how much invisible grills cost in Bangalore? Here's an honest breakdown of pricing factors, per sq ft rates, and what actually affects your final quote.",
+    date: "2026-09-13",
+    readTime: "6 min read",
+    keyword: "invisible grill cost Bangalore",
+  },
 ];
 
 export const testimonials = [
