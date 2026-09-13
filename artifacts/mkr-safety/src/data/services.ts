@@ -187,6 +187,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "stainless steel safety wire balcony",
   },
+  {
+    title: "Invisible Grill vs Iron Grill: Which One Should You Choose for Your Bangalore Home?",
+    slug: "invisible-grill-vs-iron-grill",
+    excerpt: "Still confused between invisible grills and traditional iron grills? Here's an honest comparison to help you pick the right safety solution for your Bangalore home.",
+    date: "2026-09-13",
+    readTime: "6 min read",
+    keyword: "invisible grill vs iron grill",
+  },
 ];
 
 export const testimonials = [
