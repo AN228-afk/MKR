@@ -302,11 +302,11 @@ def git_commit_and_push(post):
 
 
 def build_site():
-    run("pnpm install --frozen-lockfile", cwd=REPO_ROOT)
+    run("pnpm install --no-frozen-lockfile", cwd=REPO_ROOT)
     env = os.environ.copy()
     env["BASE_PATH"] = "/"
     env["PORT"] = "5173"
-    run("pnpm install", cwd=APP_DIR, env=env)
+    run("pnpm install --no-frozen-lockfile", cwd=APP_DIR, env=env)
     run("pnpm build", cwd=APP_DIR, env=env)
 
 
