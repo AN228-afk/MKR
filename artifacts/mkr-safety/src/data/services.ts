@@ -171,6 +171,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "balcony safety net alternative",
   },
+  {
+    title: "Balcony Safety Net Alternative: Why Bangalore Homeowners Are Switching to Invisible Grills",
+    slug: "balcony-safety-net-alternative-2",
+    excerpt: "Safety nets sag, discolour, and block your view over time. Here's why invisible grills are becoming the preferred balcony safety net alternative for Bangalore homes.",
+    date: "2026-09-13",
+    readTime: "6 min read",
+    keyword: "balcony safety net alternative",
+  },
 ];
 
 export const testimonials = [

@@ -49,6 +49,7 @@ import {
   MaintenanceBlogPost,
   SteelGradeBlogPost,
   BalconySafetyNetAlternativeBlogPost,
+  BalconySafetyNetAlternative2BlogPost,
 } from "@/pages/blog/index";
 
 const queryClient = new QueryClient();
@@ -102,6 +103,8 @@ function Router() {
       <Route path="/blog/invisible-grill-maintenance-guide" component={MaintenanceBlogPost} />
       <Route path="/blog/why-choose-316-grade-steel-grills" component={SteelGradeBlogPost} />
       <Route path="/blog/balcony-safety-net-alternative" component={BalconySafetyNetAlternativeBlogPost} />
+
+      <Route path="/blog/balcony-safety-net-alternative-2" component={BalconySafetyNetAlternative2BlogPost} />
 
       <Route component={NotFound} />
     </Switch>
