@@ -262,23 +262,21 @@ def update_app_tsx(post, component_name):
     with open(APP_TSX_FILE, "r") as f:
         content = f.read()
 
-    import_anchor = '  SteelGradeBlogPost,\n} from "@/pages/blog/index";'
-    if import_anchor not in content:
-        raise RuntimeError("Could not find blog import anchor in App.tsx")
+    import_close = '} from "@/pages/blog/index";'
+    if import_close not in content:
+        raise RuntimeError("Could not find blog import block in App.tsx")
     content = content.replace(
-        import_anchor,
-        f'  SteelGradeBlogPost,\n  {component_name},\n}} from "@/pages/blog/index";',
+        import_close,
+        f'  {component_name},\n{import_close}',
         1,
     )
 
-    route_anchor = (
-        '<Route path="/blog/why-choose-316-grade-steel-grills" component={SteelGradeBlogPost} />'
-    )
+    route_anchor = "<Route component={NotFound} />"
     if route_anchor not in content:
-        raise RuntimeError("Could not find last blog route anchor in App.tsx")
+        raise RuntimeError("Could not find NotFound route anchor in App.tsx")
     new_route = (
-        f'{route_anchor}\n'
-        f'      <Route path="/blog/{post["slug"]}" component={{{component_name}}} />'
+        f'<Route path="/blog/{post["slug"]}" component={{{component_name}}} />\n\n'
+        f'      {route_anchor}'
     )
     content = content.replace(route_anchor, new_route, 1)
 
