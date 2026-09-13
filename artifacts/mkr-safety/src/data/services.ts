@@ -179,6 +179,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "balcony safety net alternative",
   },
+  {
+    title: "Stainless Steel Safety Wire Balcony Grills: The Complete Guide for Bangalore Homes",
+    slug: "stainless-steel-safety-wire-balcony",
+    excerpt: "A stainless steel safety wire balcony grill gives you fall protection without a single iron bar in sight. Here's why Bangalore homeowners are switching to it.",
+    date: "2026-09-13",
+    readTime: "6 min read",
+    keyword: "stainless steel safety wire balcony",
+  },
 ];
 
 export const testimonials = [

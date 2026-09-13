@@ -50,6 +50,7 @@ import {
   SteelGradeBlogPost,
   BalconySafetyNetAlternativeBlogPost,
   BalconySafetyNetAlternative2BlogPost,
+  StainlessSteelSafetyWireBalconyBlogPost,
 } from "@/pages/blog/index";
 
 const queryClient = new QueryClient();
@@ -105,6 +106,8 @@ function Router() {
       <Route path="/blog/balcony-safety-net-alternative" component={BalconySafetyNetAlternativeBlogPost} />
 
       <Route path="/blog/balcony-safety-net-alternative-2" component={BalconySafetyNetAlternative2BlogPost} />
+
+      <Route path="/blog/stainless-steel-safety-wire-balcony" component={StainlessSteelSafetyWireBalconyBlogPost} />
 
       <Route component={NotFound} />
     </Switch>
