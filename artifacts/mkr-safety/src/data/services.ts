@@ -203,6 +203,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "invisible grill cost Bangalore",
   },
+  {
+    title: "Balcony Safety Net Alternative: Why Invisible Grills Are a Better Choice for Bangalore Homes",
+    slug: "balcony-safety-net-alternative-3",
+    excerpt: "Safety nets sag, discolour, and block your view over time. Discover why invisible grills are fast becoming the preferred balcony safety net alternative for Bangalore homeowners.",
+    date: "2026-09-14",
+    readTime: "6 min read",
+    keyword: "balcony safety net alternative",
+  },
 ];
 
 export const testimonials = [
