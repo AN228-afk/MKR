@@ -211,6 +211,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "balcony safety net alternative",
   },
+  {
+    title: "Pet Safety Balcony Grills: Keeping Your Dogs and Cats Safe in Bangalore Apartments",
+    slug: "pet-safety-balcony-grill",
+    excerpt: "Bangalore pet parents are increasingly choosing invisible balcony grills to keep curious cats and adventurous dogs safe without turning their homes into cages.",
+    date: "2026-09-14",
+    readTime: "5 min read",
+    keyword: "pet safety balcony grill",
+  },
 ];
 
 export const testimonials = [
