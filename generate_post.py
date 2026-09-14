@@ -38,6 +38,7 @@ APP_DIR = os.path.join(REPO_ROOT, "artifacts", "mkr-safety")
 POSTS_FILE = os.path.join(APP_DIR, "src", "pages", "blog", "index.tsx")
 SERVICES_FILE = os.path.join(APP_DIR, "src", "data", "services.ts")
 APP_TSX_FILE = os.path.join(APP_DIR, "src", "App.tsx")
+SITEMAP_FILE = os.path.join(APP_DIR, "public", "sitemap.xml")
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 FIREBASE_SERVICE_ACCOUNT = os.environ["FIREBASE_SERVICE_ACCOUNT"]
@@ -104,6 +105,31 @@ def to_pascal_case(slug):
 # Content generation
 # ---------------------------------------------------------------------------
 
+def _call_claude(prompt):
+    response = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={
+            "x-api-key": ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        json={
+            "model": "claude-sonnet-5",
+            "max_tokens": 6000,
+            "messages": [{"role": "user", "content": prompt}],
+        },
+        timeout=120,
+    )
+    if response.status_code != 200:
+        print(f"Anthropic API error {response.status_code}: {response.text}")
+    response.raise_for_status()
+    data = response.json()
+    text = "".join(
+        b.get("text", "") for b in data.get("content", []) if b.get("type") == "text"
+    )
+    return re.sub(r"^```json|```$", "", text.strip()).strip()
+
+
 def generate_post(topic, slug):
     prompt = f"""You are writing a new blog post for MKR Safety Solutions, an
 invisible grill safety business (balcony, staircase, terrace, window grills)
@@ -138,35 +164,22 @@ blog posts):
   ]
 }}
 
-Respond ONLY with valid JSON, no other text, no markdown fences.
+Respond ONLY with valid JSON, no other text, no markdown fences. Keep the
+"content" array to 6 sections maximum so the full response fits comfortably.
 """
 
-    response = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": "claude-sonnet-5",
-            "max_tokens": 3000,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=90,
-    )
-    if response.status_code != 200:
-        print(f"Anthropic API error {response.status_code}: {response.text}")
-    response.raise_for_status()
-    data = response.json()
-    text = "".join(
-        b.get("text", "") for b in data.get("content", []) if b.get("type") == "text"
-    )
-    text = re.sub(r"^```json|```$", "", text.strip()).strip()
-    post = json.loads(text)
-    post["slug"] = slug
-    post["date"] = date.today().isoformat()
-    return post
+    last_error = None
+    for attempt in range(3):
+        text = _call_claude(prompt)
+        try:
+            post = json.loads(text)
+            post["slug"] = slug
+            post["date"] = date.today().isoformat()
+            return post
+        except json.JSONDecodeError as e:
+            last_error = e
+            print(f"Attempt {attempt + 1}: got invalid JSON ({e}). Retrying...")
+    raise last_error
 
 
 # ---------------------------------------------------------------------------
@@ -255,6 +268,24 @@ def update_services_file(post):
     content = content.replace(anchor, f"{entry}];\n\nexport const testimonials", 1)
 
     with open(SERVICES_FILE, "w") as f:
+        f.write(content)
+
+
+def update_sitemap(post):
+    with open(SITEMAP_FILE, "r") as f:
+        content = f.read()
+
+    new_url = (
+        f'  <url><loc>https://mkrsafetysolutions.com/blog/{post["slug"]}</loc>'
+        f'<changefreq>monthly</changefreq><priority>0.6</priority></url>\n'
+    )
+
+    anchor = "</urlset>"
+    if anchor not in content:
+        raise RuntimeError("Could not find </urlset> closing tag in sitemap.xml")
+    content = content.replace(anchor, f"{new_url}{anchor}", 1)
+
+    with open(SITEMAP_FILE, "w") as f:
         f.write(content)
 
 
@@ -348,6 +379,7 @@ def main():
     update_posts_file(post, component_name)
     update_services_file(post)
     update_app_tsx(post, component_name)
+    update_sitemap(post)
     print("Source files updated.")
 
     git_commit_and_push(post)
