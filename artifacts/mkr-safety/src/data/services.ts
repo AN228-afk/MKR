@@ -219,6 +219,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "pet safety balcony grill",
   },
+  {
+    title: "Invisible Grill vs Iron Grill: Which One Should You Choose for Your Bangalore Home?",
+    slug: "invisible-grill-vs-iron-grill-2",
+    excerpt: "Torn between the classic iron grill and the modern invisible grill? Here's an honest, practical comparison to help Bangalore homeowners decide what's best for their balconies, windows, and staircases.",
+    date: "2026-09-15",
+    readTime: "6 min read",
+    keyword: "invisible grill vs iron grill",
+  },
 ];
 
 export const testimonials = [

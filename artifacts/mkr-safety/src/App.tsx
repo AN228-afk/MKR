@@ -55,6 +55,7 @@ import {
   InvisibleGrillCostBangaloreBlogPost,
   BalconySafetyNetAlternative3BlogPost,
   PetSafetyBalconyGrillBlogPost,
+  InvisibleGrillVsIronGrill2BlogPost,
 } from "@/pages/blog/index";
 
 const queryClient = new QueryClient();
@@ -120,6 +121,8 @@ function Router() {
       <Route path="/blog/balcony-safety-net-alternative-3" component={BalconySafetyNetAlternative3BlogPost} />
 
       <Route path="/blog/pet-safety-balcony-grill" component={PetSafetyBalconyGrillBlogPost} />
+
+      <Route path="/blog/invisible-grill-vs-iron-grill-2" component={InvisibleGrillVsIronGrill2BlogPost} />
 
       <Route component={NotFound} />
     </Switch>
