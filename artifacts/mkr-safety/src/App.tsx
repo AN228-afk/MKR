@@ -56,6 +56,7 @@ import {
   BalconySafetyNetAlternative3BlogPost,
   PetSafetyBalconyGrillBlogPost,
   InvisibleGrillVsIronGrill2BlogPost,
+  HighRiseApartmentBalconySafetyBlogPost,
 } from "@/pages/blog/index";
 
 const queryClient = new QueryClient();
@@ -123,6 +124,8 @@ function Router() {
       <Route path="/blog/pet-safety-balcony-grill" component={PetSafetyBalconyGrillBlogPost} />
 
       <Route path="/blog/invisible-grill-vs-iron-grill-2" component={InvisibleGrillVsIronGrill2BlogPost} />
+
+      <Route path="/blog/high-rise-apartment-balcony-safety" component={HighRiseApartmentBalconySafetyBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

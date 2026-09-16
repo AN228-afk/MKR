@@ -227,6 +227,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "invisible grill vs iron grill",
   },
+  {
+    title: "High Rise Apartment Balcony Safety: What Every Bangalore Resident Should Know",
+    slug: "high-rise-apartment-balcony-safety",
+    excerpt: "Living on the 10th floor or higher comes with beautiful views but also real balcony safety risks. Here's how Bangalore families are protecting their homes without ruining the view.",
+    date: "2026-09-16",
+    readTime: "5 min read",
+    keyword: "high rise apartment balcony safety",
+  },
 ];
 
 export const testimonials = [
