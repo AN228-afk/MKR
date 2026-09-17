@@ -235,6 +235,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "high rise apartment balcony safety",
   },
+  {
+    title: "Invisible Grill Cost in Bangalore: A Practical Pricing Guide for 2024",
+    slug: "invisible-grill-cost-bangalore-2",
+    excerpt: "Confused about invisible grill pricing in Bangalore? Here's an honest, no-nonsense breakdown of what affects the cost and how to plan your budget.",
+    date: "2026-09-17",
+    readTime: "6 min read",
+    keyword: "invisible grill cost Bangalore",
+  },
 ];
 
 export const testimonials = [
