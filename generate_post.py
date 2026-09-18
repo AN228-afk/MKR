@@ -12,11 +12,16 @@ This script matches the ACTUAL structure of the mkr-safety repo:
 4. Commits and pushes the changes to the repo.
 5. Builds the site (cd artifacts/mkr-safety && pnpm build).
 6. Deploys to Firebase Hosting (firebase deploy --only hosting:mkr-safety).
+7. Also publishes the same post to Blogger (with a NAP footer), if the
+   BLOGGER_* secrets are configured. Safe to run even without them.
 
 Required GitHub Secrets:
   ANTHROPIC_API_KEY        - your Anthropic API key
   FIREBASE_SERVICE_ACCOUNT - full JSON content of your Firebase service account key
-                             (you already have this secret set up)
+  BLOGGER_CLIENT_ID        - OAuth client ID for Blogger API
+  BLOGGER_CLIENT_SECRET    - OAuth client secret for Blogger API
+  BLOGGER_REFRESH_TOKEN    - long-lived refresh token for Blogger API
+  BLOGGER_BLOG_ID          - your Blogger blog's numeric ID
 """
 
 import os
@@ -42,6 +47,20 @@ SITEMAP_FILE = os.path.join(APP_DIR, "public", "sitemap.xml")
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 FIREBASE_SERVICE_ACCOUNT = os.environ["FIREBASE_SERVICE_ACCOUNT"]
+
+BLOGGER_CLIENT_ID = os.environ.get("BLOGGER_CLIENT_ID")
+BLOGGER_CLIENT_SECRET = os.environ.get("BLOGGER_CLIENT_SECRET")
+BLOGGER_REFRESH_TOKEN = os.environ.get("BLOGGER_REFRESH_TOKEN")
+BLOGGER_BLOG_ID = os.environ.get("BLOGGER_BLOG_ID")
+
+NAP_FOOTER_HTML = """
+<hr/>
+<p><strong>MKR Safety Solutions</strong><br/>
+H, 24/1, 18th A Cross Rd, Muthyala Nagar, Tannirhalli, Mathikere,
+Bengaluru, Karnataka 560054<br/>
+Phone: 077801 14547 | Website:
+<a href="https://www.mkrsafetysolutions.com">mkrsafetysolutions.com</a></p>
+"""
 
 SEED_TOPICS = [
     "invisible grill for balcony",
@@ -316,6 +335,72 @@ def update_app_tsx(post, component_name):
 
 
 # ---------------------------------------------------------------------------
+# Blogger publishing
+# ---------------------------------------------------------------------------
+
+def _get_blogger_access_token():
+    """Exchange the long-lived refresh token for a short-lived access token."""
+    response = requests.post(
+        "https://oauth2.googleapis.com/token",
+        data={
+            "client_id": BLOGGER_CLIENT_ID,
+            "client_secret": BLOGGER_CLIENT_SECRET,
+            "refresh_token": BLOGGER_REFRESH_TOKEN,
+            "grant_type": "refresh_token",
+        },
+        timeout=30,
+    )
+    response.raise_for_status()
+    return response.json()["access_token"]
+
+
+def _content_array_to_html(content):
+    """Turn the same content array used for the site's TSX post into HTML."""
+    html_parts = []
+    for section in content:
+        heading = section.get("heading")
+        body = section.get("body", "")
+        if heading:
+            html_parts.append(f"<h2>{heading}</h2>")
+        for para in body.split("\n\n"):
+            para_html = para.replace("\n", "<br/>")
+            html_parts.append(f"<p>{para_html}</p>")
+    return "\n".join(html_parts)
+
+
+def post_to_blogger(title, content):
+    """Publish a post to Blogger. Safe to call even if Blogger env vars
+    aren't set — it will just skip and print a message, so this never
+    breaks the main site's daily post."""
+    if not all([BLOGGER_CLIENT_ID, BLOGGER_CLIENT_SECRET,
+                BLOGGER_REFRESH_TOKEN, BLOGGER_BLOG_ID]):
+        print("Blogger env vars not set — skipping Blogger publish.")
+        return None
+
+    try:
+        access_token = _get_blogger_access_token()
+        html_body = _content_array_to_html(content) + NAP_FOOTER_HTML
+
+        response = requests.post(
+            f"https://www.googleapis.com/blogger/v3/blogs/{BLOGGER_BLOG_ID}/posts/",
+            headers={
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json",
+            },
+            json={"title": title, "content": html_body},
+            timeout=60,
+        )
+        response.raise_for_status()
+        result = response.json()
+        print(f"Published to Blogger: {result.get('url')}")
+        return result
+    except Exception as e:
+        # Never let a Blogger failure break the main site's daily post
+        print(f"Blogger publish failed (non-fatal): {e}")
+        return None
+
+
+# ---------------------------------------------------------------------------
 # Git / build / deploy
 # ---------------------------------------------------------------------------
 
@@ -381,6 +466,8 @@ def main():
     update_app_tsx(post, component_name)
     update_sitemap(post)
     print("Source files updated.")
+
+    post_to_blogger(post["title"], post["content"])
 
     git_commit_and_push(post)
     print("Changes committed and pushed.")
