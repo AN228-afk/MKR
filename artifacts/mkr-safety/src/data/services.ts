@@ -259,6 +259,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "balcony safety net alternative",
   },
+  {
+    title: "Terrace Safety Railing in Bangalore: Why Every Home Needs One",
+    slug: "terrace-safety-railing",
+    excerpt: "Open terraces are one of the most overlooked danger zones in Bangalore homes. Here's why a proper terrace safety railing matters and how invisible grills make it effortless.",
+    date: "2026-09-19",
+    readTime: "5 min read",
+    keyword: "terrace safety railing",
+  },
 ];
 
 export const testimonials = [
