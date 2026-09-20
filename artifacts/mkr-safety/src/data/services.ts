@@ -267,6 +267,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "terrace safety railing",
   },
+  {
+    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
+    slug: "pet-safety-balcony-grill-2",
+    excerpt: "Dogs and cats love balconies as much as we do, but open railings can be risky. Here's how a pet safety balcony grill keeps your pets secure without spoiling your view.",
+    date: "2026-09-20",
+    readTime: "5 min read",
+    keyword: "pet safety balcony grill",
+  },
 ];
 
 export const testimonials = [
