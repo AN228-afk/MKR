@@ -275,6 +275,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "pet safety balcony grill",
   },
+  {
+    title: "Window Safety Grill for Apartments: A Complete Guide for Bangalore Homes",
+    slug: "window-safety-grill-for-apartments",
+    excerpt: "Apartment windows can be a hidden safety risk, especially with kids and pets around. Here's how invisible window safety grills keep your family safe without ruining your view.",
+    date: "2026-09-21",
+    readTime: "5 min read",
+    keyword: "window safety grill for apartments",
+  },
 ];
 
 export const testimonials = [
