@@ -95,7 +95,7 @@ export function PriceCalculator() {
                   </div>
                   <div>
                     <div className="font-bold text-sm">{c} Cables</div>
-                    <div className={`text-xs mt-0.5 ${cable === c ? "text-secondary-foreground/80" : "text-primary-foreground/60"}`}>
+                    <div className={`text-xs mt-0.5 ${cable === c ? "text-secondary-foreground" : "text-primary-foreground/90"}`}>
                       {c === "3mm" ? "Standard — best for balconies & windows" : "Ultra-fine — child & pet safety grade"}
                     </div>
                   </div>

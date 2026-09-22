@@ -70,7 +70,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: -14, opacity: 0 }}
                       transition={{ duration: 0.35 }}
-                      className="block text-[10px] font-semibold text-secondary uppercase tracking-wide whitespace-nowrap"
+                      className="block text-[10px] font-semibold text-[hsl(44,65%,32%)] uppercase tracking-wide whitespace-nowrap"
                     >
                       {taglines[tagIdx]}
                     </motion.span>
