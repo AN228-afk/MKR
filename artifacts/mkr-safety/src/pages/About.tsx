@@ -5,7 +5,7 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
 import logoPath from "@assets/MKR_PHOTO_1780926061320.jpeg";
-import hero from "@assets/MKR_3_1780926061320.png";
+import hero from "@assets/MKR_3_1780926061320.webp";
 
 export default function About() {
   return (

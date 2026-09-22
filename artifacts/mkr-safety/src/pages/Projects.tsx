@@ -3,11 +3,11 @@ import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { MapPin, Calendar, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import img1 from "@assets/MKR_3_1780926061320.png";
-import img2 from "@assets/MKR_2_1780926061320.png";
-import img3 from "@assets/MKR_5_1780926061320.png";
-import img4 from "@assets/MKR_4_1780926061320.png";
-import img5 from "@assets/2_1780926045097.png";
+import img1 from "@assets/MKR_3_1780926061320.webp";
+import img2 from "@assets/MKR_2_1780926061320.webp";
+import img3 from "@assets/MKR_5_1780926061320.webp";
+import img4 from "@assets/MKR_4_1780926061320.webp";
+import img5 from "@assets/2_1780926045097.webp";
 import img6 from "@assets/7_1780926045097.jpg";
 
 const projects = [

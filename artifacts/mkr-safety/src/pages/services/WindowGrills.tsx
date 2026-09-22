@@ -1,5 +1,5 @@
 import { ServicePage } from "./ServicePage";
-import heroImg from "@assets/MKR_4_1780926061320.png";
+import heroImg from "@assets/MKR_4_1780926061320.webp";
 
 const data = {
   title: "Window Invisible Grills",

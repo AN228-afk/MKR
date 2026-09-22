@@ -8,7 +8,7 @@ import { InquiryForm } from "@/components/InquiryForm";
 import { TrustBadges } from "@/components/TrustBadges";
 import { FadeUp, FadeLeft, FadeRight, ScaleIn, StaggerList, StaggerItem } from "@/components/Animated";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import hero from "@assets/MKR_3_1780926061320.png";
+import hero from "@assets/MKR_3_1780926061320.webp";
 
 export interface LocationPageData {
   area: string;

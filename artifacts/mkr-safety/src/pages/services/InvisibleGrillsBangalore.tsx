@@ -7,8 +7,8 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { InquiryForm } from "@/components/InquiryForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { testimonials, services, locations } from "@/data/services";
-import hero from "@assets/MKR_3_1780926061320.png";
-import img2 from "@assets/MKR_2_1780926061320.png";
+import hero from "@assets/MKR_3_1780926061320.webp";
+import img2 from "@assets/MKR_2_1780926061320.webp";
 
 const faqs = [
   { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 4.9-star Google rating from 500+ reviews, 1000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 10-year warranty." },

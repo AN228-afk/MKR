@@ -1,5 +1,5 @@
 import { ServicePage } from "./ServicePage";
-import heroImg from "@assets/2_1780926045097.png";
+import heroImg from "@assets/2_1780926045097.webp";
 
 const data = {
   title: "Villa Invisible Grills",

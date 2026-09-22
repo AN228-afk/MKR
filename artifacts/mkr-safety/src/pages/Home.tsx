@@ -11,12 +11,12 @@ import { PriceCalculator } from "@/components/PriceCalculator";
 import { InquiryForm } from "@/components/InquiryForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { testimonials, services, blogPosts } from "@/data/services";
-import hero1 from "@assets/MKR_3_1780926061320.png";
-import hero2 from "@assets/MKR_1_of_child_1780926061320.png";
-import img2 from "@assets/MKR_2_1780926061320.png";
-import img5 from "@assets/MKR_5_1780926061320.png";
-import img4 from "@assets/MKR_4_1780926061320.png";
-import img6 from "@assets/2_1780926045097.png";
+import hero1 from "@assets/MKR_3_1780926061320.webp";
+import hero2 from "@assets/MKR_1_of_child_1780926061320.webp";
+import img2 from "@assets/MKR_2_1780926061320.webp";
+import img5 from "@assets/MKR_5_1780926061320.webp";
+import img4 from "@assets/MKR_4_1780926061320.webp";
+import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
 
 const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
@@ -173,6 +173,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full object-cover"
               width={1200}
               height={800}
+              fetchPriority="high"
             />
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/20" />
