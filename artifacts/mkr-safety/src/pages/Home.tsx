@@ -334,7 +334,7 @@ export default function Home() {
                   <div className="p-4 flex flex-col flex-1">
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
                     <div className="mt-4 flex items-center justify-between">
-                      <Link href={href} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
+                      <Link href={href} aria-label={`Learn more about ${title}`} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
                         Learn more <ArrowRight className="w-3 h-3" />
                       </Link>
                       <div className="flex items-center gap-2">

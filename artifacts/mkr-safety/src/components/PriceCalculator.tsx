@@ -113,6 +113,7 @@ export function PriceCalculator() {
               <div className="flex items-center gap-2">
                 <input
                   type="number"
+                  aria-label="Approximate area in square feet"
                   value={area}
                   min={10}
                   max={1000}
@@ -124,6 +125,7 @@ export function PriceCalculator() {
             </div>
             <input
               type="range"
+              aria-label="Approximate area slider, 10 to 500 square feet"
               min={10}
               max={500}
               value={area}
