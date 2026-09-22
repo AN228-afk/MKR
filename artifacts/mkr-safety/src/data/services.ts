@@ -283,6 +283,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "window safety grill for apartments",
   },
+  {
+    title: "Window Safety Grill for Apartments: A Practical Guide for Bangalore Homes",
+    slug: "window-safety-grill-for-apartments-2",
+    excerpt: "Apartment windows need safety without ruining the view. Here's why invisible window safety grills are becoming the top choice for Bangalore flats.",
+    date: "2026-09-22",
+    readTime: "5 min read",
+    keyword: "window safety grill for apartments",
+  },
 ];
 
 export const testimonials = [

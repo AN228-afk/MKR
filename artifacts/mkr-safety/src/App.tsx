@@ -63,6 +63,7 @@ import {
   TerraceSafetyRailingBlogPost,
   PetSafetyBalconyGrill2BlogPost,
   WindowSafetyGrillForApartmentsBlogPost,
+  WindowSafetyGrillForApartments2BlogPost,
 } from "@/pages/blog/index";
 
 const queryClient = new QueryClient();
@@ -144,6 +145,8 @@ function Router() {
       <Route path="/blog/pet-safety-balcony-grill-2" component={PetSafetyBalconyGrill2BlogPost} />
 
       <Route path="/blog/window-safety-grill-for-apartments" component={WindowSafetyGrillForApartmentsBlogPost} />
+
+      <Route path="/blog/window-safety-grill-for-apartments-2" component={WindowSafetyGrillForApartments2BlogPost} />
 
       <Route component={NotFound} />
     </Switch>
