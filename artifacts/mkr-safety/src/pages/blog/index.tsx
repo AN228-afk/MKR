@@ -576,6 +576,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Get a Free Consultation", href: "/contact-us" },
     ],
   },
+  "pet-safety-balcony-grill-3": {
+    slug: "pet-safety-balcony-grill-3",
+    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
+    seoTitle: "Pet Safety Balcony Grill Installation in Bangalore | MKR Safety Solutions",
+    seoDesc: "Protect your pets from balcony falls with a durable pet safety balcony grill. Invisible, pet-friendly grills for Bangalore homes by MKR Safety Solutions.",
+    date: "2026-09-23",
+    readTime: "4 min read",
+    keyword: "pet safety balcony grill",
+    content: [
+      { body: "If you share your Bangalore home with a cat or dog, you already know how much they love lounging by the balcony, watching birds, feeling the breeze, or just supervising the street below. But that same open railing or gap between balusters that makes balconies enjoyable can also be a serious hazard for curious pets. A pet safety balcony grill gives your furry companions the freedom to enjoy the outdoors while keeping them safely inside your home." },
+      { heading: "Why Balconies Are Riskier Than You Think for Pets", body: "Cats are natural climbers and jumpers, and even the most well-trained dog can slip through a gap while chasing a pigeon or a stray sound from the street. Many Bangalore apartments have railings with wide gaps or low parapet walls that were never designed with pets in mind. A sudden startle, an open gate left unattended, or simply a moment of excitement is often all it takes for a pet to end up in a dangerous fall." },
+      { heading: "How Invisible Grills Solve the Problem", body: "Unlike bulky mesh nets or metal grilles that block your view and sunlight, invisible grills use thin, high-tensile stainless steel wires spaced closely enough to prevent even small pets from squeezing through. They're installed vertically or horizontally depending on your balcony's design, creating an unobtrusive barrier that keeps pets in without turning your balcony into a cage. From the inside, you barely notice the wires; from the outside, your building's facade looks completely untouched." },
+      { heading: "Built to Handle Pet Behaviour", body: "Pets can be persistent when they want to reach something on the other side of a railing. Our invisible grills use marine-grade stainless steel wires under proper tension, so they hold firm against scratching, pawing, or a dog leaning its weight against them. The wires are also weather-resistant, which matters through Bangalore's monsoon months when balconies see a fair bit of rain and humidity." },
+      { heading: "A Solution That Works for the Whole Family", body: "Pet safety grills aren't just about pets. The same closely spaced wires that keep a cat from squeezing through also stop toddlers from getting a foot or arm caught between railings, and prevent items like flower pots, toys, or laundry from falling accidentally. For homes with both young children and pets, this makes an invisible grill a practical, dual-purpose safety upgrade rather than a pet-only accessory." },
+      { heading: "Getting It Right for Your Home in Bangalore", body: "Every balcony is different, some have grill railings already, others have glass or solid parapets, and the right spacing and installation approach depends on your pet's size and habits. Our team visits your home, checks the balcony layout, and recommends a wire spacing and configuration that suits both a small cat and a larger, more energetic dog. We also factor in Bangalore's building styles, from independent villas in Whitefield to high-rise apartments in Indiranagar, to ensure a clean, seamless fit." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -618,3 +641,5 @@ export function PetSafetyBalconyGrill2BlogPost() { return <BlogPostPage data={po
 export function WindowSafetyGrillForApartmentsBlogPost() { return <BlogPostPage data={posts["window-safety-grill-for-apartments"]} />; }
 
 export function WindowSafetyGrillForApartments2BlogPost() { return <BlogPostPage data={posts["window-safety-grill-for-apartments-2"]} />; }
+
+export function PetSafetyBalconyGrill3BlogPost() { return <BlogPostPage data={posts["pet-safety-balcony-grill-3"]} />; }

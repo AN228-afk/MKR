@@ -291,6 +291,14 @@ export const blogPosts = [
     readTime: "5 min read",
     keyword: "window safety grill for apartments",
   },
+  {
+    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
+    slug: "pet-safety-balcony-grill-3",
+    excerpt: "Cats and dogs love balconies as much as we do, but open railings can be risky. Here's how a pet safety balcony grill keeps your pets secure without ruining your view.",
+    date: "2026-09-23",
+    readTime: "4 min read",
+    keyword: "pet safety balcony grill",
+  },
 ];
 
 export const testimonials = [
