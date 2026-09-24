@@ -6,11 +6,17 @@
   },
   "entries": [
     {
-      "identifier": "urn:ai:mkrsafetysolutions.com:knowledge:llms",
+      "identifier": "urn:air:mkrsafetysolutions.com:knowledge:llms",
       "displayName": "MKR Safety Solutions Knowledge Base",
-      "type": "knowledge",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://mkrsafetysolutions.com/llms.txt",
-      "description": "Overview of MKR Safety Solutions' invisible grill safety installation services in Bangalore, including balcony, window, staircase, terrace, villa, and child safety grill installations."
+      "description": "Overview of MKR Safety Solutions' invisible grill safety installation services in Bangalore, including balcony, window, staircase, terrace, villa, and child safety grill installations.",
+      "representativeQueries": [
+        "What does MKR Safety Solutions offer in Bangalore?",
+        "How much do invisible balcony grills cost?",
+        "What is SS316 stainless steel and why is it used for safety grills?",
+        "Does MKR Safety Solutions install child safety grills?"
+      ]
     }
   ]
 }
