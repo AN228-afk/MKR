@@ -41,8 +41,8 @@ const data = {
     { q: "Do staircase invisible grills look good in modern interiors?", a: "Absolutely. The vertical cable aesthetic is a hallmark of contemporary interior design. Architects and interior designers across Bangalore specifically recommend invisible cable systems for premium staircase projects." },
   ],
   relatedServices: [
-    { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-    { label: "Villa Grills", href: "/villa-invisible-grills" },
+    { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+    { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
     { label: "Child Safety Grills", href: "/child-safety-grills" },
   ],
   relatedLocations: [

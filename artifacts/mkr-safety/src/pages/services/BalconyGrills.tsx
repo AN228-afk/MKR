@@ -42,10 +42,10 @@ const data = {
     { q: "Are balcony invisible grills safe in high winds?", a: "Yes. Our cables are tensioned precisely to withstand high winds and lateral forces. They have been tested in coastal environments far more severe than inland Bangalore conditions." },
   ],
   relatedServices: [
-    { label: "Window Grills", href: "/window-invisible-grills" },
-    { label: "Terrace Grills", href: "/terrace-invisible-grills" },
+    { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+    { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
     { label: "Child Safety Grills", href: "/child-safety-grills" },
-    { label: "Villa Grills", href: "/villa-invisible-grills" },
+    { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
   ],
   relatedLocations: [
     { label: "Whitefield", href: "/invisible-grills-whitefield" },

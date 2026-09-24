@@ -41,8 +41,8 @@ const data = {
     { q: "Can child safety grills be installed in rental apartments?", a: "Yes. Our installation uses minimal drilling that can be easily patched. We also offer removable systems for renters who need to restore the original state at the end of their tenancy." },
   ],
   relatedServices: [
-    { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-    { label: "Window Grills", href: "/window-invisible-grills" },
+    { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+    { label: "Window Invisible Grills", href: "/window-invisible-grills" },
     { label: "School Safety Grills", href: "/school-safety-grills" },
   ],
   relatedLocations: [

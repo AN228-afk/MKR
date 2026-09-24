@@ -95,9 +95,9 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto">Comprehensive invisible grill solutions for every application — from individual apartments to large villas.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "Balcony Grills", href: "/balcony-invisible-grills", price: "₹120–180/sq ft", img: hero },
-              { label: "Window Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: img2 },
-              { label: "Staircase Grills", href: "/staircase-invisible-grills", price: "₹150–220/sq ft", img: hero },
+              { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills", price: "₹120–180/sq ft", img: hero },
+              { label: "Window Invisible Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: img2 },
+              { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills", price: "₹150–220/sq ft", img: hero },
               { label: "Child Safety Grills", href: "/child-safety-grills", price: "₹130–190/sq ft", img: img2 },
             ].map(s => (
               <Link key={s.href} href={s.href}>

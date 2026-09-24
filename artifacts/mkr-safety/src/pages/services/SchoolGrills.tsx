@@ -42,8 +42,8 @@ const data = {
   ],
   relatedServices: [
     { label: "Child Safety Grills", href: "/child-safety-grills" },
-    { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-    { label: "Window Grills", href: "/window-invisible-grills" },
+    { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+    { label: "Window Invisible Grills", href: "/window-invisible-grills" },
   ],
   relatedLocations: [
     { label: "Whitefield", href: "/invisible-grills-whitefield" },

@@ -52,12 +52,12 @@ export function LocationPage({ data }: { data: LocationPageData }) {
   };
 
   const services = [
-    { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-    { label: "Window Grills", href: "/window-invisible-grills" },
-    { label: "Staircase Grills", href: "/staircase-invisible-grills" },
+    { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+    { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+    { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
     { label: "Child Safety Grills", href: "/child-safety-grills" },
-    { label: "Terrace Grills", href: "/terrace-invisible-grills" },
-    { label: "Villa Grills", href: "/villa-invisible-grills" },
+    { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+    { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
   ];
 
   return (

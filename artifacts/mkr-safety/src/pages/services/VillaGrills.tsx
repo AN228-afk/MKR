@@ -41,9 +41,9 @@ const data = {
     { q: "Do you work with interior designers and architects?", a: "Yes, frequently. We regularly collaborate with Bangalore's leading interior designers and architects to ensure our installations complement the overall design vision of the villa." },
   ],
   relatedServices: [
-    { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-    { label: "Terrace Grills", href: "/terrace-invisible-grills" },
-    { label: "Staircase Grills", href: "/staircase-invisible-grills" },
+    { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+    { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+    { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
   ],
   relatedLocations: [
     { label: "Whitefield", href: "/invisible-grills-whitefield" },

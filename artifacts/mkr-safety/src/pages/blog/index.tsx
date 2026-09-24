@@ -25,7 +25,7 @@ const posts: Record<string, BlogPostData> = {
     relatedServices: [
       { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
       { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Window Grills", href: "/window-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
     ],
   },
   "invisible-grills-vs-traditional-grills": {
@@ -48,7 +48,7 @@ const posts: Record<string, BlogPostData> = {
     ],
     relatedServices: [
       { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
-      { label: "Balcony Grills", href: "/balcony-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
       { label: "Child Safety Grills", href: "/child-safety-grills" },
     ],
   },
@@ -71,9 +71,9 @@ const posts: Record<string, BlogPostData> = {
     ],
     relatedServices: [
       { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Window Grills", href: "/window-invisible-grills" },
-      { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-      { label: "Staircase Grills", href: "/staircase-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
     ],
   },
   "balcony-safety-guide": {
@@ -94,8 +94,8 @@ const posts: Record<string, BlogPostData> = {
       { heading: "Balcony Safety for Elderly Family Members", body: "Beyond fall prevention for children, balconies also need to be safe for elderly family members who may have reduced stability. Good lighting, non-slip flooring, and a continuous handhold along the balcony railing are important. Invisible grills provide an additional tactile safety reference — the cables provide a sense of enclosure without obstructing movement." },
     ],
     relatedServices: [
-      { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-      { label: "Terrace Grills", href: "/terrace-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
       { label: "Child Safety Grills", href: "/child-safety-grills" },
     ],
   },
@@ -117,7 +117,7 @@ const posts: Record<string, BlogPostData> = {
     ],
     relatedServices: [
       { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
-      { label: "Balcony Grills", href: "/balcony-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
       { label: "Why 316 Grade Steel", href: "/blog/why-choose-316-grade-steel-grills" },
     ],
   },
@@ -141,7 +141,7 @@ const posts: Record<string, BlogPostData> = {
     ],
     relatedServices: [
       { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
-      { label: "Balcony Grills", href: "/balcony-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
       { label: "Contact for Free Quote", href: "/contact-us" },
     ],
   },
