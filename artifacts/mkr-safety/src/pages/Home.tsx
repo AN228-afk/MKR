@@ -343,12 +343,14 @@ export default function Home() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label="WhatsApp"
+                          onClick={trackGoogleAdsConversion}
                           className="w-7 h-7 flex items-center justify-center rounded-full bg-green-500 text-white hover:bg-green-600 transition-colors"
                         >
                           <MessageCircle className="w-3.5 h-3.5" />
                         </a>
                         <a
                           href="tel:+917780114547"
+                          onClick={trackGoogleAdsConversion}
                           aria-label="Call"
                           className="w-7 h-7 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-80 transition-colors"
                         >

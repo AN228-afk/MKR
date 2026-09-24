@@ -4,6 +4,7 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
 import logoPath from "@assets/MKR_PHOTO_1780926061320.jpeg";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const taglines = ["Invisible Grills", "Child Safety Experts", "10-Year Warranty", "Free Site Visit"];
 
@@ -118,7 +119,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
             <div className="flex items-center gap-3">
               <a
-                href="tel:+917780114547"
+                href="tel:+917780114547" onClick={trackGoogleAdsConversion}
                 className="hidden md:flex items-center gap-2 text-sm text-foreground hover:text-secondary transition-colors"
                 aria-label="Call MKR Safety Solutions"
               >
@@ -201,7 +202,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
               </p>
               <div className="flex flex-col gap-1 text-sm text-primary-foreground/80">
-                <a href="tel:+917780114547" className="hover:text-secondary transition-colors">+91 77801 14547</a>
+                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="hover:text-secondary transition-colors">+91 77801 14547</a>
                 <a href="mailto:info@mkrsafetysolutions.com" className="hover:text-secondary transition-colors">info@mkrsafetysolutions.com</a>
                 <span>Bangalore, Karnataka, India</span>
               </div>

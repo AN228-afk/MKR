@@ -9,6 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { testimonials, services, locations } from "@/data/services";
 import hero from "@assets/MKR_3_1780926061320.webp";
 import img2 from "@assets/MKR_2_1780926061320.webp";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
   { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 4.9-star Google rating from 500+ reviews, 1000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 10-year warranty." },
@@ -75,7 +76,7 @@ export default function InvisibleGrillsBangalore() {
               <Link href="/contact-us" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity inline-flex items-center gap-2">
                 Get Free Quote <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="tel:+917780114547" className="px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all inline-flex items-center gap-2">
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all inline-flex items-center gap-2">
                 <Phone className="w-4 h-4" /> Call Now
               </a>
             </div>
@@ -179,7 +180,7 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 10-year warranty. Call or WhatsApp us now.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-            <a href="tel:+917780114547" className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+            <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" /> Call +91 77801 14547
             </a>
           </div>
