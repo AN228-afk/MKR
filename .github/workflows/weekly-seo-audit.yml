@@ -1,0 +1,76 @@
+name: Weekly SEO Audit
+
+on:
+  schedule:
+    # Runs every Monday at 5:00 AM UTC (10:30 AM IST)
+    - cron: "0 5 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install pnpm
+        run: npm install -g pnpm@9
+
+      - name: Install mkr-safety dependencies (for sharp)
+        working-directory: ./artifacts/mkr-safety
+        run: pnpm install --frozen-lockfile
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run SEO audit
+        run: python seo_audit.py
+
+      - name: Rebuild and deploy if images were fixed
+        if: hashFiles('_seo_fixed_flag') != ''
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          FLAG=$(cat _seo_fixed_flag)
+          if [ "$FLAG" = "1" ]; then
+            cd artifacts/mkr-safety
+            PORT=3000 BASE_PATH=/ pnpm build
+            cd ../..
+            echo "$FIREBASE_SERVICE_ACCOUNT" > /tmp/firebase-key.json
+            export GOOGLE_APPLICATION_CREDENTIALS=/tmp/firebase-key.json
+            npm install -g firebase-tools@latest
+            firebase deploy --only hosting:mkr-safety --project mkr-1-34060
+            rm /tmp/firebase-key.json
+          fi
+
+      - name: Commit report and any fixed images
+        run: |
+          rm -f _seo_fixed_flag
+          git config user.name "SEO Audit Bot"
+          git config user.email "actions@github.com"
+          git add seo-reports/ attached_assets/
+          git diff --staged --quiet || git commit -m "Weekly SEO audit report"
+          git push
+
+      - name: Open a GitHub issue with the report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          REPORT_FILE="seo-reports/${TODAY}.md"
+          if [ -f "$REPORT_FILE" ]; then
+            gh issue create --title "SEO Audit — ${TODAY}" --body-file "$REPORT_FILE" --label "seo-audit" || true
+          fi
