@@ -344,7 +344,7 @@ export default function Home() {
                           rel="noopener noreferrer"
                           aria-label="WhatsApp"
                           onClick={trackGoogleAdsConversion}
-                          className="w-7 h-7 flex items-center justify-center rounded-full bg-green-500 text-white hover:bg-green-600 transition-colors"
+                          className="w-7 h-7 flex items-center justify-center rounded-full bg-green-700 text-white hover:bg-green-800 transition-colors"
                         >
                           <MessageCircle className="w-3.5 h-3.5" />
                         </a>

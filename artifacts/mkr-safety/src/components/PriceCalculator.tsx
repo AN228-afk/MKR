@@ -133,7 +133,7 @@ export function PriceCalculator() {
               className="w-full h-2 rounded-full appearance-none cursor-pointer accent-yellow-500"
               style={{ background: `linear-gradient(to right, hsl(44 55% 54%) ${((area - 10) / 490) * 100}%, rgba(255,255,255,0.2) ${((area - 10) / 490) * 100}%)` }}
             />
-            <div className="flex justify-between text-xs text-primary-foreground/50 mt-1">
+            <div className="flex justify-between text-xs text-primary-foreground/85 mt-1">
               <span>10 sq ft</span>
               <span>500 sq ft</span>
             </div>
@@ -178,7 +178,7 @@ export function PriceCalculator() {
                     onClick={trackGoogleAdsConversion}
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
-                    className="flex items-center justify-center gap-2 px-5 py-3 bg-green-500 text-white font-semibold rounded-xl text-sm hover:bg-green-600 transition-colors"
+                    className="flex items-center justify-center gap-2 px-5 py-3 bg-green-700 text-white font-semibold rounded-xl text-sm hover:bg-green-800 transition-colors"
                   >
                     <MessageCircle className="w-4 h-4" /> Confirm on WhatsApp
                   </motion.a>

@@ -37,7 +37,7 @@ export function FloatingCTA() {
           transition={{ delay: 0.55, duration: 0.5 }}
           whileHover={{ scale: 1.12 }}
           whileTap={{ scale: 0.95 }}
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:shadow-xl"
+          className="w-12 h-12 flex items-center justify-center rounded-full bg-green-700 text-white shadow-lg hover:shadow-xl"
         >
           <MessageCircle className="w-5 h-5" />
         </motion.a>
@@ -60,7 +60,7 @@ export function FloatingCTA() {
           target="_blank"
           rel="noopener noreferrer"
           data-testid="button-mobile-whatsapp"
-          className="flex-1 flex items-center justify-center gap-2 py-4 bg-green-500 text-white font-semibold text-sm"
+          className="flex-1 flex items-center justify-center gap-2 py-4 bg-green-700 text-white font-semibold text-sm"
           aria-label="Chat on WhatsApp"
           onClick={trackGoogleAdsConversion}
         >
