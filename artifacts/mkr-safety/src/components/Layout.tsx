@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
-import logoPath from "@assets/MKR_PHOTO_1780926061320.jpeg";
+import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const taglines = ["Invisible Grills", "Child Safety Experts", "10-Year Warranty", "Free Site Visit"];

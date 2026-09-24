@@ -16,6 +16,9 @@ import hero2 from "@assets/MKR_1_of_child_1780926061320.webp";
 import img2 from "@assets/MKR_2_1780926061320.webp";
 import img5 from "@assets/MKR_5_1780926061320.webp";
 import img4 from "@assets/MKR_4_1780926061320.webp";
+import img2Card from "@assets/MKR_2_card_1780926061320.webp";
+import img5Card from "@assets/MKR_5_card_1780926061320.webp";
+import img4Card from "@assets/MKR_4_card_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
 
@@ -293,21 +296,21 @@ export default function Home() {
                 title: "Window Invisible Grills",
                 href: "/window-invisible-grills",
                 desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
-                img: img4,
+                img: img4Card,
                 waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
               },
               {
                 title: "Staircase Invisible Grills",
                 href: "/staircase-invisible-grills",
                 desc: "Elegant vertical cable railings for open staircases — child-safe, pet-safe, and stunning in modern interiors.",
-                img: img5,
+                img: img5Card,
                 waMsg: "Hi, I need Staircase Invisible Grills in Bangalore. Please share details.",
               },
               {
                 title: "Villa Invisible Grills",
                 href: "/villa-invisible-grills",
                 desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
-                img: img2,
+                img: img2Card,
                 waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
               },
             ].map(({ title, href, desc, img, waMsg }) => (
