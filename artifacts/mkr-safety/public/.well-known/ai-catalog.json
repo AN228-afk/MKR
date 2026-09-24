@@ -1,0 +1,16 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "MKR Safety Solutions",
+    "identifier": "did:web:mkrsafetysolutions.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:mkrsafetysolutions.com:knowledge:llms",
+      "displayName": "MKR Safety Solutions Knowledge Base",
+      "type": "knowledge",
+      "url": "https://mkrsafetysolutions.com/llms.txt",
+      "description": "Overview of MKR Safety Solutions' invisible grill safety installation services in Bangalore, including balcony, window, staircase, terrace, villa, and child safety grill installations."
+    }
+  ]
+}
