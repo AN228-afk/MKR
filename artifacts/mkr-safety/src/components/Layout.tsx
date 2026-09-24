@@ -209,7 +209,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Services</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Services</h3>
               <ul className="space-y-2">
                 {services.map((s) => (
                   <li key={s.href}>
@@ -222,7 +222,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Locations</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Locations</h3>
               <ul className="space-y-2">
                 {[
                   ["Whitefield", "/invisible-grills-whitefield"],
@@ -244,7 +244,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Quick Links</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 {[
                   ["About Us", "/about-us"],

@@ -16,9 +16,9 @@ import hero2 from "@assets/MKR_1_of_child_1780926061320.webp";
 import img2 from "@assets/MKR_2_1780926061320.webp";
 import img5 from "@assets/MKR_5_1780926061320.webp";
 import img4 from "@assets/MKR_4_1780926061320.webp";
-import img2Card from "@assets/MKR_2_card_1780926061320.webp";
-import img5Card from "@assets/MKR_5_card_1780926061320.webp";
-import img4Card from "@assets/MKR_4_card_1780926061320.webp";
+import img2Card from "@assets/MKR_2_thumb_1780926061320.webp";
+import img5Card from "@assets/MKR_5_thumb_1780926061320.webp";
+import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
 
