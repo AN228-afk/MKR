@@ -528,7 +528,10 @@ export default function Home() {
             </Link>
           </FadeUp>
           <StaggerList className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPosts.slice(0, 3).map((post) => (
+            {blogPosts.filter((post, i, arr) => {
+              const baseSlug = post.slug.replace(/-\d+$/, "");
+              return arr.findIndex(p => p.slug.replace(/-\d+$/, "") === baseSlug) === i;
+            }).slice(0, 3).map((post) => (
               <StaggerItem key={post.slug}>
                 <motion.div whileHover={{ y: -4, boxShadow: "0 8px 28px rgba(0,0,0,0.08)" }} transition={{ duration: 0.2 }}>
                   <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`}>
