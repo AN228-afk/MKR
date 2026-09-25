@@ -39,7 +39,7 @@ const heroSlides = [
     label: "Child Safety Grills",
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",
-    sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by 500+ Bangalore families in high-rise apartments.",
+    sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by Bangalore families in high-rise apartments.",
   },
   {
     src: img2,
@@ -68,10 +68,10 @@ const heroSlides = [
   {
     src: img6,
     alt: "Balcony with invisible grills and planter arrangement, Bangalore apartment",
-    label: "1000+ Installations",
+    label: "2000+ Installations",
     heading: "Bangalore's Most",
     accent: "Trusted Grill Brand.",
-    sub: "4.9★ Google rating across 500+ reviews. Every installation backed by a 10-year warranty and lifetime customer support.",
+    sub: "5-Star rated by our customers on Google. Every installation backed by a 10-year warranty and lifetime customer support.",
   },
   {
     src: img7,
@@ -122,7 +122,7 @@ const localBusinessSchema = {
     addressCountry: "IN",
   },
   geo: { "@type": "GeoCoordinates", latitude: 12.9716, longitude: 77.5946 },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "500" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "10" },
   priceRange: "₹₹",
   areaServed: ["Bangalore", "Whitefield", "Koramangala", "HSR Layout", "Indiranagar", "Bellandur", "Marathahalli"],
   openingHours: "Mo-Sa 09:00-19:00",
@@ -156,7 +156,7 @@ export default function Home() {
     <Layout>
       <SEOHead
         title="Invisible Grills Bangalore | MKR Safety Solutions | Best Price"
-        description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 1000+ installs, 4.9★ rating, 10-year warranty. Free site visit."
+        description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 2000+ installs, 5.0★ rating, 10-year warranty. Free site visit."
         canonical="https://mkrsafetysolutions.com/"
         schema={[localBusinessSchema, faqSchema]}
       />
@@ -246,7 +246,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap gap-6 mt-8">
-              {[["1000+", "Installations"], ["4.9★", "Google Rating"], ["10 Yr", "Warranty"]].map(([num, label]) => (
+              {[["2000+", "Installations"], ["5.0★", "Google Rating"], ["10 Yr", "Warranty"]].map(([num, label]) => (
                 <div key={label}>
                   <div className="text-xl font-bold text-secondary">{num}</div>
                   <div className="text-xs text-primary-foreground/70">{label}</div>
@@ -380,7 +380,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <FadeLeft>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Why 1000+ Bangalore Families Choose MKR
+                Why 2000+ Bangalore Families Choose MKR
               </h2>
               <StaggerList className="space-y-4">
                 {[
@@ -430,9 +430,9 @@ export default function Home() {
                     <div className="flex">
                       {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
                     </div>
-                    <span className="text-sm font-semibold">4.9 / 5</span>
+                    <span className="text-sm font-semibold">5.0 / 5</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">Based on 500+ Google Reviews</p>
+                  <p className="text-xs text-muted-foreground mt-1">Based on verified Google Reviews</p>
                 </motion.div>
               </div>
             </FadeRight>

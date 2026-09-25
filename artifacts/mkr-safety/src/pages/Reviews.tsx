@@ -4,20 +4,12 @@ import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { testimonials } from "@/data/services";
 
-const allReviews = [
-  ...testimonials,
-  { name: "Kavitha L.", location: "Sarjapur Road", rating: 5, text: "The installation team was incredibly professional. They finished our 14th floor balcony in less than 4 hours and the cables are practically invisible from inside. Highly recommended for any Bangalore apartment owner.", service: "Balcony Invisible Grills" },
-  { name: "Mohan D.", location: "KR Puram", rating: 5, text: "We got grills for all our windows and the main balcony. The view is completely unaffected — our kids can play on the balcony safely and we don't feel claustrophobic at all. Excellent value.", service: "Window & Balcony Grills" },
-  { name: "Rashmi T.", location: "Yelahanka", rating: 5, text: "MKR was punctual, professional, and reasonably priced. Our staircase grills look stunning — you'd never know they were a safety feature. They blend so well with our modern interior.", service: "Staircase Grills" },
-  { name: "Krishnamurthy S.", location: "Jayanagar", rating: 4, text: "Good quality grills and professional service. The site visit was thorough and the quote was transparent. Installation was done cleanly. Would recommend MKR for anyone in Bangalore.", service: "Balcony Grills" },
-  { name: "Latha M.", location: "Marathahalli", rating: 5, text: "Three years since installation and not a single cable has lost tension or shown any corrosion. The 316-grade steel is clearly superior. MKR's team responds quickly to any queries too.", service: "Balcony & Window Grills" },
-];
+const allReviews = [...testimonials];
 
 const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "MKR Safety Solutions",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "500" },
   review: allReviews.map(r => ({
     "@type": "Review",
     author: { "@type": "Person", name: r.name },
@@ -31,7 +23,7 @@ export default function Reviews() {
     <Layout>
       <SEOHead
         title="Customer Reviews | MKR Safety Solutions Invisible Grills Bangalore"
-        description="Read genuine customer reviews for MKR Safety Solutions. 4.9-star rating from 500+ customers across Bangalore for invisible grill installations."
+        description="Read genuine customer reviews for MKR Safety Solutions. 5.0-star rating from 10+ customers across Bangalore for invisible grill installations."
         canonical="https://mkrsafetysolutions.com/reviews"
         schema={reviewSchema}
       />
@@ -46,8 +38,8 @@ export default function Reviews() {
             <h1 className="text-4xl font-bold text-foreground mb-4">What Our Customers Say</h1>
             <div className="flex items-center justify-center gap-3 mb-3">
               <div className="flex">{[1,2,3,4,5].map(s => <Star key={s} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}</div>
-              <span className="text-2xl font-bold text-foreground">4.9</span>
-              <span className="text-muted-foreground text-sm">/ 5 from 500+ reviews</span>
+              <span className="text-2xl font-bold text-foreground">5.0</span>
+              <span className="text-muted-foreground text-sm">/ 5 from 10+ reviews</span>
             </div>
             <p className="text-muted-foreground">Real customers, real experiences across Bangalore</p>
           </div>

@@ -2,8 +2,8 @@ import { Shield, Star, Clock, Wrench, Award } from "lucide-react";
 import { StaggerList, StaggerItem } from "./Animated";
 
 const badges = [
-  { icon: Shield, label: "1000+ Installs", sub: "Completed Projects" },
-  { icon: Star, label: "4.9/5 Rating", sub: "Google Reviews" },
+  { icon: Shield, label: "2000+ Installs", sub: "Completed Projects" },
+  { icon: Star, label: "5.0/5 Rating", sub: "Google Reviews" },
   { icon: Clock, label: "8+ Years", sub: "Experience" },
   { icon: Wrench, label: "Free Site Visit", sub: "No Obligation" },
   { icon: Award, label: "10-Year Warranty", sub: "On All Installations" },

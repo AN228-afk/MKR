@@ -38,7 +38,7 @@ export default function Gallery() {
     <Layout>
       <SEOHead
         title="Invisible Grills Gallery | MKR Safety Solutions Bangalore Projects"
-        description="View our gallery of invisible grill installations in Bangalore — balcony, window, staircase, villa, and child safety grills. 1000+ completed projects."
+        description="View our gallery of invisible grill installations in Bangalore — balcony, window, staircase, villa, and child safety grills. 2000+ completed projects."
         canonical="https://mkrsafetysolutions.com/gallery"
       />
 
@@ -52,7 +52,7 @@ export default function Gallery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h1 className="text-4xl font-bold text-foreground mb-4">Our Invisible Grill Projects in Bangalore</h1>
-            <p className="text-muted-foreground max-w-xl mx-auto">Browse our portfolio of 1000+ invisible grill installations across Bangalore's top neighborhoods.</p>
+            <p className="text-muted-foreground max-w-xl mx-auto">Browse our portfolio of 2000+ invisible grill installations across Bangalore's top neighborhoods.</p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 mb-8">
