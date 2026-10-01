@@ -622,6 +622,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "balcony-safety-checklist-for-parents": {
+    slug: "balcony-safety-checklist-for-parents",
+    title: "The Weekend Balcony Safety Checklist Every Bangalore Parent Should Run Today",
+    seoTitle: "Balcony Safety Checklist for Parents in Bangalore | MKR Safety Solutions",
+    seoDesc: "A practical balcony safety checklist for parents to self-audit their Bangalore home this weekend, no tools or expertise needed.",
+    date: "2026-10-01",
+    readTime: "7 min read",
+    keyword: "balcony safety checklist for parents",
+    content: [
+      { body: "You don't need to wait for a renovation or a big safety overhaul to protect your child from balcony hazards. Most dangerous gaps in home safety aren't about missing grills or nets, they're about small, everyday things parents walk past without noticing: a stool left near the railing, a gap that's grown wider after a repair, a latch that doesn't click shut anymore. This is a practical, do-it-yourself checklist you can run through your own home this weekend, no contractor visit required." },
+      { heading: "Start With the Furniture, Not the Grill", body: "Before you even look at your railing or grill, check what's sitting near your balcony. Chairs, stools, planters, storage boxes, washing machines, even a pile of folded clothes can become a step-up for a curious toddler. Walk around every balcony and window in your home and ask: can a child climb onto anything within arm's reach of this opening? If yes, move it. This single habit prevents more accidents than any hardware upgrade." },
+      { heading: "The 10cm Gap Test", body: "A child's head can pass through surprisingly small gaps. A simple rule used by safety professionals: if a gap between bars, railing posts, or grill wires is wider than about 10cm (roughly the width of a soda can), a small child can slip through or get their head stuck. Walk along every balcony railing and window grill in your home with this test in mind. Pay special attention to gaps near corners, where railings meet walls, and any spot where a grill or net may have loosened over time." },
+      { heading: "Check Every Lock, Latch, and Door Closer", body: "A grill or safety net is only as good as the access point around it. Test every balcony door, sliding door latch, and window lock in the house, not just the main balcony. Can your child open it alone? Does the latch stay shut, or does it slip with a light push? If you have a balcony door that's often left open for ventilation, this is the single highest-risk spot in most Bangalore apartments. A child-proof latch or a self-closing mechanism costs very little compared to peace of mind." },
+      { heading: "Don't Forget the Utility Balcony and Spare Room", body: "Parents are usually vigilant about the main living room balcony but forget about utility balconies, spare bedroom windows, or the balcony attached to a guest room that's rarely used. These areas often have weaker grills, older nets, or no safety measures at all because they're 'not used much.' Children, however, explore everywhere. Walk through every single room with an external opening, not just the ones you use daily." },
+      { heading: "Seasonal Checks for Bangalore Weather", body: "Bangalore's monsoon brings its own risks, wet, slippery balcony floors, rust on older iron grills, and loosened fittings from water exposure. Before and after every monsoon season, check for rust spots, loose screws in grill frames, and any flex or wobble when you press on the grill or railing with moderate pressure. If something that was firm last year now moves even slightly, get it inspected rather than waiting for it to fail." },
+      { heading: "The Two-Minute Monthly Habit", body: "Safety isn't a one-time checklist, it's a habit. Pick one day a month (the first Sunday works well) and spend two minutes per balcony or window doing the gap test, the furniture check, and the latch test. Involve older children in this routine too, it builds awareness without alarming them. If this checklist reveals gaps, loose fittings, or areas with no protection at all, that's a sign it's time for a proper safety upgrade rather than a patch fix." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Get a Free Safety Consultation", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -668,3 +692,5 @@ export function WindowSafetyGrillForApartments2BlogPost() { return <BlogPostPage
 export function PetSafetyBalconyGrill3BlogPost() { return <BlogPostPage data={posts["pet-safety-balcony-grill-3"]} />; }
 
 export function InvisibleGrillElectronicCityBlogPost() { return <BlogPostPage data={posts["invisible-grill-electronic-city"]} />; }
+
+export function BalconySafetyChecklistForParentsBlogPost() { return <BlogPostPage data={posts["balcony-safety-checklist-for-parents"]} />; }

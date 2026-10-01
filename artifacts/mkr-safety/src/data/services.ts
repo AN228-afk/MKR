@@ -282,6 +282,14 @@ export const blogPosts = [
     readTime: "6 min read",
     keyword: "invisible grill Electronic City",
   },
+  {
+    title: "The Weekend Balcony Safety Checklist Every Bangalore Parent Should Run Today",
+    slug: "balcony-safety-checklist-for-parents",
+    excerpt: "Grab 20 minutes this weekend and walk through this room-by-room checklist to spot the balcony hazards most Bangalore parents miss until it's too late.",
+    date: "2026-10-01",
+    readTime: "7 min read",
+    keyword: "balcony safety checklist for parents",
+  },
 ];
 
 export const testimonials = [
