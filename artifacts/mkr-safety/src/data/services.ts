@@ -274,6 +274,14 @@ export const blogPosts = [
     date: "2024-09-05",
     readTime: "6 min read",
   },
+  {
+    title: "Invisible Grill Installation in Electronic City: A Local Resident's Guide",
+    slug: "invisible-grill-electronic-city",
+    excerpt: "Electronic City's fast-growing apartment communities have their own balcony layouts, schedules, and challenges. Here's a local resident's guide to getting invisible grills installed without the hassle.",
+    date: "2026-10-01",
+    readTime: "6 min read",
+    keyword: "invisible grill Electronic City",
+  },
 ];
 
 export const testimonials = [
