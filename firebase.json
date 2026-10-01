@@ -3,6 +3,7 @@
         {
             "target": "mkr-safety",
             "public": "artifacts/mkr-safety/dist/public",
+            "cleanUrls": true,
             "ignore": [
                 "firebase.json",
                 "**/.*",

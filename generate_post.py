@@ -75,6 +75,54 @@ SEED_TOPICS = [
     "stainless steel safety wire balcony",
     "invisible grill cost Bangalore",
     "window safety grill for apartments",
+    "invisible grill installation process",
+    "invisible grill price per square feet",
+    "invisible grill thickness guide",
+    "invisible grill for duplex staircase",
+    "invisible grill for villa",
+    "invisible grill for school buildings",
+    "invisible grill for office balcony",
+    "invisible grill for sliding windows",
+    "invisible grill for French windows",
+    "invisible grill for open terrace",
+    "invisible grill for gated community apartments",
+    "invisible grill rules for apartment associations",
+    "invisible grill and pigeon problem",
+    "invisible grill vs pigeon net",
+    "invisible grill vs glass railing",
+    "invisible grill vs SS pipe railing",
+    "invisible grill vs aluminium grill",
+    "invisible grill for cats",
+    "invisible grill for toddlers",
+    "invisible grill for senior citizens",
+    "invisible grill strength and load capacity",
+    "invisible grill maintenance tips",
+    "invisible grill monsoon care",
+    "invisible grill warranty what to check",
+    "how to choose an invisible grill installer",
+    "invisible grill nano coating",
+    "invisible grill for new flat handover",
+    "invisible grill for rented apartment",
+    "invisible grill horizontal vs vertical",
+    "invisible grill gap spacing for kids",
+    "balcony safety checklist for parents",
+    "balcony garden with invisible grill",
+    "invisible grill for balcony with AC unit",
+    "invisible grill for utility area",
+    "invisible grill for kitchen window",
+    "invisible grill for bedroom window",
+    "invisible grill for lift duct or shaft",
+    "invisible grill for corner balcony",
+    "invisible grill Whitefield",
+    "invisible grill Sarjapur Road",
+    "invisible grill Electronic City",
+    "invisible grill HSR Layout",
+    "invisible grill Hebbal",
+    "invisible grill Yelahanka",
+    "invisible grill Koramangala",
+    "invisible grill Indiranagar",
+    "invisible grill Marathahalli",
+    "invisible grill Bellandur",
 ]
 
 
@@ -88,7 +136,19 @@ def get_existing_slugs():
     return set(re.findall(r'^\s{2}"([a-z0-9-]+)":\s*\{', content, re.MULTILINE))
 
 
+def get_existing_titles():
+    with open(POSTS_FILE, "r") as f:
+        content = f.read()
+    return re.findall(r'^\s{4}title:\s*"(.*)",\s*$', content, re.MULTILINE)
+
+
+def base_slug(slug):
+    """'balcony-safety-net-alternative-3' -> 'balcony-safety-net-alternative'"""
+    return re.sub(r"-\d+$", "", slug)
+
+
 def get_topic(existing_slugs):
+    used = {base_slug(s) for s in existing_slugs}
     candidates = []
     if TrendReq is not None:
         try:
@@ -104,9 +164,26 @@ def get_topic(existing_slugs):
         except Exception as e:
             print(f"Trends lookup failed, using fallback topics: {e}")
 
-    candidates.extend(SEED_TOPICS)
     random.shuffle(candidates)
-    return candidates[0]
+    seeds = SEED_TOPICS[:]
+    random.shuffle(seeds)
+    # Trends first, then seed list — but never a topic we already wrote about
+    for topic in candidates + seeds:
+        if slugify(topic) not in used:
+            return topic
+
+    # Every listed topic is used: ask Claude for a fresh one
+    titles = "\n".join(f"- {t}" for t in get_existing_titles())
+    for _ in range(3):
+        topic = _call_claude(
+            "Suggest ONE new blog topic (a short search keyword, 3-7 words) for an "
+            "invisible grill / balcony safety installer in Bangalore. It must be "
+            "clearly different from all of these existing posts:\n"
+            f"{titles}\n\nReply with the keyword only, nothing else."
+        ).strip().strip('"').splitlines()[0]
+        if topic and slugify(topic) not in used:
+            return topic
+    raise RuntimeError("Could not find a topic that hasn't been covered yet")
 
 
 def slugify(text):
@@ -150,11 +227,16 @@ def _call_claude(prompt):
 
 
 def generate_post(topic, slug):
+    existing_titles = "\n".join(f"- {t}" for t in get_existing_titles())
     prompt = f"""You are writing a new blog post for MKR Safety Solutions, an
 invisible grill safety business (balcony, staircase, terrace, window grills)
 serving Bangalore.
 
 Topic/keyword to target: "{topic}"
+
+These posts already exist on the site. Do NOT repeat their angle or content;
+write something that is clearly different and useful on its own:
+{existing_titles}
 
 Write content matching this exact JSON structure (matches their existing
 blog posts):
@@ -312,14 +394,21 @@ def update_app_tsx(post, component_name):
     with open(APP_TSX_FILE, "r") as f:
         content = f.read()
 
-    import_close = '} from "@/pages/blog/index";'
-    if import_close not in content:
-        raise RuntimeError("Could not find blog import block in App.tsx")
-    content = content.replace(
-        import_close,
-        f'  {component_name},\n{import_close}',
-        1,
+    # Routes are code-split: each post has a line like
+    # const XBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.XBlogPost })));
+    lazy_lines = re.findall(
+        r'^const \w+ = lazy\(\(\) => import\("@/pages/blog/index"\).*$',
+        content,
+        re.MULTILINE,
     )
+    if not lazy_lines:
+        raise RuntimeError("Could not find blog lazy-import lines in App.tsx")
+    last_line = lazy_lines[-1]
+    new_line = (
+        f'const {component_name} = lazy(() => import("@/pages/blog/index")'
+        f'.then(m => ({{ default: m.{component_name} }})));'
+    )
+    content = content.replace(last_line, f"{last_line}\n{new_line}", 1)
 
     route_anchor = "<Route component={NotFound} />"
     if route_anchor not in content:
