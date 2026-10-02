@@ -439,7 +439,8 @@ def _get_blogger_access_token():
         },
         timeout=30,
     )
-    response.raise_for_status()
+    if response.status_code != 200:
+        raise RuntimeError(f"Google token error {response.status_code}: {response.text}")
     return response.json()["access_token"]
 
 
@@ -479,7 +480,8 @@ def post_to_blogger(title, content):
             json={"title": title, "content": html_body},
             timeout=60,
         )
-        response.raise_for_status()
+        if response.status_code not in (200, 201):
+            raise RuntimeError(f"Blogger API error {response.status_code}: {response.text}")
         result = response.json()
         print(f"Published to Blogger: {result.get('url')}")
         return result
