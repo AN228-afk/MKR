@@ -243,6 +243,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill and pigeon problem",
   },
+  {
+    title: "Invisible Grills for School Buildings: A Safety Checklist for Bangalore Schools",
+    slug: "invisible-grill-for-school-buildings",
+    excerpt: "Schools have safety needs that are very different from homes - more floors, more children, and far less margin for error. Here's a practical checklist for school administrators considering invisible grills.",
+    date: "2026-10-02",
+    readTime: "7 min read",
+    keyword: "invisible grill for school buildings",
+  },
 ];
 
 export const testimonials = [
