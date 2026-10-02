@@ -46,22 +46,13 @@ const BestGrillsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ 
 const MaintenanceBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.MaintenanceBlogPost })));
 const SteelGradeBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.SteelGradeBlogPost })));
 const BalconySafetyNetAlternativeBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyNetAlternativeBlogPost })));
-const BalconySafetyNetAlternative2BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyNetAlternative2BlogPost })));
 const StainlessSteelSafetyWireBalconyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.StainlessSteelSafetyWireBalconyBlogPost })));
 const InvisibleGrillVsIronGrillBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsIronGrillBlogPost })));
 const InvisibleGrillCostBangaloreBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillCostBangaloreBlogPost })));
-const BalconySafetyNetAlternative3BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyNetAlternative3BlogPost })));
 const PetSafetyBalconyGrillBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.PetSafetyBalconyGrillBlogPost })));
-const InvisibleGrillVsIronGrill2BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsIronGrill2BlogPost })));
 const HighRiseApartmentBalconySafetyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.HighRiseApartmentBalconySafetyBlogPost })));
-const InvisibleGrillCostBangalore2BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillCostBangalore2BlogPost })));
-const InvisibleGrillCostBangalore3BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillCostBangalore3BlogPost })));
-const BalconySafetyNetAlternative4BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyNetAlternative4BlogPost })));
 const TerraceSafetyRailingBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.TerraceSafetyRailingBlogPost })));
-const PetSafetyBalconyGrill2BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.PetSafetyBalconyGrill2BlogPost })));
 const WindowSafetyGrillForApartmentsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.WindowSafetyGrillForApartmentsBlogPost })));
-const WindowSafetyGrillForApartments2BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.WindowSafetyGrillForApartments2BlogPost })));
-const PetSafetyBalconyGrill3BlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.PetSafetyBalconyGrill3BlogPost })));
 const InvisibleGrillElectronicCityBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillElectronicCityBlogPost })));
 const BalconySafetyChecklistForParentsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyChecklistForParentsBlogPost })));
 const InvisibleGrillHorizontalVsVerticalBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillHorizontalVsVerticalBlogPost })));
@@ -118,22 +109,13 @@ function Router() {
       <Route path="/blog/invisible-grill-maintenance-guide" component={MaintenanceBlogPost} />
       <Route path="/blog/why-choose-316-grade-steel-grills" component={SteelGradeBlogPost} />
       <Route path="/blog/balcony-safety-net-alternative" component={BalconySafetyNetAlternativeBlogPost} />
-      <Route path="/blog/balcony-safety-net-alternative-2" component={BalconySafetyNetAlternative2BlogPost} />
       <Route path="/blog/stainless-steel-safety-wire-balcony" component={StainlessSteelSafetyWireBalconyBlogPost} />
       <Route path="/blog/invisible-grill-vs-iron-grill" component={InvisibleGrillVsIronGrillBlogPost} />
       <Route path="/blog/invisible-grill-cost-bangalore" component={InvisibleGrillCostBangaloreBlogPost} />
-      <Route path="/blog/balcony-safety-net-alternative-3" component={BalconySafetyNetAlternative3BlogPost} />
       <Route path="/blog/pet-safety-balcony-grill" component={PetSafetyBalconyGrillBlogPost} />
-      <Route path="/blog/invisible-grill-vs-iron-grill-2" component={InvisibleGrillVsIronGrill2BlogPost} />
       <Route path="/blog/high-rise-apartment-balcony-safety" component={HighRiseApartmentBalconySafetyBlogPost} />
-      <Route path="/blog/invisible-grill-cost-bangalore-2" component={InvisibleGrillCostBangalore2BlogPost} />
-      <Route path="/blog/invisible-grill-cost-bangalore-3" component={InvisibleGrillCostBangalore3BlogPost} />
-      <Route path="/blog/balcony-safety-net-alternative-4" component={BalconySafetyNetAlternative4BlogPost} />
       <Route path="/blog/terrace-safety-railing" component={TerraceSafetyRailingBlogPost} />
-      <Route path="/blog/pet-safety-balcony-grill-2" component={PetSafetyBalconyGrill2BlogPost} />
       <Route path="/blog/window-safety-grill-for-apartments" component={WindowSafetyGrillForApartmentsBlogPost} />
-      <Route path="/blog/window-safety-grill-for-apartments-2" component={WindowSafetyGrillForApartments2BlogPost} />
-      <Route path="/blog/pet-safety-balcony-grill-3" component={PetSafetyBalconyGrill3BlogPost} />
 
       <Route path="/blog/invisible-grill-electronic-city" component={InvisibleGrillElectronicCityBlogPost} />
 

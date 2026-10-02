@@ -35,6 +35,53 @@
                         }
                     ]
                 }
+            ],
+            "redirects": [
+                {
+                    "source": "/blog/balcony-safety-net-alternative-2",
+                    "destination": "/blog/balcony-safety-net-alternative",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/balcony-safety-net-alternative-3",
+                    "destination": "/blog/balcony-safety-net-alternative",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/balcony-safety-net-alternative-4",
+                    "destination": "/blog/balcony-safety-net-alternative",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/invisible-grill-cost-bangalore-2",
+                    "destination": "/blog/invisible-grill-cost-bangalore",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/invisible-grill-cost-bangalore-3",
+                    "destination": "/blog/invisible-grill-cost-bangalore",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/invisible-grill-vs-iron-grill-2",
+                    "destination": "/blog/invisible-grill-vs-iron-grill",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/pet-safety-balcony-grill-2",
+                    "destination": "/blog/pet-safety-balcony-grill",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/pet-safety-balcony-grill-3",
+                    "destination": "/blog/pet-safety-balcony-grill",
+                    "type": 301
+                },
+                {
+                    "source": "/blog/window-safety-grill-for-apartments-2",
+                    "destination": "/blog/window-safety-grill-for-apartments",
+                    "type": 301
+                }
             ]
         }
     ]

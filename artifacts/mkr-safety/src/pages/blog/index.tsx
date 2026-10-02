@@ -214,32 +214,6 @@ const posts: Record<string, BlogPostData> = {
       { label: "Get a Free Consultation", href: "/contact-us" },
     ],
   },
-  "balcony-safety-net-alternative-2": {
-    slug: "balcony-safety-net-alternative-2",
-    title: "Balcony Safety Net Alternative: Why Bangalore Homeowners Are Switching to Invisible Grills",
-    seoTitle: "Balcony Safety Net Alternative for Bangalore Homes | MKR Safety Solutions",
-    seoDesc: "Looking for a balcony safety net alternative in Bangalore? Discover why invisible grills offer better safety, looks, and durability than nets.",
-    date: "2026-09-13",
-    readTime: "6 min read",
-    keyword: "balcony safety net alternative",
-    content: [
-      { body: "If you have young children, elderly parents, or pets at home, an open balcony can be a constant source of worry. Many Bangalore homeowners have traditionally turned to safety nets as a quick fix, but nets come with their own set of problems - fading, sagging, and a caged-in look. In this post, we break down why invisible grills are emerging as the go-to balcony safety net alternative for apartments and villas across the city." },
-      { heading: "The Problem With Traditional Balcony Safety Nets", body: "Nylon or polypropylene safety nets are affordable, but they weren't built for Bangalore's mix of sun, dust, and monsoon humidity. Over a year or two, nets tend to lose tensile strength, develop a yellowish tinge, and start sagging at the edges. They also need periodic tightening and cleaning, since dust and pollen easily get trapped in the mesh. For balconies that get direct sunlight - common in areas like Whitefield, Sarjapur Road, and HSR Layout - UV exposure accelerates this wear even faster." },
-      { heading: "Why Invisible Grills Are a Better Fit", body: "Invisible grills use high-tensile stainless steel wires fixed vertically with minimal spacing, offering the same fall-prevention function as a net but without the bulky appearance. Since the wires are thin and unobtrusive, your balcony view stays largely uninterrupted - something nets simply can't offer once installed. They're also fixed permanently to the structure, so there's no sagging or loosening over time the way a net can stretch under weight or wind pressure." },
-      { heading: "Built for Bangalore's Weather", body: "Stainless steel grills are inherently more weather-resistant than fabric or nylon netting. They don't degrade under UV exposure, and they handle Bangalore's monsoon months without absorbing moisture or growing mould, which is a common complaint with older nets left up during the rainy season. This makes invisible grills a lower-maintenance option for balconies, terraces, and open corridors that stay exposed year-round." },
-      { heading: "A Cleaner, More Premium Look", body: "One of the biggest reasons homeowners switch is aesthetics. Safety nets, however neatly installed, give balconies a caged or utilitarian appearance that can clash with modern apartment interiors. Invisible grills, by contrast, blend into the background - ideal for homes in gated communities or premium villas in areas like Whitefield, Indiranagar, and Koramangala where residents want safety without compromising on how the balcony looks from inside or outside." },
-      { heading: "Durability and Long-Term Value", body: "While the upfront cost of invisible grills is generally higher than a net, they typically outlast nets by several years since they aren't subject to the same wear from sun and rain. For homeowners who've already replaced a sagging or discoloured net once or twice, switching to a permanent grill solution often works out to be more practical in the long run, since it removes the recurring cost and hassle of net replacement." },
-      { heading: "Safety for Children, Pets, and Elderly Family Members", body: "The core purpose of a balcony safety net - preventing accidental falls - is fully addressed by invisible grills. The vertical wire spacing is designed to be safe even for curious toddlers and small pets, while the sturdy stainless steel construction offers reliable support for anyone who may lean or rest against it. For homes with elderly parents who use balconies for morning walks or fresh air, a rigid grill setup can feel more dependable than a stretched net." },
-      { heading: "Installation Considerations in Bangalore Apartments", body: "Most Bangalore apartments and independent homes can accommodate invisible grill installation without major structural changes, whether it's a standard 3-4 foot balcony railing or a larger open terrace. It's worth getting a site visit done to assess railing height, spacing requirements, and anchoring points, especially in older buildings or those with unconventional balcony designs. This is typically a straightforward process when handled by an experienced installer familiar with local building types." },
-      { heading: "Making the Switch", body: "If your current safety net is sagging, discoloured, or simply not doing justice to your balcony's appearance, it may be time to consider a more permanent alternative. Invisible grills offer a practical middle ground - the safety of a net with the durability and aesthetics of a fixed structure. Many homeowners choose to upgrade balconies first and later extend the same solution to staircases, windows, or terraces for consistent safety across the home." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Contact Us", href: "/contact-us" },
-    ],
-  },
   "stainless-steel-safety-wire-balcony": {
     slug: "stainless-steel-safety-wire-balcony",
     title: "Stainless Steel Safety Wire Balcony Grills: The Complete Guide for Bangalore Homes",
@@ -318,32 +292,6 @@ const posts: Record<string, BlogPostData> = {
       { label: "Get a Free Quote", href: "/contact-us" },
     ],
   },
-  "balcony-safety-net-alternative-3": {
-    slug: "balcony-safety-net-alternative-3",
-    title: "Balcony Safety Net Alternative: Why Invisible Grills Are a Better Choice for Bangalore Homes",
-    seoTitle: "Balcony Safety Net Alternative in Bangalore | MKR Safety Solutions",
-    seoDesc: "Looking for a balcony safety net alternative? See why invisible grills offer better safety, looks, and durability for Bangalore homes.",
-    date: "2026-09-14",
-    readTime: "6 min read",
-    keyword: "balcony safety net alternative",
-    content: [
-      { body: "If you have a balcony at home and young children, elderly parents, or pets, you have probably looked into balcony safety nets at some point. They are a common choice, but many Bangalore homeowners are moving away from nets after dealing with sagging, fading, and the general 'caged-in' look they give a home. If you are exploring a balcony safety net alternative that looks better and lasts longer, invisible grills deserve a serious look." },
-      { heading: "The Problem With Balcony Safety Nets", body: "Safety nets are usually made of nylon or polypropylene mesh tied to hooks or frames around the balcony. They work initially, but Bangalore's weather \u2014 sun, dust, and monsoon humidity \u2014 takes a toll on them faster than most people expect. Nets tend to sag within a year or two, the knots loosen, and UV exposure makes the material brittle. Once a net starts sagging, it stops being a reliable barrier, especially for active kids or pets who might lean or push against it." },
-      { heading: "Why Invisible Grills Make a Stronger Alternative", body: "Invisible grills use high-tensile stainless steel wires fixed vertically with minimal spacing, anchored securely into the balcony structure. Unlike nets, they don't sag, stretch, or lose tension over time. The wires are strong enough to act as a genuine physical barrier, not just a soft mesh that gives way under pressure. This makes them a far more dependable balcony safety net alternative for homes with small children or pets who like to test boundaries." },
-      { heading: "They Don't Block Your View or Light", body: "One of the biggest complaints about safety nets is how they change the way a balcony looks and feels. Nets are visible, they yellow with age, and they can make an open balcony feel closed in. Invisible grills, as the name suggests, are barely noticeable from a few feet away. You keep the open, airy feel of your balcony while still having a solid safety barrier in place \u2014 something nets simply can't offer." },
-      { heading: "Lower Maintenance in Bangalore's Climate", body: "Bangalore's mix of intense sun and heavy monsoon rain is hard on nylon nets \u2014 they degrade, discolour, and often need replacement every couple of years. Stainless steel invisible grills, on the other hand, are built to handle outdoor exposure without rusting or weakening. A quick wipe-down every few months is usually all they need, making them a much lower-maintenance option in the long run compared to nets that require periodic re-tying or full replacement." },
-      { heading: "Better Value Over Time", body: "Safety nets may seem cheaper upfront, but when you factor in replacement costs every year or two, the math changes quickly. Invisible grills are a one-time investment with a much longer usable life, especially when installed correctly. For homeowners looking at long-term balcony safety net alternative options, invisible grills often work out more cost-effective over five to ten years, not just safer." },
-      { heading: "Where Else You Can Use This Same Idea", body: "The same reasoning that makes invisible grills a good balcony safety net alternative applies to other open spaces at home \u2014 terraces, staircases, and windows. If you're already reconsidering your balcony, it's worth having these other areas assessed at the same time, especially in independent houses and villas with multiple open levels." },
-      { heading: "What to Check Before You Switch", body: "If you're replacing an existing safety net with invisible grills, get the balcony measured and assessed on-site first. Wire spacing, anchoring points, and the type of railing or parapet you have all affect the installation. A good installer will walk you through wire gauge, spacing suited to your family's needs (especially if you have young kids), and expected maintenance before quoting a price." },
-      { heading: "Get a Free Site Visit With MKR Safety Solutions", body: "At MKR Safety Solutions, we've helped many Bangalore families move from sagging nets to a cleaner, longer-lasting invisible grill setup for their balconies. If you're weighing a balcony safety net alternative, we're happy to do a free on-site assessment and give you a clear, no-obligation quote based on your actual balcony." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Contact Us", href: "/contact-us" },
-    ],
-  },
   "pet-safety-balcony-grill": {
     slug: "pet-safety-balcony-grill",
     title: "Pet Safety Balcony Grills: Keeping Your Dogs and Cats Safe in Bangalore Apartments",
@@ -365,30 +313,6 @@ const posts: Record<string, BlogPostData> = {
       { label: "Child Safety Grills", href: "/child-safety-grills" },
       { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
       { label: "Contact Us", href: "/contact-us" },
-    ],
-  },
-  "invisible-grill-vs-iron-grill-2": {
-    slug: "invisible-grill-vs-iron-grill-2",
-    title: "Invisible Grill vs Iron Grill: Which One Should You Choose for Your Bangalore Home?",
-    seoTitle: "Invisible Grill vs Iron Grill: A Complete Comparison | MKR Safety Solutions",
-    seoDesc: "Confused between invisible grill vs iron grill for your home? Compare safety, looks, cost & maintenance to make the right choice in Bangalore.",
-    date: "2026-09-15",
-    readTime: "6 min read",
-    keyword: "invisible grill vs iron grill",
-    content: [
-      { body: "If you're planning to secure your balcony, window, staircase, or terrace, you've probably found yourself comparing invisible grill vs iron grill options. Both promise safety, but they look, feel, and perform very differently. As a safety solutions provider working across Bangalore apartments, villas, and independent homes, we get asked this question almost every week. Here's a straightforward breakdown to help you decide what suits your home best." },
-      { heading: "The Biggest Difference: How They Look", body: "Traditional iron grills are bulky, visible from both inside and outside, and often painted black or dark grey to match window frames. They give a caged, boxed-in feel to balconies and can block views of Bangalore's greenery or city skyline. Invisible grills, made of thin stainless steel wires, are almost unnoticeable from a few feet away. Your balcony or window continues to look open and airy while still being fully secured. If aesthetics and natural light matter to you, invisible grills clearly win here." },
-      { heading: "Safety: Both Work, But Differently", body: "Iron grills have been trusted for decades because they're rigid and visibly strong. Invisible grills, though thinner, use high-tensile stainless steel wires spaced closely together, which makes them just as effective at preventing falls, especially for children and pets, when installed correctly. The key difference is that iron grills rely on a fixed frame, while invisible grills rely on wire tension and proper anchoring. Both are safe options when installed by experienced professionals who understand load-bearing points and spacing standards." },
-      { heading: "Maintenance and Weather Resistance", body: "Bangalore's mix of humidity, dust, and monsoon rains affects iron grills more visibly over time. Iron grills tend to rust, especially at welding joints and screw points, requiring repainting or touch-ups every couple of years to keep them from corroding. Invisible grills use stainless steel wires that resist rust and don't need repainting. Occasional wiping down and periodic tension checks are usually enough to keep them performing well for years." },
-      { heading: "Space, Ventilation, and Cleaning", body: "Iron grills are fixed and can make cleaning windows or balcony glass panels a hassle since the frame is in the way. Invisible grills, being minimal in structure, allow much easier access for cleaning glass, grilles, and balcony floors. They also don't obstruct airflow or natural ventilation the way a dense iron mesh can, which matters in Bangalore's pleasant weather where many homeowners like to keep windows open." },
-      { heading: "Cost Comparison: What You're Really Paying For", body: "Iron grills are generally cheaper upfront since the material and fabrication process are simpler. Invisible grills cost more initially because of the quality of stainless steel wire and the precision installation involved. However, when you factor in repainting, rust treatment, and the resale value impact of bulky iron grills on a home's appearance, invisible grills often work out to be a smarter long-term investment, especially for premium apartments and villas in areas like Whitefield, Sarjapur, and Indiranagar." },
-      { heading: "So, Which One Should You Choose?", body: "If budget is your only concern and aesthetics don't matter much, iron grills still get the job done. But if you want a home that looks open, modern, and well-maintained while keeping your family and pets safe, invisible grills are the better fit for most Bangalore homes today. At MKR Safety Solutions, we help homeowners across Bangalore evaluate both options based on their balcony size, budget, and safety needs, so you can make a choice you won't second-guess later." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Invisible Grills in Bangalore", href: "/invisible-grills-bangalore" },
     ],
   },
   "high-rise-apartment-balcony-safety": {
@@ -414,76 +338,6 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
-  "invisible-grill-cost-bangalore-2": {
-    slug: "invisible-grill-cost-bangalore-2",
-    title: "Invisible Grill Cost in Bangalore: A Practical Pricing Guide for 2024",
-    seoTitle: "Invisible Grill Cost Bangalore 2024 | MKR Safety Solutions",
-    seoDesc: "Wondering about invisible grill cost in Bangalore? Get a clear breakdown of pricing factors, per sq ft rates, and how to budget for your home.",
-    date: "2026-09-17",
-    readTime: "6 min read",
-    keyword: "invisible grill cost Bangalore",
-    content: [
-      { body: "If you've started researching invisible grills for your balcony, staircase, or terrace, the first question that comes up is almost always the same: how much will it actually cost? Unlike traditional MS grills where pricing is fairly standard, invisible grill cost in Bangalore depends on several factors that aren't always explained clearly. This guide breaks down everything that goes into the pricing so you can budget accurately before you start getting quotes." },
-      { heading: "How Invisible Grill Pricing Works", body: "Invisible grills are typically priced per running foot or per square foot, depending on the installer. The price includes the stainless steel wires, the fixing hardware (turnbuckles, hooks, and end fittings), and the labour for installation. Unlike a flat rate for a whole flat, most companies calculate cost based on the actual open area you want to secure, since every balcony, window, or staircase has a different shape and size." },
-      { heading: "What Affects the Final Price", body: "Several things influence what you'll pay: the total length of the area being covered, the height (staircases and double-height balconies need more wire and support points), the type of stainless steel used (marine-grade SS316 costs more than SS304 but lasts longer in Bangalore's varied weather), the complexity of the layout (curves, corners, and irregular shapes take more labour), and the accessibility of the site (higher floors or tricky access can add to installation charges)." },
-      { heading: "Balcony vs Staircase vs Terrace vs Window Grills", body: "Costs vary by application. Balcony invisible grills are usually the most straightforward since they cover a defined perimeter. Staircase grills tend to cost more per foot because of the height and the need for secure anchoring at multiple levels. Terrace grills, especially for larger open terraces common in Bangalore villas and independent houses, are priced based on total perimeter length. Window grills are generally the most affordable since the area covered is smaller, but pricing can still vary based on the number of windows and their size." },
-      { heading: "Why Cheaper Isn't Always Better", body: "It's tempting to go with the lowest quote, but with invisible grills, the wire quality and installation technique matter a lot for long-term safety. Poor quality wires can sag or rust over time, especially given Bangalore's monsoon season, and loose installation reduces the tension needed to keep the grill effective as a safety barrier. When comparing quotes, ask what grade of stainless steel is being used and whether the pricing includes all hardware and after-installation support." },
-      { heading: "Getting an Accurate Quote for Your Home", body: "Because every home is different, the best way to know your actual invisible grill cost is to get a site visit and measurement done rather than relying on a rough estimate over the phone. At MKR Safety Solutions, we visit your home or apartment in Bangalore, measure the exact areas you want covered, and give you a transparent, itemised quote with no hidden charges. This way, you know exactly what you're paying for before any installation begins." },
-      { heading: "Planning Your Invisible Grill Installation", body: "If you're budgeting for invisible grills across multiple areas of your home, it often works out more cost-effective to plan installation for the balcony, staircase, and terrace together rather than doing it in phases. This can also reduce overall labour costs since our team can complete the work in a single visit. Whether you're securing a single balcony or an entire villa, getting a personalised quote is the most reliable way to plan your budget." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
-      { label: "Get a Free Quote", href: "/contact-us" },
-    ],
-  },
-  "invisible-grill-cost-bangalore-3": {
-    slug: "invisible-grill-cost-bangalore-3",
-    title: "Invisible Grill Cost in Bangalore: A Practical Pricing Guide for 2024",
-    seoTitle: "Invisible Grill Cost Bangalore 2024 - Pricing Guide | MKR Safety Solutions",
-    seoDesc: "Wondering about invisible grill cost in Bangalore? Get a clear breakdown of pricing factors, per sq ft rates, and tips to choose the right installer.",
-    date: "2026-09-18",
-    readTime: "6 min read",
-    keyword: "invisible grill cost Bangalore",
-    content: [
-      { body: "If you're searching for the invisible grill cost in Bangalore, you've probably noticed that quotes vary quite a bit between vendors. This isn't unusual - invisible grill pricing depends on several factors like the area to be covered, the type of wire and hardware used, and the complexity of installation. In this guide, we break down exactly what goes into the cost so you can budget accurately and avoid surprises." },
-      { heading: "How Invisible Grill Pricing Works", body: "Invisible grills are typically priced on a per running foot or per square foot basis, depending on the vendor. Balcony and window grills are usually measured by running feet, while larger open areas like terraces may be quoted differently. The final cost also includes the stainless steel wires, tensioning hardware, brackets, and labour for installation. Getting a site visit and a detailed measurement is the only reliable way to get an accurate quote instead of relying on generic online estimates." },
-      { heading: "Factors That Affect Cost in Bangalore Homes", body: "A few things influence pricing for Bangalore homes specifically. Apartments in gated communities often have straightforward balcony shapes, which keep installation simple and cost-effective. Independent villas and older homes, on the other hand, may have irregular balcony curves, longer staircases, or larger terraces that require more wire and labour. The height of the building, ease of access for installation teams, and the number of grills needed across balconies, windows, and staircases in a single home all add up to the final quote." },
-      { heading: "Balcony vs Window vs Staircase vs Terrace Grills", body: "Each area of the home has different pricing considerations. Balcony invisible grills are the most commonly installed and tend to be moderately priced since they cover a defined perimeter. Window invisible grills are usually smaller in size, so they cost less per window but add up if you have many windows. Staircase invisible grills often need custom angling to follow the slope of the stairs, which can affect labour cost. Terrace invisible grills usually cover a larger open perimeter, so material quantity plays a bigger role in the final price." },
-      { heading: "Why the Cheapest Quote Isn't Always the Best Value", body: "It's tempting to go with the lowest invisible grill cost in Bangalore, but the quality of stainless steel wire and hardware makes a real difference in durability, especially with Bangalore's mix of dust, humidity, and rain. Cheaper installations sometimes use thinner or lower-grade wires that sag or corrode faster, leading to repeat expenses down the line. It's worth comparing what's included in the quote - wire quality, warranty on workmanship, and after-sales support - rather than just the headline price." },
-      { heading: "Getting an Accurate Quote for Your Home", body: "The best way to know your actual invisible grill cost is to book a free site visit. At MKR Safety Solutions, our team measures your balconies, windows, staircases, or terrace on-site and gives you a transparent, itemised quote with no hidden charges. This lets you compare accurately and make an informed decision based on your home's specific layout, rather than guessing from generic price ranges online." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
-      { label: "Get a Free Quote", href: "/contact-us" },
-    ],
-  },
-  "balcony-safety-net-alternative-4": {
-    slug: "balcony-safety-net-alternative-4",
-    title: "Balcony Safety Net Alternative: Why Invisible Grills Are Winning in Bangalore Homes",
-    seoTitle: "Best Balcony Safety Net Alternative in Bangalore | MKR Safety Solutions",
-    seoDesc: "Looking for a balcony safety net alternative? Discover why invisible grills are a stronger, longer-lasting choice for Bangalore homes and apartments.",
-    date: "2026-09-18",
-    readTime: "5 min read",
-    keyword: "balcony safety net alternative",
-    content: [
-      { body: "If you have been searching for a balcony safety net alternative, you have probably already noticed the common complaints from families who installed nets first: sagging ropes, yellowing threads, birds pecking at the mesh, and a balcony that suddenly looks like a construction site. Nets were once the go-to option because they were cheap and quick to install, but homeowners across Bangalore are now moving towards invisible grills for a safer, cleaner, and more permanent solution." },
-      { heading: "Why Bangalore Homeowners Are Rethinking Balcony Safety Nets", body: "Balcony safety nets work by covering the open area with a rope or nylon mesh. While they do offer some protection, the material is not built for long-term outdoor use. Bangalore's mix of intense sun, sudden showers, and dust means nets tend to weaken within a couple of years. The knots loosen, the mesh stretches under weight, and repairs become a recurring expense. For apartments facing busy roads or higher floors, this gradual wear is a genuine safety concern, not just a cosmetic one." },
-      { heading: "How Invisible Grills Compare as a Balcony Safety Net Alternative", body: "Invisible grills use high-tensile stainless steel cables fixed vertically at close intervals, strong enough to hold significant weight while remaining barely visible from indoors or outdoors. Unlike nets, there is no fabric to fray, no knots to loosen, and no sagging over time. The cables are weather-resistant and designed to handle Bangalore's rains and heat without frequent maintenance. This makes invisible grills a sturdier, longer-term balcony safety net alternative for families with children, elderly parents, or pets at home." },
-      { heading: "Aesthetic and Practical Benefits Over Nets", body: "One of the biggest reasons homeowners switch is appearance. Safety nets are bulky and immediately noticeable, often making balconies feel closed in and cluttered. Invisible grills, on the other hand, preserve your balcony's open view and natural light while still providing a strong physical barrier. You get uninterrupted views of your garden, street, or skyline, along with the peace of mind that comes with a reliable safety system that does not need constant patch-up work." },
-      { heading: "A Fit for Bangalore's Apartment and Villa Lifestyle", body: "Whether you live in a high-rise apartment in Whitefield, an independent villa in Sarjapur, or a gated community off Bannerghatta Road, invisible grills adapt easily to different balcony sizes and railing designs. They can be customised around irregular shapes, corner balconies, and existing grill work without the need for major structural changes. This flexibility is part of why more housing societies and individual homeowners across the city are choosing invisible grills over traditional nets for balconies, staircases, and terraces alike." },
-      { heading: "Making the Switch with MKR Safety Solutions", body: "At MKR Safety Solutions, we help Bangalore families move away from short-lived safety nets to durable, good-looking invisible grill installations. Our team assesses your balcony's layout, recommends the right cable spacing for child and pet safety, and completes installation with minimal disruption to your home. If you are tired of replacing nets every year or two, it is worth exploring invisible grills as a one-time investment in lasting balcony safety." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Get a Free Consultation", href: "/contact-us" },
-    ],
-  },
   "terrace-safety-railing": {
     slug: "terrace-safety-railing",
     title: "Terrace Safety Railing in Bangalore: Why Every Home Needs One",
@@ -504,29 +358,6 @@ const posts: Record<string, BlogPostData> = {
       { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
       { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
       { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
-      { label: "Get a Free Consultation", href: "/contact-us" },
-    ],
-  },
-  "pet-safety-balcony-grill-2": {
-    slug: "pet-safety-balcony-grill-2",
-    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
-    seoTitle: "Pet Safety Balcony Grill Installation in Bangalore | MKR Safety Solutions",
-    seoDesc: "Protect your pets from balcony falls with invisible pet safety balcony grills in Bangalore. Strong, discreet, and pet-friendly designs from MKR Safety Solutions.",
-    date: "2026-09-20",
-    readTime: "5 min read",
-    keyword: "pet safety balcony grill",
-    content: [
-      { body: "If you share your Bangalore home with a dog or cat, you already know how much they love the balcony. It's their favourite spot to watch birds, feel the breeze, or simply nap in the sun. But that same open railing or gap between balusters that gives them a great view can also be a serious safety hazard. A pet safety balcony grill is one of the simplest ways to let your pets enjoy the outdoors without you worrying about jumps, squeezes, or accidental falls." },
-      { heading: "Why Balconies Are Riskier Than You Think for Pets", body: "Cats are natural climbers and jumpers, often testing narrow ledges or railings that seem too small for them. Small and medium dog breeds can squeeze through gaps between grill bars or railing posts that look perfectly safe at first glance. In high-rise apartments across areas like Whitefield, Sarjapur Road, and Electronic City, even a momentary lapse in supervision can lead to a pet slipping through or over a railing. Unlike standard MS grills with wide gaps, an invisible grill system is designed to close off these vulnerable spaces completely." },
-      { heading: "How Invisible Grills Are Different from Regular Balcony Railings", body: "Traditional balcony railings are built with human safety and aesthetics in mind, not pets. The gaps between bars are usually wide enough for a cat to slip through or a small dog to push its head and body out. Invisible grills use thin, high-tensile stainless steel cables spaced closely together, forming a nearly invisible barrier that still blocks small paws, heads, and bodies from getting through. The result is a balcony that looks open and unobstructed while being genuinely secure for pets of almost any size." },
-      { heading: "Key Benefits of a Pet Safety Balcony Grill", body: "Beyond preventing falls, invisible grills let you keep your balcony doors open for ventilation and natural light without constantly monitoring your pet. They don't block your view the way bulky metal grills do, so you still get to enjoy the outdoors visually. The cables are also weather-resistant, which matters in Bangalore's mix of sun and monsoon rains, ensuring the grill stays strong and doesn't rust or sag over time. For multi-pet households, this single installation covers both curious cats and adventurous dogs." },
-      { heading: "Things to Consider Before Installation", body: "Before installing a pet safety balcony grill, think about the size and breed of your pet, since smaller pets need tighter cable spacing. If you have a very active or large dog that jumps or leans on railings, we recommend combining the grill with slightly reinforced anchoring points for added durability. It's also worth checking your building's society guidelines in Bangalore, as some gated communities have specific rules about balcony modifications, though invisible grills are generally approved due to their minimal visual impact." },
-      { heading: "Why Bangalore Pet Owners Are Choosing Invisible Grills", body: "With more Bangalore homes adopting pets, especially in apartment complexes without dedicated outdoor spaces, balconies have become the go-to spot for pets to get fresh air. Many of our clients in areas like Indiranagar, HSR Layout, and Koramangala have opted for pet safety balcony grills after a near-miss incident or simply as a precaution when bringing home a new puppy or kitten. It's a practical, one-time investment that gives pet parents real peace of mind, whether they're home or away at work." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
       { label: "Get a Free Consultation", href: "/contact-us" },
     ],
   },
@@ -551,52 +382,6 @@ const posts: Record<string, BlogPostData> = {
       { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
       { label: "Child Safety Grills", href: "/child-safety-grills" },
       { label: "Invisible Grills in Bangalore", href: "/invisible-grills-bangalore" },
-    ],
-  },
-  "window-safety-grill-for-apartments-2": {
-    slug: "window-safety-grill-for-apartments-2",
-    title: "Window Safety Grill for Apartments: A Practical Guide for Bangalore Homes",
-    seoTitle: "Window Safety Grill for Apartments in Bangalore | MKR Safety Solutions",
-    seoDesc: "Looking for a window safety grill for apartments in Bangalore? Learn why invisible grills are the safest, most stylish choice for high-rise homes.",
-    date: "2026-09-22",
-    readTime: "5 min read",
-    keyword: "window safety grill for apartments",
-    content: [
-      { body: "Bangalore's apartment culture has changed the way families think about home safety. With homes on higher floors, curious toddlers, playful pets, and window ledges that double up as seating, a window safety grill for apartments is no longer optional - it's essential. But traditional iron grills often feel like a compromise, blocking light, views, and ventilation. This is where invisible grills have quietly become the preferred solution for apartment owners across the city." },
-      { heading: "Why Apartment Windows Need Extra Attention", body: "Unlike independent houses, apartments often have larger windows, low sills, and balconies attached to bedrooms or living rooms. Many societies in areas like Whitefield, Sarjapur Road, and Electronic City have windows overlooking common areas or open shafts, which can be risky for children and elderly family members. Even if your society has general safety measures in place, individual window safety within your own flat is something only you can control." },
-      { heading: "The Problem with Traditional Window Grills", body: "Most apartment owners default to welded iron grills because that's what's always been done. But these grills come with real drawbacks - they rust in Bangalore's humid monsoon months, they visually clutter modern window designs, and they can even violate certain apartment association aesthetic guidelines. In emergencies, traditional grills can also make it harder to access windows for cleaning or ventilation, since they're usually fixed permanently." },
-      { heading: "How Invisible Grills Solve This", body: "Invisible grills use thin, high-tensile stainless steel wires or cables installed vertically or horizontally across the window frame, spaced closely enough to prevent a child from slipping through, yet nearly invisible from both inside and outside the home. This means you get complete safety coverage without blocking your view of the skyline or your natural light. For apartments with sliding or French windows, invisible grills fit neatly without interfering with the opening and closing mechanism." },
-      { heading: "Perfect for Modern Apartment Aesthetics", body: "Many new-age Bangalore apartments, especially in gated communities and premium projects, are designed with large glass windows and minimalist interiors. A bulky iron grill can immediately clash with this design language. Invisible grills, on the other hand, blend into the architecture, preserving the clean look builders and interior designers work hard to achieve, while still meeting the practical need for child and pet safety." },
-      { heading: "Getting It Right for Your Apartment", body: "Every apartment layout is different - some have grill windows facing balconies, some overlook staircases, and some are simply standalone bedroom windows. At MKR Safety Solutions, we visit your apartment, understand the specific window type and usage pattern, and recommend the right wire gauge and spacing before installation. This ensures your window safety grill for apartments is customised, not a one-size-fits-all fix, and works seamlessly with your existing window frames." },
-    ],
-    relatedServices: [
-      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Get a Free Consultation", href: "/contact-us" },
-    ],
-  },
-  "pet-safety-balcony-grill-3": {
-    slug: "pet-safety-balcony-grill-3",
-    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
-    seoTitle: "Pet Safety Balcony Grill Installation in Bangalore | MKR Safety Solutions",
-    seoDesc: "Protect your pets from balcony falls with a durable pet safety balcony grill. Invisible, pet-friendly grills for Bangalore homes by MKR Safety Solutions.",
-    date: "2026-09-23",
-    readTime: "4 min read",
-    keyword: "pet safety balcony grill",
-    content: [
-      { body: "If you share your Bangalore home with a cat or dog, you already know how much they love lounging by the balcony, watching birds, feeling the breeze, or just supervising the street below. But that same open railing or gap between balusters that makes balconies enjoyable can also be a serious hazard for curious pets. A pet safety balcony grill gives your furry companions the freedom to enjoy the outdoors while keeping them safely inside your home." },
-      { heading: "Why Balconies Are Riskier Than You Think for Pets", body: "Cats are natural climbers and jumpers, and even the most well-trained dog can slip through a gap while chasing a pigeon or a stray sound from the street. Many Bangalore apartments have railings with wide gaps or low parapet walls that were never designed with pets in mind. A sudden startle, an open gate left unattended, or simply a moment of excitement is often all it takes for a pet to end up in a dangerous fall." },
-      { heading: "How Invisible Grills Solve the Problem", body: "Unlike bulky mesh nets or metal grilles that block your view and sunlight, invisible grills use thin, high-tensile stainless steel wires spaced closely enough to prevent even small pets from squeezing through. They're installed vertically or horizontally depending on your balcony's design, creating an unobtrusive barrier that keeps pets in without turning your balcony into a cage. From the inside, you barely notice the wires; from the outside, your building's facade looks completely untouched." },
-      { heading: "Built to Handle Pet Behaviour", body: "Pets can be persistent when they want to reach something on the other side of a railing. Our invisible grills use marine-grade stainless steel wires under proper tension, so they hold firm against scratching, pawing, or a dog leaning its weight against them. The wires are also weather-resistant, which matters through Bangalore's monsoon months when balconies see a fair bit of rain and humidity." },
-      { heading: "A Solution That Works for the Whole Family", body: "Pet safety grills aren't just about pets. The same closely spaced wires that keep a cat from squeezing through also stop toddlers from getting a foot or arm caught between railings, and prevent items like flower pots, toys, or laundry from falling accidentally. For homes with both young children and pets, this makes an invisible grill a practical, dual-purpose safety upgrade rather than a pet-only accessory." },
-      { heading: "Getting It Right for Your Home in Bangalore", body: "Every balcony is different, some have grill railings already, others have glass or solid parapets, and the right spacing and installation approach depends on your pet's size and habits. Our team visits your home, checks the balcony layout, and recommends a wire spacing and configuration that suits both a small cat and a larger, more energetic dog. We also factor in Bangalore's building styles, from independent villas in Whitefield to high-rise apartments in Indiranagar, to ensure a clean, seamless fit." },
-    ],
-    relatedServices: [
-      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
-      { label: "Child Safety Grills", href: "/child-safety-grills" },
-      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
-      { label: "Contact Us", href: "/contact-us" },
     ],
   },
   "invisible-grill-electronic-city": {
@@ -682,7 +467,6 @@ export function SteelGradeBlogPost() { return <BlogPostPage data={posts["why-cho
 
 export function BalconySafetyNetAlternativeBlogPost() { return <BlogPostPage data={posts["balcony-safety-net-alternative"]} />; }
 
-export function BalconySafetyNetAlternative2BlogPost() { return <BlogPostPage data={posts["balcony-safety-net-alternative-2"]} />; }
 
 export function StainlessSteelSafetyWireBalconyBlogPost() { return <BlogPostPage data={posts["stainless-steel-safety-wire-balcony"]} />; }
 
@@ -690,29 +474,21 @@ export function InvisibleGrillVsIronGrillBlogPost() { return <BlogPostPage data=
 
 export function InvisibleGrillCostBangaloreBlogPost() { return <BlogPostPage data={posts["invisible-grill-cost-bangalore"]} />; }
 
-export function BalconySafetyNetAlternative3BlogPost() { return <BlogPostPage data={posts["balcony-safety-net-alternative-3"]} />; }
 
 export function PetSafetyBalconyGrillBlogPost() { return <BlogPostPage data={posts["pet-safety-balcony-grill"]} />; }
 
-export function InvisibleGrillVsIronGrill2BlogPost() { return <BlogPostPage data={posts["invisible-grill-vs-iron-grill-2"]} />; }
 
 export function HighRiseApartmentBalconySafetyBlogPost() { return <BlogPostPage data={posts["high-rise-apartment-balcony-safety"]} />; }
 
-export function InvisibleGrillCostBangalore2BlogPost() { return <BlogPostPage data={posts["invisible-grill-cost-bangalore-2"]} />; }
 
-export function InvisibleGrillCostBangalore3BlogPost() { return <BlogPostPage data={posts["invisible-grill-cost-bangalore-3"]} />; }
 
-export function BalconySafetyNetAlternative4BlogPost() { return <BlogPostPage data={posts["balcony-safety-net-alternative-4"]} />; }
 
 export function TerraceSafetyRailingBlogPost() { return <BlogPostPage data={posts["terrace-safety-railing"]} />; }
 
-export function PetSafetyBalconyGrill2BlogPost() { return <BlogPostPage data={posts["pet-safety-balcony-grill-2"]} />; }
 
 export function WindowSafetyGrillForApartmentsBlogPost() { return <BlogPostPage data={posts["window-safety-grill-for-apartments"]} />; }
 
-export function WindowSafetyGrillForApartments2BlogPost() { return <BlogPostPage data={posts["window-safety-grill-for-apartments-2"]} />; }
 
-export function PetSafetyBalconyGrill3BlogPost() { return <BlogPostPage data={posts["pet-safety-balcony-grill-3"]} />; }
 
 export function InvisibleGrillElectronicCityBlogPost() { return <BlogPostPage data={posts["invisible-grill-electronic-city"]} />; }
 

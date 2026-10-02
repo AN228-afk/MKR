@@ -98,33 +98,12 @@ export const locations = [
   { name: "KR Puram", slug: "kr-puram", landmarks: "KR Puram Bridge, BEML Township, Tin Factory" },
 ];
 
-export const blogPosts = [
-  {
-    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
-    slug: "pet-safety-balcony-grill-3",
-    excerpt: "Protect your pets from balcony falls with a durable pet safety balcony grill. Invisible, pet-friendly grills for Bangalore homes by MKR Safety Solutions.",
-    date: "2026-09-23",
-    readTime: "4 min read",
-  },
-  {
-    title: "Window Safety Grill for Apartments: A Practical Guide for Bangalore Homes",
-    slug: "window-safety-grill-for-apartments-2",
-    excerpt: "Looking for a window safety grill for apartments in Bangalore? Learn why invisible grills are the safest, most stylish choice for high-rise homes.",
-    date: "2026-09-22",
-    readTime: "5 min read",
-  },
+const blogPostsRaw = [
   {
     title: "Window Safety Grill for Apartments: A Complete Guide for Bangalore Homes",
     slug: "window-safety-grill-for-apartments",
     excerpt: "Looking for a window safety grill for apartments in Bangalore? Discover invisible grill options that protect kids and pets without blocking your view.",
     date: "2026-09-21",
-    readTime: "5 min read",
-  },
-  {
-    title: "Pet Safety Balcony Grills: Keeping Your Furry Friends Safe in Bangalore Homes",
-    slug: "pet-safety-balcony-grill-2",
-    excerpt: "Protect your pets from balcony falls with invisible pet safety balcony grills in Bangalore. Strong, discreet, and pet-friendly designs from MKR Safety Solutions.",
-    date: "2026-09-20",
     readTime: "5 min read",
   },
   {
@@ -135,27 +114,6 @@ export const blogPosts = [
     readTime: "5 min read",
   },
   {
-    title: "Invisible Grill Cost in Bangalore: A Practical Pricing Guide for 2024",
-    slug: "invisible-grill-cost-bangalore-3",
-    excerpt: "Wondering about invisible grill cost in Bangalore? Get a clear breakdown of pricing factors, per sq ft rates, and tips to choose the right installer.",
-    date: "2026-09-18",
-    readTime: "6 min read",
-  },
-  {
-    title: "Balcony Safety Net Alternative: Why Invisible Grills Are Winning in Bangalore Homes",
-    slug: "balcony-safety-net-alternative-4",
-    excerpt: "Looking for a balcony safety net alternative? Discover why invisible grills are a stronger, longer-lasting choice for Bangalore homes and apartments.",
-    date: "2026-09-18",
-    readTime: "5 min read",
-  },
-  {
-    title: "Invisible Grill Cost in Bangalore: A Practical Pricing Guide for 2024",
-    slug: "invisible-grill-cost-bangalore-2",
-    excerpt: "Wondering about invisible grill cost in Bangalore? Get a clear breakdown of pricing factors, per sq ft rates, and how to budget for your home.",
-    date: "2026-09-17",
-    readTime: "6 min read",
-  },
-  {
     title: "High Rise Apartment Balcony Safety: What Every Bangalore Resident Should Know",
     slug: "high-rise-apartment-balcony-safety",
     excerpt: "Practical guide to high rise apartment balcony safety in Bangalore. Learn risks, solutions and how invisible grills protect your family without blocking views.",
@@ -163,32 +121,11 @@ export const blogPosts = [
     readTime: "5 min read",
   },
   {
-    title: "Invisible Grill vs Iron Grill: Which One Should You Choose for Your Bangalore Home?",
-    slug: "invisible-grill-vs-iron-grill-2",
-    excerpt: "Confused between invisible grill vs iron grill for your home? Compare safety, looks, cost & maintenance to make the right choice in Bangalore.",
-    date: "2026-09-15",
-    readTime: "6 min read",
-  },
-  {
-    title: "Balcony Safety Net Alternative: Why Invisible Grills Are a Better Choice for Bangalore Homes",
-    slug: "balcony-safety-net-alternative-3",
-    excerpt: "Looking for a balcony safety net alternative? See why invisible grills offer better safety, looks, and durability for Bangalore homes.",
-    date: "2026-09-14",
-    readTime: "6 min read",
-  },
-  {
     title: "Pet Safety Balcony Grills: Keeping Your Dogs and Cats Safe in Bangalore Apartments",
     slug: "pet-safety-balcony-grill",
     excerpt: "Protect your pets with invisible pet safety balcony grills in Bangalore. Sturdy, escape-proof, and pet-friendly designs that don't block your view.",
     date: "2026-09-14",
     readTime: "5 min read",
-  },
-  {
-    title: "Balcony Safety Net Alternative: Why Bangalore Homeowners Are Switching to Invisible Grills",
-    slug: "balcony-safety-net-alternative-2",
-    excerpt: "Looking for a balcony safety net alternative in Bangalore? Discover why invisible grills offer better safety, looks, and durability than nets.",
-    date: "2026-09-13",
-    readTime: "6 min read",
   },
   {
     title: "Stainless Steel Safety Wire Balcony Grills: The Complete Guide for Bangalore Homes",
@@ -337,3 +274,6 @@ export const testimonials = [
     service: "Invisible Grills",
   },
 ];
+
+// Newest first, so new daily posts show at the top of /blog and the homepage
+export const blogPosts = [...blogPostsRaw].sort((a, b) => b.date.localeCompare(a.date));
