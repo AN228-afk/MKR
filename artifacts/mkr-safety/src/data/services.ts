@@ -290,6 +290,14 @@ export const blogPosts = [
     readTime: "7 min read",
     keyword: "balcony safety checklist for parents",
   },
+  {
+    title: "Invisible Grill Horizontal vs Vertical: Which Wire Orientation Should You Choose?",
+    slug: "invisible-grill-horizontal-vs-vertical",
+    excerpt: "Most homeowners don't realise invisible grills can be installed with horizontal or vertical wire runs - and the choice affects safety, strength, and even your view. Here's how to decide.",
+    date: "2026-10-02",
+    readTime: "6 min read",
+    keyword: "invisible grill horizontal vs vertical",
+  },
 ];
 
 export const testimonials = [
