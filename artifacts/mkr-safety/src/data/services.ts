@@ -235,6 +235,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill horizontal vs vertical",
   },
+  {
+    title: "Invisible Grills and the Pigeon Problem: A Practical Solution for Bangalore Balconies",
+    slug: "invisible-grill-and-pigeon-problem",
+    excerpt: "Pigeons nesting on your balcony aren't just messy, they're a health hazard. Here's how invisible grills help Bangalore homeowners keep pigeons away without blocking light or view.",
+    date: "2026-10-02",
+    readTime: "6 min read",
+    keyword: "invisible grill and pigeon problem",
+  },
 ];
 
 export const testimonials = [
