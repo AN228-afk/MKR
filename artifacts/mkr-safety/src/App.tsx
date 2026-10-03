@@ -58,6 +58,7 @@ const BalconySafetyChecklistForParentsBlogPost = lazy(() => import("@/pages/blog
 const InvisibleGrillHorizontalVsVerticalBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillHorizontalVsVerticalBlogPost })));
 const InvisibleGrillAndPigeonProblemBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillAndPigeonProblemBlogPost })));
 const InvisibleGrillForSchoolBuildingsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForSchoolBuildingsBlogPost })));
+const InvisibleGrillVsGlassRailingBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsGlassRailingBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -128,6 +129,8 @@ function Router() {
       <Route path="/blog/invisible-grill-and-pigeon-problem" component={InvisibleGrillAndPigeonProblemBlogPost} />
 
       <Route path="/blog/invisible-grill-for-school-buildings" component={InvisibleGrillForSchoolBuildingsBlogPost} />
+
+      <Route path="/blog/invisible-grill-vs-glass-railing" component={InvisibleGrillVsGlassRailingBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

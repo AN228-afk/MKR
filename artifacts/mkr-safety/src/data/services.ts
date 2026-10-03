@@ -251,6 +251,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill for school buildings",
   },
+  {
+    title: "Invisible Grill vs Glass Railing: Which Is Better for Your Bangalore Balcony?",
+    slug: "invisible-grill-vs-glass-railing",
+    excerpt: "Glass railings and invisible grills both promise unobstructed views, but they solve very different problems. Here's an honest, Bangalore-specific comparison to help you decide.",
+    date: "2026-10-03",
+    readTime: "7 min read",
+    keyword: "invisible grill vs glass railing",
+  },
 ];
 
 export const testimonials = [
