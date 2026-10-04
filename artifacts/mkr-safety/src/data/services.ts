@@ -259,6 +259,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill vs glass railing",
   },
+  {
+    title: "Invisible Grill Installation in HSR Layout: A Sector-by-Sector Guide for Local Homeowners",
+    slug: "invisible-grill-hsr-layout",
+    excerpt: "HSR Layout's mix of independent houses, villas, and gated apartments across its sectors means invisible grill installation isn't one-size-fits-all. Here's what local homeowners should know.",
+    date: "2026-10-04",
+    readTime: "6 min read",
+    keyword: "invisible grill HSR Layout",
+  },
 ];
 
 export const testimonials = [
