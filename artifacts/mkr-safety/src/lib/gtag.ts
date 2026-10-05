@@ -1,4 +1,4 @@
-const GOOGLE_ADS_CONVERSION_ID = "AW-18243106446/L_DTCOzgmdYcEI7t_vpD";
+const GOOGLE_ADS_CONVERSION_ID = "AW-18243106446";
 
 export function trackGoogleAdsConversion() {
     const w = window as any;
