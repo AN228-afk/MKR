@@ -48,10 +48,17 @@ SITEMAP_FILE = os.path.join(APP_DIR, "public", "sitemap.xml")
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 FIREBASE_SERVICE_ACCOUNT = os.environ["FIREBASE_SERVICE_ACCOUNT"]
 
-BLOGGER_CLIENT_ID = os.environ.get("BLOGGER_CLIENT_ID")
-BLOGGER_CLIENT_SECRET = os.environ.get("BLOGGER_CLIENT_SECRET")
-BLOGGER_REFRESH_TOKEN = os.environ.get("BLOGGER_REFRESH_TOKEN")
-BLOGGER_BLOG_ID = os.environ.get("BLOGGER_BLOG_ID")
+def _clean_secret(name):
+    """Strip spaces, newlines and stray quotes that sneak in when pasting secrets."""
+    v = os.environ.get(name)
+    if v is None:
+        return None
+    return v.strip().strip('"').strip("'").strip()
+
+BLOGGER_CLIENT_ID = _clean_secret("BLOGGER_CLIENT_ID")
+BLOGGER_CLIENT_SECRET = _clean_secret("BLOGGER_CLIENT_SECRET")
+BLOGGER_REFRESH_TOKEN = _clean_secret("BLOGGER_REFRESH_TOKEN")
+BLOGGER_BLOG_ID = _clean_secret("BLOGGER_BLOG_ID")
 
 NAP_FOOTER_HTML = """
 <hr/>
@@ -447,6 +454,12 @@ def _get_blogger_access_token():
         timeout=30,
     )
     if response.status_code != 200:
+        # Safe diagnostics (never prints the secrets themselves)
+        print("Blogger auth check: "
+              f"client_id starts '{(BLOGGER_CLIENT_ID or '')[:12]}', "
+              f"client_secret length {len(BLOGGER_CLIENT_SECRET or '')}, "
+              f"refresh_token starts '{(BLOGGER_REFRESH_TOKEN or '')[:6]}' "
+              f"length {len(BLOGGER_REFRESH_TOKEN or '')}")
         raise RuntimeError(f"Google token error {response.status_code}: {response.text}")
     return response.json()["access_token"]
 
