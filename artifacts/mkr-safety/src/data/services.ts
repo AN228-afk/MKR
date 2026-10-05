@@ -271,6 +271,27 @@ const blogPostsRaw = [
 
 export const testimonials = [
   {
+    name: "Pradeep P.",
+    location: "Bangalore",
+    rating: 5,
+    text: "Work done very well. It was tough job, done with patience and neat work.",
+    service: "Invisible Grills",
+  },
+  {
+    name: "Neeraj D.",
+    location: "Bangalore",
+    rating: 5,
+    text: "Quick, efficient and nice work.",
+    service: "Invisible Grills",
+  },
+  {
+    name: "Neha K.",
+    location: "Bangalore",
+    rating: 5,
+    text: "Quality work.",
+    service: "Invisible Grills",
+  },
+  {
     name: "Ganesh J.",
     location: "Purva Park Hill",
     rating: 5,
