@@ -29,6 +29,7 @@ import re
 import json
 import random
 import subprocess
+import sys
 from datetime import date
 
 import requests
@@ -45,8 +46,8 @@ SERVICES_FILE = os.path.join(APP_DIR, "src", "data", "services.ts")
 APP_TSX_FILE = os.path.join(APP_DIR, "src", "App.tsx")
 SITEMAP_FILE = os.path.join(APP_DIR, "public", "sitemap.xml")
 
-ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-FIREBASE_SERVICE_ACCOUNT = os.environ["FIREBASE_SERVICE_ACCOUNT"]
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+FIREBASE_SERVICE_ACCOUNT = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
 
 def _clean_secret(name):
     """Strip spaces, newlines and stray quotes that sneak in when pasting secrets."""
@@ -525,6 +526,8 @@ def git_commit_and_push(post):
     run('git config user.email "blog-bot@users.noreply.github.com"')
     run("git add -A")
     run(f'git commit -m "Add blog post: {post["title"]}" || echo "Nothing to commit"')
+    # Pick up any commits pushed while this job was running, then push
+    run("git pull --rebase --autostash origin main")
     run("git push")
 
 
@@ -555,7 +558,26 @@ def deploy_site():
 # Main
 # ---------------------------------------------------------------------------
 
+def test_blogger():
+    """Check Blogger credentials without generating or publishing a post."""
+    print(f"Blogger auth check: client_id starts '{(BLOGGER_CLIENT_ID or '')[:12]}', "
+          f"client_secret length {len(BLOGGER_CLIENT_SECRET or '')}, "
+          f"refresh_token starts '{(BLOGGER_REFRESH_TOKEN or '')[:6]}' length {len(BLOGGER_REFRESH_TOKEN or '')}, "
+          f"blog_id length {len(BLOGGER_BLOG_ID or '')}")
+    token = _get_blogger_access_token()
+    print("Blogger token OK")
+    r = requests.get(f"https://www.googleapis.com/blogger/v3/blogs/{BLOGGER_BLOG_ID}",
+                     headers={"Authorization": f"Bearer {token}"}, timeout=30)
+    if r.status_code != 200:
+        raise RuntimeError(f"Blogger API error {r.status_code}: {r.text}")
+    b = r.json()
+    print(f"Blogger connected: '{b.get('name')}' {b.get('url')}")
+
+
 def main():
+    if "--test-blogger" in sys.argv:
+        test_blogger()
+        return
     existing_slugs = get_existing_slugs()
 
     topic = get_topic(existing_slugs)
