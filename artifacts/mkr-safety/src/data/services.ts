@@ -275,6 +275,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill gap spacing for kids",
   },
+  {
+    title: "Invisible Grill for Balcony: Finding the Right Fit for Every Balcony Shape in Bangalore",
+    slug: "invisible-grill-for-balcony",
+    excerpt: "Not all balconies are the same shape - here's how invisible grills are adapted for rectangular, corner, curved, and compact balconies across Bangalore.",
+    date: "2026-10-05",
+    readTime: "6 min read",
+    keyword: "invisible grill for balcony",
+  },
 ];
 
 export const testimonials = [
