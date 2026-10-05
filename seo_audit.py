@@ -42,7 +42,7 @@ def fetch_pagespeed(strategy):
         f"&category=accessibility&category=seo&category=best-practices{key_param}"
     )
     try:
-        with urllib.request.urlopen(url, timeout=60) as resp:
+        with urllib.request.urlopen(url, timeout=120) as resp:
             data = json.loads(resp.read())
         cats = data["lighthouseResult"]["categories"]
         return {k: round(v["score"] * 100) for k, v in cats.items()}
@@ -101,6 +101,9 @@ def main():
                              f"Accessibility {desktop.get('accessibility','?')}, "
                              f"Best Practices {desktop.get('best-practices','?')}, "
                              f"SEO {desktop.get('seo','?')}\n")
+    if not mobile and not desktop:
+        report_lines.append("PageSpeed scores could not be fetched this week (Google API limit or timeout). "
+                            "Add a free PAGESPEED_API_KEY secret in GitHub to make this reliable, or check manually at https://pagespeed.web.dev/\n")
 
     oversized = find_oversized_images()
     fixed_any = False

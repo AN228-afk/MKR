@@ -27,9 +27,10 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm@9
 
-      - name: Install mkr-safety dependencies (for sharp)
-        working-directory: ./artifacts/mkr-safety
-        run: pnpm install --frozen-lockfile
+      - name: Install dependencies (for sharp + build)
+        run: |
+          pnpm install --no-frozen-lockfile
+          cd artifacts/mkr-safety && pnpm install --no-frozen-lockfile
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,6 +38,8 @@ jobs:
           python-version: "3.11"
 
       - name: Run SEO audit
+        env:
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
         run: python seo_audit.py
 
       - name: Rebuild and deploy if images were fixed
@@ -63,6 +66,8 @@ jobs:
           git config user.email "actions@github.com"
           git add seo-reports/ attached_assets/
           git diff --staged --quiet || git commit -m "Weekly SEO audit report"
+          # The daily blog bot may have pushed meanwhile — pick that up first
+          git pull --rebase --autostash origin main
           git push
 
       - name: Open a GitHub issue with the report
@@ -72,5 +77,6 @@ jobs:
           TODAY=$(date -u +%Y-%m-%d)
           REPORT_FILE="seo-reports/${TODAY}.md"
           if [ -f "$REPORT_FILE" ]; then
-            gh issue create --title "SEO Audit — ${TODAY}" --body-file "$REPORT_FILE" --label "seo-audit" || true
+            gh label create "seo-audit" --color "C08A3E" --description "Weekly SEO audit" 2>/dev/null || true
+            gh issue create --title "SEO Audit — ${TODAY}" --body-file "$REPORT_FILE" --label "seo-audit"
           fi
