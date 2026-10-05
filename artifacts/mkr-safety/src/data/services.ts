@@ -283,6 +283,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for balcony",
   },
+  {
+    title: "Invisible Grill for Senior Citizens: A Safety Guide for Aging Parents in Bangalore",
+    slug: "invisible-grill-for-senior-citizens",
+    excerpt: "Many Bangalore families install invisible grills for children, but the needs of senior citizens at home are just as important. Here's what to consider when choosing invisible grills for elderly parents.",
+    date: "2026-10-05",
+    readTime: "7 min read",
+    keyword: "invisible grill for senior citizens",
+  },
 ];
 
 export const testimonials = [
