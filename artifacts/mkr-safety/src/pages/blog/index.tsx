@@ -620,6 +620,31 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-installation-process": {
+    slug: "invisible-grill-installation-process",
+    title: "Invisible Grill Installation Process: What Actually Happens, Step by Step",
+    seoTitle: "Invisible Grill Installation Process Explained Step-by-Step | MKR Safety Solutions",
+    seoDesc: "Curious about the invisible grill installation process? Here's exactly what happens from site visit to final handover, explained step by step for Bangalore homes.",
+    date: "2026-10-05",
+    readTime: "7 min read",
+    keyword: "invisible grill installation process",
+    content: [
+      { body: "Most people searching for invisible grills already know what they are and why they're useful. What they actually want to know before booking is simpler: what happens on the day, how long it takes, and what they need to prepare. This post walks through the real, practical installation process step by step, so you know exactly what to expect when a team shows up at your Bangalore home." },
+      { heading: "Step 1: Site Visit and Measurement", body: "Every installation starts with a site visit. A technician comes to your home to measure the exact length and height of each balcony, window, or staircase opening that needs covering. They also check the type of wall or railing surface (concrete, granite, metal), note any obstructions like grilles, AC units, or sloped sills, and check whether the structure can safely hold anchor points. This visit takes 20-30 minutes and is usually free. At the end of it, you'll get a rough sq ft calculation and a sense of pricing, which for MKR falls between \u20b9100 and \u20b9160 per sq ft depending on the layout." },
+      { heading: "Step 2: Material Selection and Order Confirmation", body: "Once measurements are confirmed, you decide on cable thickness (2.5mm or 3mm) and spacing based on your household's needs - for example, tighter spacing if you have small children or pets. The price stays the same regardless of which cable thickness you choose, so this decision is purely about safety and aesthetics, not budget. Once confirmed, the order is scheduled and materials are cut to size before the installation date." },
+      { heading: "Step 3: Marking and Drilling Anchor Points", body: "On installation day, the team first marks out where each anchor point will be drilled - usually along the top and bottom of the railing or window frame, and at the sides. Drilling is done carefully to avoid cracking tiles, granite, or plaster. Dust sheets or covers are typically used to protect the floor and furniture nearby. This is usually the noisiest and messiest part of the process, and it's worth keeping pets and children away from the work area during this stage." },
+      { heading: "Step 4: Fixing Anchors and Running the Cables", body: "Once the anchor points are drilled and fitted, the steel cables are threaded through in a horizontal or vertical pattern, as decided earlier. Each cable is passed through the anchors and gradually tensioned so there's no sagging. For larger balconies or terraces, this step is done in sections to keep tension even across the full length." },
+      { heading: "Step 5: Tensioning and Alignment Check", body: "This is the step that separates a good installation from a poor one. Each cable is individually tightened and checked for uniform tension - loose cables defeat the purpose of the grill, while uneven tensioning can cause visible sagging over time. The technician checks spacing at multiple points along the run, not just the ends, to make sure gaps stay consistent." },
+      { heading: "Step 6: Final Inspection, Cleanup, and Handover", body: "Once all cables are fixed, the team does a final walk-through - checking for sharp edges at anchor points, confirming there's no play in the cables, and cleaning up any dust or debris from drilling. You'll typically get a quick explanation of basic care (wiping down cables, avoiding leaning heavy objects on them) before the team leaves. A straightforward balcony installation usually wraps up in a few hours; larger terraces or multiple windows may take a full day." },
+      { heading: "Questions to Ask Before You Book", body: "Before confirming any installation, it's worth asking: how many anchor points per running foot, what grade of steel is being used, whether the quote is final or subject to change after measurement, and what the warranty covers. For an exact quote based on your home's layout, call or WhatsApp 077801 14547, or book a free site visit with MKR Safety Solutions." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+      { label: "Book a Free Site Visit", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -675,3 +700,5 @@ export function InvisibleGrillGapSpacingForKidsBlogPost() { return <BlogPostPage
 export function InvisibleGrillForBalconyBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-balcony"]} />; }
 
 export function InvisibleGrillForSeniorCitizensBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-senior-citizens"]} />; }
+
+export function InvisibleGrillInstallationProcessBlogPost() { return <BlogPostPage data={posts["invisible-grill-installation-process"]} />; }

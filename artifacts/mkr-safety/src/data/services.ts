@@ -291,6 +291,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill for senior citizens",
   },
+  {
+    title: "Invisible Grill Installation Process: What Actually Happens, Step by Step",
+    slug: "invisible-grill-installation-process",
+    excerpt: "Wondering what actually happens on installation day? Here's a clear, step-by-step walkthrough of the entire invisible grill installation process, from the first site visit to the final cable tensioning.",
+    date: "2026-10-05",
+    readTime: "7 min read",
+    keyword: "invisible grill installation process",
+  },
 ];
 
 export const testimonials = [
