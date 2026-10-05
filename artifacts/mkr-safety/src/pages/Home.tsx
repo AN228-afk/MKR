@@ -113,7 +113,7 @@ const localBusinessSchema = {
   description: "Premium invisible grill installation in Bangalore. Balcony, window, staircase, terrace, and villa grills. 316-grade marine SS cables. 10-year warranty.",
   url: "https://mkrsafetysolutions.com",
   telephone: "+91-77801-14547",
-  email: "info@mkrsafetysolutions.com",
+  email: "mkrsafetysolutions@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Bangalore",

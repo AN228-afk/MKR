@@ -43,7 +43,7 @@ export default function Contact() {
                   {[
                     { icon: Phone, label: "Phone", value: "+91 77801 14547", href: "tel:+917780114547" },
                     { icon: MessageCircle, label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/917780114547" },
-                    { icon: Mail, label: "Email", value: "info@mkrsafetysolutions.com", href: "mailto:info@mkrsafetysolutions.com" },
+                    { icon: Mail, label: "Email", value: "mkrsafetysolutions@gmail.com", href: "mailto:mkrsafetysolutions@gmail.com" },
                     { icon: MapPin, label: "Location", value: "Bangalore, Karnataka, India", href: undefined },
                     { icon: Clock, label: "Hours", value: "Mon–Sat: 9 AM – 7 PM", href: undefined },
                   ].map(({ icon: Icon, label, value, href }) => (

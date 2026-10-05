@@ -203,7 +203,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </p>
               <div className="flex flex-col gap-1 text-sm text-primary-foreground/80">
                 <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="hover:text-secondary transition-colors">+91 77801 14547</a>
-                <a href="mailto:info@mkrsafetysolutions.com" className="hover:text-secondary transition-colors">info@mkrsafetysolutions.com</a>
+                <a href="mailto:mkrsafetysolutions@gmail.com" className="hover:text-secondary transition-colors">mkrsafetysolutions@gmail.com</a>
                 <span>Bangalore, Karnataka, India</span>
               </div>
             </div>
