@@ -7,11 +7,12 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { InquiryForm } from "@/components/InquiryForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { testimonials, services, locations } from "@/data/services";
-import hero from "@assets/MKR_3_1780926061320.png";
-import img2 from "@assets/MKR_2_1780926061320.png";
+import hero from "@assets/MKR_3_1780926061320.webp";
+import img2 from "@assets/MKR_2_1780926061320.webp";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
-  { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 4.9-star Google rating from 500+ reviews, 1000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 10-year warranty." },
+  { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 10+ reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 10-year warranty." },
   { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹220 per sq ft with MKR Safety Solutions. Balcony grills: ₹120–₹180/sq ft. Window grills: ₹100–₹160/sq ft. Staircase grills: ₹150–₹220/sq ft. We provide free site visits with transparent quotes." },
   { q: "Which areas in Bangalore does MKR Safety Solutions serve?", a: "MKR Safety Solutions serves all major areas of Bangalore including Whitefield, Koramangala, HSR Layout, Indiranagar, Electronic City, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, Hebbal, Yelahanka, and KR Puram." },
   { q: "How long does invisible grill installation take in Bangalore?", a: "A standard balcony installation takes 3–5 hours. Full apartment installations with multiple balconies and windows are typically completed in 1–2 days. We work around your schedule including weekends." },
@@ -29,7 +30,7 @@ const schema = {
     url: "https://mkrsafetysolutions.com",
     telephone: "+91-77801-14547",
     address: { "@type": "PostalAddress", addressLocality: "Bangalore", addressRegion: "Karnataka", addressCountry: "IN" },
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "500" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "10" },
   },
   areaServed: locations.map(l => ({ "@type": "City", name: l.name })),
 };
@@ -39,7 +40,7 @@ export default function InvisibleGrillsBangalore() {
     <Layout>
       <SEOHead
         title="Invisible Grills Bangalore | Best Price, 10-Yr Warranty | MKR Safety Solutions"
-        description="Bangalore's #1 invisible grill company. Balcony, window, staircase & terrace grills. 316-grade SS, 4.9★ rating, 1000+ installs, 10-year warranty. Free site visit."
+        description="Bangalore's #1 invisible grill company. Balcony, window, staircase & terrace grills. 316-grade SS, 5.0★ rating, 2000+ installs, 10-year warranty. Free site visit."
         canonical="https://mkrsafetysolutions.com/invisible-grills-bangalore"
         schema={schema}
       />
@@ -67,7 +68,7 @@ export default function InvisibleGrillsBangalore() {
               MKR Safety Solutions is Bangalore's most trusted invisible grill installer. From individual balconies to entire villa complexes, we protect families with ultra-fine 316-grade marine stainless steel cables.
             </p>
             <div className="flex flex-wrap gap-3 mb-6">
-              {["1000+ Installs", "4.9★ Google", "10-Yr Warranty", "Free Site Visit"].map(b => (
+              {["2000+ Installs", "5.0★ Google", "10-Yr Warranty", "Free Site Visit"].map(b => (
                 <span key={b} className="px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold">{b}</span>
               ))}
             </div>
@@ -75,7 +76,7 @@ export default function InvisibleGrillsBangalore() {
               <Link href="/contact-us" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity inline-flex items-center gap-2">
                 Get Free Quote <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="tel:+917780114547" className="px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all inline-flex items-center gap-2">
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all inline-flex items-center gap-2">
                 <Phone className="w-4 h-4" /> Call Now
               </a>
             </div>
@@ -94,9 +95,9 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto">Comprehensive invisible grill solutions for every application — from individual apartments to large villas.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "Balcony Grills", href: "/balcony-invisible-grills", price: "₹120–180/sq ft", img: hero },
-              { label: "Window Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: img2 },
-              { label: "Staircase Grills", href: "/staircase-invisible-grills", price: "₹150–220/sq ft", img: hero },
+              { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills", price: "₹120–180/sq ft", img: hero },
+              { label: "Window Invisible Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: img2 },
+              { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills", price: "₹150–220/sq ft", img: hero },
               { label: "Child Safety Grills", href: "/child-safety-grills", price: "₹130–190/sq ft", img: img2 },
             ].map(s => (
               <Link key={s.href} href={s.href}>
@@ -142,13 +143,13 @@ export default function InvisibleGrillsBangalore() {
               "8+ years of experience in Bangalore's invisible grill market",
               "316-grade marine stainless steel — the highest available grade",
               "Load tested to 250kg per linear meter — certified safe",
-              "4.9-star Google rating from 500+ genuine Bangalore customers",
+              "5.0-star Google rating from 10+ genuine Bangalore customers",
               "Free site visit with transparent, itemized quotations",
               "Same-day site visits available across all Bangalore areas",
               "Professional installation completed in 3–5 hours",
               "10-year comprehensive warranty on all installations",
               "Dedicated after-sales support and annual maintenance",
-              "1000+ successful installations across 12+ Bangalore neighborhoods",
+              "2000+ successful installations across 12+ Bangalore neighborhoods",
             ].map((b, i) => (
               <div key={i} className="flex items-start gap-3 p-3 bg-muted rounded-lg">
                 <CheckCircle className="w-4 h-4 text-secondary flex-shrink-0 mt-0.5" />
@@ -179,7 +180,7 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 10-year warranty. Call or WhatsApp us now.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-            <a href="tel:+917780114547" className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+            <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" /> Call +91 77801 14547
             </a>
           </div>

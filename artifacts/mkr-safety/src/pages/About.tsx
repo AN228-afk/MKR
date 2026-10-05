@@ -4,15 +4,15 @@ import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
-import logoPath from "@assets/MKR_PHOTO_1780926061320.jpeg";
-import hero from "@assets/MKR_3_1780926061320.png";
+import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
+import hero from "@assets/MKR_3_1780926061320.webp";
 
 export default function About() {
   return (
     <Layout>
       <SEOHead
         title="About MKR Safety Solutions | Bangalore's Trusted Invisible Grill Company"
-        description="Learn about MKR Safety Solutions — Bangalore's leading invisible grill company with 8+ years of experience, 1000+ installations, and a 4.9-star Google rating."
+        description="Learn about MKR Safety Solutions — Bangalore's leading invisible grill company with 8+ years of experience, 2000+ installations, and a 5.0-star Google rating."
         canonical="https://mkrsafetysolutions.com/about-us"
       />
 
@@ -64,7 +64,7 @@ export default function About() {
             {[
               { icon: Shield, title: "Safety First", desc: "Every installation meets the highest safety standards, tested to 250kg per linear meter." },
               { icon: Award, title: "Uncompromising Quality", desc: "We only use 316-grade marine stainless steel — never inferior substitutes." },
-              { icon: Users, title: "Customer Trust", desc: "4.9 stars on Google from 500+ reviews. We earn trust one family at a time." },
+              { icon: Users, title: "Customer Trust", desc: "5.0 stars on Google from 10+ reviews. We earn trust one family at a time." },
               { icon: MapPin, title: "Local Expertise", desc: "Deep knowledge of Bangalore's construction styles, weather, and apartment types." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="text-center p-6 bg-muted rounded-xl border border-border">

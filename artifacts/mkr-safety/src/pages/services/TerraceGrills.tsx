@@ -1,5 +1,5 @@
 import { ServicePage } from "./ServicePage";
-import heroImg from "@assets/MKR_2_1780926061320.png";
+import heroImg from "@assets/MKR_2_1780926061320.webp";
 
 const data = {
   title: "Terrace Invisible Grills",
@@ -41,8 +41,8 @@ const data = {
     { q: "How much does terrace grill installation cost in Bangalore?", a: "Terrace invisible grills cost ₹130–₹200 per square foot in Bangalore. The total cost depends on the perimeter length and the cable height required. We provide free site visits with itemized quotes." },
   ],
   relatedServices: [
-    { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-    { label: "Villa Grills", href: "/villa-invisible-grills" },
+    { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+    { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
     { label: "Child Safety Grills", href: "/child-safety-grills" },
   ],
   relatedLocations: [

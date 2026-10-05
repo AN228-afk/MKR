@@ -3,17 +3,18 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
-import logoPath from "@assets/MKR_PHOTO_1780926061320.jpeg";
+import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
+import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const taglines = ["Invisible Grills", "Child Safety Experts", "10-Year Warranty", "Free Site Visit"];
 
 const services = [
   { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
-  { label: "Balcony Grills", href: "/balcony-invisible-grills" },
-  { label: "Window Grills", href: "/window-invisible-grills" },
-  { label: "Staircase Grills", href: "/staircase-invisible-grills" },
-  { label: "Terrace Grills", href: "/terrace-invisible-grills" },
-  { label: "Villa Grills", href: "/villa-invisible-grills" },
+  { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+  { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+  { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+  { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+  { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
   { label: "Child Safety Grills", href: "/child-safety-grills" },
   { label: "School Safety Grills", href: "/school-safety-grills" },
 ];
@@ -70,7 +71,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: -14, opacity: 0 }}
                       transition={{ duration: 0.35 }}
-                      className="block text-[10px] font-semibold text-secondary uppercase tracking-wide whitespace-nowrap"
+                      className="block text-[10px] font-semibold text-[hsl(44,65%,32%)] uppercase tracking-wide whitespace-nowrap"
                     >
                       {taglines[tagIdx]}
                     </motion.span>
@@ -118,7 +119,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
             <div className="flex items-center gap-3">
               <a
-                href="tel:+917780114547"
+                href="tel:+917780114547" onClick={trackGoogleAdsConversion}
                 className="hidden md:flex items-center gap-2 text-sm text-foreground hover:text-secondary transition-colors"
                 aria-label="Call MKR Safety Solutions"
               >
@@ -201,14 +202,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
               </p>
               <div className="flex flex-col gap-1 text-sm text-primary-foreground/80">
-                <a href="tel:+917780114547" className="hover:text-secondary transition-colors">+91 77801 14547</a>
+                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="hover:text-secondary transition-colors">+91 77801 14547</a>
                 <a href="mailto:info@mkrsafetysolutions.com" className="hover:text-secondary transition-colors">info@mkrsafetysolutions.com</a>
                 <span>Bangalore, Karnataka, India</span>
               </div>
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Services</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Services</h3>
               <ul className="space-y-2">
                 {services.map((s) => (
                   <li key={s.href}>
@@ -221,7 +222,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Locations</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Locations</h3>
               <ul className="space-y-2">
                 {[
                   ["Whitefield", "/invisible-grills-whitefield"],
@@ -243,7 +244,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Quick Links</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 {[
                   ["About Us", "/about-us"],
