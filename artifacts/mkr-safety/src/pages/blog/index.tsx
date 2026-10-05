@@ -549,6 +549,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Get a Free Quote", href: "/contact-us" },
     ],
   },
+  "invisible-grill-gap-spacing-for-kids": {
+    slug: "invisible-grill-gap-spacing-for-kids",
+    title: "Invisible Grill Gap Spacing for Kids: How Much Space Is Actually Safe?",
+    seoTitle: "Invisible Grill Gap Spacing for Kids Explained | MKR Safety Solutions",
+    seoDesc: "Confused about invisible grill gap spacing for kids? Learn the ideal cable gaps, how spacing is calculated, and how to check your balcony is child-safe.",
+    date: "2026-10-05",
+    readTime: "6 min read",
+    keyword: "invisible grill gap spacing for kids",
+    content: [
+      { body: "Most parents who call us about invisible grills ask about steel grade or visibility - but very few ask the one question that matters most for child safety: how far apart are the cables actually spaced? Gap spacing is the single biggest factor that determines whether a toddler can slip a hand, foot, or head through your balcony or window grill. This post breaks down what spacing actually means, how it's decided, and how you can check it yourself." },
+      { heading: "What 'Gap Spacing' Really Means", body: "Invisible grills are made of thin stainless steel cables strung horizontally or vertically between anchor points, with a fixed gap between each cable. This gap - not the cable thickness - is what keeps a child from passing through. A 3mm cable and a 2.5mm cable look almost identical once installed, and at MKR Safety Solutions both are priced the same at \u20b9100-\u20b9160/sq ft. The cable diameter barely affects safety; the spacing between cables is what does the real work." },
+      { heading: "Why Spacing Matters More Than Most Parents Realise", body: "Children, especially under age 5, are flexible enough to squeeze a limb or even their head through gaps that look 'too small' to an adult eye. If the gap is wide enough for a small child's head to pass through at the widest point (usually the skull, not the shoulders), there is a real entrapment risk - the head goes through but the body can't follow, or vice versa. This is why spacing has to be tight and consistent across the entire grill, not just at eye level where it's easy to inspect." },
+      { heading: "How MKR Decides the Right Spacing for Your Home", body: "When we survey a balcony, staircase, or window, we factor in the age of children in the house, the height of the railing or parapet, and whether the area is also used for drying clothes, gardening, or pet access. For homes with toddlers, we tighten the gap spacing noticeably more than we would for a terrace used mainly by adults. The spacing is adjusted during installation itself - it isn't a one-size-fits-all number, which is why a proper site visit matters more than picking a random package online." },
+      { heading: "A Simple Way to Check Your Existing Grill", body: "If you already have grills installed and want to double-check the spacing, try this: take a small ball or tennis ball (roughly the size of a toddler's fist) and see if it passes through any gap along the length of the installation, not just one spot. Also check corners and the area near the floor, where sagging or incorrect tensioning sometimes widens the gap over time. If the ball slides through easily anywhere, the spacing needs to be corrected or re-tensioned." },
+      { heading: "Getting Spacing Right From the Start", body: "The best time to fix spacing is before installation, not after. A rushed or budget installation sometimes stretches cables further apart to save on material, which looks fine visually but compromises safety where it matters. At MKR Safety Solutions, our installers calculate spacing on site based on your family's needs, not a fixed template. If you'd like an exact quote or want us to assess the spacing on your balcony, staircase, or window grills, call or WhatsApp 077801 14547, or book a free site visit." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Book a Site Visit", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -598,3 +621,5 @@ export function InvisibleGrillForSchoolBuildingsBlogPost() { return <BlogPostPag
 export function InvisibleGrillVsGlassRailingBlogPost() { return <BlogPostPage data={posts["invisible-grill-vs-glass-railing"]} />; }
 
 export function InvisibleGrillHsrLayoutBlogPost() { return <BlogPostPage data={posts["invisible-grill-hsr-layout"]} />; }
+
+export function InvisibleGrillGapSpacingForKidsBlogPost() { return <BlogPostPage data={posts["invisible-grill-gap-spacing-for-kids"]} />; }

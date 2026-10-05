@@ -267,6 +267,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill HSR Layout",
   },
+  {
+    title: "Invisible Grill Gap Spacing for Kids: How Much Space Is Actually Safe?",
+    slug: "invisible-grill-gap-spacing-for-kids",
+    excerpt: "Not all invisible grills are spaced the same. Here's how gap spacing actually works, why it matters for small children, and how to check if your balcony or window grill is spaced safely.",
+    date: "2026-10-05",
+    readTime: "6 min read",
+    keyword: "invisible grill gap spacing for kids",
+  },
 ];
 
 export const testimonials = [
