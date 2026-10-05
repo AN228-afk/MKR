@@ -10,7 +10,7 @@ const data = {
   heroImg,
   heroAlt: "Terrace invisible grill installation with panoramic ocean and pool view from rooftop",
   intro: "Secure your rooftop terrace with robust cable systems that withstand Bangalore's climate while preserving panoramic 360-degree views. The perfect solution for terrace parties, family gatherings, and everyday relaxation.",
-  price: "130–200 per sq ft",
+  price: "100–160 per sq ft",
   benefits: [
     "360-degree perimeter safety — secure every side of your terrace",
     "Enjoy terrace views and natural breezes completely unobstructed",
@@ -38,7 +38,7 @@ const data = {
     { q: "Can invisible grills be installed on open terraces without parapets?", a: "Yes. For terraces without parapets, we install a structural post system that anchors to the terrace slab. Our team assesses each terrace individually to determine the best anchoring method." },
     { q: "Are terrace grills suitable for penthouses?", a: "Absolutely. Penthouse terrace grills are one of our most common installations. We work with penthouse owners across Bangalore's premium towers to provide elegant, invisible safety solutions." },
     { q: "Do terrace invisible grills affect cellular or WiFi signals?", a: "No. The stainless steel cables are too thin and sparse to have any meaningful impact on wireless signals." },
-    { q: "How much does terrace grill installation cost in Bangalore?", a: "Terrace invisible grills cost ₹130–₹200 per square foot in Bangalore. The total cost depends on the perimeter length and the cable height required. We provide free site visits with itemized quotes." },
+    { q: "How much does terrace grill installation cost in Bangalore?", a: "Terrace invisible grills cost ₹100–₹160 per square foot in Bangalore. The total cost depends on the perimeter length and the cable height required. We provide free site visits with itemized quotes." },
   ],
   relatedServices: [
     { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },

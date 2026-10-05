@@ -34,7 +34,7 @@ const faqCategories = [
   {
     category: "Pricing & Warranty",
     faqs: [
-      { q: "How much do invisible grills cost in Bangalore?", a: "Prices range from ₹100–₹220 per square foot depending on the type (balcony, window, staircase), the grade of steel, and the complexity of installation. We provide detailed, itemized quotes after a free site visit with absolutely no hidden charges." },
+      { q: "How much do invisible grills cost in Bangalore?", a: "Prices range from ₹100–₹160 per square foot for both 3mm and 2.5mm cables, depending on the type (balcony, window, staircase) and the complexity of installation. We provide detailed, itemized quotes after a free site visit with absolutely no hidden charges." },
       { q: "What does the 10-year warranty cover?", a: "Our 10-year warranty covers the stainless steel cables, anchor points, channel systems, and all fittings. It covers structural integrity and rust protection. Natural wear on nylon coatings is not covered. We also offer annual maintenance inspection services." },
       { q: "Do you offer EMI or payment plans?", a: "We offer flexible payment terms for large projects. For residential projects, we accept 50% at the time of booking confirmation and the remaining 50% upon successful installation and your satisfaction." },
       { q: "Are there any hidden charges?", a: "No. Our quote includes all materials, labor, hardware, and installation. We provide itemized quotes so you know exactly what you're paying for. There are no surprises." },

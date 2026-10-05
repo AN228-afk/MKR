@@ -12,20 +12,20 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "PriceSpecification",
   name: "Invisible Grills Price in Bangalore",
-  description: "Transparent pricing for invisible grill installation in Bangalore by MKR Safety Solutions. Prices from ₹90/sq ft.",
+  description: "Transparent pricing for invisible grill installation in Bangalore by MKR Safety Solutions. Prices from ₹100/sq ft.",
   priceCurrency: "INR",
   minPrice: "90",
   maxPrice: "150",
 };
 
 const rows = [
-  { service: "Balcony Invisible Grills", cable3: "₹90–₹130", cable25: "₹110–₹145", note: "Most popular" },
-  { service: "Window Invisible Grills", cable3: "₹90–₹125", cable25: "₹108–₹140", note: "" },
-  { service: "Staircase Grills", cable3: "₹95–₹135", cable25: "₹112–₹148", note: "" },
-  { service: "Terrace Grills", cable3: "₹90–₹130", cable25: "₹110–₹148", note: "" },
-  { service: "Villa Full-Home", cable3: "₹95–₹140", cable25: "₹115–₹150", note: "Custom quote" },
-  { service: "Child Safety Grills", cable3: "₹95–₹135", cable25: "₹115–₹150", note: "Recommended 2.5mm" },
-  { service: "School / Institution", cable3: "₹90–₹130", cable25: "₹108–₹145", note: "Bulk discount" },
+  { service: "Balcony Invisible Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Most popular" },
+  { service: "Window Invisible Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "" },
+  { service: "Staircase Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "" },
+  { service: "Terrace Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "" },
+  { service: "Villa Full-Home", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Custom quote" },
+  { service: "Child Safety Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Recommended 2.5mm" },
+  { service: "School / Institution", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Bulk discount" },
 ];
 
 const included = [
@@ -39,9 +39,9 @@ const included = [
 ];
 
 const faqs = [
-  { q: "What is the price of invisible grills in Bangalore?", a: "Invisible grill prices in Bangalore start from ₹90 per sq ft for 3mm cable systems and ₹110 per sq ft for 2.5mm ultra-fine child safety grills. The total cost depends on the area size, space type, and cable thickness. MKR Safety Solutions provides transparent itemised quotes after a free site visit." },
+  { q: "What is the price of invisible grills in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100 to ₹160 per sq ft for both 3mm and 2.5mm cable systems. The total cost depends on the area size and space type. MKR Safety Solutions provides transparent itemised quotes after a free site visit." },
   { q: "Are there any hidden charges?", a: "No. Our quotes are fully itemised — materials, labour, and installation are all included. The only variable is if the site requires special structural anchoring (rare), which we identify and quote for during the free site visit." },
-  { q: "Why do 2.5mm cables cost more than 3mm?", a: "2.5mm cables require more cables per linear metre (closer spacing = more cables) and the finer hardware is more expensive to fabricate. The result is a more child-safe grill with smaller gaps — ideal for families with young children or pets." },
+  { q: "Is 2.5mm more expensive than 3mm?", a: "No. Both 3mm and 2.5mm cables are priced the same — ₹100 to ₹160 per sq ft. Choose 3mm for the most invisible look, or 2.5mm for extra child and pet safety. Our team will recommend the right option during the free site visit." },
   { q: "Do you offer discounts for large projects?", a: "Yes. Villa full-home projects, school and institutional installations, and multi-apartment building projects all qualify for volume pricing. Contact us for a custom quote for projects above 1,000 sq ft." },
   { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 250 kg/lm, post-installation cleanup, and a 10-year warranty with documentation." },
 ];
@@ -50,8 +50,8 @@ export default function Pricing() {
   return (
     <Layout>
       <SEOHead
-        title="Invisible Grills Price in Bangalore 2024 | ₹90/sq ft | MKR Safety Solutions"
-        description="Transparent invisible grill prices in Bangalore. 3mm cables from ₹90/sq ft, 2.5mm child safety from ₹110/sq ft. All-inclusive pricing with 10-year warranty. Free site visit. MKR Safety Solutions."
+        title="Invisible Grills Price in Bangalore 2024 | ₹100/sq ft | MKR Safety Solutions"
+        description="Transparent invisible grill prices in Bangalore. 3mm and 2.5mm cables from ₹100–₹160/sq ft. All-inclusive pricing with 10-year warranty. Free site visit. MKR Safety Solutions."
         canonical="https://mkrsafetysolutions.com/pricing"
         schema={[schema]}
       />
@@ -73,7 +73,7 @@ export default function Pricing() {
               Invisible Grills Price in Bangalore
             </h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-6">
-              All-inclusive pricing starting at ₹90/sq ft. Materials, installation, load testing, and 10-year warranty — everything included.
+              All-inclusive pricing starting at ₹100/sq ft. Materials, installation, load testing, and 10-year warranty — everything included.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
@@ -170,7 +170,7 @@ export default function Pricing() {
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-3 h-3 rounded-full bg-primary inline-block" />
                     <span className="font-semibold text-foreground">3mm Standard Cables</span>
-                    <span className="ml-auto text-sm font-bold text-primary">₹90–₹140/sq ft</span>
+                    <span className="ml-auto text-sm font-bold text-primary">₹100–₹160/sq ft</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Best for most balconies, windows, and terraces. Nearly invisible from 3+ metres. Ideal when aesthetics and views are the top priority.</p>
                 </div>
@@ -179,7 +179,7 @@ export default function Pricing() {
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-3 h-3 rounded-full bg-secondary inline-block" />
                     <span className="font-semibold text-foreground">2.5mm Ultra-Fine Cables</span>
-                    <span className="ml-auto text-sm font-bold text-secondary">₹110–₹150/sq ft</span>
+                    <span className="ml-auto text-sm font-bold text-secondary">₹100–₹160/sq ft</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Tighter 2.5mm spacing — children's fingers and small toys cannot pass through. The gold standard for families with children under 10 or small pets.</p>
                 </div>

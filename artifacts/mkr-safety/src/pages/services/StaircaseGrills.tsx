@@ -10,7 +10,7 @@ const data = {
   heroImg,
   heroAlt: "Beautiful interior staircase with vertical invisible grill cable system",
   intro: "Elegant vertical cable systems for staircases that enhance aesthetics while providing essential fall protection for children and the elderly. Trusted by architects and interior designers across Bangalore.",
-  price: "150–220 per sq ft",
+  price: "100–160 per sq ft",
   benefits: [
     "Replaces bulky staircase railings with a sleek, modern cable aesthetic",
     "Essential fall protection for children and elderly family members",

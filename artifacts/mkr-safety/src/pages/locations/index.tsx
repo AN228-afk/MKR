@@ -11,7 +11,7 @@ const locationData: Record<string, LocationPageData> = {
     intro: "Premium invisible grill installation across Whitefield's apartment communities — from Prestige Shantiniketan to Brigade Cosmopolis. Serving all major residential projects in Whitefield.",
     localContent: "Whitefield is home to some of Bangalore's most premium high-rise apartments and gated communities. With thousands of families living in towers like Prestige Shantiniketan, Brigade Exotica, and Sobha Dream Gardens, invisible grills are essential safety infrastructure. MKR Safety Solutions has completed 150+ installations in Whitefield alone, making us the neighborhood's most trusted invisible grill provider. Our team is familiar with the construction types, apartment layouts, and building management requirements of Whitefield's major residential complexes. We offer same-day site visits and flexible scheduling to work around Whitefield's busy working professionals.",
     faqs: [
-      { q: "How much do invisible grills cost in Whitefield?", a: "Invisible grills in Whitefield cost ₹100–₹220 per sq ft with MKR Safety Solutions. Balcony grills start at ₹120/sq ft. We provide free site visits with transparent quotes." },
+      { q: "How much do invisible grills cost in Whitefield?", a: "Invisible grills in Whitefield cost ₹100–₹160 per sq ft with MKR Safety Solutions. Prices are the same for 3mm and 2.5mm cables. We provide free site visits with transparent quotes." },
       { q: "Do you serve all apartment complexes in Whitefield?", a: "Yes. We serve all residential complexes in Whitefield including Prestige, Brigade, Sobha, Tata, and other major developers' properties. Our team is familiar with HOA requirements in most major complexes." },
       { q: "How quickly can you visit for a site assessment in Whitefield?", a: "We offer same-day or next-day site visits in Whitefield. Call or WhatsApp us and our team will schedule a visit at your convenience, including weekends." },
     ],
@@ -53,7 +53,7 @@ const locationData: Record<string, LocationPageData> = {
     localContent: "Electronic City is home to tens of thousands of IT professionals and their families living in modern high-rise apartments. The area around Electronic City Phase 1 and Phase 2 has seen rapid residential development, with many families on upper floors requiring balcony and window safety solutions. MKR Safety Solutions has extensive experience installing invisible grills in Electronic City's diverse apartment stock. We understand the building management policies of major complexes here and work efficiently to minimize installation time. Our team can reach Electronic City from our Bangalore base quickly, making same-day site visits a regular offering.",
     faqs: [
       { q: "Do you serve both Electronic City Phase 1 and Phase 2?", a: "Yes. We serve the entire Electronic City area including Phase 1 (near Neeladri Road) and Phase 2 (near Hebbagodi). Same-day site visits available." },
-      { q: "How much do invisible grills cost in Electronic City?", a: "Invisible grills in Electronic City cost ₹100–₹220 per sq ft with MKR Safety Solutions. We provide free site visits and transparent itemized quotes." },
+      { q: "How much do invisible grills cost in Electronic City?", a: "Invisible grills in Electronic City cost ₹100–₹160 per sq ft with MKR Safety Solutions. We provide free site visits and transparent itemized quotes." },
     ],
     relatedAreas: [
       { label: "HSR Layout", href: "/invisible-grills-hsr-layout" },

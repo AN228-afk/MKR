@@ -13,7 +13,7 @@ import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
   { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 10+ reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 10-year warranty." },
-  { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹220 per sq ft with MKR Safety Solutions. Balcony grills: ₹120–₹180/sq ft. Window grills: ₹100–₹160/sq ft. Staircase grills: ₹150–₹220/sq ft. We provide free site visits with transparent quotes." },
+  { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹160 per sq ft with MKR Safety Solutions, for both 3mm and 2.5mm cables, across balcony, window, staircase and terrace grills. We provide free site visits with transparent quotes." },
   { q: "Which areas in Bangalore does MKR Safety Solutions serve?", a: "MKR Safety Solutions serves all major areas of Bangalore including Whitefield, Koramangala, HSR Layout, Indiranagar, Electronic City, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, Hebbal, Yelahanka, and KR Puram." },
   { q: "How long does invisible grill installation take in Bangalore?", a: "A standard balcony installation takes 3–5 hours. Full apartment installations with multiple balconies and windows are typically completed in 1–2 days. We work around your schedule including weekends." },
   { q: "Are invisible grills safe for children in Bangalore apartments?", a: "Yes. Our invisible grills — especially our child safety variant with 2.5mm cable spacing — are specifically tested and designed to prevent toddler falls. We have 300+ child safety installations across Bangalore's family apartments." },
@@ -95,10 +95,10 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto">Comprehensive invisible grill solutions for every application — from individual apartments to large villas.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills", price: "₹120–180/sq ft", img: hero },
+              { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills", price: "₹100–160/sq ft", img: hero },
               { label: "Window Invisible Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: img2 },
-              { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills", price: "₹150–220/sq ft", img: hero },
-              { label: "Child Safety Grills", href: "/child-safety-grills", price: "₹130–190/sq ft", img: img2 },
+              { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills", price: "₹100–160/sq ft", img: hero },
+              { label: "Child Safety Grills", href: "/child-safety-grills", price: "₹100–160/sq ft", img: img2 },
             ].map(s => (
               <Link key={s.href} href={s.href}>
                 <div className="group border border-border rounded-xl overflow-hidden hover:shadow-md transition-shadow">

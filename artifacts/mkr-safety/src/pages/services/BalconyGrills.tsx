@@ -10,7 +10,7 @@ const data = {
   heroImg,
   heroAlt: "Invisible grills on apartment balcony with panoramic Bangalore city view",
   intro: "Transform your balcony into a safe, open sanctuary with ultra-fine 316-grade marine stainless steel cables. Nearly invisible from a distance, load-tested to 250kg, and backed by a 10-year warranty.",
-  price: "120–180 per sq ft",
+  price: "100–160 per sq ft",
   benefits: [
     "Complete unobstructed views from your balcony — cables disappear visually",
     "Child and pet safe — 3mm cable spacing prevents falls",
@@ -35,7 +35,7 @@ const data = {
     { step: "Quality Check", desc: "Every cable is load-tested and inspected. We clean up completely and hand over with warranty documentation." },
   ],
   faqs: [
-    { q: "How much do balcony invisible grills cost in Bangalore?", a: "Balcony invisible grills in Bangalore typically cost ₹120–₹180 per square foot with MKR Safety Solutions. The exact price depends on the balcony size and complexity. We provide free site visits with transparent, itemized quotes." },
+    { q: "How much do balcony invisible grills cost in Bangalore?", a: "Balcony invisible grills in Bangalore typically cost ₹100–₹160 per square foot with MKR Safety Solutions. The exact price depends on the balcony size and complexity. We provide free site visits with transparent, itemized quotes." },
     { q: "Can invisible grills be installed on any balcony type?", a: "Yes. Our team has installed grills on straight balconies, curved balconies, L-shaped balconies, and open terraces across Bangalore. We custom-fabricate for every shape and size." },
     { q: "Will my balcony view be affected after installation?", a: "No. The 3mm ultra-thin cables are virtually invisible from more than 3 meters away. Most customers report that their view appears completely unchanged after installation. That's why we call them invisible grills." },
     { q: "How do I maintain balcony invisible grills?", a: "Maintenance is minimal — wipe cables with a damp cloth every 3–6 months to remove dust. No painting, no oiling, no rust treatment required. The 316-grade steel handles Bangalore's weather on its own." },

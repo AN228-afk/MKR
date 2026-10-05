@@ -10,7 +10,7 @@ const data = {
   heroImg,
   heroAlt: "Child safely exploring Bangalore city view through MKR child safety invisible grills on apartment balcony",
   intro: "Purpose-built child safety invisible grills with tighter cable spacing specifically designed to prevent toddler falls. Trusted by 300+ Bangalore families with young children. Peace of mind guaranteed.",
-  price: "130–190 per sq ft",
+  price: "100–160 per sq ft",
   benefits: [
     "2.5mm ultra-tight cable spacing — prevents even toddlers from squeezing through",
     "Load-tested to 250kg per linear meter — withstands any child impact",

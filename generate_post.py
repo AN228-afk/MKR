@@ -232,6 +232,13 @@ def generate_post(topic, slug):
 invisible grill safety business (balcony, staircase, terrace, window grills)
 serving Bangalore.
 
+PRICING (use ONLY these figures whenever price or cost is mentioned):
+- Invisible grills cost Rs.100 to Rs.160 per sq ft (written as ₹100–₹160/sq ft).
+- The price is the SAME for both 3mm and 2.5mm cables.
+- Never state any other price, rate, or price range for MKR's invisible grills,
+  and never say 2.5mm costs more than 3mm. For an exact quote, tell readers to
+  call/WhatsApp 077801 14547 or book a site visit.
+
 Topic/keyword to target: "{topic}"
 
 These posts already exist on the site. Do NOT repeat their angle or content;

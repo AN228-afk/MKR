@@ -90,7 +90,7 @@ const homeFaqs = [
   },
   {
     q: "How much do invisible grills cost in Bangalore?",
-    a: "Invisible grill prices in Bangalore range from ₹100 to ₹220 per square foot depending on the type (balcony, window, staircase) and the grade of steel used. MKR Safety Solutions provides free site visits and transparent quotations with no hidden charges.",
+    a: "Invisible grill prices in Bangalore range from ₹100 to ₹160 per square foot for both 3mm and 2.5mm cables, depending on the type (balcony, window, staircase). MKR Safety Solutions provides free site visits and transparent quotations with no hidden charges.",
   },
   {
     q: "Are invisible grills safe for children and pets?",

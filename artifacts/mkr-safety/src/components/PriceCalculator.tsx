@@ -6,12 +6,12 @@ import { FadeUp } from "./Animated";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const SPACE_TYPES = [
-  { id: "balcony", label: "Balcony", icon: "🏠", min3: 90, max3: 130, min25: 110, max25: 150 },
-  { id: "window", label: "Window", icon: "🪟", min3: 90, max3: 125, min25: 108, max25: 145 },
-  { id: "staircase", label: "Staircase", icon: "🪜", min3: 95, max3: 135, min25: 112, max25: 150 },
-  { id: "terrace", label: "Terrace", icon: "🌿", min3: 90, max3: 130, min25: 110, max25: 148 },
-  { id: "villa", label: "Villa", icon: "🏡", min3: 95, max3: 140, min25: 115, max25: 150 },
-  { id: "child", label: "Child Safety", icon: "👶", min3: 95, max3: 135, min25: 115, max25: 150 },
+  { id: "balcony", label: "Balcony", icon: "🏠", min3: 100, max3: 160, min25: 100, max25: 160 },
+  { id: "window", label: "Window", icon: "🪟", min3: 100, max3: 160, min25: 100, max25: 160 },
+  { id: "staircase", label: "Staircase", icon: "🪜", min3: 100, max3: 160, min25: 100, max25: 160 },
+  { id: "terrace", label: "Terrace", icon: "🌿", min3: 100, max3: 160, min25: 100, max25: 160 },
+  { id: "villa", label: "Villa", icon: "🏡", min3: 100, max3: 160, min25: 100, max25: 160 },
+  { id: "child", label: "Child Safety", icon: "👶", min3: 100, max3: 160, min25: 100, max25: 160 },
 ];
 
 function fmt(n: number) {

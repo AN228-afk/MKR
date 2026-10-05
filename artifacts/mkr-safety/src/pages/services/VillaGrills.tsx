@@ -10,7 +10,7 @@ const data = {
   heroImg,
   heroAlt: "Luxury villa balcony with invisible grill cable system and panoramic view",
   intro: "Bespoke invisible grill solutions for villas and independent houses across Bangalore. Designed to complement premium architecture, we handle every aspect of the project — from free site assessment to final handover.",
-  price: "140–210 per sq ft",
+  price: "100–160 per sq ft",
   benefits: [
     "Comprehensive coverage — all balconies, windows, terraces, and staircases in one project",
     "Dedicated project manager for every villa installation",
