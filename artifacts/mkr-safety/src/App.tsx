@@ -64,6 +64,7 @@ const InvisibleGrillGapSpacingForKidsBlogPost = lazy(() => import("@/pages/blog/
 const InvisibleGrillForBalconyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForBalconyBlogPost })));
 const InvisibleGrillForSeniorCitizensBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForSeniorCitizensBlogPost })));
 const InvisibleGrillInstallationProcessBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillInstallationProcessBlogPost })));
+const InvisibleGrillForLiftDuctOrShaftBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForLiftDuctOrShaftBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -146,6 +147,8 @@ function Router() {
       <Route path="/blog/invisible-grill-for-senior-citizens" component={InvisibleGrillForSeniorCitizensBlogPost} />
 
       <Route path="/blog/invisible-grill-installation-process" component={InvisibleGrillInstallationProcessBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-lift-duct-or-shaft" component={InvisibleGrillForLiftDuctOrShaftBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

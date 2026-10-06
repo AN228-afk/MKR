@@ -299,6 +299,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill installation process",
   },
+  {
+    title: "Invisible Grill for Lift Duct or Shaft: The Overlooked Safety Gap in Bangalore Apartments",
+    slug: "invisible-grill-for-lift-duct-or-shaft",
+    excerpt: "Lift ducts and shafts are one of the most overlooked fall hazards in Bangalore apartments. Here's why invisible grills are the practical fix, and how to get them installed in common areas.",
+    date: "2026-10-06",
+    readTime: "7 min read",
+    keyword: "invisible grill for lift duct or shaft",
+  },
 ];
 
 export const testimonials = [

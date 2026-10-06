@@ -645,6 +645,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Book a Free Site Visit", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-lift-duct-or-shaft": {
+    slug: "invisible-grill-for-lift-duct-or-shaft",
+    title: "Invisible Grill for Lift Duct or Shaft: The Overlooked Safety Gap in Bangalore Apartments",
+    seoTitle: "Invisible Grill for Lift Duct or Shaft Bangalore | MKR Safety Solutions",
+    seoDesc: "Learn why lift duct and shaft openings need invisible grill protection in Bangalore apartments, and how societies can get it done safely and affordably.",
+    date: "2026-10-06",
+    readTime: "7 min read",
+    keyword: "invisible grill for lift duct or shaft",
+    content: [
+      { body: "When people think about invisible grills, balconies and windows come to mind first. Lift ducts and shafts rarely make the list, yet they're one of the riskiest open spaces in a residential building. Service corridors, machine room access points, and the gaps around lift shafts on each floor are often left completely open or protected only with flimsy wire mesh that sags, rusts, or gets removed during maintenance. For apartment associations and facility managers in Bangalore, this is a safety gap worth closing before an incident forces the issue." },
+      { heading: "Why Lift Shaft Areas Are a Hidden Risk", body: "Most residents never think twice about the duct space running alongside a lift shaft because they don't interact with it daily. But these areas are frequently accessed by housekeeping staff, lift technicians, and sometimes curious children exploring common areas. A shaft opening left uncovered, even briefly during servicing, is a serious fall hazard. Unlike a balcony where residents are naturally cautious, lift duct areas feel 'service-only' and get a false sense of security - which is exactly why they need a dependable physical barrier." },
+      { heading: "Where Invisible Grills Fit Into Lift Duct Safety", body: "Invisible grills work well around lift duct and shaft openings because they can be tensioned across irregular or narrow gaps without blocking ventilation, light, or the visual flow of the common area. Unlike iron grills or welded mesh, which make a service corridor feel boxed in and are harder to remove for maintenance access, a grill made of thin stainless steel cables can be installed to close off the hazard while still allowing technicians to access the duct when genuinely needed, by unhooking and re-tensioning the cables." },
+      { heading: "Common Areas, Society Approvals, and Who Decides", body: "Unlike a balcony inside a flat, lift duct and shaft areas usually fall under common property, which means the decision to install safety grills often goes through the apartment association or facility management committee rather than an individual owner. If you're on a managing committee or safety sub-committee, it helps to document the exact locations - each floor's duct opening, the machine room access, any shaft-adjacent terrace area - and get a single consolidated quote rather than handling it floor by floor. This also ensures consistent cable spacing and finish across the building." },
+      { heading: "What to Check Before Installing", body: "A few things matter more here than in a typical balcony installation: the duct opening dimensions can vary floor to floor, so each one should be measured individually rather than assuming a standard size. Anchor points need to be solid - shaft walls are often finished differently from balcony walls, so installers should confirm the mounting surface can hold cable tension safely. Access for lift maintenance staff should never be fully blocked; the grill should be removable or adjustable at the exact spot where technicians need to reach in. Finally, ventilation slots near the shaft should stay uncovered rather than tightly netted, since lift shafts often need airflow." },
+      { heading: "Getting It Done Without Overspending", body: "Invisible grills for MKR Safety Solutions are priced at \u20b9100\u2013\u20b9160 per sq ft, and this rate applies whether you choose 3mm or 2.5mm cable - there's no price difference between the two. For common area work like lift duct or shaft openings, pricing is usually finalised after a site visit since duct dimensions and anchor conditions vary by building. For apartment associations, we're happy to do a single visit covering every floor's duct opening and give one consolidated quote. For an exact quote, call or WhatsApp 077801 14547, or book a site visit directly." },
+    ],
+    relatedServices: [
+      { label: "Invisible Grills in Bangalore", href: "/invisible-grills-bangalore" },
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -702,3 +725,5 @@ export function InvisibleGrillForBalconyBlogPost() { return <BlogPostPage data={
 export function InvisibleGrillForSeniorCitizensBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-senior-citizens"]} />; }
 
 export function InvisibleGrillInstallationProcessBlogPost() { return <BlogPostPage data={posts["invisible-grill-installation-process"]} />; }
+
+export function InvisibleGrillForLiftDuctOrShaftBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-lift-duct-or-shaft"]} />; }
