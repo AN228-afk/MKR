@@ -307,6 +307,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill for lift duct or shaft",
   },
+  {
+    title: "How to Choose an Invisible Grill Installer in Bangalore: A No-Nonsense Checklist",
+    slug: "how-to-choose-an-invisible-grill-installer",
+    excerpt: "Not all invisible grill installers are the same. Here's exactly what to check before you hire one, so you don't end up with sagging wires or a safety hazard dressed up as a safety solution.",
+    date: "2026-10-07",
+    readTime: "7 min read",
+    keyword: "how to choose an invisible grill installer",
+  },
 ];
 
 export const testimonials = [
