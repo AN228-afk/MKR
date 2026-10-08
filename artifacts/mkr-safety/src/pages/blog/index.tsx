@@ -693,6 +693,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-duplex-staircase": {
+    slug: "invisible-grill-for-duplex-staircase",
+    title: "Invisible Grill for Duplex Staircase: Protecting the Open Flights Inside Your Own Home",
+    seoTitle: "Invisible Grill for Duplex Staircase in Bangalore | MKR Safety Solutions",
+    seoDesc: "Planning an invisible grill for duplex staircase safety in Bangalore? Here's what makes internal staircases different from balconies, and how to get it right.",
+    date: "2026-10-08",
+    readTime: "7 min read",
+    keyword: "invisible grill for duplex staircase",
+    content: [
+      { body: "If you live in a duplex villa, row house, or a duplex apartment in Bangalore, you already know your staircase isn't like a regular building staircase. It's inside your home, it's open on one or both sides, and it usually overlooks a living room, dining area, or entrance foyer below. That open drop is exactly what makes duplex staircases risky for toddlers, pets, and even adults carrying things up and down. Most people think of invisible grills only for balconies - but the internal staircase and the void above it often need just as much attention." },
+      { heading: "Why Duplex Staircases Need a Different Safety Approach", body: "A duplex staircase is rarely a simple straight flight against a wall. It often has a landing midway, a turn (dog-leg or L-shaped), and an open side that looks down into the floor below or up into a double-height void. This means the risk isn't just at the top or bottom - it exists at every open edge along the way, including the landing itself. Unlike a balcony that has one fixed opening to cover, a duplex staircase may need grills along the flight, around the landing, and sometimes along an adjoining void that connects to an upper bedroom or passage. Treating it as one continuous safety zone, rather than isolated sections, is what makes the difference." },
+      { heading: "The Void Problem: What People Often Miss", body: "Many duplex homes have a double-height void next to the staircase - a gap that lets light and air flow between floors, often paired with a skylight or a decorative drop light. It looks great, but it's also an unguarded drop that children can reach from an upstairs passage, a bedroom doorway, or even a study nook overlooking the stairwell. When we assess a duplex home, we always check this void area separately from the staircase itself, because a grill on the stairs alone doesn't protect a child standing at the railing of the floor above, looking down into that same gap." },
+      { heading: "Keeping Sight Lines Open in a Compact Layout", body: "Duplex homes are often more compact than standalone villas, so the staircase area doubles up as a visual connector between floors - you can usually see from the living room below right up to the passage above. This is one place where invisible grills work better than any solid barrier. Thin, taut steel cables let you keep that open, connected feel between floors while still closing off the fall risk. A wooden railing addition or box grill would block the view and make the stairwell feel closed in, which defeats the purpose of an open duplex layout in the first place." },
+      { heading: "Handling Turns, Landings, and Non-Standard Angles", body: "Straight staircases are easy to fit. Dog-leg and spiral staircases, which are common in duplex homes due to space constraints, need careful handling at the turn and landing, where the angle of the railing changes. The cable tensioning has to account for the change in direction without leaving a wider gap at the corner than along the straight run. This is a detail that's easy to get wrong if the installer treats the staircase as a single straight measurement instead of mapping each segment - straight flight, landing, and turn - individually before installation." },
+      { heading: "Matching the Rest of Your Home's Interior", body: "Because a duplex staircase sits inside the living space, not on an outdoor balcony, how it looks matters as much as how safe it is. The grills run alongside wooden or MS railings, polished handrails, and sometimes glass panels, so the cable spacing and frame finish need to blend in rather than stand out. Most duplex homeowners choose a grill setup that mirrors the existing railing color and keeps the cables as unnoticeable as possible, so the staircase still looks like a design feature of the home and not an afterthought." },
+      { heading: "What It Costs and How to Get an Accurate Quote", body: "Invisible grills for duplex staircases, like all our installations, are priced at \u20b9100\u2013\u20b9160 per sq ft, and this rate stays the same whether you choose 3mm or 2.5mm cable. The final cost depends on the total run length across the flight, landing, and any adjoining void - which is why a phone estimate is only ever approximate. For an exact quote based on your staircase's actual layout, call or WhatsApp us at 077801 14547, or book a free site visit and we'll measure every flight, turn, and void before confirming the price." },
+    ],
+    relatedServices: [
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -754,3 +778,5 @@ export function InvisibleGrillInstallationProcessBlogPost() { return <BlogPostPa
 export function InvisibleGrillForLiftDuctOrShaftBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-lift-duct-or-shaft"]} />; }
 
 export function HowToChooseAnInvisibleGrillInstallerBlogPost() { return <BlogPostPage data={posts["how-to-choose-an-invisible-grill-installer"]} />; }
+
+export function InvisibleGrillForDuplexStaircaseBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-duplex-staircase"]} />; }

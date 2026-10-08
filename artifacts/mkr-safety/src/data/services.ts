@@ -315,6 +315,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "how to choose an invisible grill installer",
   },
+  {
+    title: "Invisible Grill for Duplex Staircase: Protecting the Open Flights Inside Your Own Home",
+    slug: "invisible-grill-for-duplex-staircase",
+    excerpt: "Duplex staircases bring their own safety challenges - open voids, landing turns, and double-height drops inside the home. Here's how invisible grills are adapted for these spaces.",
+    date: "2026-10-08",
+    readTime: "7 min read",
+    keyword: "invisible grill for duplex staircase",
+  },
 ];
 
 export const testimonials = [
