@@ -67,6 +67,7 @@ const InvisibleGrillInstallationProcessBlogPost = lazy(() => import("@/pages/blo
 const InvisibleGrillForLiftDuctOrShaftBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForLiftDuctOrShaftBlogPost })));
 const HowToChooseAnInvisibleGrillInstallerBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.HowToChooseAnInvisibleGrillInstallerBlogPost })));
 const InvisibleGrillForDuplexStaircaseBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForDuplexStaircaseBlogPost })));
+const InvisibleGrillStrengthAndLoadCapacityBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillStrengthAndLoadCapacityBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -155,6 +156,8 @@ function Router() {
       <Route path="/blog/how-to-choose-an-invisible-grill-installer" component={HowToChooseAnInvisibleGrillInstallerBlogPost} />
 
       <Route path="/blog/invisible-grill-for-duplex-staircase" component={InvisibleGrillForDuplexStaircaseBlogPost} />
+
+      <Route path="/blog/invisible-grill-strength-and-load-capacity" component={InvisibleGrillStrengthAndLoadCapacityBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

@@ -323,6 +323,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill for duplex staircase",
   },
+  {
+    title: "Invisible Grill Strength and Load Capacity: How Much Force Can It Actually Take?",
+    slug: "invisible-grill-strength-and-load-capacity",
+    excerpt: "Everyone asks if invisible grills are 'strong enough' but few explain what actually determines that strength. Here's a practical look at load capacity, anchoring, and cable thickness.",
+    date: "2026-10-09",
+    readTime: "7 min read",
+    keyword: "invisible grill strength and load capacity",
+  },
 ];
 
 export const testimonials = [
