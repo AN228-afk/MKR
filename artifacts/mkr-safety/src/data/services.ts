@@ -331,6 +331,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill strength and load capacity",
   },
+  {
+    title: "Invisible Grill Price Per Square Foot: How the Math Actually Works",
+    slug: "invisible-grill-price-per-square-feet",
+    excerpt: "Confused about how invisible grill price per square foot actually translates into your final bill? Here's how to measure your balcony and calculate a realistic estimate yourself.",
+    date: "2026-10-10",
+    readTime: "6 min read",
+    keyword: "invisible grill price per square feet",
+  },
 ];
 
 export const testimonials = [
