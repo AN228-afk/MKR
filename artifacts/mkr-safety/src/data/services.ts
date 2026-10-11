@@ -339,6 +339,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill price per square feet",
   },
+  {
+    title: "Invisible Grill Rules for Apartment Associations: A Bangalore Resident's Guide to Getting Approval",
+    slug: "invisible-grill-rules-for-apartment-associations",
+    excerpt: "Most Bangalore apartment owners don't get stuck on choosing a grill \u2014 they get stuck getting their RWA to say yes. Here's how the approval process actually works.",
+    date: "2026-10-11",
+    readTime: "7 min read",
+    keyword: "invisible grill rules for apartment associations",
+  },
 ];
 
 export const testimonials = [
