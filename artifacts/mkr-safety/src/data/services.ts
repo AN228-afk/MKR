@@ -347,6 +347,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill rules for apartment associations",
   },
+  {
+    title: "Invisible Grill Monsoon Care: Protecting Your Grills Through Bangalore's Rainy Season",
+    slug: "invisible-grill-monsoon-care",
+    excerpt: "Bangalore's monsoon brings weeks of continuous rain, humidity, and dust-mud buildup that your invisible grills need to handle well. Here's how to prepare them before, during, and after the season.",
+    date: "2026-10-12",
+    readTime: "6 min read",
+    keyword: "invisible grill monsoon care",
+  },
 ];
 
 export const testimonials = [
