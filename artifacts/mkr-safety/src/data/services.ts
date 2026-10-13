@@ -355,6 +355,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill monsoon care",
   },
+  {
+    title: "Invisible Grill for French Windows: Safety Without Losing the View",
+    slug: "invisible-grill-for-french-windows",
+    excerpt: "French windows open up your home to balconies and gardens, but that same opening is a fall risk. Here's how invisible grills secure them without blocking the door or the view.",
+    date: "2026-10-13",
+    readTime: "6 min read",
+    keyword: "invisible grill for French windows",
+  },
 ];
 
 export const testimonials = [

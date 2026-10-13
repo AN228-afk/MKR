@@ -810,6 +810,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-french-windows": {
+    slug: "invisible-grill-for-french-windows",
+    title: "Invisible Grill for French Windows: Safety Without Losing the View",
+    seoTitle: "Invisible Grill for French Windows Bangalore | MKR Safety Solutions",
+    seoDesc: "Invisible grill for French windows in Bangalore homes - how it works with opening doors, where it's fixed, and what it costs. \u20b9100-\u20b9160/sq ft.",
+    date: "2026-10-13",
+    readTime: "6 min read",
+    keyword: "invisible grill for French windows",
+    content: [
+      { body: "French windows are everywhere in Bangalore homes now - floor-to-ceiling glass panels that open onto a balcony, garden, or terrace, flooding the room with light and view. But that same full-height opening is exactly what makes them risky for kids, pets, and elderly family members, especially on upper floors. Regular grills ruin the whole point of having a French window - the unobstructed view. This is where invisible grills fit in, and the fitting itself works a little differently here than on a plain balcony railing. Here's what to actually expect." },
+      { heading: "Why French Windows Need a Different Approach", body: "A French window usually opens fully - either as hinged double doors or sliding panels - right down to floor level. There's no waist-high parapet wall doing half the safety job like on a balcony edge. The entire height, from floor to the top of the frame, is open space when the doors are swung back or slid open. That means the invisible grill has to cover the full height of the opening, not just a railing section, and it has to work even when the doors themselves are open for ventilation." },
+      { heading: "Where the Cables Actually Get Fixed", body: "For French windows, the invisible grill is installed on the outer side of the frame, anchored into the wall or external frame on either side using stainless steel hooks, with the cables running horizontally or vertically across the full opening. The grill sits outside the door's swing path, so the doors can open and shut freely without the cables being in the way. If there's an external sill or balcony ledge, the bottom anchoring point is set there so the full drop is covered, not just the visible glass portion." },
+      { heading: "Will It Get in the Way of Opening the Door?", body: "No - this is usually the first question we get. Since the grill is fixed on the outside of the frame rather than across the door itself, you can open and close your French windows exactly as before. The grills aren't attached to the moving door panels, so there's no interference with hinges, sliders, or the locking mechanism. You get to use the window normally and still have continuous fall protection outside it." },
+      { heading: "Keeping the View You Installed French Windows For", body: "Most homeowners choose French windows specifically for the view - a garden, a pool, a park, or just more natural light. The 1.5mm-2mm stainless steel cables used in invisible grills are thin and nearly see-through from a few feet away, so the openness you paid for stays intact. This matters more for French windows than for almost any other application in the house, since the whole design intent is visibility." },
+      { heading: "What It Costs for French Windows", body: "Invisible grills for French windows are priced the same as any other invisible grill installation in Bangalore - \u20b9100 to \u20b9160 per sq ft, whether you choose 3mm or 2.5mm cable. The final cost depends on the width and height of your French window opening and how many panels need covering, not on the cable thickness. Because French windows run floor to ceiling, the per-window cost can be a bit higher than a standard balcony railing simply due to the larger area, but the rate per sq ft stays the same. For an exact quote based on your window dimensions, call or WhatsApp 077801 14547, or book a free site visit." },
+    ],
+    relatedServices: [
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Get a Free Quote", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -881,3 +904,5 @@ export function InvisibleGrillPricePerSquareFeetBlogPost() { return <BlogPostPag
 export function InvisibleGrillRulesForApartmentAssociationsBlogPost() { return <BlogPostPage data={posts["invisible-grill-rules-for-apartment-associations"]} />; }
 
 export function InvisibleGrillMonsoonCareBlogPost() { return <BlogPostPage data={posts["invisible-grill-monsoon-care"]} />; }
+
+export function InvisibleGrillForFrenchWindowsBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-french-windows"]} />; }
