@@ -363,6 +363,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for French windows",
   },
+  {
+    title: "Staircase Safety Grill: What Makes Stairs Different From Balconies (And Why It Matters)",
+    slug: "staircase-safety-grill",
+    excerpt: "Staircases aren't just sloped balconies. Here's why a staircase safety grill needs different planning, measurements, and installation thinking than a regular balcony grill.",
+    date: "2026-10-14",
+    readTime: "7 min read",
+    keyword: "staircase safety grill",
+  },
 ];
 
 export const testimonials = [

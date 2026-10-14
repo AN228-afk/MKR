@@ -833,6 +833,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Get a Free Quote", href: "/contact-us" },
     ],
   },
+  "staircase-safety-grill": {
+    slug: "staircase-safety-grill",
+    title: "Staircase Safety Grill: What Makes Stairs Different From Balconies (And Why It Matters)",
+    seoTitle: "Staircase Safety Grill Bangalore: Complete Installation Guide | MKR Safety Solutions",
+    seoDesc: "Planning a staircase safety grill for your Bangalore home? Learn why stairs need different planning than balconies, from height to spacing to cost.",
+    date: "2026-10-14",
+    readTime: "7 min read",
+    keyword: "staircase safety grill",
+    content: [
+      { body: "If you've already got invisible grills on your balcony and you're now looking at your staircase, you might assume it's the same job on a different surface. It isn't. Staircases bring their own set of challenges \u2014 sloped runs, changing heights at every step, open-riser designs, landings that turn corners, and in many Bangalore homes, staircases that lead straight up to an open terrace. Get the planning wrong and you end up with gaps near the handrail or a grill that doesn't actually stop a child or pet from squeezing through on the lower steps. This post walks through what actually makes a staircase safety grill different, so you know what to ask your installer before work begins." },
+      { heading: "Why a Staircase Isn't Just a Sloped Balcony", body: "On a balcony, the open area is usually one flat rectangle with a fixed height from floor to top rail. On a staircase, the 'open area' changes shape with every step \u2014 the gap between the railing and the floor keeps shrinking as you climb, then opens up again at the landing. A good installer has to treat the flight, the landing, and the turn (if there is one) as separate zones, each measured on its own. Treating the whole staircase as one flat measurement is one of the most common mistakes that leads to a grill that looks fine but leaves gaps near the bottom steps where a toddler or pet can slip through." },
+      { heading: "Where Staircases in Bangalore Homes Actually Need Grills", body: "Independent houses and villas with an internal staircase to the first floor or terrace are the most common case, but they're not the only one. Open external staircases leading up to a terrace or servant quarters, common staircases in smaller apartment buildings with low parapet walls, and spiral or dog-legged staircases with open risers all create fall risk \u2014 especially for small children who tend to climb railings rather than walk through them, and for elderly family members who may lose balance on open-riser steps. If your staircase has any point where you can see straight through to the floor below, or where the railing height feels lower than it should, it's worth a safety grill." },
+      { heading: "Horizontal or Vertical Wires: It Depends on the Flight", body: "For straight flights of stairs, horizontal cables run parallel to the slope and generally give a cleaner, less cluttered look while still closing the gap effectively. For landings and open sections where the railing is vertical and taller, a vertical wire pattern often makes more sense because it matches the existing baluster-like structure. Many Bangalore homes end up using a mix \u2014 horizontal on the flight, vertical on the landing \u2014 and this decision should be made on site, not over a phone call, since every staircase design is a little different." },
+      { heading: "Gap Spacing Gets Trickier on Steps", body: "On a flat balcony, gap spacing is a fixed number from top to bottom. On stairs, the usable vertical gap between the floor and the lowest wire changes as you move along the flight, because the step height keeps rising. A careful installer accounts for this by checking the tightest point on each step, not just the overall railing height, so there's no spot along the staircase where a child's foot or a pet's head could fit through. If your installer is only measuring the top and bottom of the staircase and not individual steps, ask them to check again." },
+      { heading: "What a Staircase Grill Actually Costs", body: "MKR's invisible grills are priced at \u20b9100\u2013\u20b9160 per sq ft, whether you choose 2.5mm or 3mm cable \u2014 the price doesn't change with cable thickness. For a staircase, the final cost depends on the total run length including the flight, landing, and any turns, which is why staircase quotes often look different from a simple balcony quote of the same height. Because every staircase has its own layout, slope, and number of turns, the only accurate way to get a number is a site visit or a quick call. For an exact quote on your staircase, call or WhatsApp 077801 14547, or book a free site visit and we'll measure it properly before quoting." },
+      { heading: "Getting It Right the First Time", body: "A staircase safety grill is one of those installations where small measurement mistakes are hard to spot until someone actually tests the gap \u2014 and by then the cables are already fixed. Insist on a site visit where the installer walks the full staircase, checks each step and the landing separately, and explains the wire orientation they're recommending and why. It takes a little longer than quoting over the phone, but it's the difference between a staircase that looks safe and one that actually is." },
+    ],
+    relatedServices: [
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
+      { label: "Book a Site Visit", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -906,3 +930,5 @@ export function InvisibleGrillRulesForApartmentAssociationsBlogPost() { return <
 export function InvisibleGrillMonsoonCareBlogPost() { return <BlogPostPage data={posts["invisible-grill-monsoon-care"]} />; }
 
 export function InvisibleGrillForFrenchWindowsBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-french-windows"]} />; }
+
+export function StaircaseSafetyGrillBlogPost() { return <BlogPostPage data={posts["staircase-safety-grill"]} />; }
