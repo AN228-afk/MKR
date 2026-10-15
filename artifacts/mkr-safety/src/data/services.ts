@@ -371,6 +371,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "staircase safety grill",
   },
+  {
+    title: "Invisible Grill for Utility Area: The Safety Gap Most Bangalore Homes Forget",
+    slug: "invisible-grill-for-utility-area",
+    excerpt: "Utility areas hold washing machines, drying lines and storage \u2014 and they're often the most neglected open space in a home. Here's why they need invisible grills too.",
+    date: "2026-10-15",
+    readTime: "6 min read",
+    keyword: "invisible grill for utility area",
+  },
 ];
 
 export const testimonials = [
