@@ -379,6 +379,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for utility area",
   },
+  {
+    title: "Invisible Grill vs SS Pipe Railing: Which Is Better for Your Bangalore Balcony?",
+    slug: "invisible-grill-vs-ss-pipe-railing",
+    excerpt: "SS pipe railings and invisible grills both use stainless steel, but they solve balcony safety very differently. Here's how to choose between them.",
+    date: "2026-10-16",
+    readTime: "6 min read",
+    keyword: "invisible grill vs SS pipe railing",
+  },
 ];
 
 export const testimonials = [
