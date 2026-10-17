@@ -387,6 +387,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill vs SS pipe railing",
   },
+  {
+    title: "Invisible Grill for Villa: A Whole-Property Safety Plan for Bangalore Homes",
+    slug: "invisible-grill-for-villa",
+    excerpt: "Villas have far more open edges than apartments - multiple balconies, terraces, sit-outs and internal staircases. Here's how to plan invisible grill safety for the entire property at once.",
+    date: "2026-10-17",
+    readTime: "7 min read",
+    keyword: "invisible grill for villa",
+  },
 ];
 
 export const testimonials = [
