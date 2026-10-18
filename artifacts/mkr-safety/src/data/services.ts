@@ -395,6 +395,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill for villa",
   },
+  {
+    title: "Invisible Grill Nano Coating: What It Actually Does and Why It Matters",
+    slug: "invisible-grill-nano-coating",
+    excerpt: "Nano coating is the one detail most homeowners never ask about when buying invisible grills - yet it decides whether your cables stay shiny or turn dull and rusty in a few years.",
+    date: "2026-10-18",
+    readTime: "7 min read",
+    keyword: "invisible grill nano coating",
+  },
 ];
 
 export const testimonials = [
