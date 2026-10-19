@@ -77,6 +77,7 @@ const InvisibleGrillForUtilityAreaBlogPost = lazy(() => import("@/pages/blog/ind
 const InvisibleGrillVsSsPipeRailingBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsSsPipeRailingBlogPost })));
 const InvisibleGrillForVillaBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForVillaBlogPost })));
 const InvisibleGrillNanoCoatingBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillNanoCoatingBlogPost })));
+const InvisibleGrillForOfficeBalconyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForOfficeBalconyBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -185,6 +186,8 @@ function Router() {
       <Route path="/blog/invisible-grill-for-villa" component={InvisibleGrillForVillaBlogPost} />
 
       <Route path="/blog/invisible-grill-nano-coating" component={InvisibleGrillNanoCoatingBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-office-balcony" component={InvisibleGrillForOfficeBalconyBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

@@ -403,6 +403,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill nano coating",
   },
+  {
+    title: "Invisible Grill for Office Balcony: A Practical Guide for Bangalore Workplaces",
+    slug: "invisible-grill-for-office-balcony",
+    excerpt: "Office balconies, cafeterias and terrace break-out areas need safety too - here's how invisible grills fit into commercial spaces without ruining the look your office worked hard to build.",
+    date: "2026-10-19",
+    readTime: "6 min read",
+    keyword: "invisible grill for office balcony",
+  },
 ];
 
 export const testimonials = [
