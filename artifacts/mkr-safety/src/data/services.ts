@@ -411,6 +411,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for office balcony",
   },
+  {
+    title: "Invisible Grill Installation in Marathahalli: A Local Homeowner's Guide",
+    slug: "invisible-grill-marathahalli",
+    excerpt: "From ORR high-rises to independent homes near AECS Layout, Marathahalli has a mix of building types that each need a slightly different invisible grill approach. Here's what local homeowners should know.",
+    date: "2026-10-20",
+    readTime: "6 min read",
+    keyword: "invisible grill Marathahalli",
+  },
 ];
 
 export const testimonials = [
