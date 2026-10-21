@@ -419,6 +419,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Marathahalli",
   },
+  {
+    title: "Invisible Grill Installation on Sarjapur Road: A Local Homeowner's Guide",
+    slug: "invisible-grill-sarjapur-road",
+    excerpt: "From Wipro Corporate to Dommasandra, Sarjapur Road's apartment boom has brought thousands of open balconies without safety grills. Here's what homeowners in this stretch need to know before installing invisible grills.",
+    date: "2026-10-21",
+    readTime: "6 min read",
+    keyword: "invisible grill Sarjapur Road",
+  },
 ];
 
 export const testimonials = [
