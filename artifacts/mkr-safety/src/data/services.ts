@@ -427,6 +427,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Sarjapur Road",
   },
+  {
+    title: "Invisible Grill Maintenance Tips: The Small Habits That Save You Big Repairs",
+    slug: "invisible-grill-maintenance-tips",
+    excerpt: "Good invisible grill maintenance isn't a big monthly project - it's a handful of small habits. Here's what actually matters and what you can skip.",
+    date: "2026-10-22",
+    readTime: "6 min read",
+    keyword: "invisible grill maintenance tips",
+  },
 ];
 
 export const testimonials = [
