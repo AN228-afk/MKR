@@ -435,6 +435,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill maintenance tips",
   },
+  {
+    title: "Invisible Grill Warranty: What to Check Before You Sign the Order",
+    slug: "invisible-grill-warranty-what-to-check",
+    excerpt: "Most homeowners only read the warranty card after something goes wrong. Here's exactly what to check before you pay the advance, so there are no surprises later.",
+    date: "2026-10-23",
+    readTime: "7 min read",
+    keyword: "invisible grill warranty what to check",
+  },
 ];
 
 export const testimonials = [

@@ -1046,6 +1046,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-warranty-what-to-check": {
+    slug: "invisible-grill-warranty-what-to-check",
+    title: "Invisible Grill Warranty: What to Check Before You Sign the Order",
+    seoTitle: "Invisible Grill Warranty What to Check | MKR Safety Solutions",
+    seoDesc: "Invisible grill warranty what to check before installation in Bangalore - coverage, cable rusting, fittings, and claim process explained simply.",
+    date: "2026-10-23",
+    readTime: "7 min read",
+    keyword: "invisible grill warranty what to check",
+    content: [
+      { body: "A warranty card looks reassuring on the day of installation, but very few homeowners actually read the fine print until a cable snaps or a bracket loosens a year later. In Bangalore, where balconies face heavy rain, dust, and direct sun for months at a stretch, the warranty terms matter almost as much as the installation itself. This post is not about pricing or which steel grade to pick - it's about the paperwork and promises you should check before you commit to any invisible grill installer." },
+      { heading: "What an Invisible Grill Warranty Should Actually Cover", body: "A proper warranty should clearly mention coverage for cable rusting or discoloration, hook and bracket failure, and tension loosening over time. Vague terms like \"manufacturing defects only\" leave too much room for disputes. Ask the installer to specify, in writing, whether the warranty covers the cables, the end fittings, the wall anchors, or just the installation workmanship. These are different things, and a warranty that only covers workmanship won't help if the cable itself starts rusting." },
+      { heading: "Check the Warranty Period Against the Cable Type", body: "Invisible grill cables are typically offered in 3mm or 2.5mm thickness, and at MKR Safety Solutions both are priced the same at \u20b9100\u2013\u20b9160 per sq ft, so cost is never a reason to choose one over the other. What matters for warranty purposes is that the installer specifies the warranty period clearly for whichever cable you choose. Don't assume a longer warranty automatically means thicker cable or better quality - always ask what exact years are promised and get it mentioned on the invoice, not just verbally." },
+      { heading: "Ask Who Pays for Site Visits During the Warranty Period", body: "Many warranty disputes in Bangalore happen not because the material failed, but because the homeowner was charged a \"visit fee\" for a warranty claim. Before signing, ask directly: if a cable loosens or a bracket needs tightening within the warranty period, is the site visit free, and is there any labour charge? Get this answered in writing. A good installer will not charge for routine warranty visits like re-tensioning or minor bracket fixes." },
+      { heading: "Understand What Voids the Warranty", body: "Every warranty has exclusions, and it's worth knowing them upfront rather than discovering them during a claim. Common exclusions include damage from external impact (like a flower pot falling on the grill), unauthorized repairs by someone other than the original installer, or structural changes to the wall or railing after installation. Ask specifically about monsoon-related claims too, since Bangalore's rainy season is when most cable and bracket issues actually surface." },
+      { heading: "Get the Claim Process in Writing, Not Just a Phone Number", body: "A warranty is only as good as how easy it is to claim. Ask the installer: how do you raise a complaint, how soon does someone visit, and is there a written acknowledgment when you report an issue? A verbal promise of \"call us anytime\" is not the same as a documented process with a reference number or job sheet. If the company can't explain their claim process clearly before installation, that's a signal to ask more questions before paying the advance." },
+      { heading: "Match the Warranty Document to the Actual Invoice", body: "Finally, cross-check that the warranty card matches the invoice - same company name, same installation date, same scope of work (balcony, staircase, terrace, or window grills). Mismatched paperwork is one of the most common reasons warranty claims get rejected later. If you're unsure what questions to ask or want to compare warranty terms against actual installation quality, call or WhatsApp MKR Safety Solutions at 077801 14547, or book a site visit so our team can walk you through the exact coverage before you decide." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1137,3 +1161,5 @@ export function InvisibleGrillMarathahalliBlogPost() { return <BlogPostPage data
 export function InvisibleGrillSarjapurRoadBlogPost() { return <BlogPostPage data={posts["invisible-grill-sarjapur-road"]} />; }
 
 export function InvisibleGrillMaintenanceTipsBlogPost() { return <BlogPostPage data={posts["invisible-grill-maintenance-tips"]} />; }
+
+export function InvisibleGrillWarrantyWhatToCheckBlogPost() { return <BlogPostPage data={posts["invisible-grill-warranty-what-to-check"]} />; }
