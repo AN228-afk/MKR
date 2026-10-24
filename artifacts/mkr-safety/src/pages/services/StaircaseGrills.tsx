@@ -19,7 +19,7 @@ const data = {
     "316-grade SS — maintenance-free and rust-proof for 20+ years",
     "Vertical and horizontal cable patterns available",
     "Complements modern, contemporary, and minimalist interiors",
-    "10-year warranty on materials and installation",
+    "15-year warranty on materials and installation",
   ],
   features: [
     { title: "Vertical Cable Design", desc: "Clean vertical lines that enhance the visual height of your staircase while maintaining complete transparency." },

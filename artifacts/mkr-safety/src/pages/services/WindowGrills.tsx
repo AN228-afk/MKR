@@ -5,7 +5,7 @@ const data = {
   title: "Window Invisible Grills",
   slug: "window-invisible-grills",
   seoTitle: "Window Invisible Grills Bangalore | Child Safety | MKR Safety Solutions",
-  seoDesc: "Window invisible grills in Bangalore. Protect your windows without blocking light or views. 316 SS cables, free site visit, 10-year warranty. Call MKR today.",
+  seoDesc: "Window invisible grills in Bangalore. Protect your windows without blocking light or views. 316 SS cables, free site visit, 15-year warranty. Call MKR today.",
   h1: "Window Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Window invisible grills with panoramic view of Bangalore greens and cityscape",
@@ -19,7 +19,7 @@ const data = {
     "Easy to open and close windows with grills installed",
     "Transparent pricing — no hidden charges",
     "Same-day site visit available across Bangalore",
-    "10-year warranty covering all materials and installation",
+    "15-year warranty covering all materials and installation",
   ],
   features: [
     { title: "Fits Any Window Style", desc: "Custom fabricated for your exact window dimensions — sliding, casement, fixed, or louvered windows." },

@@ -6,7 +6,7 @@ const badges = [
   { icon: Star, label: "5.0/5 Rating", sub: "Google Reviews" },
   { icon: Clock, label: "8+ Years", sub: "Experience" },
   { icon: Wrench, label: "Free Site Visit", sub: "No Obligation" },
-  { icon: Award, label: "10-Year Warranty", sub: "On All Installations" },
+  { icon: Award, label: "15-Year Warranty", sub: "On All Installations" },
 ];
 
 export function TrustBadges({ dark = false }: { dark?: boolean }) {

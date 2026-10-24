@@ -33,7 +33,7 @@ const included = [
   "Aluminium top channel & anchors",
   "Professional installation by certified team",
   "Load testing to 250 kg per linear metre",
-  "10-year warranty on materials & workmanship",
+  "15-year warranty on materials & workmanship",
   "Post-installation cleaning",
   "Warranty documentation",
 ];
@@ -43,7 +43,7 @@ const faqs = [
   { q: "Are there any hidden charges?", a: "No. Our quotes are fully itemised — materials, labour, and installation are all included. The only variable is if the site requires special structural anchoring (rare), which we identify and quote for during the free site visit." },
   { q: "Is 2.5mm more expensive than 3mm?", a: "No. Both 3mm and 2.5mm cables are priced the same — ₹100 to ₹160 per sq ft. Choose 3mm for the most invisible look, or 2.5mm for extra child and pet safety. Our team will recommend the right option during the free site visit." },
   { q: "Do you offer discounts for large projects?", a: "Yes. Villa full-home projects, school and institutional installations, and multi-apartment building projects all qualify for volume pricing. Contact us for a custom quote for projects above 1,000 sq ft." },
-  { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 250 kg/lm, post-installation cleanup, and a 10-year warranty with documentation." },
+  { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 250 kg/lm, post-installation cleanup, and a 15-year warranty with documentation." },
 ];
 
 export default function Pricing() {
@@ -51,7 +51,7 @@ export default function Pricing() {
     <Layout>
       <SEOHead
         title="Invisible Grills Price in Bangalore 2024 | ₹100/sq ft | MKR Safety Solutions"
-        description="Transparent invisible grill prices in Bangalore. 3mm and 2.5mm cables from ₹100–₹160/sq ft. All-inclusive pricing with 10-year warranty. Free site visit. MKR Safety Solutions."
+        description="Transparent invisible grill prices in Bangalore. 3mm and 2.5mm cables from ₹100–₹160/sq ft. All-inclusive pricing with 15-year warranty. Free site visit. MKR Safety Solutions."
         canonical="https://mkrsafetysolutions.com/pricing"
         schema={[schema]}
       />
@@ -66,14 +66,14 @@ export default function Pricing() {
       <section className="py-16 bg-primary">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <FadeUp>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wide">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-light/20 border border-brand-light/30 rounded-full text-brand-light text-xs font-semibold mb-5 uppercase tracking-wide">
               Transparent Pricing — No Surprises
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
               Invisible Grills Price in Bangalore
             </h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-6">
-              All-inclusive pricing starting at ₹100/sq ft. Materials, installation, load testing, and 10-year warranty — everything included.
+              All-inclusive pricing starting at ₹100/sq ft. Materials, installation, load testing, and 15-year warranty — everything included.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
@@ -125,7 +125,7 @@ export default function Pricing() {
                       className={i % 2 === 0 ? "bg-white" : "bg-muted/50"}
                     >
                       <td className="px-5 py-4 font-medium text-foreground">{r.service}</td>
-                      <td className="px-5 py-4 text-center font-bold text-primary">{r.cable3}<span className="text-xs text-muted-foreground font-normal">/sq ft</span></td>
+                      <td className="px-5 py-4 text-center font-bold text-foreground">{r.cable3}<span className="text-xs text-muted-foreground font-normal">/sq ft</span></td>
                       <td className="px-5 py-4 text-center font-bold text-secondary">{r.cable25}<span className="text-xs text-muted-foreground font-normal">/sq ft</span></td>
                       <td className="px-5 py-4 text-center hidden sm:table-cell">
                         {r.note && (
@@ -170,7 +170,7 @@ export default function Pricing() {
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-3 h-3 rounded-full bg-primary inline-block" />
                     <span className="font-semibold text-foreground">3mm Standard Cables</span>
-                    <span className="ml-auto text-sm font-bold text-primary">₹100–₹160/sq ft</span>
+                    <span className="ml-auto text-sm font-bold text-foreground">₹100–₹160/sq ft</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Best for most balconies, windows, and terraces. Nearly invisible from 3+ metres. Ideal when aesthetics and views are the top priority.</p>
                 </div>
@@ -226,7 +226,7 @@ export default function Pricing() {
               <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
                 Book Free Site Visit
               </Link>
-              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> Call +91 77801 14547
               </a>
             </div>

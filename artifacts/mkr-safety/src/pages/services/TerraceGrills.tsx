@@ -5,7 +5,7 @@ const data = {
   title: "Terrace Invisible Grills",
   slug: "terrace-invisible-grills",
   seoTitle: "Terrace Invisible Grills Bangalore | Rooftop Safety | MKR Safety Solutions",
-  seoDesc: "Terrace invisible grills in Bangalore for full rooftop perimeter safety. 316 SS cables, weather-resistant, free site visit, 10-year warranty. MKR Safety Solutions.",
+  seoDesc: "Terrace invisible grills in Bangalore for full rooftop perimeter safety. 316 SS cables, weather-resistant, free site visit, 15-year warranty. MKR Safety Solutions.",
   h1: "Terrace Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Terrace invisible grill installation with panoramic ocean and pool view from rooftop",
@@ -19,7 +19,7 @@ const data = {
     "UV-resistant — cables maintain their appearance in direct sunlight",
     "Ideal for penthouses, independent villas, and terrace apartments",
     "Free site survey with professional assessment of terrace structure",
-    "10-year warranty on the complete installation",
+    "15-year warranty on the complete installation",
   ],
   features: [
     { title: "Full Perimeter Coverage", desc: "We install cable systems around the complete terrace perimeter — no gaps, no compromises." },

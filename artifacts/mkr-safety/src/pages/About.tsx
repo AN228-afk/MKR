@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
-import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
+import { Logo } from "@/components/Logo";
 import hero from "@assets/MKR_3_1780926061320.webp";
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img src={logoPath} alt="MKR Safety Solutions Logo" className="h-16 w-auto object-contain mb-6" width={160} height={64} />
+              <Logo className="text-[30px] mb-6" />
               <h1 className="text-4xl font-bold text-foreground mb-6">
                 Bangalore's Most Trusted Invisible Grill Specialists
               </h1>
@@ -37,10 +37,10 @@ export default function About() {
                 From a single balcony project in Koramangala to over 1,000 completed installations across 12 neighborhoods, our journey has been built on one principle — safety without compromise.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We use only 316-grade marine stainless steel, the same grade trusted in boats and coastal buildings. Every cable is tensioned to withstand 250kg per linear meter and backed by a 10-year warranty.
+                We use only 316-grade marine stainless steel, the same grade trusted in boats and coastal buildings. Every cable is tensioned to withstand 250kg per linear meter and backed by a 15-year warranty.
               </p>
               <div className="space-y-3">
-                {["8+ years of installation expertise", "316-grade marine SS cables only", "Free site visits with no obligation", "10-year comprehensive warranty", "Serving 12+ Bangalore neighborhoods"].map(f => (
+                {["8+ years of installation expertise", "316-grade marine SS cables only", "Free site visits with no obligation", "15-year comprehensive warranty", "Serving 12+ Bangalore neighborhoods"].map(f => (
                   <div key={f} className="flex items-center gap-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-secondary" />
                     <span className="text-foreground">{f}</span>

@@ -19,7 +19,7 @@ const data = {
     "Internationally recognized safety specifications followed",
     "Loved by pediatricians and child safety experts",
     "300+ installations in family homes across Bangalore",
-    "10-year warranty on all child safety installations",
+    "15-year warranty on all child safety installations",
   ],
   features: [
     { title: "2.5mm Cable Spacing", desc: "Tighter than standard (3mm), our child safety variant prevents toddlers from pushing their head or body through." },

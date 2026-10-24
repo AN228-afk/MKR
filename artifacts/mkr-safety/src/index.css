@@ -31,6 +31,8 @@
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-muted-border: var(--muted-border);
 
+  --color-brand-light: hsl(210 83% 51%);
+
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
   --color-accent-border: var(--accent-border);
@@ -57,48 +59,48 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  --background: 0 0% 100%;
-  --foreground: 240 28% 14%;
-  --border: 240 5% 84%;
-  --input: 240 5% 84%;
-  --ring: 44 55% 54%;
+  --background: 240 33% 99%;
+  --foreground: 240 3% 12%;
+  --border: 240 6% 84%;
+  --input: 240 6% 78%;
+  --ring: 210 83% 51%;
   
   --card: 0 0% 100%;
-  --card-foreground: 240 28% 14%;
-  --card-border: 240 5% 90%;
+  --card-foreground: 240 3% 12%;
+  --card-border: 240 6% 88%;
   
   --sidebar: 240 5% 96%;
-  --sidebar-foreground: 240 28% 14%;
+  --sidebar-foreground: 240 3% 12%;
   --sidebar-border: 240 5% 84%;
-  --sidebar-primary: 44 55% 54%;
+  --sidebar-primary: 36 5% 34%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 240 5% 84%;
-  --sidebar-accent-foreground: 240 28% 14%;
-  --sidebar-ring: 44 55% 54%;
+  --sidebar-accent-foreground: 240 3% 12%;
+  --sidebar-ring: 36 5% 34%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 240 28% 14%;
-  --popover-border: 240 5% 84%;
+  --popover-foreground: 240 3% 12%;
+  --popover-border: 240 6% 84%;
 
-  --primary: 240 28% 14%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 240 11% 96%;
+  --primary-foreground: 240 3% 12%;
 
-  --secondary: 44 65% 32%;
+  --secondary: 210 83% 51%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 240 5% 96%;
-  --muted-foreground: 240 5% 45%;
+  --muted: 240 11% 96%;
+  --muted-foreground: 240 2% 42%;
 
-  --accent: 44 55% 54%;
+  --accent: 210 83% 51%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --app-font-sans: 'Inter', sans-serif;
-  --app-font-serif: Georgia, serif;
+  --app-font-sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --app-font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --app-font-mono: Menlo, monospace;
-  --radius: 0.5rem;
+  --radius: 0rem;
 }
 
 .dark {
@@ -108,39 +110,39 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  --background: 240 28% 14%;
+  --background: 218 64% 14%;
   --foreground: 0 0% 100%;
   --border: 240 5% 26%;
   --input: 240 5% 26%;
-  --ring: 44 55% 54%;
+  --ring: 40 6% 62%;
   
-  --card: 240 28% 18%;
+  --card: 218 50% 19%;
   --card-foreground: 0 0% 100%;
   --card-border: 240 5% 26%;
   
-  --sidebar: 240 28% 18%;
+  --sidebar: 218 50% 19%;
   --sidebar-foreground: 0 0% 100%;
   --sidebar-border: 240 5% 26%;
-  --sidebar-primary: 44 55% 54%;
+  --sidebar-primary: 40 6% 62%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 240 5% 26%;
   --sidebar-accent-foreground: 0 0% 100%;
-  --sidebar-ring: 44 55% 54%;
+  --sidebar-ring: 40 6% 62%;
 
-  --popover: 240 28% 18%;
+  --popover: 218 50% 19%;
   --popover-foreground: 0 0% 100%;
   --popover-border: 240 5% 26%;
 
-  --primary: 44 55% 54%;
+  --primary: 40 6% 62%;
   --primary-foreground: 0 0% 100%;
 
   --secondary: 240 5% 26%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 240 28% 18%;
+  --muted: 218 50% 19%;
   --muted-foreground: 240 5% 65%;
 
-  --accent: 44 55% 54%;
+  --accent: 40 6% 62%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 62% 30%;
@@ -267,4 +269,40 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+}
+
+/* =====================================================================
+   Editorial layer (same look as the HomeNest site):
+   ivory + charcoal, serif headlines, square corners, no shadows.
+   These rules sit outside Tailwind's layers on purpose, so they win.
+   ===================================================================== */
+body { letter-spacing: .005em; }
+h1, h2 { font-family: var(--app-font-serif); font-weight: 500; letter-spacing: -0.01em; line-height: 1.04; }
+::selection { background: hsl(211 100% 88%); color: hsl(240 3% 12%); }
+
+.rounded, .rounded-md, .rounded-lg, .rounded-xl, .rounded-2xl, .rounded-3xl,
+.rounded-t-lg, .rounded-b-lg, .first\:rounded-t-lg:first-child, .last\:rounded-b-lg:last-child { border-radius: 0; }
+.shadow-sm, .shadow, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl { box-shadow: none; }
+
+/* small tracked capitals used for buttons, labels and section numbers */
+.caps { font-family: var(--app-font-sans); font-size: .74rem; font-weight: 400; letter-spacing: .2em; text-transform: uppercase; }
+.sec-no { display: block; font-family: var(--app-font-sans); font-size: .72rem; letter-spacing: .3em; text-transform: uppercase; color: hsl(var(--secondary)); margin-bottom: 14px; }
+
+/* Home hero */
+@keyframes mkr-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+@keyframes mkr-drop { to { transform: scaleY(1); } }
+@keyframes mkr-fade { to { opacity: 0; } }
+@keyframes mkr-rise { to { opacity: 1; transform: none; } }
+.mkr-zoom { animation: mkr-zoom 9s linear forwards; }
+.mkr-cable { width: 1px; height: 100%; background: linear-gradient(180deg, rgba(222,220,214,.6), rgba(222,220,214,.08)); transform: scaleY(0); transform-origin: top;
+  animation: mkr-drop 1.4s cubic-bezier(.7,0,.2,1) forwards, mkr-fade 1.6s ease forwards;
+  animation-delay: calc(var(--i) * 45ms), calc(2.6s + var(--i) * 20ms); }
+.mkr-cable-stay { width: 1px; height: 100%; background: linear-gradient(180deg, rgba(222,220,214,.55), rgba(222,220,214,.06)); transform: scaleY(0); transform-origin: top;
+  animation: mkr-drop 1.4s cubic-bezier(.7,0,.2,1) forwards; animation-delay: calc(var(--i) * 40ms); }
+.mkr-rise { opacity: 0; transform: translateY(20px); animation: mkr-rise 1s cubic-bezier(.2,.7,.2,1) forwards; }
+@media (prefers-reduced-motion: reduce) {
+  .mkr-zoom, .mkr-cable, .mkr-rise { animation: none; }
+  .mkr-cable-stay { animation: none; transform: none; }
+  .mkr-cable { display: none; }
+  .mkr-rise { opacity: 1; transform: none; }
 }

@@ -5,7 +5,7 @@ const data = {
   title: "Villa Invisible Grills",
   slug: "villa-invisible-grills",
   seoTitle: "Villa Invisible Grills Bangalore | Bespoke Safety Solutions | MKR",
-  seoDesc: "Premium villa invisible grills in Bangalore. Custom solutions for independent houses, villas, and bungalows. Full project management. 10-year warranty. MKR Safety Solutions.",
+  seoDesc: "Premium villa invisible grills in Bangalore. Custom solutions for independent houses, villas, and bungalows. Full project management. 15-year warranty. MKR Safety Solutions.",
   h1: "Villa Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Luxury villa balcony with invisible grill cable system and panoramic view",
@@ -19,7 +19,7 @@ const data = {
     "Large area pricing advantages — more cost-effective than piecemeal installation",
     "Minimal disruption — we coordinate around your household schedule",
     "Trusted by 50+ premium villas across Bangalore's best neighborhoods",
-    "10-year warranty covering all installations",
+    "15-year warranty covering all installations",
   ],
   features: [
     { title: "Full Villa Coverage", desc: "We handle all grill types in a single project — balcony, window, staircase, terrace, and courtyard." },

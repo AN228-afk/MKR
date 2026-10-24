@@ -88,7 +88,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <FadeLeft>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wide">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-light/20 border border-brand-light/30 rounded-full text-brand-light text-xs font-semibold mb-5 uppercase tracking-wide">
               <Shield className="w-3 h-3" /> MKR Safety Solutions
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 leading-tight">{data.h1}</h1>
@@ -103,7 +103,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
             </div>
           </FadeLeft>
           <FadeRight delay={0.2}>
-            <div className="hidden lg:block bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6">
+            <div className="hidden lg:block bg-white border border-border rounded-2xl p-6">
               <InquiryForm title="Book Free Site Visit" compact />
             </div>
           </FadeRight>
@@ -257,7 +257,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
             <p className="text-muted-foreground mb-6">Book a free site visit. Our team will visit your home, take measurements, and provide a transparent quote within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors">Call +91 77801 14547</a>
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors">Call +91 77801 14547</a>
             </div>
           </div>
         </section>

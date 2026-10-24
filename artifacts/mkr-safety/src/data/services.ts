@@ -78,7 +78,7 @@ export const services: Service[] = [
     description: "Bangalore's leading invisible grill installation service. Serving 12+ major neighborhoods with 1000+ successful installations.",
     price: "₹100–160/sq ft",
     icon: "MapPin",
-    features: ["Same-day site visit", "Free estimate", "10-year warranty", "500+ happy customers"],
+    features: ["Same-day site visit", "Free estimate", "15-year warranty", "500+ happy customers"],
     image: "MKR_1",
   },
 ];

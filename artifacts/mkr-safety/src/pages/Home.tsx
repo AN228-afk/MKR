@@ -1,28 +1,26 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { motion, AnimatePresence } from "framer-motion";
-import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
-import { FadeUp, FadeLeft, FadeRight, ScaleIn, StaggerList, StaggerItem } from "@/components/Animated";
+import { FadeUp } from "@/components/Animated";
+import { PremiumIcon, type PremiumIconName } from "@/components/PremiumIcon";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
+import { socialLinks } from "@/lib/social";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
-import { TrustBadges } from "@/components/TrustBadges";
 import { PriceCalculator } from "@/components/PriceCalculator";
 import { InquiryForm } from "@/components/InquiryForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { testimonials, services, blogPosts } from "@/data/services";
+import { testimonials, blogPosts } from "@/data/services";
 import hero1 from "@assets/MKR_3_1780926061320.webp";
-import hero2 from "@assets/MKR_1_of_child_1780926061320.webp";
 import img2 from "@assets/MKR_2_1780926061320.webp";
 import img5 from "@assets/MKR_5_1780926061320.webp";
 import img4 from "@assets/MKR_4_1780926061320.webp";
-import img2Card from "@assets/MKR_2_thumb_1780926061320.webp";
-import img5Card from "@assets/MKR_5_thumb_1780926061320.webp";
-import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
+import img8 from "@assets/5_1780926045097.webp";
+import img9 from "@assets/3_1780926045097.jpg";
 
 const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
+const SLIDE_MS = 6000;
 
 const heroSlides = [
   {
@@ -34,8 +32,8 @@ const heroSlides = [
     sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested to 250 kg/m.",
   },
   {
-    src: hero2,
-    alt: "Child safely enjoying the view through MKR invisible grills on high-rise balcony",
+    src: img7,
+    alt: "Child safely looking out from a high-rise balcony through MKR invisible grills at sunset",
     label: "Child Safety Grills",
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",
@@ -71,16 +69,70 @@ const heroSlides = [
     label: "2000+ Installations",
     heading: "Bangalore's Most",
     accent: "Trusted Grill Brand.",
-    sub: "5-Star rated by our customers on Google. Every installation backed by a 10-year warranty and lifetime customer support.",
+    sub: "5-Star rated by our customers on Google. Every installation backed by a 15-year warranty and lifetime customer support.",
   },
   {
-    src: img7,
-    alt: "Apartment balcony with stainless steel invisible grills at dusk",
-    label: "10-Year Warranty",
+    src: img8,
+    alt: "Open balcony with stainless steel invisible grills overlooking green trees",
+    label: "15-Year Warranty",
     heading: "316 Marine SS Steel.",
     accent: "Zero Rust. Ever.",
     sub: "The same grade used in marine environments. Resistant to Bangalore humidity, rain, and coastal conditions — guaranteed.",
   },
+];
+
+const serviceCards = [
+  {
+    title: "Balcony Invisible Grills",
+    href: "/balcony-invisible-grills",
+    desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
+    img: hero1,
+    waMsg: "Hi, I need Balcony Invisible Grills in Bangalore. Please share details.",
+  },
+  {
+    title: "Window Invisible Grills",
+    href: "/window-invisible-grills",
+    desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
+    img: img4,
+    waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
+  },
+  {
+    title: "Staircase Invisible Grills",
+    href: "/staircase-invisible-grills",
+    desc: "Elegant vertical cable railings for open staircases — child-safe, pet-safe, and stunning in modern interiors.",
+    img: img5,
+    waMsg: "Hi, I need Staircase Invisible Grills in Bangalore. Please share details.",
+  },
+  {
+    title: "Villa Invisible Grills",
+    href: "/villa-invisible-grills",
+    desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
+    img: img2,
+    waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
+  },
+];
+
+const reasons = [
+  { title: "316 Grade Marine Stainless Steel", desc: "The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity." },
+  { title: "250kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed." },
+  { title: "Nearly Invisible From Any Angle", desc: "3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust." },
+  { title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and provide a transparent quote — no obligation required." },
+  { title: "15-Year Warranty", desc: "Every installation is backed by a full 15 years of warranty covering cables, anchors, and fittings." },
+];
+
+const areas = [
+  ["Whitefield", "/invisible-grills-whitefield"],
+  ["Koramangala", "/invisible-grills-koramangala"],
+  ["HSR Layout", "/invisible-grills-hsr-layout"],
+  ["Indiranagar", "/invisible-grills-indiranagar"],
+  ["Electronic City", "/invisible-grills-electronic-city"],
+  ["Marathahalli", "/invisible-grills-marathahalli"],
+  ["Bellandur", "/invisible-grills-bellandur"],
+  ["Sarjapur Road", "/invisible-grills-sarjapur-road"],
+  ["Jayanagar", "/invisible-grills-jayanagar"],
+  ["Hebbal", "/invisible-grills-hebbal"],
+  ["Yelahanka", "/invisible-grills-yelahanka"],
+  ["KR Puram", "/invisible-grills-kr-puram"],
 ];
 
 const homeFaqs = [
@@ -102,7 +154,7 @@ const homeFaqs = [
   },
   {
     q: "Do invisible grills rust in Bangalore's climate?",
-    a: "We exclusively use 316-grade marine stainless steel, which is highly resistant to rust, corrosion, and humidity. This is the same grade used in marine environments. We back every installation with a 10-year warranty.",
+    a: "We exclusively use 316-grade marine stainless steel, which is highly resistant to rust, corrosion, and humidity. This is the same grade used in marine environments. We back every installation with a 15-year warranty.",
   },
 ];
 
@@ -110,7 +162,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "MKR Safety Solutions",
-  description: "Premium invisible grill installation in Bangalore. Balcony, window, staircase, terrace, and villa grills. 316-grade marine SS cables. 10-year warranty.",
+  description: "Premium invisible grill installation in Bangalore. Balcony, window, staircase, terrace, and villa grills. 316-grade marine SS cables. 15-year warranty.",
   url: "https://mkrsafetysolutions.com",
   telephone: "+91-77801-14547",
   email: "mkrsafetysolutions@gmail.com",
@@ -127,6 +179,7 @@ const localBusinessSchema = {
   areaServed: ["Bangalore", "Whitefield", "Koramangala", "HSR Layout", "Indiranagar", "Bellandur", "Marathahalli"],
   openingHours: "Mo-Sa 09:00-19:00",
   image: "https://mkrsafetysolutions.com/og-image.jpg",
+  ...(socialLinks.length ? { sameAs: socialLinks } : {}),
 };
 
 const faqSchema = {
@@ -139,466 +192,405 @@ const faqSchema = {
   })),
 };
 
+/* Shared building blocks, in the HomeNest style */
+const wrap = "max-w-7xl mx-auto px-5 sm:px-6 lg:px-8";
+const section = "pt-[clamp(48px,6vw,88px)]";
+const btnBase = "caps inline-flex items-center justify-center min-h-[52px] px-7 border transition-colors";
+const btnLight = `${btnBase} bg-white text-foreground border-white hover:bg-secondary hover:border-secondary hover:text-white`;
+const btnOutlineLight = `${btnBase} bg-transparent text-white border-white/70 hover:bg-white hover:text-foreground`;
+const btnBlue = `${btnBase} rounded-full bg-[#2a8af0] text-white border-[#2a8af0] hover:bg-[#4198f2] hover:border-[#4198f2]`;
+const btnOutlineBlue = `${btnBase} rounded-full bg-transparent text-[#2a8af0] border-[#2a8af0] hover:bg-[#2a8af0] hover:text-white`;
+const textLink = "caps inline-block pb-1 border-b border-secondary text-foreground hover:text-secondary transition-colors";
+
+function SectionHead({ no, title, link }: { no: string; title: string; link?: { href: string; label: string } }) {
+  return (
+    <FadeUp className="flex flex-wrap items-end justify-between gap-4 border-b border-border pb-5 mb-8">
+      <div>
+        <span className="sec-no">{no}</span>
+        <h2 className="text-[clamp(2rem,3.8vw,3.1rem)] text-foreground max-w-[20ch]">{title}</h2>
+      </div>
+      {link && <Link href={link.href} className={textLink}>{link.label}</Link>}
+    </FadeUp>
+  );
+}
+
+function PhotoBand({ src, alt, title, accent, text }: { src: string; alt: string; title: string; accent: string; text: string }) {
+  return (
+    <section className="relative mt-[clamp(48px,6vw,88px)] h-[clamp(420px,70vh,760px)] overflow-hidden flex items-end text-white">
+      <img src={src} alt={alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" width={1600} height={1000} />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/80" />
+      <div className={`${wrap} relative z-10 w-full pb-[clamp(32px,5vw,64px)]`}>
+        <h2 className="text-white text-[clamp(2.4rem,6vw,5.2rem)] leading-[.98] max-w-[16ch] mb-4">
+          {title} <em className="italic text-brand-light">{accent}</em>
+        </h2>
+        <p className="text-white/85 font-light max-w-[46ch] text-[1.05rem]">{text}</p>
+      </div>
+    </section>
+  );
+}
+
+/* Icon feature card (used in place of photos in two sections) */
+function FeatureCard({ icon, title, children }: { icon: PremiumIconName; title: string; no?: string; children: React.ReactNode }) {
+  return (
+    <div className="h-full bg-white rounded-[24px] p-8 sm:p-9 flex flex-col gap-3 shadow-[0_1px_2px_rgba(0,0,0,.04),0_8px_24px_-12px_rgba(0,0,0,.08)] transition-transform duration-500 hover:-translate-y-1">
+      <PremiumIcon name={icon} className="w-16 h-16 mb-3" />
+      <h3 className="text-[#1d1d1f] font-semibold text-[1.2rem] tracking-[-0.01em] leading-snug">{title}</h3>
+      <div className="text-[#6e6e73] text-[0.98rem] leading-relaxed">{children}</div>
+    </div>
+  );
+}
+
 export default function Home() {
   const [current, setCurrent] = useState(0);
-  const [direction, setDirection] = useState(1);
+  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setDirection(1);
-      setCurrent((prev) => (prev + 1) % heroSlides.length);
-    }, 4500);
+    if (paused) return;
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+    const timer = setInterval(() => setCurrent((prev) => (prev + 1) % heroSlides.length), SLIDE_MS);
     return () => clearInterval(timer);
-  }, []);
+  }, [paused]);
 
+  const slide = heroSlides[current];
+  const uniquePosts = blogPosts
+    .filter((post, i, arr) => arr.findIndex((p) => p.slug.replace(/-\d+$/, "") === post.slug.replace(/-\d+$/, "")) === i)
+    .slice(0, 3);
 
   return (
     <Layout>
       <SEOHead
         title="Invisible Grills Bangalore | MKR Safety Solutions | Best Price"
-        description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 2000+ installs, 5.0★ rating, 10-year warranty. Free site visit."
+        description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 2000+ installs, 5.0★ rating, 15-year warranty. Free site visit."
         canonical="https://mkrsafetysolutions.com/"
         schema={[localBusinessSchema, faqSchema]}
       />
 
-      {/* Hero Slideshow Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-primary">
-        {/* Slideshow Background */}
-        <div className="absolute inset-0">
-          <AnimatePresence initial={false} mode="sync">
-            <motion.img
-              key={current}
-              src={heroSlides[current].src}
-              alt={heroSlides[current].alt}
-              initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 0.85, scale: 1, transition: { duration: 1.1, ease: [0.22, 1, 0.36, 1] } }}
-              exit={{ opacity: 0, transition: { duration: 0.6 } }}
-              className="absolute inset-0 w-full h-full object-cover"
-              width={1200}
-              height={800}
-              fetchPriority="high"
+      {/* ---------- Hero: full-screen photos, header sits on top ---------- */}
+      <section
+        className="relative -mt-16 md:-mt-20 h-[100svh] min-h-[600px] max-h-[1100px] overflow-hidden bg-[#0b0a09] text-white flex flex-col justify-end"
+        aria-roledescription="carousel"
+        aria-label="Our work"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        {heroSlides.map((s, i) => (
+          <div
+            key={s.label}
+            className={`absolute inset-0 transition-opacity duration-[1200ms] ${i === current ? "opacity-100" : "opacity-0"}`}
+            aria-hidden={i !== current}
+          >
+            <img
+              src={s.src}
+              alt={s.alt}
+              className={`w-full h-full object-cover ${i === current ? "mkr-zoom" : ""}`}
+              width={1600}
+              height={1000}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
             />
-          </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/20" />
+          </div>
+        ))}
+        <div className="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(90deg,rgba(0,0,0,.78)_0%,rgba(0,0,0,.55)_40%,rgba(0,0,0,.18)_75%,rgba(0,0,0,.05)_100%)]" />
+        <div className="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(180deg,rgba(0,0,0,.6)_0%,rgba(0,0,0,0)_22%,rgba(0,0,0,0)_55%,rgba(0,0,0,.75)_100%)]" />
+        {/* thin cables that drop in when the page opens */}
+        <div className="absolute inset-0 z-[2] flex justify-around px-[4vw] pointer-events-none" aria-hidden="true">
+          {Array.from({ length: 22 }).map((_, i) => (
+            <i key={i} className={`mkr-cable ${i >= 10 ? "hidden md:block" : ""}`} style={{ ["--i" as string]: i } as React.CSSProperties} />
+          ))}
         </div>
 
-        {/* Slide Label Pill */}
-        <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 hidden sm:block">
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={current}
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 8 }}
-              transition={{ duration: 0.35 }}
-              className="px-4 py-1.5 bg-secondary/90 text-secondary-foreground text-xs font-bold rounded-full uppercase tracking-widest shadow"
+        <div className={`${wrap} relative z-[3] w-full pb-8`}>
+          <div key={current} className="mkr-rise [text-shadow:0_2px_24px_rgba(0,0,0,.45)]">
+            <p className="caps flex items-center gap-3.5 text-white/80 mb-5 before:content-[''] before:w-11 before:h-px before:bg-brand-light">
+              {slide.label}
+            </p>
+            <h1 className="text-white text-[clamp(2.5rem,7vw,6.2rem)] leading-[1] max-w-[15ch] mb-6">
+              {slide.heading} <em className="italic text-white/90">{slide.accent}</em>
+            </h1>
+            <p className="text-white/90 font-normal text-[clamp(1rem,1.3vw,1.18rem)] max-w-[44ch] mb-8">{slide.sub}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-3">
+            <Link href="/contact-us" className={btnBlue} data-testid="button-hero-quote">
+              Get a free quote
+            </Link>
+            <a
+              href={WA}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${btnOutlineLight} rounded-full`}
+              data-testid="button-hero-whatsapp"
+              onClick={trackGoogleAdsConversion}
             >
-              {heroSlides[current].label}
-            </motion.span>
-          </AnimatePresence>
+              WhatsApp us
+            </a>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wider">
-              <Shield className="w-3 h-3" /> Bangalore's Most Trusted Invisible Grill Company
-            </div>
-
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={current}
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -14 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-4">
-                  {heroSlides[current].heading}<br />
-                  <span className="text-secondary">{heroSlides[current].accent}</span>
-                </h1>
-                <p className="text-sm sm:text-base text-primary-foreground/80 leading-relaxed mb-7 max-w-lg">
-                  {heroSlides[current].sub}
-                </p>
-              </motion.div>
-            </AnimatePresence>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/contact-us"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-all text-sm"
-                data-testid="button-hero-quote"
-              >
-                Get Free Quote
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <a
-                href={WA}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all text-sm"
-                data-testid="button-hero-whatsapp"
-                onClick={trackGoogleAdsConversion}
-              >
-                <MessageCircle className="w-4 h-4" />
-                WhatsApp Us
-              </a>
-            </div>
-
-            <div className="flex flex-wrap gap-6 mt-8">
-              {[["2000+", "Installations"], ["5.0★", "Google Rating"], ["10 Yr", "Warranty"]].map(([num, label]) => (
-                <div key={label}>
-                  <div className="text-xl font-bold text-secondary">{num}</div>
-                  <div className="text-xs text-primary-foreground/70">{label}</div>
-                </div>
+        <div className={`${wrap} relative z-[3] w-full`}>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-t border-white/25 pt-4 pb-6">
+            <ul className="hidden sm:flex flex-wrap gap-x-10 gap-y-1 text-[0.72rem] tracking-[0.16em] uppercase text-white/80">
+              <li>2000+ installations</li>
+              <li>5.0★ Google rating</li>
+              <li>15-year warranty</li>
+              <li>Free site visit</li>
+            </ul>
+            <div className="flex gap-1.5 md:w-[240px]">
+              {heroSlides.map((s, i) => (
+                <button
+                  key={s.label}
+                  onClick={() => setCurrent(i)}
+                  aria-label={`Show slide ${i + 1}: ${s.label}`}
+                  aria-current={i === current}
+                  className="flex-1 h-8 flex items-center"
+                >
+                  <span className={`block w-full h-[2px] transition-colors ${i === current ? "bg-brand-light" : "bg-white/35"}`} />
+                </button>
               ))}
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:block"
-          >
-            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6">
-              <InquiryForm title="Book Free Site Visit" compact />
-            </div>
-          </motion.div>
         </div>
       </section>
 
-      <TrustBadges />
-
-      <PriceCalculator />
-
-      {/* Services Grid */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Invisible Grill Services in Bangalore
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              From balconies to staircases, every space deserves a safety solution that doesn't compromise on beauty or views.
+      {/* ---------- Statement + numbers ---------- */}
+      <section className={section}>
+        <div className={`${wrap} grid lg:grid-cols-[1.4fr_1fr] gap-12 lg:gap-20 items-end`}>
+          <FadeUp>
+            <p className="font-serif text-[clamp(1.9rem,3.6vw,3rem)] leading-[1.12] text-foreground">
+              We make balconies, windows and staircases <em className="italic text-secondary">safe for children and pets</em>, with cables so fine the view stays exactly as it was.
             </p>
           </FadeUp>
-          <StaggerList className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Balcony Invisible Grills",
-                href: "/balcony-invisible-grills",
-                desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
-                img: hero1,
-                waMsg: "Hi, I need Balcony Invisible Grills in Bangalore. Please share details.",
-              },
-              {
-                title: "Window Invisible Grills",
-                href: "/window-invisible-grills",
-                desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
-                img: img4Card,
-                waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
-              },
-              {
-                title: "Staircase Invisible Grills",
-                href: "/staircase-invisible-grills",
-                desc: "Elegant vertical cable railings for open staircases — child-safe, pet-safe, and stunning in modern interiors.",
-                img: img5Card,
-                waMsg: "Hi, I need Staircase Invisible Grills in Bangalore. Please share details.",
-              },
-              {
-                title: "Villa Invisible Grills",
-                href: "/villa-invisible-grills",
-                desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
-                img: img2Card,
-                waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
-              },
-            ].map(({ title, href, desc, img, waMsg }) => (
-              <StaggerItem key={href}>
-                <motion.div
-                  whileHover={{ y: -4, boxShadow: "0 12px 32px rgba(0,0,0,0.1)" }}
-                  transition={{ duration: 0.2 }}
-                  className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all flex flex-col h-full"
-                >
-                  <Link href={href} data-testid={`card-service-${href}`}>
-                    <div className="relative h-48 overflow-hidden">
+          <FadeUp delay={0.1}>
+            <dl className="grid grid-cols-2 gap-x-8 gap-y-8 border-t border-foreground pt-8">
+              {[
+                ["2000+", "Installations"],
+                ["5.0★", "Google rating"],
+                ["8+ yrs", "Experience"],
+                ["15 yrs", "Warranty"],
+              ].map(([num, label]) => (
+                <div key={label} className="flex flex-col-reverse">
+                  <dt className="caps text-muted-foreground mt-3">{label}</dt>
+                  <dd className="font-serif text-[clamp(2.2rem,3.4vw,3rem)] leading-none text-foreground">{num}</dd>
+                </div>
+              ))}
+            </dl>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* ---------- 01 Services ---------- */}
+      <section className={section}>
+        <div className={wrap}>
+          <SectionHead no="01 — Services" title="Invisible grill services in Bangalore" link={{ href: "/invisible-grills-bangalore", label: "All services" }} />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-3.5 sm:gap-x-8 gap-y-12">
+            {serviceCards.map(({ title, href, desc, img, waMsg }) => (
+              <FadeUp key={href}>
+                <article className="group">
+                  <Link href={href} data-testid={`card-service-${href}`} className="block">
+                    <div className="aspect-[4/5] overflow-hidden bg-muted mb-5">
                       <img
                         src={img}
                         alt={`${title} in Bangalore by MKR Safety Solutions`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
                         loading="lazy"
-                        width={400}
-                        height={300}
+                        width={800}
+                        height={1000}
                       />
-                      <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/30 transition-colors" />
-                      <div className="absolute bottom-3 left-3 text-white font-bold text-sm leading-tight pr-2">{title}</div>
                     </div>
+                    <h3 className="font-serif text-[1.25rem] sm:text-[1.65rem] font-medium leading-[1.1] text-foreground mb-2 group-hover:text-secondary transition-colors">
+                      {title}
+                    </h3>
                   </Link>
-                  <div className="p-4 flex flex-col flex-1">
-                    <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
-                    <div className="mt-4 flex items-center justify-between">
-                      <Link href={href} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
-                        Learn more<span className="sr-only"> about {title}</span> <ArrowRight className="w-3 h-3" />
-                      </Link>
-                      <div className="flex items-center gap-2">
-                        <a
-                          href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label="WhatsApp"
-                          onClick={trackGoogleAdsConversion}
-                          className="w-7 h-7 flex items-center justify-center rounded-full bg-green-700 text-white hover:bg-green-800 transition-colors"
-                        >
-                          <MessageCircle className="w-3.5 h-3.5" />
-                        </a>
-                        <a
-                          href="tel:+917780114547"
-                          onClick={trackGoogleAdsConversion}
-                          aria-label="Call"
-                          className="w-7 h-7 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-80 transition-colors"
-                        >
-                          <Phone className="w-3.5 h-3.5" />
-                        </a>
-                      </div>
-                    </div>
+                  <p className="hidden sm:block text-[0.95rem] text-muted-foreground leading-relaxed">{desc}</p>
+                  <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-[0.68rem] tracking-[0.18em] uppercase">
+                    <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="text-foreground hover:text-secondary py-1">
+                      Call
+                    </a>
+                    <a
+                      href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={trackGoogleAdsConversion}
+                      className="text-foreground hover:text-secondary py-1"
+                    >
+                      WhatsApp
+                    </a>
                   </div>
-                </motion.div>
-              </StaggerItem>
-            ))}
-          </StaggerList>
-          <div className="text-center mt-8">
-            <Link href="/invisible-grills-bangalore" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
-              View All Services <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose MKR */}
-      <section className="py-16 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeLeft>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Why 2000+ Bangalore Families Choose MKR
-              </h2>
-              <StaggerList className="space-y-4">
-                {[
-                  { title: "316 Grade Marine Stainless Steel", desc: "The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity." },
-                  { title: "250kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed." },
-                  { title: "Nearly Invisible From Any Angle", desc: "3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust." },
-                  { title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and provide a transparent quote — no obligation required." },
-                  { title: "10-Year Warranty", desc: "Every installation is backed by a full decade of warranty covering cables, anchors, and fittings." },
-                ].map(({ title, desc }) => (
-                  <StaggerItem key={title}>
-                    <div className="flex gap-3">
-                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                      <div>
-                        <div className="font-semibold text-foreground text-sm">{title}</div>
-                        <div className="text-muted-foreground text-sm mt-0.5">{desc}</div>
-                      </div>
-                    </div>
-                  </StaggerItem>
-                ))}
-              </StaggerList>
-              <div className="mt-8">
-                <Link href="/about-us" className="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all">
-                  About MKR Safety Solutions <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </FadeLeft>
-            <FadeRight delay={0.15}>
-              <div className="relative">
-                <motion.img
-                  src={hero2}
-                  alt="Child safely watching city view through MKR invisible grills on Bangalore apartment balcony"
-                  className="rounded-2xl w-full object-cover shadow-xl"
-                  loading="lazy"
-                  width={600}
-                  height={500}
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.4 }}
-                />
-                <motion.div
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg border border-border"
-                >
-                  <div className="flex items-center gap-2">
-                    <div className="flex">
-                      {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
-                    </div>
-                    <span className="text-sm font-semibold">5.0 / 5</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground mt-1">Based on verified Google Reviews</p>
-                </motion.div>
-              </div>
-            </FadeRight>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-3">What Bangalore Families Say</h2>
-            <p className="text-muted-foreground">Real reviews from real customers across Bangalore</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.slice(0, 6).map((t, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-muted rounded-xl p-6 border border-border"
-                data-testid={`card-testimonial-${i}`}
-              >
-                <div className="flex items-center gap-1 mb-3">
-                  {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
-                </div>
-                <p className="text-foreground text-sm leading-relaxed mb-4">"{t.text}"</p>
-                <div>
-                  <div className="font-semibold text-sm text-foreground">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.location} · {t.service}</div>
-                </div>
-              </motion.div>
+                </article>
+              </FadeUp>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Link href="/reviews" className="inline-flex items-center gap-2 text-secondary font-semibold">
-              Read All Reviews <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Locations */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-3">Serving All Major Areas in Bangalore</h2>
-            <p className="text-primary-foreground/70">Same-day site visits available across 12+ neighborhoods</p>
-          </FadeUp>
-          <StaggerList className="flex flex-wrap justify-center gap-3">
+      <section className="mt-[clamp(48px,6vw,88px)] py-[clamp(44px,5.5vw,76px)] bg-[#f5f5f7]">
+        <div className={wrap}>
+          <SectionHead no="Trusted across Bangalore" title="Bangalore's most trusted grill brand" />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             {[
-              ["Whitefield", "/invisible-grills-whitefield"],
-              ["Koramangala", "/invisible-grills-koramangala"],
-              ["HSR Layout", "/invisible-grills-hsr-layout"],
-              ["Indiranagar", "/invisible-grills-indiranagar"],
-              ["Electronic City", "/invisible-grills-electronic-city"],
-              ["Marathahalli", "/invisible-grills-marathahalli"],
-              ["Bellandur", "/invisible-grills-bellandur"],
-              ["Sarjapur Road", "/invisible-grills-sarjapur-road"],
-              ["Jayanagar", "/invisible-grills-jayanagar"],
-              ["Hebbal", "/invisible-grills-hebbal"],
-              ["Yelahanka", "/invisible-grills-yelahanka"],
-              ["KR Puram", "/invisible-grills-kr-puram"],
-            ].map(([area, href]) => (
-              <StaggerItem key={href}>
-                <motion.div whileHover={{ scale: 1.08 }} transition={{ duration: 0.15 }}>
-                  <Link
-                    href={href}
-                    className="block px-4 py-2 border border-primary-foreground/30 rounded-full text-sm text-primary-foreground/90 hover:border-secondary hover:text-secondary transition-all"
-                    data-testid={`link-location-${area}`}
-                  >
-                    {area}
-                  </Link>
-                </motion.div>
-              </StaggerItem>
+              { icon: "home" as PremiumIconName, num: "2000+", label: "Homes secured" },
+              { icon: "star" as PremiumIconName, num: "5.0★", label: "Google rating" },
+              { icon: "clock" as PremiumIconName, num: "8+ yrs", label: "Experience" },
+              { icon: "award" as PremiumIconName, num: "15 yrs", label: "Warranty on every job" },
+            ].map(({ icon, num, label }) => (
+              <FadeUp key={label}>
+                <div className="h-full bg-white rounded-[24px] p-6 sm:p-8 flex flex-col gap-5 shadow-[0_1px_2px_rgba(0,0,0,.04),0_8px_24px_-12px_rgba(0,0,0,.08)]">
+                  <PremiumIcon name={icon} className="w-14 h-14" />
+                  <div>
+                    <div className="font-serif text-[clamp(2.2rem,3.6vw,3rem)] leading-none text-[#1d1d1f]">{num}</div>
+                    <div className="text-sm text-muted-foreground mt-2">{label}</div>
+                  </div>
+                </div>
+              </FadeUp>
             ))}
-          </StaggerList>
+          </div>
         </div>
       </section>
 
-      {/* Blog Preview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="flex justify-between items-center mb-10">
-            <div>
-              <h2 className="text-3xl font-bold text-foreground">Latest from Our Blog</h2>
-              <p className="text-muted-foreground mt-1">Expert tips on invisible grills and home safety</p>
-            </div>
-            <Link href="/blog" className="hidden sm:flex items-center gap-2 text-secondary font-semibold">
-              All Posts <ArrowRight className="w-4 h-4" />
-            </Link>
-          </FadeUp>
-          <StaggerList className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPosts.filter((post, i, arr) => {
-              const baseSlug = post.slug.replace(/-\d+$/, "");
-              return arr.findIndex(p => p.slug.replace(/-\d+$/, "") === baseSlug) === i;
-            }).slice(0, 3).map((post) => (
-              <StaggerItem key={post.slug}>
-                <motion.div whileHover={{ y: -4, boxShadow: "0 8px 28px rgba(0,0,0,0.08)" }} transition={{ duration: 0.2 }}>
-                  <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`}>
-                    <article className="border border-border rounded-xl p-6 hover:shadow-md transition-shadow h-full">
-                      <div className="text-xs text-muted-foreground mb-2">{post.date} · {post.readTime}</div>
-                      <h3 className="font-semibold text-foreground text-base mb-2 leading-snug">{post.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
-                      <span className="inline-flex items-center gap-1 mt-4 text-xs font-semibold text-secondary">
-                        Read more <ArrowRight className="w-3 h-3" />
-                      </span>
-                    </article>
-                  </Link>
-                </motion.div>
-              </StaggerItem>
-            ))}
-          </StaggerList>
+      <div className="mt-[clamp(48px,6vw,88px)]">
+        <PriceCalculator />
+      </div>
+
+      {/* ---------- 02 Why MKR ---------- */}
+      <section className="mt-[clamp(48px,6vw,88px)] py-[clamp(44px,5.5vw,76px)] bg-[#f5f5f7]">
+        <div className={wrap}>
+          <SectionHead no="02 — Why MKR" title="Why 2000+ Bangalore families choose MKR" link={{ href: "/about-us", label: "About MKR" }} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            <FadeUp><FeatureCard icon="shield" title="316 Grade Marine Stainless Steel">The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity.</FeatureCard></FadeUp>
+            <FadeUp delay={0.05}><FeatureCard icon="load" title="250kg Load-Tested Safety">Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed.</FeatureCard></FadeUp>
+            <FadeUp delay={0.1}><FeatureCard icon="eye" title="Nearly Invisible From Any Angle">3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust.</FeatureCard></FadeUp>
+            <FadeUp><FeatureCard icon="visit" title="Free Site Visit & Custom Quote">We visit your home, measure every corner, and provide a transparent quote — no obligation required.</FeatureCard></FadeUp>
+            <FadeUp delay={0.05}><FeatureCard icon="rupee" title="Clear, Honest Pricing">₹100 to ₹160 per sq ft, with the same price for 2.5mm and 3mm cables. No hidden charges.</FeatureCard></FadeUp>
+            <FadeUp delay={0.1}><FeatureCard icon="award" title="15-Year Warranty">Every installation is backed by a full 15 years of warranty covering cables, anchors, and fittings.</FeatureCard></FadeUp>
+          </div>
+          <p className="flex items-center gap-3 mt-8 text-sm text-muted-foreground">
+            <span className="text-foreground tracking-[0.2em]" aria-hidden="true">★★★★★</span>
+            5.0 / 5 — based on verified Google Reviews
+          </p>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <ScaleIn>
-        <section className="py-16 bg-secondary/10 border-t border-secondary/20">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Secure Your Home?</h2>
-            <p className="text-muted-foreground mb-8">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
-                  Book Free Site Visit
+      {/* ---------- 03 Reviews ---------- */}
+      <section className={section}>
+        <div className={wrap}>
+          <SectionHead no="03 — Reviews" title="What Bangalore families say" link={{ href: "/reviews", label: "Read all reviews" }} />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+            {testimonials.slice(0, 6).map((t, i) => (
+              <FadeUp key={i} delay={(i % 3) * 0.08}>
+                <figure className="border-t border-foreground pt-6" data-testid={`card-testimonial-${i}`}>
+                  <span className="text-secondary tracking-[0.2em] text-sm" aria-label="5 out of 5 stars">★★★★★</span>
+                  <blockquote className="font-serif italic text-[1.35rem] leading-snug text-foreground mt-4 mb-6">“{t.text}”</blockquote>
+                  <figcaption>
+                    <div className="text-foreground font-medium text-sm">{t.name}</div>
+                    <div className="text-xs text-muted-foreground mt-0.5">{t.location} · {t.service}</div>
+                  </figcaption>
+                </figure>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <PhotoBand
+        src={img9}
+        alt="Curved apartment balcony fitted with stainless steel invisible grills"
+        title="316 marine SS steel."
+        accent="Zero rust. Ever."
+        text="The same grade used in marine environments. Resistant to Bangalore humidity, rain, and coastal conditions — guaranteed."
+      />
+
+      {/* ---------- 04 Areas ---------- */}
+      <section className={section}>
+        <div className={wrap}>
+          <SectionHead no="04 — Areas" title="Serving all major areas in Bangalore" />
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 border-t border-border">
+            {areas.map(([area, href], i) => (
+              <li key={href} className="border-b border-border">
+                <Link
+                  href={href}
+                  data-testid={`link-location-${area}`}
+                  className={`flex items-baseline justify-between gap-3 py-5 font-serif text-[clamp(1.4rem,2vw,1.8rem)] transition-all duration-300 hover:text-secondary hover:pl-2.5 ${i === 0 ? "text-secondary" : "text-foreground"}`}
+                >
+                  {area}
+                  <span className="font-sans text-[0.64rem] tracking-[0.18em] uppercase text-muted-foreground whitespace-nowrap">Invisible grills</span>
                 </Link>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
-                  <Phone className="w-4 h-4" /> Call +91 77801 14547
-                </a>
-              </motion.div>
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground text-sm mt-6">Same-day site visits available across 12+ neighborhoods.</p>
+        </div>
+      </section>
+
+      {/* ---------- 05 Blog ---------- */}
+      <section className={section}>
+        <div className={wrap}>
+          <SectionHead no="05 — Journal" title="Latest from our blog" link={{ href: "/blog", label: "All posts" }} />
+          <div className="grid md:grid-cols-3 gap-x-10 gap-y-12">
+            {uniquePosts.map((post) => (
+              <FadeUp key={post.slug}>
+                <article className="border-t border-foreground pt-6 h-full">
+                  <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`} className="group block">
+                    <div className="text-[0.68rem] tracking-[0.18em] uppercase text-muted-foreground mb-3">{post.date} · {post.readTime}</div>
+                    <h3 className="font-serif text-[1.5rem] font-medium leading-[1.15] text-foreground mb-3 group-hover:text-secondary transition-colors">{post.title}</h3>
+                    <p className="text-[0.95rem] text-muted-foreground leading-relaxed">{post.excerpt}</p>
+                  </Link>
+                </article>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- 06 FAQ ---------- */}
+      <section className={section}>
+        <div className={`${wrap} grid lg:grid-cols-[1fr_1.6fr] gap-10 lg:gap-20`}>
+          <FadeUp>
+            <span className="sec-no">06 — Questions</span>
+            <h2 className="text-[clamp(2rem,3.8vw,3.1rem)] text-foreground mb-6">Frequently asked questions</h2>
+            <Link href="/faqs" className={textLink}>View all FAQs</Link>
+          </FadeUp>
+          <Accordion type="single" collapsible className="border-t border-foreground">
+            {homeFaqs.map((faq, i) => (
+              <AccordionItem key={i} value={`faq-${i}`} className="border-b border-border">
+                <AccordionTrigger className="text-left font-serif text-[1.3rem] font-medium text-foreground py-6 hover:no-underline hover:text-secondary">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-[0.98rem] pb-6 leading-relaxed">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* ---------- Closing: call, WhatsApp or book a visit ---------- */}
+      <section className="mt-[clamp(48px,6vw,88px)] bg-[#f5f5f7] text-[#1d1d1f] py-[clamp(48px,6vw,88px)]">
+        <div className={`${wrap} grid lg:grid-cols-2 gap-12 lg:gap-20 items-center`}>
+          <div>
+            <span className="sec-no">Free site visit</span>
+            <h2 className="text-foreground text-[clamp(2.2rem,4.5vw,3.6rem)] mb-5">Ready to secure your home?</h2>
+            <p className="text-muted-foreground max-w-[44ch] mb-8">
+              Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.
+            </p>
+            <a
+              href="tel:+917780114547"
+              onClick={trackGoogleAdsConversion}
+              className="block font-serif text-foreground text-[clamp(2rem,4vw,3.2rem)] leading-none hover:text-secondary transition-colors mb-8"
+            >
+              +91 77801 14547
+            </a>
+            <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-3">
+              <a href={WA} target="_blank" rel="noopener noreferrer" onClick={trackGoogleAdsConversion} className={btnBlue}>
+                WhatsApp us
+              </a>
+              <Link href="/contact-us" onClick={trackGoogleAdsConversion} className={btnOutlineBlue}>
+                Book free site visit
+              </Link>
             </div>
           </div>
-        </section>
-      </ScaleIn>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
-            <p className="text-muted-foreground">Everything you need to know about invisible grills in Bangalore</p>
-          </FadeUp>
-          <FadeUp delay={0.1}>
-            <Accordion type="single" collapsible className="space-y-3">
-              {homeFaqs.map((faq, i) => (
-                <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-4">
-                  <AccordionTrigger className="text-left font-medium text-sm py-4 hover:no-underline">
-                    {faq.q}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-sm pb-4 leading-relaxed">
-                    {faq.a}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </FadeUp>
-          <FadeUp delay={0.2} className="text-center mt-8">
-            <Link href="/faqs" className="inline-flex items-center gap-2 text-secondary font-semibold">
-              View All FAQs <ArrowRight className="w-4 h-4" />
-            </Link>
-          </FadeUp>
+          <div className="bg-white text-foreground border border-border rounded-[22px] p-6 sm:p-10">
+            <InquiryForm title="Book a free site visit" compact />
+          </div>
         </div>
       </section>
     </Layout>

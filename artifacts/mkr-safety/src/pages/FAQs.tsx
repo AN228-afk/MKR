@@ -18,7 +18,7 @@ const faqCategories = [
     faqs: [
       { q: "Are invisible grills safe for children and toddlers?", a: "Yes, our child safety invisible grills are specifically designed to prevent toddler falls. With 2.5mm cable spacing and load testing to 250kg per linear meter, they provide certified protection even for active toddlers. We've installed child safety grills in 300+ Bangalore homes." },
       { q: "What is the weight load capacity of your invisible grills?", a: "Each cable in our invisible grill system is tensioned and load-tested to withstand 250kg per linear meter. This far exceeds international safety standards for balcony railing systems, making it suitable for residential, commercial, and school applications." },
-      { q: "Are your grills certified or tested?", a: "Yes, our cables are tension-tested and quality-checked before and after installation. We follow IS (Indian Standards) and international safety guidelines for balcony protection systems. Our 10-year warranty covers the integrity of the entire installation." },
+      { q: "Are your grills certified or tested?", a: "Yes, our cables are tension-tested and quality-checked before and after installation. We follow IS (Indian Standards) and international safety guidelines for balcony protection systems. Our 15-year warranty covers the integrity of the entire installation." },
       { q: "Can invisible grills be cut by intruders?", a: "316-grade marine stainless steel requires heavy-duty industrial cable cutters to cut — ordinary tools will not work. For ground-floor or accessible windows where security is a concern, we recommend supplementing with other security measures." },
     ],
   },
@@ -35,7 +35,7 @@ const faqCategories = [
     category: "Pricing & Warranty",
     faqs: [
       { q: "How much do invisible grills cost in Bangalore?", a: "Prices range from ₹100–₹160 per square foot for both 3mm and 2.5mm cables, depending on the type (balcony, window, staircase) and the complexity of installation. We provide detailed, itemized quotes after a free site visit with absolutely no hidden charges." },
-      { q: "What does the 10-year warranty cover?", a: "Our 10-year warranty covers the stainless steel cables, anchor points, channel systems, and all fittings. It covers structural integrity and rust protection. Natural wear on nylon coatings is not covered. We also offer annual maintenance inspection services." },
+      { q: "What does the 15-year warranty cover?", a: "Our 15-year warranty covers the stainless steel cables, anchor points, channel systems, and all fittings. It covers structural integrity and rust protection. Natural wear on nylon coatings is not covered. We also offer annual maintenance inspection services." },
       { q: "Do you offer EMI or payment plans?", a: "We offer flexible payment terms for large projects. For residential projects, we accept 50% at the time of booking confirmation and the remaining 50% upon successful installation and your satisfaction." },
       { q: "Are there any hidden charges?", a: "No. Our quote includes all materials, labor, hardware, and installation. We provide itemized quotes so you know exactly what you're paying for. There are no surprises." },
     ],
@@ -44,8 +44,8 @@ const faqCategories = [
     category: "Maintenance & Durability",
     faqs: [
       { q: "How do I maintain my invisible grills?", a: "Maintenance is minimal. Wipe the cables with a damp cloth every 3–6 months to remove dust. For coastal areas, a mild soap solution once a month helps maintain the marine-grade finish. Never use abrasive cleaners or steel wool on the cables." },
-      { q: "Will invisible grills rust in Bangalore's monsoon?", a: "316-grade marine stainless steel is specifically formulated to resist rust in high-humidity and wet environments. Bangalore's monsoon does not affect the integrity of our cables. We guarantee this with our 10-year warranty." },
-      { q: "How long do invisible grills last?", a: "With proper installation and minimal maintenance, 316-grade stainless steel invisible grills last 20+ years. The cables themselves are extremely durable. Our 10-year warranty is our conservative guarantee — most installations significantly outlast this period." },
+      { q: "Will invisible grills rust in Bangalore's monsoon?", a: "316-grade marine stainless steel is specifically formulated to resist rust in high-humidity and wet environments. Bangalore's monsoon does not affect the integrity of our cables. We guarantee this with our 15-year warranty." },
+      { q: "How long do invisible grills last?", a: "With proper installation and minimal maintenance, 316-grade stainless steel invisible grills last 20+ years. The cables themselves are extremely durable. Our 15-year warranty is our conservative guarantee — most installations significantly outlast this period." },
     ],
   },
 ];

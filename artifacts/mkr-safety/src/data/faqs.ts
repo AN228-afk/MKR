@@ -17,6 +17,6 @@ export const faqData = [
   },
   {
     question: "Will invisible grills rust over time?",
-    answer: "We use 316-grade marine stainless steel, which is highly resistant to rust and corrosion, making it perfect for all weather conditions in Bangalore. We also provide a 10-year warranty."
+    answer: "We use 316-grade marine stainless steel, which is highly resistant to rust and corrosion, making it perfect for all weather conditions in Bangalore. We also provide a 15-year warranty."
   }
 ];
