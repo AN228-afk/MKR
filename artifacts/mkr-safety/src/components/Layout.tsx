@@ -76,7 +76,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20 gap-6">
             <Link href="/" className="flex items-center min-w-0" aria-label="MKR Safety Solutions - Invisible Grills Bangalore">
-              <Logo variant={overlay ? "dark" : "light"} className="text-[19px] sm:text-[22px] lg:text-[18px] xl:text-[22px]" />
+              <Logo variant={overlay ? "dark" : "light"} className="text-[16.5px] min-[400px]:text-[18px] sm:text-[22px] lg:text-[19px] xl:text-[22px]" />
             </Link>
 
             <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">

@@ -30,8 +30,11 @@ export function Logo({ variant = "light", className = "" }: LogoProps) {
         <span className="inline-flex items-baseline gap-[0.22em] font-extrabold tracking-[-0.02em] text-[1.15em]">
           <span style={{ color: mkr }}>MKR</span>
           <span style={{ color: safety }}>Safety</span>
+          {/* phones: everything on one line */}
+          <span className="sm:hidden font-semibold text-[0.82em] tracking-normal" style={{ color: mkr }}>Solutions</span>
         </span>
-        <span className="flex items-center gap-[0.5em] mt-[0.28em] text-[0.32em] font-semibold tracking-[0.42em]" style={{ color: tag }}>
+        {/* tablets & computers: SOLUTIONS tagline underneath */}
+        <span className="hidden sm:flex items-center gap-[0.5em] mt-[0.28em] text-[0.32em] font-semibold tracking-[0.42em]" style={{ color: tag }}>
           <span className="flex-grow h-[1.5px] opacity-50" style={{ background: tag }} />
           SOLUTIONS
         </span>
