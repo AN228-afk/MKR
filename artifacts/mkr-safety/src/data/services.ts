@@ -443,6 +443,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill warranty what to check",
   },
+  {
+    title: "Invisible Grill Installation in Yelahanka: A Local Resident's Guide",
+    slug: "invisible-grill-yelahanka",
+    excerpt: "A practical, locality-specific guide to getting invisible grills installed in Yelahanka, covering housing types, areas covered, and what to expect from site visit to finish.",
+    date: "2026-10-24",
+    readTime: "6 min read",
+    keyword: "invisible grill Yelahanka",
+  },
 ];
 
 export const testimonials = [
