@@ -103,7 +103,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
             </div>
           </FadeLeft>
           <FadeRight delay={0.2}>
-            <div className="hidden lg:block bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6">
+            <div className="hidden lg:block bg-white border border-border rounded-2xl p-6">
               <InquiryForm title="Book Free Site Visit" compact />
             </div>
           </FadeRight>
@@ -256,8 +256,8 @@ export function ServicePage({ data }: { data: ServicePageData }) {
             <h2 className="text-2xl font-bold text-foreground mb-3">Ready to Get Started?</h2>
             <p className="text-muted-foreground mb-6">Book a free site visit. Our team will visit your home, take measurements, and provide a transparent quote within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors">Call +91 77801 14547</a>
+              <Link href="/contact-us" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors">Call +91 77801 14547</a>
             </div>
           </div>
         </section>

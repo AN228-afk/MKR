@@ -48,7 +48,7 @@ export function PriceCalculator() {
           </p>
         </FadeUp>
 
-        <div className="bg-white/10 backdrop-blur border border-white/15 rounded-2xl p-6 sm:p-8">
+        <div className="bg-white border border-border rounded-2xl p-6 sm:p-8">
           {/* Step 1 — Space Type */}
           <div className="mb-6">
             <p className="text-sm font-semibold text-primary-foreground/80 uppercase tracking-wide mb-3">
@@ -63,7 +63,7 @@ export function PriceCalculator() {
                   whileTap={{ scale: 0.95 }}
                   className={`flex flex-col items-center gap-1.5 py-3 px-2 rounded-xl border transition-all text-sm font-medium ${spaceId === s.id
                       ? "bg-secondary text-secondary-foreground border-secondary shadow-lg"
-                      : "border-white/20 text-primary-foreground/80 hover:border-secondary/50"
+                      : "border-border text-primary-foreground/80 hover:border-secondary/50"
                     }`}
                 >
                   <span className="text-xl">{s.icon}</span>
@@ -87,10 +87,10 @@ export function PriceCalculator() {
                   whileTap={{ scale: 0.98 }}
                   className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${cable === c
                       ? "bg-secondary text-secondary-foreground border-secondary"
-                      : "border-white/20 text-primary-foreground hover:border-secondary/50"
+                      : "border-border text-primary-foreground hover:border-secondary/50"
                     }`}
                 >
-                  <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 mt-0.5 flex items-center justify-center ${cable === c ? "border-secondary-foreground bg-secondary-foreground/20" : "border-white/40"}`}>
+                  <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 mt-0.5 flex items-center justify-center ${cable === c ? "border-secondary-foreground bg-secondary-foreground/20" : "border-border"}`}>
                     {cable === c && <div className="w-2 h-2 rounded-full bg-secondary-foreground" />}
                   </div>
                   <div>
@@ -118,7 +118,7 @@ export function PriceCalculator() {
                   min={10}
                   max={1000}
                   onChange={(e) => setArea(Math.max(10, Math.min(1000, Number(e.target.value))))}
-                  className="w-20 text-center bg-white/10 border border-white/20 rounded-lg px-2 py-1.5 text-primary-foreground text-sm font-semibold focus:outline-none focus:border-secondary"
+                  className="w-20 text-center bg-white border border-border rounded-lg px-2 py-1.5 text-primary-foreground text-sm font-semibold focus:outline-none focus:border-secondary"
                 />
                 <span className="text-primary-foreground/70 text-sm">sq ft</span>
               </div>
@@ -155,9 +155,9 @@ export function PriceCalculator() {
                     Estimated Price for {space.label} · {cable} · {area} sq ft
                   </p>
                   <div className="flex items-baseline gap-1.5">
-                    <span className="text-3xl sm:text-4xl font-bold text-primary">{fmt(minTotal)}</span>
+                    <span className="text-3xl sm:text-4xl font-bold text-foreground">{fmt(minTotal)}</span>
                     <span className="text-muted-foreground text-lg font-medium">–</span>
-                    <span className="text-3xl sm:text-4xl font-bold text-primary">{fmt(maxTotal)}</span>
+                    <span className="text-3xl sm:text-4xl font-bold text-foreground">{fmt(maxTotal)}</span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1.5">
                     ₹{minRate}–₹{maxRate}/sq ft · includes materials + installation · 15-year warranty
@@ -186,7 +186,7 @@ export function PriceCalculator() {
                     <Link
                       href="/contact-us"
                       onClick={trackGoogleAdsConversion}
-                      className="flex items-center justify-center gap-2 px-5 py-3 border border-primary text-primary font-semibold rounded-xl text-sm hover:bg-primary/5 transition-colors"
+                      className="flex items-center justify-center gap-2 px-5 py-3 border border-foreground/25 text-foreground font-semibold rounded-xl text-sm hover:bg-primary/5 transition-colors"
                     >
                       Book Free Site Visit <ArrowRight className="w-3.5 h-3.5" />
                     </Link>

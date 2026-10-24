@@ -58,44 +58,44 @@
   --elevate-2: rgba(0,0,0, .08);
 
   --background: 0 0% 100%;
-  --foreground: 240 28% 14%;
-  --border: 240 5% 84%;
-  --input: 240 5% 84%;
-  --ring: 44 55% 54%;
+  --foreground: 215 14% 18%;
+  --border: 38 22% 86%;
+  --input: 38 22% 82%;
+  --ring: 38 70% 36%;
   
   --card: 0 0% 100%;
-  --card-foreground: 240 28% 14%;
-  --card-border: 240 5% 90%;
+  --card-foreground: 215 14% 18%;
+  --card-border: 38 22% 90%;
   
   --sidebar: 240 5% 96%;
-  --sidebar-foreground: 240 28% 14%;
+  --sidebar-foreground: 215 14% 18%;
   --sidebar-border: 240 5% 84%;
   --sidebar-primary: 44 55% 54%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 240 5% 84%;
-  --sidebar-accent-foreground: 240 28% 14%;
+  --sidebar-accent-foreground: 215 14% 18%;
   --sidebar-ring: 44 55% 54%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 240 28% 14%;
+  --popover-foreground: 215 14% 18%;
   --popover-border: 240 5% 84%;
 
-  --primary: 240 28% 14%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 40 40% 96%;
+  --primary-foreground: 215 14% 18%;
 
-  --secondary: 44 65% 32%;
+  --secondary: 38 70% 36%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 240 5% 96%;
-  --muted-foreground: 240 5% 45%;
+  --muted: 40 33% 97%;
+  --muted-foreground: 215 8% 40%;
 
-  --accent: 44 55% 54%;
+  --accent: 40 62% 50%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --app-font-sans: 'Inter', sans-serif;
+  --app-font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0.5rem;

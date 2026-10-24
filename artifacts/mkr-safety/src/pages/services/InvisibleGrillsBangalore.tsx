@@ -81,7 +81,7 @@ export default function InvisibleGrillsBangalore() {
               </a>
             </div>
           </div>
-          <div className="hidden lg:block bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6">
+          <div className="hidden lg:block bg-white border border-border rounded-2xl p-6">
             <InquiryForm title="Get Free Quote" compact />
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function InvisibleGrillsBangalore() {
                 <div className="group border border-border rounded-xl overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative h-36 overflow-hidden">
                     <img src={s.img} alt={`${s.label} in Bangalore`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" width={400} height={200} />
-                    <div className="absolute inset-0 bg-primary/40" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                     <div className="absolute bottom-2 left-3 text-white font-semibold text-sm">{s.label}</div>
                   </div>
                   <div className="p-3">
@@ -179,8 +179,8 @@ export default function InvisibleGrillsBangalore() {
           <h2 className="text-2xl font-bold text-foreground mb-3">Get the Best Invisible Grills in Bangalore</h2>
           <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 15-year warranty. Call or WhatsApp us now.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-            <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+            <Link href="/contact-us" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
+            <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" /> Call +91 77801 14547
             </a>
           </div>

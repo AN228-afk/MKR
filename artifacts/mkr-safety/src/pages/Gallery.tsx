@@ -61,7 +61,7 @@ export default function Gallery() {
                 key={cat}
                 onClick={() => setActive(cat)}
                 data-testid={`button-filter-${cat}`}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${active === cat ? "bg-primary text-primary-foreground" : "bg-muted text-foreground hover:bg-muted/80"}`}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${active === cat ? "bg-secondary text-secondary-foreground" : "bg-muted text-foreground hover:bg-muted/80"}`}
               >
                 {cat}
               </button>
@@ -79,7 +79,7 @@ export default function Gallery() {
                   width={600}
                   height={450}
                 />
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/30 transition-colors flex items-end">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-end">
                   <div className="p-4 translate-y-full group-hover:translate-y-0 transition-transform">
                     <span className="px-2 py-1 bg-secondary text-secondary-foreground text-xs font-semibold rounded-full">{img.category}</span>
                   </div>

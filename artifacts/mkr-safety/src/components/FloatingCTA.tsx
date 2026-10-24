@@ -20,7 +20,7 @@ export function FloatingCTA() {
           transition={{ delay: 0.4, duration: 0.5 }}
           whileHover={{ scale: 1.12 }}
           whileTap={{ scale: 0.95 }}
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl"
+          className="w-12 h-12 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground shadow-lg hover:shadow-xl"
         >
           <Phone className="w-5 h-5" />
         </motion.a>
@@ -48,7 +48,7 @@ export function FloatingCTA() {
         <a
           href={`tel:${PHONE}`}
           data-testid="button-mobile-call"
-          className="flex-1 flex items-center justify-center gap-2 py-4 text-primary font-semibold text-sm border-r border-border"
+          className="flex-1 flex items-center justify-center gap-2 py-4 text-foreground font-semibold text-sm border-r border-border"
           aria-label="Call MKR Safety Solutions"
           onClick={trackGoogleAdsConversion}
         >

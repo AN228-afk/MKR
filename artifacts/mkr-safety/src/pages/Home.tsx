@@ -22,6 +22,7 @@ import img5Card from "@assets/MKR_5_thumb_1780926061320.webp";
 import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
+import img8 from "@assets/5_1780926045097.webp";
 
 const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
 
@@ -35,8 +36,8 @@ const heroSlides = [
     sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested to 250 kg/m.",
   },
   {
-    src: hero2,
-    alt: "Child safely enjoying the view through MKR invisible grills on high-rise balcony",
+    src: img7,
+    alt: "Child safely looking out from a high-rise balcony through MKR invisible grills at sunset",
     label: "Child Safety Grills",
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",
@@ -75,8 +76,8 @@ const heroSlides = [
     sub: "5-Star rated by our customers on Google. Every installation backed by a 15-year warranty and lifetime customer support.",
   },
   {
-    src: img7,
-    alt: "Apartment balcony with stainless steel invisible grills at dusk",
+    src: img8,
+    alt: "Open balcony with stainless steel invisible grills overlooking green trees",
     label: "15-Year Warranty",
     heading: "316 Marine SS Steel.",
     accent: "Zero Rust. Ever.",
@@ -263,7 +264,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="hidden lg:block"
           >
-            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6">
+            <div className="bg-white/95 border border-border shadow-xl rounded-2xl p-6">
               <InquiryForm title="Book Free Site Visit" compact />
             </div>
           </motion.div>
@@ -332,7 +333,7 @@ export default function Home() {
                         width={400}
                         height={300}
                       />
-                      <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/30 transition-colors" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
                       <div className="absolute bottom-3 left-3 text-white font-bold text-sm leading-tight pr-2">{title}</div>
                     </div>
                   </Link>
@@ -357,7 +358,7 @@ export default function Home() {
                           href="tel:+917780114547"
                           onClick={trackGoogleAdsConversion}
                           aria-label="Call"
-                          className="w-7 h-7 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:opacity-80 transition-colors"
+                          className="w-7 h-7 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:opacity-80 transition-colors"
                         >
                           <Phone className="w-3.5 h-3.5" />
                         </a>
@@ -369,7 +370,7 @@ export default function Home() {
             ))}
           </StaggerList>
           <div className="text-center mt-8">
-            <Link href="/invisible-grills-bangalore" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
+            <Link href="/invisible-grills-bangalore" className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -561,12 +562,12 @@ export default function Home() {
             <p className="text-muted-foreground mb-8">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
+                <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
                   Book Free Site Visit
                 </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
+                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
                   <Phone className="w-4 h-4" /> Call +91 77801 14547
                 </a>
               </motion.div>
