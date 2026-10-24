@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
-import { Logo } from "./Logo";
-import { SocialLinks } from "./SocialLinks";
+import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
+import { SocialLinks } from "./SocialLinks";
+
+const taglines = ["Invisible Grills", "Child Safety Experts", "15-Year Warranty", "Free Site Visit"];
 
 const services = [
   { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
@@ -28,68 +31,75 @@ const navLinks = [
   { label: "Contact", href: "/contact-us" },
 ];
 
-const footerLocations = [
-  ["Whitefield", "/invisible-grills-whitefield"],
-  ["Koramangala", "/invisible-grills-koramangala"],
-  ["HSR Layout", "/invisible-grills-hsr-layout"],
-  ["Indiranagar", "/invisible-grills-indiranagar"],
-  ["Electronic City", "/invisible-grills-electronic-city"],
-  ["Marathahalli", "/invisible-grills-marathahalli"],
-  ["Bellandur", "/invisible-grills-bellandur"],
-  ["Hebbal", "/invisible-grills-hebbal"],
-];
-
-const quickLinks = [
-  ["About Us", "/about-us"],
-  ["Pricing", "/pricing"],
-  ["Projects", "/projects"],
-  ["Gallery", "/gallery"],
-  ["Customer Reviews", "/reviews"],
-  ["FAQs", "/faqs"],
-  ["Blog", "/blog"],
-  ["Contact Us", "/contact-us"],
-];
-
 export function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [location] = useLocation();
+  const [tagIdx, setTagIdx] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const t = setInterval(() => setTagIdx((i) => (i + 1) % taglines.length), 2800);
+    return () => clearInterval(t);
   }, []);
-
-  // On the home page the header sits on top of the hero photo until you scroll.
-  const overlay = location === "/" && !scrolled && !menuOpen;
-  const linkTone = overlay ? "text-white/90 hover:text-white" : "text-foreground hover:text-secondary";
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header
-        className={`sticky top-0 z-50 transition-colors duration-300 border-b ${
-          overlay ? "bg-transparent border-transparent" : "bg-background/95 backdrop-blur border-border"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20 gap-6">
-            <Link href="/" className="flex items-center min-w-0" aria-label="MKR Safety Solutions - Invisible Grills Bangalore">
-              <Logo variant={overlay ? "dark" : "light"} className="text-[16.5px] min-[400px]:text-[18px] sm:text-[22px] lg:text-[19px] xl:text-[22px]" />
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            <Link href="/" className="flex items-center gap-2.5">
+              <img
+                src={logoPath}
+                alt="MKR Safety Solutions - Invisible Grills Bangalore"
+                className="h-10 md:h-12 w-auto object-contain flex-shrink-0"
+                width={120}
+                height={48}
+              />
+              <div className="lg:hidden flex flex-col leading-tight overflow-hidden">
+                <motion.span
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-sm font-bold text-foreground whitespace-nowrap"
+                >
+                  MKR Safety Solutions
+                </motion.span>
+                <div className="h-4 overflow-hidden">
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={tagIdx}
+                      initial={{ y: 14, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: -14, opacity: 0 }}
+                      transition={{ duration: 0.35 }}
+                      className="block text-[10px] font-semibold text-[hsl(44,65%,32%)] uppercase tracking-wide whitespace-nowrap"
+                    >
+                      {taglines[tagIdx]}
+                    </motion.span>
+                  </AnimatePresence>
+                </div>
+              </div>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+            <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+              <Link href="/" className={`text-sm font-medium transition-colors hover:text-secondary ${location === "/" ? "text-secondary" : "text-foreground"}`}>
+                Home
+              </Link>
+
               <div className="relative group">
-                <button className={`caps flex items-center gap-1.5 py-2 transition-colors ${linkTone}`} aria-haspopup="true">
+                <button
+                  className="flex items-center gap-1 text-sm font-medium text-foreground hover:text-secondary transition-colors"
+                  aria-expanded={servicesOpen}
+                  aria-haspopup="true"
+                >
                   Services <ChevronDown className="w-3 h-3" />
                 </button>
-                <div className="absolute top-full left-0 mt-3 w-64 bg-background border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all z-50">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
                   {services.map((s) => (
                     <Link
                       key={s.href}
                       href={s.href}
-                      className="block px-5 py-3 text-sm text-foreground border-b border-border last:border-b-0 hover:text-secondary transition-colors"
+                      className="block px-4 py-2.5 text-sm text-foreground hover:bg-muted hover:text-secondary transition-colors first:rounded-t-lg last:rounded-b-lg"
                     >
                       {s.label}
                     </Link>
@@ -101,77 +111,74 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Link
                   key={link.href}
                   href={link.href}
-                  aria-current={location === link.href ? "page" : undefined}
-                  className={`caps py-2 transition-colors ${location === link.href && !overlay ? "text-secondary" : linkTone}`}
+                  className={`text-sm font-medium transition-colors hover:text-secondary ${location === link.href ? "text-secondary" : "text-foreground"}`}
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <a
-                href="tel:+917780114547"
-                onClick={trackGoogleAdsConversion}
-                className={`hidden xl:inline text-sm font-medium tracking-wider transition-colors ${linkTone}`}
+                href="tel:+917780114547" onClick={trackGoogleAdsConversion}
+                className="hidden md:flex items-center gap-2 text-sm text-foreground hover:text-secondary transition-colors"
                 aria-label="Call MKR Safety Solutions"
               >
-                +91 77801 14547
+                <Phone className="w-4 h-4" />
+                <span className="font-medium">+91 77801 14547</span>
               </a>
               <Link
                 href="/contact-us"
-                className={`caps hidden sm:inline-flex items-center min-h-[44px] px-6 border rounded-full transition-colors ${
-                  overlay
-                    ? "bg-[#2a8af0] text-white border-[#2a8af0] hover:bg-[#4198f2] hover:border-[#4198f2]"
-                    : "bg-[#2a8af0] text-white border-[#2a8af0] hover:bg-[#4198f2] hover:border-[#4198f2]"
-                }`}
+                className="hidden sm:inline-flex items-center px-4 py-2 bg-secondary text-secondary-foreground text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Free Quote
+                Get Free Quote
               </Link>
               <button
-                className={`lg:hidden w-11 h-11 -mr-2 flex items-center justify-center ${overlay ? "text-white" : "text-foreground"}`}
+                className="lg:hidden p-2 text-foreground"
                 onClick={() => setMenuOpen(!menuOpen)}
-                aria-label={menuOpen ? "Close menu" : "Open menu"}
-                aria-expanded={menuOpen}
+                aria-label="Toggle menu"
               >
-                {menuOpen ? <X className="w-6 h-6" strokeWidth={1.5} /> : <Menu className="w-6 h-6" strokeWidth={1.5} />}
+                {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
             </div>
           </div>
         </div>
 
         {menuOpen && (
-          <div className="lg:hidden bg-background border-t border-border max-h-[calc(100svh-64px)] overflow-y-auto">
-            <div className="max-w-7xl mx-auto px-5 pb-6">
+          <div className="lg:hidden bg-white border-t border-border">
+            <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block py-4 text-[1.05rem] text-foreground border-b border-border"
+                  className="block py-2.5 px-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <p className="sec-no mt-6 mb-1">Services</p>
-              {services.map((s) => (
+              <div className="pt-2 border-t border-border">
+                <p className="px-3 py-1 text-xs font-semibold text-muted-foreground uppercase tracking-wide">Services</p>
+                {services.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="block py-2 px-3 text-sm text-foreground hover:bg-muted rounded-lg transition-colors"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+              <div className="pt-3">
                 <Link
-                  key={s.href}
-                  href={s.href}
-                  className="block py-3 text-[0.98rem] text-muted-foreground border-b border-border"
+                  href="/contact-us"
+                  className="block w-full text-center px-4 py-3 bg-secondary text-secondary-foreground text-sm font-semibold rounded-lg"
                   onClick={() => setMenuOpen(false)}
                 >
-                  {s.label}
+                  Get Free Quote
                 </Link>
-              ))}
-              <SocialLinks className="mt-6" />
-              <Link
-                href="/contact-us"
-                className="caps mt-6 flex items-center justify-center min-h-[52px] rounded-full bg-[#2a8af0] text-white"
-                onClick={() => setMenuOpen(false)}
-              >
-                Get a free quote
-              </Link>
+              </div>
             </div>
           </div>
         )}
@@ -179,65 +186,101 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
       <main className="flex-1">{children}</main>
 
-      <footer className="bg-[#f5f5f7] text-[#6e6e73] border-t border-[#d2d2d7]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-16 pb-8">
-          <div className="grid grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10">
-            <div className="col-span-2 lg:col-span-1">
-              <Logo variant="light" className="text-[22px]" />
-              <p className="text-sm leading-relaxed mt-5 max-w-[34ch]">
+      <footer className="bg-primary text-primary-foreground">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="lg:col-span-1">
+              <div className="inline-block bg-white rounded-xl px-3 py-2 mb-4">
+                <img
+                  src={logoPath}
+                  alt="MKR Safety Solutions"
+                  className="h-10 w-auto object-contain"
+                  width={120}
+                  height={40}
+                />
+              </div>
+              <p className="text-sm text-primary-foreground/80 leading-relaxed mb-4">
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
               </p>
-              <div className="flex flex-col gap-1.5 text-sm mt-5">
-                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="text-[#1d1d1f] hover:text-secondary transition-colors">+91 77801 14547</a>
+              <div className="flex flex-col gap-1 text-sm text-primary-foreground/80">
+                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="hover:text-secondary transition-colors">+91 77801 14547</a>
                 <a href="mailto:mkrsafetysolutions@gmail.com" className="hover:text-secondary transition-colors">mkrsafetysolutions@gmail.com</a>
                 <span>Bangalore, Karnataka, India</span>
               </div>
-              <SocialLinks className="mt-6" />
+              <SocialLinks className="mt-5" />
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
-              <h3 className="text-[#1d1d1f] text-[0.7rem] tracking-[0.24em] uppercase font-normal mb-5">Services</h3>
-              <ul className="space-y-2.5">
+            <div>
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Services</h3>
+              <ul className="space-y-2">
                 {services.map((s) => (
                   <li key={s.href}>
-                    <Link href={s.href} className="text-sm hover:text-secondary transition-colors">{s.label}</Link>
+                    <Link href={s.href} className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
+                      {s.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <h3 className="text-[#1d1d1f] text-[0.7rem] tracking-[0.24em] uppercase font-normal mb-5">Locations</h3>
-              <ul className="space-y-2.5">
-                {footerLocations.map(([label, href]) => (
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Locations</h3>
+              <ul className="space-y-2">
+                {[
+                  ["Whitefield", "/invisible-grills-whitefield"],
+                  ["Koramangala", "/invisible-grills-koramangala"],
+                  ["HSR Layout", "/invisible-grills-hsr-layout"],
+                  ["Indiranagar", "/invisible-grills-indiranagar"],
+                  ["Electronic City", "/invisible-grills-electronic-city"],
+                  ["Marathahalli", "/invisible-grills-marathahalli"],
+                  ["Bellandur", "/invisible-grills-bellandur"],
+                  ["Hebbal", "/invisible-grills-hebbal"],
+                ].map(([label, href]) => (
                   <li key={href}>
-                    <Link href={href} className="text-sm hover:text-secondary transition-colors">{label}</Link>
+                    <Link href={href} className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
+                      {label}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <h3 className="text-[#1d1d1f] text-[0.7rem] tracking-[0.24em] uppercase font-normal mb-5">Quick Links</h3>
-              <ul className="space-y-2.5">
-                {quickLinks.map(([label, href]) => (
+              <h3 className="font-semibold text-sm uppercase tracking-wide text-[hsl(44,65%,65%)] mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                {[
+                  ["About Us", "/about-us"],
+                  ["Pricing", "/pricing"],
+                  ["Projects", "/projects"],
+                  ["Gallery", "/gallery"],
+                  ["Customer Reviews", "/reviews"],
+                  ["FAQs", "/faqs"],
+                  ["Blog", "/blog"],
+                  ["Contact Us", "/contact-us"],
+                ].map(([label, href]) => (
                   <li key={href}>
-                    <Link href={href} className="text-sm hover:text-secondary transition-colors">{label}</Link>
+                    <Link href={href} className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
+                      {label}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          <div className="mt-14 pt-6 border-t border-[#d2d2d7] flex flex-col sm:flex-row justify-between gap-3 text-xs text-[#6e6e73]">
-            <p>© {new Date().getFullYear()} MKR Safety Solutions. All rights reserved. Bangalore, Karnataka, India.</p>
-            <p>Invisible Grills · Balcony Safety · Child Protection · Bangalore</p>
+          <div className="mt-10 pt-8 border-t border-primary-foreground/20">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+              <p className="text-xs text-primary-foreground/60">
+                © {new Date().getFullYear()} MKR Safety Solutions. All rights reserved. Bangalore, Karnataka, India.
+              </p>
+              <p className="text-xs text-primary-foreground/60">
+                Invisible Grills | Balcony Safety | Child Protection | Bangalore
+              </p>
+            </div>
           </div>
         </div>
       </footer>
 
-      {/* room for the phone call / WhatsApp bar */}
-      <div className="h-14 sm:hidden" aria-hidden="true" />
       <FloatingCTA />
     </div>
   );

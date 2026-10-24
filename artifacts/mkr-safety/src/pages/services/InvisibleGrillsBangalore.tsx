@@ -58,7 +58,7 @@ export default function InvisibleGrillsBangalore() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-light/20 border border-brand-light/30 rounded-full text-brand-light text-xs font-semibold mb-5 uppercase">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase">
               <Shield className="w-3 h-3" /> Bangalore's #1 Invisible Grill Company
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
@@ -69,7 +69,7 @@ export default function InvisibleGrillsBangalore() {
             </p>
             <div className="flex flex-wrap gap-3 mb-6">
               {["2000+ Installs", "5.0★ Google", "15-Yr Warranty", "Free Site Visit"].map(b => (
-                <span key={b} className="px-3 py-1.5 bg-brand-light/20 border border-brand-light/30 rounded-full text-brand-light text-xs font-semibold">{b}</span>
+                <span key={b} className="px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold">{b}</span>
               ))}
             </div>
             <div className="flex gap-4">
@@ -81,7 +81,7 @@ export default function InvisibleGrillsBangalore() {
               </a>
             </div>
           </div>
-          <div className="hidden lg:block bg-white border border-border rounded-2xl p-6">
+          <div className="hidden lg:block bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6">
             <InquiryForm title="Get Free Quote" compact />
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 15-year warranty. Call or WhatsApp us now.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact-us" className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
-            <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+            <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" /> Call +91 77801 14547
             </a>
           </div>

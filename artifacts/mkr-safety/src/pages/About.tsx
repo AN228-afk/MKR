@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
-import { Logo } from "@/components/Logo";
+import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
 import hero from "@assets/MKR_3_1780926061320.webp";
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Logo className="text-[30px] mb-6" />
+              <img src={logoPath} alt="MKR Safety Solutions Logo" className="h-16 w-auto object-contain mb-6" width={160} height={64} />
               <h1 className="text-4xl font-bold text-foreground mb-6">
                 Bangalore's Most Trusted Invisible Grill Specialists
               </h1>

@@ -66,7 +66,7 @@ export default function Pricing() {
       <section className="py-16 bg-primary">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <FadeUp>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-light/20 border border-brand-light/30 rounded-full text-brand-light text-xs font-semibold mb-5 uppercase tracking-wide">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wide">
               Transparent Pricing — No Surprises
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
@@ -125,7 +125,7 @@ export default function Pricing() {
                       className={i % 2 === 0 ? "bg-white" : "bg-muted/50"}
                     >
                       <td className="px-5 py-4 font-medium text-foreground">{r.service}</td>
-                      <td className="px-5 py-4 text-center font-bold text-foreground">{r.cable3}<span className="text-xs text-muted-foreground font-normal">/sq ft</span></td>
+                      <td className="px-5 py-4 text-center font-bold text-primary">{r.cable3}<span className="text-xs text-muted-foreground font-normal">/sq ft</span></td>
                       <td className="px-5 py-4 text-center font-bold text-secondary">{r.cable25}<span className="text-xs text-muted-foreground font-normal">/sq ft</span></td>
                       <td className="px-5 py-4 text-center hidden sm:table-cell">
                         {r.note && (
@@ -170,7 +170,7 @@ export default function Pricing() {
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-3 h-3 rounded-full bg-primary inline-block" />
                     <span className="font-semibold text-foreground">3mm Standard Cables</span>
-                    <span className="ml-auto text-sm font-bold text-foreground">₹100–₹160/sq ft</span>
+                    <span className="ml-auto text-sm font-bold text-primary">₹100–₹160/sq ft</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Best for most balconies, windows, and terraces. Nearly invisible from 3+ metres. Ideal when aesthetics and views are the top priority.</p>
                 </div>
@@ -226,7 +226,7 @@ export default function Pricing() {
               <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
                 Book Free Site Visit
               </Link>
-              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
+              <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> Call +91 77801 14547
               </a>
             </div>
