@@ -169,9 +169,9 @@ export default function Home() {
       />
 
       {/* Hero Slideshow Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-primary">
+      <section className="relative md:min-h-[85vh] flex flex-col md:flex-row md:items-center overflow-hidden bg-white md:bg-primary">
         {/* Slideshow Background */}
-        <div className="absolute inset-0">
+        <div className="relative h-[42vh] min-h-[260px] md:absolute md:inset-0 md:h-auto">
           <AnimatePresence initial={false} mode="sync">
             <motion.img
               key={current}
@@ -186,7 +186,8 @@ export default function Home() {
               fetchPriority="high"
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent lg:via-white/35" />
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent md:hidden" />
+          <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-white/92 via-white/60 to-transparent lg:via-white/40" />
         </div>
 
         {/* Slide Label Pill */}
@@ -206,10 +207,10 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-2 pb-10 md:py-20 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wider">
-              <Shield className="w-3 h-3" /> Bangalore's Most Trusted Invisible Grill Company
+              <Shield className="w-3 h-3" /> <span className="sm:hidden">Bangalore's Most Trusted</span><span className="hidden sm:inline">Bangalore's Most Trusted Invisible Grill Company</span>
             </div>
 
             <AnimatePresence mode="wait">

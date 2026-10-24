@@ -9,7 +9,7 @@ export function FloatingCTA() {
   return (
     <>
       {/* Floating round icons — right side, vertically centered — all screen sizes */}
-      <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3 items-center">
+      <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 hidden sm:flex flex-col gap-3 items-center">
         <motion.a
           href={`tel:${PHONE}`}
           data-testid="button-float-call"
