@@ -23,13 +23,17 @@ import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
 import img8 from "@assets/5_1780926045097.webp";
+import realDay from "@assets/mkr-real-balcony-day.webp";
+import realCorner from "@assets/mkr-real-corner-balcony.webp";
+import realNight from "@assets/mkr-real-night-view.webp";
+import realSunset from "@assets/mkr-real-sunset.webp";
 
 const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
 
 const heroSlides = [
   {
-    src: hero1,
-    alt: "Invisible grills on luxury apartment balcony with panoramic Bangalore city view",
+    src: realDay,
+    alt: "High-rise balcony with MKR invisible grills and a clear city and lake view",
     label: "Balcony Invisible Grills",
     heading: "Protect Your Balcony.",
     accent: "Keep The View Forever.",
@@ -44,16 +48,16 @@ const heroSlides = [
     sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by Bangalore families in high-rise apartments.",
   },
   {
-    src: img2,
-    alt: "Premium villa balcony with near-invisible stainless steel cable grills",
+    src: realCorner,
+    alt: "Wide corner balcony fitted with invisible grills under an open blue sky",
     label: "Villa Invisible Grills",
     heading: "Luxury Villas Deserve",
     accent: "Invisible Protection.",
     sub: "Bespoke cable grill systems designed for large villa balconies and terraces — seamlessly blending with premium architecture.",
   },
   {
-    src: img4,
-    alt: "Window invisible grills with lush greenery view preserved completely",
+    src: realNight,
+    alt: "Invisible grills on a large balcony opening with city lights at night",
     label: "Window Invisible Grills",
     heading: "Maximum Light.",
     accent: "Maximum Safety.",
@@ -76,8 +80,8 @@ const heroSlides = [
     sub: "5-Star rated by our customers on Google. Every installation backed by a 15-year warranty and lifetime customer support.",
   },
   {
-    src: img8,
-    alt: "Open balcony with stainless steel invisible grills overlooking green trees",
+    src: realSunset,
+    alt: "Horizontal invisible grill cables on a balcony overlooking the city at sunset",
     label: "15-Year Warranty",
     heading: "316 Marine SS Steel.",
     accent: "Zero Rust. Ever.",
@@ -174,7 +178,7 @@ export default function Home() {
               src={heroSlides[current].src}
               alt={heroSlides[current].alt}
               initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 0.85, scale: 1, transition: { duration: 1.1, ease: [0.22, 1, 0.36, 1] } }}
+              animate={{ opacity: 1, scale: 1, transition: { duration: 1.1, ease: [0.22, 1, 0.36, 1] } }}
               exit={{ opacity: 0, transition: { duration: 0.6 } }}
               className="absolute inset-0 w-full h-full object-cover"
               width={1200}
@@ -182,7 +186,7 @@ export default function Home() {
               fetchPriority="high"
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent lg:via-white/35" />
         </div>
 
         {/* Slide Label Pill */}
