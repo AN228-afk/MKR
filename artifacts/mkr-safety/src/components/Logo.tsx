@@ -31,7 +31,7 @@ export function Logo({ variant = "light", className = "" }: LogoProps) {
     <span className={`inline-flex items-center gap-[0.5em] whitespace-nowrap leading-none ${className}`}>
       <svg viewBox="0 0 64 64" className="h-[1.7em] w-[1.7em] flex-shrink-0" aria-hidden="true">
         <defs>
-          <linearGradient id={id} x1="0" y1="0" x2="1" y2="1">
+          <linearGradient id={id} gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="64" y2="64">
             <stop offset="0" stopColor={stops[0]} />
             <stop offset=".5" stopColor={stops[1]} />
             <stop offset="1" stopColor={stops[2]} />
