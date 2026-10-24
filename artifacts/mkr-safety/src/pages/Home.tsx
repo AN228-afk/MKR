@@ -381,12 +381,12 @@ export default function Home() {
       <section className={section}>
         <div className={wrap}>
           <SectionHead no="01 — Services" title="Invisible grill services in Bangalore" link={{ href: "/invisible-grills-bangalore", label: "All services" }} />
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-3.5 sm:gap-x-8 gap-y-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-3.5 sm:gap-x-8 gap-y-9 sm:gap-y-12">
             {serviceCards.map(({ title, href, desc, img, waMsg }) => (
               <FadeUp key={href}>
                 <article className="group">
                   <Link href={href} data-testid={`card-service-${href}`} className="block">
-                    <div className="aspect-[4/5] overflow-hidden bg-muted mb-5">
+                    <div className="aspect-square sm:aspect-[4/5] overflow-hidden bg-muted mb-4 sm:mb-5">
                       <img
                         src={img}
                         alt={`${title} in Bangalore by MKR Safety Solutions`}
@@ -401,8 +401,8 @@ export default function Home() {
                     </h3>
                   </Link>
                   <p className="hidden sm:block text-[0.95rem] text-muted-foreground leading-relaxed">{desc}</p>
-                  <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-[0.68rem] tracking-[0.18em] uppercase">
-                    <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="text-foreground hover:text-secondary py-1">
+                  <div className="grid grid-cols-2 gap-2 mt-4 text-[0.68rem] tracking-[0.14em] uppercase">
+                    <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="flex items-center justify-center min-h-[42px] rounded-full border border-border text-foreground hover:border-secondary hover:text-secondary">
                       Call
                     </a>
                     <a
@@ -410,7 +410,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={trackGoogleAdsConversion}
-                      className="text-foreground hover:text-secondary py-1"
+                      className="flex items-center justify-center min-h-[42px] rounded-full border border-border text-foreground hover:border-secondary hover:text-secondary"
                     >
                       WhatsApp
                     </a>
@@ -454,13 +454,13 @@ export default function Home() {
       <section className="mt-[clamp(48px,6vw,88px)] py-[clamp(44px,5.5vw,76px)] bg-[#f5f5f7]">
         <div className={wrap}>
           <SectionHead no="02 — Why MKR" title="Why 2000+ Bangalore families choose MKR" link={{ href: "/about-us", label: "About MKR" }} />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            <FadeUp><FeatureCard icon="shield" title="316 Grade Marine Stainless Steel">The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity.</FeatureCard></FadeUp>
-            <FadeUp delay={0.05}><FeatureCard icon="load" title="250kg Load-Tested Safety">Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed.</FeatureCard></FadeUp>
-            <FadeUp delay={0.1}><FeatureCard icon="eye" title="Nearly Invisible From Any Angle">3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust.</FeatureCard></FadeUp>
-            <FadeUp><FeatureCard icon="visit" title="Free Site Visit & Custom Quote">We visit your home, measure every corner, and provide a transparent quote — no obligation required.</FeatureCard></FadeUp>
-            <FadeUp delay={0.05}><FeatureCard icon="rupee" title="Clear, Honest Pricing">₹100 to ₹160 per sq ft, with the same price for 2.5mm and 3mm cables. No hidden charges.</FeatureCard></FadeUp>
-            <FadeUp delay={0.1}><FeatureCard icon="award" title="15-Year Warranty">Every installation is backed by a full 15 years of warranty covering cables, anchors, and fittings.</FeatureCard></FadeUp>
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory -mx-5 px-5 pb-3 [scrollbar-width:none] sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-5">
+            <FadeUp className="snap-start shrink-0 w-[82%] sm:w-auto"><FeatureCard icon="shield" title="316 Grade Marine Stainless Steel">The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity.</FeatureCard></FadeUp>
+            <FadeUp delay={0.05} className="snap-start shrink-0 w-[82%] sm:w-auto"><FeatureCard icon="load" title="250kg Load-Tested Safety">Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed.</FeatureCard></FadeUp>
+            <FadeUp delay={0.1} className="snap-start shrink-0 w-[82%] sm:w-auto"><FeatureCard icon="eye" title="Nearly Invisible From Any Angle">3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust.</FeatureCard></FadeUp>
+            <FadeUp className="snap-start shrink-0 w-[82%] sm:w-auto"><FeatureCard icon="visit" title="Free Site Visit & Custom Quote">We visit your home, measure every corner, and provide a transparent quote — no obligation required.</FeatureCard></FadeUp>
+            <FadeUp delay={0.05} className="snap-start shrink-0 w-[82%] sm:w-auto"><FeatureCard icon="rupee" title="Clear, Honest Pricing">₹100 to ₹160 per sq ft, with the same price for 2.5mm and 3mm cables. No hidden charges.</FeatureCard></FadeUp>
+            <FadeUp delay={0.1} className="snap-start shrink-0 w-[82%] sm:w-auto"><FeatureCard icon="award" title="15-Year Warranty">Every installation is backed by a full 15 years of warranty covering cables, anchors, and fittings.</FeatureCard></FadeUp>
           </div>
           <p className="flex items-center gap-3 mt-8 text-sm text-muted-foreground">
             <span className="text-foreground tracking-[0.2em]" aria-hidden="true">★★★★★</span>
@@ -473,12 +473,12 @@ export default function Home() {
       <section className={section}>
         <div className={wrap}>
           <SectionHead no="03 — Reviews" title="What Bangalore families say" link={{ href: "/reviews", label: "Read all reviews" }} />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory -mx-5 px-5 pb-3 [scrollbar-width:none] sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible sm:grid md:grid-cols-2 lg:grid-cols-3 sm:gap-x-10 sm:gap-y-14">
             {testimonials.slice(0, 6).map((t, i) => (
-              <FadeUp key={i} delay={(i % 3) * 0.08}>
+              <FadeUp key={i} delay={(i % 3) * 0.08} className="snap-start shrink-0 w-[82%] sm:w-auto">
                 <figure className="border-t border-foreground pt-6" data-testid={`card-testimonial-${i}`}>
                   <span className="text-secondary tracking-[0.2em] text-sm" aria-label="5 out of 5 stars">★★★★★</span>
-                  <blockquote className="font-serif italic text-[1.35rem] leading-snug text-foreground mt-4 mb-6">“{t.text}”</blockquote>
+                  <blockquote className="font-serif italic text-[1.15rem] sm:text-[1.35rem] leading-snug text-foreground mt-4 mb-6">“{t.text}”</blockquote>
                   <figcaption>
                     <div className="text-foreground font-medium text-sm">{t.name}</div>
                     <div className="text-xs text-muted-foreground mt-0.5">{t.location} · {t.service}</div>
@@ -502,16 +502,16 @@ export default function Home() {
       <section className={section}>
         <div className={wrap}>
           <SectionHead no="04 — Areas" title="Serving all major areas in Bangalore" />
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 border-t border-border">
+          <ul className="grid grid-cols-2 lg:grid-cols-3 gap-x-5 sm:gap-x-10 border-t border-border">
             {areas.map(([area, href], i) => (
               <li key={href} className="border-b border-border">
                 <Link
                   href={href}
                   data-testid={`link-location-${area}`}
-                  className={`flex items-baseline justify-between gap-3 py-5 font-serif text-[clamp(1.4rem,2vw,1.8rem)] transition-all duration-300 hover:text-secondary hover:pl-2.5 ${i === 0 ? "text-secondary" : "text-foreground"}`}
+                  className={`flex items-baseline justify-between gap-3 py-3.5 sm:py-5 font-serif text-[clamp(1.12rem,2vw,1.8rem)] transition-all duration-300 hover:text-secondary hover:pl-2.5 ${i === 0 ? "text-secondary" : "text-foreground"}`}
                 >
                   {area}
-                  <span className="font-sans text-[0.64rem] tracking-[0.18em] uppercase text-muted-foreground whitespace-nowrap">Invisible grills</span>
+                  <span className="hidden sm:inline font-sans text-[0.64rem] tracking-[0.18em] uppercase text-muted-foreground whitespace-nowrap">Invisible grills</span>
                 </Link>
               </li>
             ))}
@@ -524,9 +524,9 @@ export default function Home() {
       <section className={section}>
         <div className={wrap}>
           <SectionHead no="05 — Journal" title="Latest from our blog" link={{ href: "/blog", label: "All posts" }} />
-          <div className="grid md:grid-cols-3 gap-x-10 gap-y-12">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory -mx-5 px-5 pb-3 [scrollbar-width:none] sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible sm:grid md:grid-cols-3 sm:gap-x-10 sm:gap-y-12">
             {uniquePosts.map((post) => (
-              <FadeUp key={post.slug}>
+              <FadeUp key={post.slug} className="snap-start shrink-0 w-[82%] sm:w-auto">
                 <article className="border-t border-foreground pt-6 h-full">
                   <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`} className="group block">
                     <div className="text-[0.68rem] tracking-[0.18em] uppercase text-muted-foreground mb-3">{post.date} · {post.readTime}</div>

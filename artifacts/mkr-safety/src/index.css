@@ -306,3 +306,6 @@ h1, h2 { font-family: var(--app-font-serif); font-weight: 500; letter-spacing: -
   .mkr-cable { display: none; }
   .mkr-rise { opacity: 1; transform: none; }
 }
+
+/* swipe rows on phones: hide the scrollbar */
+[class*="snap-x"]::-webkit-scrollbar { display: none; }

@@ -34,9 +34,9 @@ export function PriceCalculator() {
   );
 
   return (
-    <section className="py-16 bg-primary text-primary-foreground overflow-hidden">
+    <section className="py-12 sm:py-16 bg-primary text-primary-foreground overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeUp className="text-center mb-10">
+        <FadeUp className="text-center mb-6 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-light/20 border border-brand-light/30 rounded-full text-brand-light text-xs font-semibold mb-4 uppercase tracking-wide">
             <Calculator className="w-3 h-3" /> Instant Price Calculator
           </div>
@@ -48,7 +48,7 @@ export function PriceCalculator() {
           </p>
         </FadeUp>
 
-        <div className="bg-white border border-border rounded-2xl p-6 sm:p-8">
+        <div className="bg-white border border-border rounded-2xl p-5 sm:p-8">
           {/* Step 1 — Space Type */}
           <div className="mb-6">
             <p className="text-sm font-semibold text-primary-foreground/80 uppercase tracking-wide mb-3">
