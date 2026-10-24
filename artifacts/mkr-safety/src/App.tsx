@@ -63,6 +63,25 @@ const InvisibleGrillHsrLayoutBlogPost = lazy(() => import("@/pages/blog/index").
 const InvisibleGrillGapSpacingForKidsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillGapSpacingForKidsBlogPost })));
 const InvisibleGrillForBalconyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForBalconyBlogPost })));
 const InvisibleGrillForSeniorCitizensBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForSeniorCitizensBlogPost })));
+const InvisibleGrillInstallationProcessBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillInstallationProcessBlogPost })));
+const InvisibleGrillForLiftDuctOrShaftBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForLiftDuctOrShaftBlogPost })));
+const HowToChooseAnInvisibleGrillInstallerBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.HowToChooseAnInvisibleGrillInstallerBlogPost })));
+const InvisibleGrillForDuplexStaircaseBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForDuplexStaircaseBlogPost })));
+const InvisibleGrillStrengthAndLoadCapacityBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillStrengthAndLoadCapacityBlogPost })));
+const InvisibleGrillPricePerSquareFeetBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillPricePerSquareFeetBlogPost })));
+const InvisibleGrillRulesForApartmentAssociationsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillRulesForApartmentAssociationsBlogPost })));
+const InvisibleGrillMonsoonCareBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillMonsoonCareBlogPost })));
+const InvisibleGrillForFrenchWindowsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForFrenchWindowsBlogPost })));
+const StaircaseSafetyGrillBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.StaircaseSafetyGrillBlogPost })));
+const InvisibleGrillForUtilityAreaBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForUtilityAreaBlogPost })));
+const InvisibleGrillVsSsPipeRailingBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsSsPipeRailingBlogPost })));
+const InvisibleGrillForVillaBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForVillaBlogPost })));
+const InvisibleGrillNanoCoatingBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillNanoCoatingBlogPost })));
+const InvisibleGrillForOfficeBalconyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForOfficeBalconyBlogPost })));
+const InvisibleGrillMarathahalliBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillMarathahalliBlogPost })));
+const InvisibleGrillSarjapurRoadBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillSarjapurRoadBlogPost })));
+const InvisibleGrillMaintenanceTipsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillMaintenanceTipsBlogPost })));
+const InvisibleGrillWarrantyWhatToCheckBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillWarrantyWhatToCheckBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -143,6 +162,44 @@ function Router() {
       <Route path="/blog/invisible-grill-for-balcony" component={InvisibleGrillForBalconyBlogPost} />
 
       <Route path="/blog/invisible-grill-for-senior-citizens" component={InvisibleGrillForSeniorCitizensBlogPost} />
+
+      <Route path="/blog/invisible-grill-installation-process" component={InvisibleGrillInstallationProcessBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-lift-duct-or-shaft" component={InvisibleGrillForLiftDuctOrShaftBlogPost} />
+
+      <Route path="/blog/how-to-choose-an-invisible-grill-installer" component={HowToChooseAnInvisibleGrillInstallerBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-duplex-staircase" component={InvisibleGrillForDuplexStaircaseBlogPost} />
+
+      <Route path="/blog/invisible-grill-strength-and-load-capacity" component={InvisibleGrillStrengthAndLoadCapacityBlogPost} />
+
+      <Route path="/blog/invisible-grill-price-per-square-feet" component={InvisibleGrillPricePerSquareFeetBlogPost} />
+
+      <Route path="/blog/invisible-grill-rules-for-apartment-associations" component={InvisibleGrillRulesForApartmentAssociationsBlogPost} />
+
+      <Route path="/blog/invisible-grill-monsoon-care" component={InvisibleGrillMonsoonCareBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-french-windows" component={InvisibleGrillForFrenchWindowsBlogPost} />
+
+      <Route path="/blog/staircase-safety-grill" component={StaircaseSafetyGrillBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-utility-area" component={InvisibleGrillForUtilityAreaBlogPost} />
+
+      <Route path="/blog/invisible-grill-vs-ss-pipe-railing" component={InvisibleGrillVsSsPipeRailingBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-villa" component={InvisibleGrillForVillaBlogPost} />
+
+      <Route path="/blog/invisible-grill-nano-coating" component={InvisibleGrillNanoCoatingBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-office-balcony" component={InvisibleGrillForOfficeBalconyBlogPost} />
+
+      <Route path="/blog/invisible-grill-marathahalli" component={InvisibleGrillMarathahalliBlogPost} />
+
+      <Route path="/blog/invisible-grill-sarjapur-road" component={InvisibleGrillSarjapurRoadBlogPost} />
+
+      <Route path="/blog/invisible-grill-maintenance-tips" component={InvisibleGrillMaintenanceTipsBlogPost} />
+
+      <Route path="/blog/invisible-grill-warranty-what-to-check" component={InvisibleGrillWarrantyWhatToCheckBlogPost} />
 
       <Route component={NotFound} />
     </Switch>
