@@ -10,6 +10,16 @@ const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "MKR Safety Solutions",
+  url: "https://mkrsafetysolutions.com",
+  telephone: "+91-77801-14547",
+  address: { "@type": "PostalAddress", addressLocality: "Bangalore", addressRegion: "Karnataka", addressCountry: "IN" },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: (allReviews.reduce((sum, r) => sum + Number(r.rating), 0) / allReviews.length).toFixed(1),
+    reviewCount: allReviews.length,
+    bestRating: "5",
+    worstRating: "1",
+  },
   review: allReviews.map(r => ({
     "@type": "Review",
     author: { "@type": "Person", name: r.name },
