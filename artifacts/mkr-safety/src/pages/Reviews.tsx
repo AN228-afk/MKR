@@ -33,7 +33,7 @@ export default function Reviews() {
     <Layout>
       <SEOHead
         title="Customer Reviews | MKR Safety Solutions Invisible Grills Bangalore"
-        description="Read genuine customer reviews for MKR Safety Solutions. 5.0-star rating from 10+ customers across Bangalore for invisible grill installations."
+        description="Read genuine customer reviews for MKR Safety Solutions. 5.0-star rating from 13 Google reviews across Bangalore for invisible grill installations."
         canonical="https://mkrsafetysolutions.com/reviews"
         schema={reviewSchema}
       />
@@ -49,7 +49,7 @@ export default function Reviews() {
             <div className="flex items-center justify-center gap-3 mb-3">
               <div className="flex">{[1,2,3,4,5].map(s => <Star key={s} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}</div>
               <span className="text-2xl font-bold text-foreground">5.0</span>
-              <span className="text-muted-foreground text-sm">/ 5 from 10+ reviews</span>
+              <span className="text-muted-foreground text-sm">/ 5 from 13 Google reviews</span>
             </div>
             <p className="text-muted-foreground">Real customers, real experiences across Bangalore</p>
           </div>

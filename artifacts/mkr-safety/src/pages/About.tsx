@@ -64,7 +64,7 @@ export default function About() {
             {[
               { icon: Shield, title: "Safety First", desc: "Every installation meets the highest safety standards, tested to 250kg per linear meter." },
               { icon: Award, title: "Uncompromising Quality", desc: "We only use 316-grade marine stainless steel — never inferior substitutes." },
-              { icon: Users, title: "Customer Trust", desc: "5.0 stars on Google from 10+ reviews. We earn trust one family at a time." },
+              { icon: Users, title: "Customer Trust", desc: "5.0 stars on Google from 13 reviews. We earn trust one family at a time." },
               { icon: MapPin, title: "Local Expertise", desc: "Deep knowledge of Bangalore's construction styles, weather, and apartment types." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="text-center p-6 bg-muted rounded-xl border border-border">

@@ -12,7 +12,7 @@ import img2 from "@assets/MKR_2_1780926061320.webp";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
-  { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 10+ reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 15-year warranty." },
+  { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 13 reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 15-year warranty." },
   { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹160 per sq ft with MKR Safety Solutions, for both 3mm and 2.5mm cables, across balcony, window, staircase and terrace grills. We provide free site visits with transparent quotes." },
   { q: "Which areas in Bangalore does MKR Safety Solutions serve?", a: "MKR Safety Solutions serves all major areas of Bangalore including Whitefield, Koramangala, HSR Layout, Indiranagar, Electronic City, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, Hebbal, Yelahanka, and KR Puram." },
   { q: "How long does invisible grill installation take in Bangalore?", a: "A standard balcony installation takes 3–5 hours. Full apartment installations with multiple balconies and windows are typically completed in 1–2 days. We work around your schedule including weekends." },
@@ -30,7 +30,7 @@ const schema = {
     url: "https://mkrsafetysolutions.com",
     telephone: "+91-77801-14547",
     address: { "@type": "PostalAddress", addressLocality: "Bangalore", addressRegion: "Karnataka", addressCountry: "IN" },
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "10" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "13" },
   },
   areaServed: locations.map(l => ({ "@type": "City", name: l.name })),
 };

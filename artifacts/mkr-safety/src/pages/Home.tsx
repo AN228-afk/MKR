@@ -128,7 +128,7 @@ const localBusinessSchema = {
     addressCountry: "IN",
   },
   geo: { "@type": "GeoCoordinates", latitude: 12.9716, longitude: 77.5946 },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "10" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "13" },
   priceRange: "₹₹",
   areaServed: ["Bangalore", "Whitefield", "Koramangala", "HSR Layout", "Indiranagar", "Bellandur", "Marathahalli"],
   openingHours: "Mo-Sa 09:00-19:00",
