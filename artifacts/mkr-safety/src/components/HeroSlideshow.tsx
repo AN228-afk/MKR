@@ -234,7 +234,7 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
           transition={{ duration: 0.9, ease, delay: 0.25 }}
           className="hidden lg:block"
         >
-          <div className="bg-white/95 border border-border shadow-2xl rounded-2xl p-6">
+          <div className="mkr-nolift bg-white/95 border border-border shadow-2xl rounded-2xl p-6">
             <InquiryForm title="Book Free Site Visit" compact />
           </div>
         </motion.div>

@@ -395,3 +395,6 @@ main section h2.is-in::after { width: 64px; transition: width .9s cubic-bezier(.
 /* Scroll progress */
 .mkr-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 70; transform-origin: 0 50%;
   background: linear-gradient(90deg, hsl(38 70% 36%), hsl(40 62% 58%)); }
+
+.mkr-nolift, .mkr-nolift:hover { transform: none !important; }
+form.rounded-xl:hover, form.rounded-2xl:hover { transform: none !important; }
