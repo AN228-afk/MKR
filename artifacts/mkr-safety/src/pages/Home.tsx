@@ -43,6 +43,7 @@ const heroSlides = [
   {
     src: kidsBalcony,
     alt: "Two children safely looking out from a balcony protected by MKR invisible grills at sunset",
+    position: "center 72%",
     label: "Child Safety Grills",
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",

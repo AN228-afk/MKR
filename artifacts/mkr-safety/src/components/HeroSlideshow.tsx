@@ -4,7 +4,7 @@ import { motion, AnimatePresence, animate, useInView, useReducedMotion } from "f
 import { Shield, ArrowRight, MessageCircle, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
-export type HeroSlide = { src: string; alt: string; label: string; heading: string; accent: string; sub: string };
+export type HeroSlide = { src: string; alt: string; label: string; heading: string; accent: string; sub: string; position?: string };
 
 const SLIDE_MS = 6000;
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -122,6 +122,7 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
               src={slide.src}
               alt={slide.alt}
               className="w-full h-full object-cover"
+              style={{ objectPosition: slide.position ?? "center" }}
               width={1600}
               height={1000}
               fetchPriority={current === 0 ? "high" : "auto"}
