@@ -47,3 +47,6 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# old inner copy of the site (separate repo) - never commit it
+MKR/
