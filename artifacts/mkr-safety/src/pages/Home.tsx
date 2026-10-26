@@ -526,6 +526,29 @@ export default function Home() {
         </ScaleIn>
       </section>
 
+      {/* Book a site visit */}
+      <section className="py-20 bg-muted">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+          <FadeLeft>
+            <span className="mkr-eyebrow">Free Site Visit</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Get Your Free Quote in 24 Hours</h2>
+            <p className="text-muted-foreground mb-6">Tell us about your balcony, window or staircase. Our team visits, measures and gives you a clear price — no obligation.</p>
+            <ul className="space-y-3">
+              {["Free measurement at your home", "Transparent price per sq.ft", "15-year warranty on every installation"].map((x) => (
+                <li key={x} className="flex items-center gap-3 text-sm font-medium text-foreground">
+                  <span className="mkr-icon !w-8 !h-8 !rounded-lg"><BadgeCheck className="w-4 h-4" /></span>{x}
+                </li>
+              ))}
+            </ul>
+          </FadeLeft>
+          <FadeRight delay={0.1}>
+            <div className="mkr-nolift bg-white border border-border shadow-2xl rounded-[1.75rem] p-6 sm:p-8">
+              <InquiryForm title="Book Free Site Visit" compact />
+            </div>
+          </FadeRight>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
