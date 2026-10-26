@@ -22,7 +22,7 @@ import img2Card from "@assets/MKR_2_thumb_1780926061320.webp";
 import img5Card from "@assets/MKR_5_thumb_1780926061320.webp";
 import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
-import img7 from "@assets/6_1780926045097.jpg";
+import kidsBalcony from "@assets/mkr-real-kids-balcony.webp";
 import img8 from "@assets/5_1780926045097.webp";
 import realBalcony from "@assets/mkr-real-balcony-night.webp";
 import realCorner from "@assets/mkr-real-corner-balcony.webp";
@@ -41,8 +41,8 @@ const heroSlides = [
     sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested to 250 kg/m.",
   },
   {
-    src: img7,
-    alt: "Child safely looking out from a high-rise balcony through MKR invisible grills at sunset",
+    src: kidsBalcony,
+    alt: "Two children safely looking out from a balcony protected by MKR invisible grills at sunset",
     label: "Child Safety Grills",
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",
