@@ -398,3 +398,11 @@ main section h2.is-in::after { width: 64px; transition: width .9s cubic-bezier(.
 
 .mkr-nolift, .mkr-nolift:hover { transform: none !important; }
 form.rounded-xl:hover, form.rounded-2xl:hover { transform: none !important; }
+
+/* ---------- Phone fixes ---------- */
+/* Never let anything make the page wider than the screen */
+html, body { max-width: 100%; overflow-x: clip; }
+/* iPhone zooms the whole page when a form field's text is under 16px — keep it 16px on phones */
+@media (max-width: 767px) {
+  input, select, textarea { font-size: 16px !important; }
+}

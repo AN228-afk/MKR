@@ -46,7 +46,15 @@ function RiseWords({ text, className = "", delay = 0 }: { text: string; classNam
 export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; whatsappUrl: string }) {
   const [current, setCurrent] = useState(0);
   const [dir, setDir] = useState(1);
-  const reduce = useReducedMotion();
+  const reduceMotion = useReducedMotion();
+  const [isPhone, setIsPhone] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const on = () => setIsPhone(mq.matches);
+    on(); mq.addEventListener("change", on);
+    return () => mq.removeEventListener("change", on);
+  }, []);
+  const reduce = reduceMotion || isPhone;
   const touchX = useRef<number | null>(null);
   const go = (n: number, d = n > current ? 1 : -1) => { setDir(d); setCurrent((n + slides.length) % slides.length); };
   const next = () => go(current + 1, 1);
@@ -113,9 +121,9 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
               center: { clipPath: "inset(0 0% 0 0%)", zIndex: 2, filter: "brightness(1)" },
               exit: { zIndex: 1, filter: "brightness(0.8)", transition: { duration: 1.1 } },
             }}
-            initial={reduce ? { opacity: 0 } : "enter"}
-            animate={reduce ? { opacity: 1 } : "center"}
-            exit={reduce ? { opacity: 0 } : "exit"}
+            initial={reduce ? { opacity: 0, zIndex: 2, filter: "brightness(1)" } : "enter"}
+            animate={reduce ? { opacity: 1, zIndex: 2, filter: "brightness(1)" } : "center"}
+            exit={reduce ? { zIndex: 1, filter: "brightness(0.97)", transition: { duration: 0.9 } } : "exit"}
             transition={{ clipPath: { duration: 1.1, ease: [0.77, 0, 0.18, 1] }, opacity: { duration: 0.8 }, zIndex: { duration: 0 } }}
           >
             <motion.img
