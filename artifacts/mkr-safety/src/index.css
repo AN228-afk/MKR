@@ -309,6 +309,27 @@ a.bg-secondary:hover::after, button.bg-secondary:hover::after, .btn-shine:hover:
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1 !important; transform: none !important; }
-  .mkr-header-in, .mkr-fill { animation: none !important; }
-  .mkr-fill { width: 100%; }
+  .mkr-header-in { animation: none !important; }
 }
+
+/* WhatsApp bubble ping */
+@keyframes mkr-ping { 0% { transform: scale(1); opacity: .55; } 80%,100% { transform: scale(1.7); opacity: 0; } }
+.mkr-ping { animation: mkr-ping 2s cubic-bezier(0,0,.2,1) infinite; z-index: -1; }
+
+/* Trust strip marquee */
+@keyframes mkr-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.mkr-marquee { animation: mkr-marquee 32s linear infinite; }
+.mkr-marquee:hover { animation-play-state: paused; }
+
+/* Gold underline that draws in under section headings */
+main section h2 { position: relative; }
+main section h2.reveal::after, main section h2.is-in::after {
+  content: ""; display: block; height: 3px; width: 0; margin-top: .55rem; border-radius: 3px;
+  background: linear-gradient(90deg, hsl(38 70% 36%), hsl(40 62% 58%));
+}
+main section .text-center h2::after, main section h2.text-center::after { margin-inline: auto; }
+main section h2.is-in::after { width: 64px; transition: width .9s cubic-bezier(.22,1,.36,1) .25s; }
+
+/* Scroll progress */
+.mkr-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 70; transform-origin: 0 50%;
+  background: linear-gradient(90deg, hsl(38 70% 36%), hsl(40 62% 58%)); }

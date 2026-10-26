@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
 import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
@@ -37,6 +37,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [location] = useLocation();
   useScrollReveal(location);
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 24, restDelta: 0.001 });
   const [tagIdx, setTagIdx] = useState(0);
 
   useEffect(() => {
@@ -46,6 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <motion.div className="mkr-progress" style={{ scaleX: progress }} aria-hidden="true" />
       <header className="mkr-header-in sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">

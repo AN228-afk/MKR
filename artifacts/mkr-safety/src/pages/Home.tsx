@@ -161,6 +161,19 @@ export default function Home() {
 
       <HeroSlideshow slides={heroSlides} whatsappUrl={WA} />
 
+      {/* Moving trust strip */}
+      <div className="bg-secondary text-secondary-foreground overflow-hidden py-3" aria-label="Why MKR">
+        <div className="mkr-marquee flex w-max gap-10 whitespace-nowrap text-sm font-semibold tracking-wide">
+          {[0, 1].map((k) => (
+            <div key={k} className="flex gap-10" aria-hidden={k === 1}>
+              {["15-Year Warranty", "2000+ Installations", "5.0★ Google Rating", "Free Site Visit", "Marine-Grade SS 316 Cables", "Child & Pet Safe", "All Bangalore Areas"].map((t) => (
+                <span key={t} className="inline-flex items-center gap-10">{t}<span className="opacity-60">✦</span></span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
       <TrustBadges />
 
       <PriceCalculator />

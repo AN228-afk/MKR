@@ -46,17 +46,16 @@ function RiseWords({ text, className = "", delay = 0 }: { text: string; classNam
 
 export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; whatsappUrl: string }) {
   const [current, setCurrent] = useState(0);
-  const [paused, setPaused] = useState(false);
   const reduce = useReducedMotion();
   const touchX = useRef<number | null>(null);
   const go = (n: number) => setCurrent((n + slides.length) % slides.length);
 
+  // Always auto-slide (also on phones and with reduced motion)
   useEffect(() => {
-    if (paused || reduce) return;
     const t = setTimeout(() => go(current + 1), SLIDE_MS);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [current, paused, reduce]);
+  }, [current]);
 
   const slide = slides[current];
   const headingWords = slide.heading.split(" ").length;
@@ -66,8 +65,6 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
       className="relative md:min-h-[88vh] flex flex-col md:flex-row md:items-center overflow-hidden bg-white md:bg-[#e9e5dc]"
       aria-roledescription="carousel"
       aria-label="Our work"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
       onTouchStart={(e) => { touchX.current = e.touches[0].clientX; }}
       onTouchEnd={(e) => {
         if (touchX.current === null) return;
@@ -121,7 +118,7 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
                     <span
                       key={current}
                       className="absolute inset-y-0 left-0 bg-secondary mkr-fill"
-                      style={{ animationDuration: `${SLIDE_MS}ms`, animationPlayState: paused || reduce ? "paused" : "running" }}
+                      style={{ animationDuration: `${SLIDE_MS}ms`, animationPlayState: "running" }}
                     />
                   )}
                 </span>
