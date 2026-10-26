@@ -26,7 +26,7 @@ import img7 from "@assets/6_1780926045097.jpg";
 import img8 from "@assets/5_1780926045097.webp";
 import realBalcony from "@assets/mkr-real-balcony-night.webp";
 import realCorner from "@assets/mkr-real-corner-balcony.webp";
-import realNight from "@assets/mkr-real-night-view.webp";
+import realWindow from "@assets/mkr-real-window-view.webp";
 import realSunset from "@assets/mkr-real-sunset.webp";
 
 const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
@@ -57,8 +57,8 @@ const heroSlides = [
     sub: "Bespoke cable grill systems designed for large villa balconies and terraces — seamlessly blending with premium architecture.",
   },
   {
-    src: realNight,
-    alt: "Invisible grills on a large balcony opening with city lights at night",
+    src: realWindow,
+    alt: "Apartment window fitted with MKR invisible grills overlooking the Bangalore skyline on a sunny day",
     label: "Window Invisible Grills",
     heading: "Maximum Light.",
     accent: "Maximum Safety.",
