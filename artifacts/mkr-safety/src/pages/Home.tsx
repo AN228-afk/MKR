@@ -23,6 +23,7 @@ import img5Card from "@assets/MKR_5_thumb_1780926061320.webp";
 import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import kidsBalcony from "@assets/mkr-real-kids-balcony.webp";
+import petsBalcony from "@assets/mkr-real-pets-balcony.webp";
 import img8 from "@assets/5_1780926045097.webp";
 import realBalcony from "@assets/mkr-real-balcony-night.webp";
 import realCorner from "@assets/mkr-real-corner-balcony.webp";
@@ -48,6 +49,15 @@ const heroSlides = [
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",
     sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by Bangalore families in high-rise apartments.",
+  },
+  {
+    src: petsBalcony,
+    alt: "Golden retriever and cat relaxing beside a high-rise balcony secured with MKR invisible grills",
+    label: "Pet Safety Grills",
+    heading: "Let Your Pets Enjoy",
+    accent: "The View, Safely.",
+    sub: "Closely spaced 316-grade SS cables keep cats and dogs safely inside while they relax by the balcony or window.",
+    position: "center 60%",
   },
   {
     src: realCorner,
