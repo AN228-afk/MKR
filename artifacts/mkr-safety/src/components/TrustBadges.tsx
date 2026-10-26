@@ -16,8 +16,8 @@ export function TrustBadges({ dark = false }: { dark?: boolean }) {
         <StaggerList className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
           {badges.map(({ icon: Icon, label, sub }, i) => (
             <StaggerItem key={label} className={i === badges.length - 1 ? "col-span-2 lg:col-span-1" : ""}>
-              <div className="h-full flex items-center gap-3 sm:flex-col sm:text-center sm:gap-3 bg-white border border-border rounded-2xl px-3.5 py-4 sm:p-6 shadow-[0_6px_20px_-12px_rgba(120,90,30,.35)]">
-                <span className="w-11 h-11 sm:w-14 sm:h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-br from-[#f7e7c6] to-[#e6c98d] text-secondary">
+              <div className="mkr-card h-full flex items-center gap-3 sm:flex-col sm:text-center sm:gap-3 px-3.5 py-4 sm:p-6">
+                <span className="mkr-icon !w-11 !h-11 sm:!w-14 sm:!h-14 !rounded-2xl flex-shrink-0">
                   <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.8} />
                 </span>
                 <span className="min-w-0">

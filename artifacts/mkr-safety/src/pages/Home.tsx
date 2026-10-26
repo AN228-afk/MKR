@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shield, Star, CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { Shield, Star, ArrowRight, Phone, MessageCircle, Award, Eye, Ruler, BadgeCheck, Quote, MapPin } from "lucide-react";
 import { FadeUp, FadeLeft, FadeRight, ScaleIn, StaggerList, StaggerItem } from "@/components/Animated";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { socialLinks } from "@/lib/social";
@@ -179,9 +179,10 @@ export default function Home() {
       <PriceCalculator />
 
       {/* Services Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="text-center mb-12">
+          <FadeUp className="text-center mb-14">
+            <span className="mkr-eyebrow">Our Services</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Invisible Grill Services in Bangalore
             </h2>
@@ -193,6 +194,7 @@ export default function Home() {
             {[
               {
                 title: "Balcony Invisible Grills",
+                tag: "Most Popular",
                 href: "/balcony-invisible-grills",
                 desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
                 img: hero1,
@@ -200,6 +202,7 @@ export default function Home() {
               },
               {
                 title: "Window Invisible Grills",
+                tag: "Light & Air",
                 href: "/window-invisible-grills",
                 desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
                 img: img4Card,
@@ -207,6 +210,7 @@ export default function Home() {
               },
               {
                 title: "Staircase Invisible Grills",
+                tag: "Child Safe",
                 href: "/staircase-invisible-grills",
                 desc: "Elegant vertical cable railings for open staircases — child-safe, pet-safe, and stunning in modern interiors.",
                 img: img5Card,
@@ -214,66 +218,68 @@ export default function Home() {
               },
               {
                 title: "Villa Invisible Grills",
+                tag: "Custom Built",
                 href: "/villa-invisible-grills",
                 desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
                 img: img2Card,
                 waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
               },
-            ].map(({ title, href, desc, img, waMsg }) => (
-              <StaggerItem key={href}>
-                <motion.div
-                  whileHover={{ y: -4, boxShadow: "0 12px 32px rgba(0,0,0,0.1)" }}
-                  transition={{ duration: 0.2 }}
-                  className="group rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all flex flex-col h-full"
-                >
-                  <Link href={href} data-testid={`card-service-${href}`}>
-                    <div className="relative h-48 overflow-hidden">
+            ].map(({ title, tag, href, desc, img, waMsg }) => (
+              <StaggerItem key={href} className="h-full">
+                <div className="mkr-card group flex flex-col h-full">
+                  <Link href={href} data-testid={`card-service-${href}`} className="block p-2 pb-0">
+                    <div className="relative h-52 overflow-hidden rounded-xl">
                       <img
                         src={img}
                         alt={`${title} in Bangalore by MKR Safety Solutions`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         loading="lazy"
                         width={400}
                         height={300}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
-                      <div className="absolute bottom-3 left-3 text-white font-bold text-sm leading-tight pr-2">{title}</div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
+                      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur text-[10px] font-bold uppercase tracking-wider text-secondary shadow-sm">{tag}</span>
+                      <span className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur flex items-center justify-center text-foreground shadow-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white group-hover:-rotate-45">
+                        <ArrowRight className="w-4 h-4" />
+                      </span>
+                      <h3 className="absolute bottom-3 left-3 right-3 text-white font-bold text-base leading-tight">{title}</h3>
                     </div>
                   </Link>
-                  <div className="p-4 flex flex-col flex-1">
+                  <div className="p-5 flex flex-col flex-1">
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
-                    <div className="mt-4 flex items-center justify-between">
-                      <Link href={href} className="inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline">
-                        Learn more<span className="sr-only"> about {title}</span> <ArrowRight className="w-3 h-3" />
+                    <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
+                      <Link href={href} className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary group/lm">
+                        Learn more<span className="sr-only"> about {title}</span>
+                        <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/lm:translate-x-1" />
                       </Link>
                       <div className="flex items-center gap-2">
                         <a
                           href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          aria-label="WhatsApp"
+                          aria-label={`WhatsApp about ${title}`}
                           onClick={trackGoogleAdsConversion}
-                          className="w-7 h-7 flex items-center justify-center rounded-full bg-green-700 text-white hover:bg-green-800 transition-colors"
+                          className="w-9 h-9 flex items-center justify-center rounded-full bg-[#25D366]/10 text-[#128C7E] hover:bg-[#25D366] hover:text-white hover:scale-110 transition-all"
                         >
-                          <MessageCircle className="w-3.5 h-3.5" />
+                          <MessageCircle className="w-4 h-4" />
                         </a>
                         <a
                           href="tel:+917780114547"
                           onClick={trackGoogleAdsConversion}
-                          aria-label="Call"
-                          className="w-7 h-7 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:opacity-80 transition-colors"
+                          aria-label={`Call about ${title}`}
+                          className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary/10 text-secondary hover:bg-secondary hover:text-white hover:scale-110 transition-all"
                         >
-                          <Phone className="w-3.5 h-3.5" />
+                          <Phone className="w-4 h-4" />
                         </a>
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               </StaggerItem>
             ))}
           </StaggerList>
-          <div className="text-center mt-8">
-            <Link href="/invisible-grills-bangalore" className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
+          <div className="text-center mt-12">
+            <Link href="/invisible-grills-bangalore" className="inline-flex items-center gap-2 px-7 py-3.5 bg-secondary text-secondary-foreground font-semibold rounded-xl">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -281,27 +287,30 @@ export default function Home() {
       </section>
 
       {/* Why Choose MKR */}
-      <section className="py-16 bg-muted">
+      <section className="py-20 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
             <FadeLeft>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+              <span className="mkr-eyebrow">Why MKR</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
                 Why 2000+ Bangalore Families Choose MKR
               </h2>
-              <StaggerList className="space-y-4">
+              <StaggerList className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { title: "316 Grade Marine Stainless Steel", desc: "The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity." },
-                  { title: "250kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 250kg per linear meter. Our grills are certified, not just claimed." },
-                  { title: "Nearly Invisible From Any Angle", desc: "3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust." },
-                  { title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and provide a transparent quote — no obligation required." },
-                  { title: "15-Year Warranty", desc: "Every installation is backed by a full 15 years of warranty covering cables, anchors, and fittings." },
-                ].map(({ title, desc }) => (
-                  <StaggerItem key={title}>
-                    <div className="flex gap-3">
-                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  { icon: Shield, title: "316 Grade Marine Stainless Steel", desc: "The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity." },
+                  { icon: Award, title: "250kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 250kg per linear meter. Certified, not just claimed." },
+                  { icon: Eye, title: "Nearly Invisible From Any Angle", desc: "3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust." },
+                  { icon: Ruler, title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and give a transparent quote — no obligation." },
+                  { icon: BadgeCheck, title: "15-Year Warranty", desc: "Every installation is backed by 15 years of warranty covering cables, anchors, and fittings.", wide: true },
+                ].map(({ icon: Icon, title, desc, wide }) => (
+                  <StaggerItem key={title} className={wide ? "sm:col-span-2" : ""}>
+                    <div className="mkr-card group h-full p-5 flex gap-4">
+                      <div className="mkr-icon shrink-0">
+                        <Icon className="w-5 h-5" />
+                      </div>
                       <div>
-                        <div className="font-semibold text-foreground text-sm">{title}</div>
-                        <div className="text-muted-foreground text-sm mt-0.5">{desc}</div>
+                        <h3 className="font-semibold text-foreground text-sm">{title}</h3>
+                        <p className="text-muted-foreground text-[13px] mt-1 leading-relaxed">{desc}</p>
                       </div>
                     </div>
                   </StaggerItem>
@@ -314,11 +323,12 @@ export default function Home() {
               </div>
             </FadeLeft>
             <FadeRight delay={0.15}>
-              <div className="relative">
+              <div className="relative p-3 sm:p-4">
+                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-secondary/25 via-secondary/5 to-transparent -rotate-2" aria-hidden="true" />
                 <motion.img
                   src={hero2}
                   alt="Child safely watching city view through MKR invisible grills on Bangalore apartment balcony"
-                  className="rounded-2xl w-full object-cover shadow-xl"
+                  className="relative rounded-2xl w-full object-cover shadow-2xl"
                   loading="lazy"
                   width={600}
                   height={500}
@@ -330,15 +340,28 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4, duration: 0.5 }}
-                  className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg border border-border"
+                  className="mkr-float absolute -bottom-2 -left-2 sm:-left-4 bg-white rounded-2xl p-4 shadow-xl border border-border"
                 >
                   <div className="flex items-center gap-2">
                     <div className="flex">
                       {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
                     </div>
-                    <span className="text-sm font-semibold">5.0 / 5</span>
+                    <span className="text-sm font-bold">5.0 / 5</span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">Based on verified Google Reviews</p>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: -16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.6, duration: 0.5 }}
+                  className="mkr-float-slow absolute -top-2 -right-2 sm:-right-4 bg-white rounded-2xl px-4 py-3 shadow-xl border border-border flex items-center gap-3"
+                >
+                  <div className="mkr-icon !w-10 !h-10"><BadgeCheck className="w-5 h-5" /></div>
+                  <div>
+                    <div className="text-sm font-bold text-foreground leading-tight">15-Year</div>
+                    <div className="text-xs text-muted-foreground">Warranty</div>
+                  </div>
                 </motion.div>
               </div>
             </FadeRight>
@@ -347,36 +370,45 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-3">What Bangalore Families Say</h2>
+          <div className="text-center mb-14">
+            <span className="mkr-eyebrow">Reviews</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">What Bangalore Families Say</h2>
             <p className="text-muted-foreground">Real reviews from real customers across Bangalore</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.slice(0, 6).map((t, i) => (
-              <motion.div
+              <motion.figure
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-muted rounded-xl p-6 border border-border"
+                transition={{ delay: (i % 3) * 0.1, duration: 0.6 }}
+                className="mkr-card relative p-7 flex flex-col"
                 data-testid={`card-testimonial-${i}`}
               >
-                <div className="flex items-center gap-1 mb-3">
+                <Quote className="absolute top-5 right-5 w-10 h-10 text-secondary/15 fill-secondary/10" aria-hidden="true" />
+                <div className="flex items-center gap-0.5 mb-4">
                   {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
                 </div>
-                <p className="text-foreground text-sm leading-relaxed mb-4">"{t.text}"</p>
-                <div>
-                  <div className="font-semibold text-sm text-foreground">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.location} · {t.service}</div>
-                </div>
-              </motion.div>
+                <blockquote className="text-foreground/90 text-[14.5px] leading-relaxed mb-6 flex-1">"{t.text}"</blockquote>
+                <figcaption className="flex items-center gap-3 pt-5 border-t border-border">
+                  <span className="w-11 h-11 rounded-full bg-gradient-to-br from-[hsl(40_62%_58%)] to-secondary text-white font-bold flex items-center justify-center shadow-md">
+                    {t.name.trim().charAt(0).toUpperCase()}
+                  </span>
+                  <div className="min-w-0">
+                    <div className="font-semibold text-sm text-foreground flex items-center gap-1.5">
+                      {t.name} <BadgeCheck className="w-4 h-4 text-[#1a73e8]" aria-label="Verified" />
+                    </div>
+                    <div className="text-xs text-muted-foreground truncate">{t.location} · {t.service}</div>
+                  </div>
+                </figcaption>
+              </motion.figure>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Link href="/reviews" className="inline-flex items-center gap-2 text-secondary font-semibold">
+          <div className="text-center mt-10">
+            <Link href="/reviews" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-secondary/40 text-secondary font-semibold hover:bg-secondary hover:text-white transition-colors">
               Read All Reviews <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -384,13 +416,14 @@ export default function Home() {
       </section>
 
       {/* Locations */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-3">Serving All Major Areas in Bangalore</h2>
+          <FadeUp className="text-center mb-12">
+            <span className="mkr-eyebrow">Service Areas</span>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3">Serving All Major Areas in Bangalore</h2>
             <p className="text-primary-foreground/70">Same-day site visits available across 12+ neighborhoods</p>
           </FadeUp>
-          <StaggerList className="flex flex-wrap justify-center gap-3">
+          <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-w-5xl mx-auto">
             {[
               ["Whitefield", "/invisible-grills-whitefield"],
               ["Koramangala", "/invisible-grills-koramangala"],
@@ -406,15 +439,17 @@ export default function Home() {
               ["KR Puram", "/invisible-grills-kr-puram"],
             ].map(([area, href]) => (
               <StaggerItem key={href}>
-                <motion.div whileHover={{ scale: 1.08 }} transition={{ duration: 0.15 }}>
-                  <Link
-                    href={href}
-                    className="block px-4 py-2 border border-primary-foreground/30 rounded-full text-sm text-primary-foreground/90 hover:border-secondary hover:text-secondary transition-all"
-                    data-testid={`link-location-${area}`}
-                  >
-                    {area}
-                  </Link>
-                </motion.div>
+                <Link
+                  href={href}
+                  className="group flex items-center gap-2.5 px-4 py-3 bg-white rounded-xl border border-border text-sm font-medium text-foreground shadow-sm hover:border-secondary hover:shadow-md hover:-translate-y-0.5 transition-all"
+                  data-testid={`link-location-${area}`}
+                >
+                  <span className="w-7 h-7 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-colors">
+                    <MapPin className="w-3.5 h-3.5" />
+                  </span>
+                  <span className="truncate">{area}</span>
+                  <ArrowRight className="w-3.5 h-3.5 ml-auto text-secondary opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all hidden sm:block" />
+                </Link>
               </StaggerItem>
             ))}
           </StaggerList>
@@ -422,11 +457,12 @@ export default function Home() {
       </section>
 
       {/* Blog Preview */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="flex justify-between items-center mb-10">
+          <FadeUp className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-3xl font-bold text-foreground">Latest from Our Blog</h2>
+              <span className="mkr-eyebrow">Blog</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Latest from Our Blog</h2>
               <p className="text-muted-foreground mt-1">Expert tips on invisible grills and home safety</p>
             </div>
             <Link href="/blog" className="hidden sm:flex items-center gap-2 text-secondary font-semibold">
@@ -437,20 +473,25 @@ export default function Home() {
             {blogPosts.filter((post, i, arr) => {
               const baseSlug = post.slug.replace(/-\d+$/, "");
               return arr.findIndex(p => p.slug.replace(/-\d+$/, "") === baseSlug) === i;
-            }).slice(0, 3).map((post) => (
-              <StaggerItem key={post.slug}>
-                <motion.div whileHover={{ y: -4, boxShadow: "0 8px 28px rgba(0,0,0,0.08)" }} transition={{ duration: 0.2 }}>
-                  <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`}>
-                    <article className="border border-border rounded-xl p-6 hover:shadow-md transition-shadow h-full">
-                      <div className="text-xs text-muted-foreground mb-2">{post.date} · {post.readTime}</div>
-                      <h3 className="font-semibold text-foreground text-base mb-2 leading-snug">{post.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
-                      <span className="inline-flex items-center gap-1 mt-4 text-xs font-semibold text-secondary">
-                        Read more <ArrowRight className="w-3 h-3" />
+            }).slice(0, 3).map((post, i) => (
+              <StaggerItem key={post.slug} className="h-full">
+                <Link href={`/blog/${post.slug}`} data-testid={`card-blog-${post.slug}`} className="block h-full">
+                  <article className="mkr-card group relative h-full p-7 flex flex-col overflow-hidden">
+                    <span className="absolute top-0 left-0 h-1 w-12 bg-gradient-to-r from-secondary to-[hsl(40_62%_58%)] transition-all duration-500 group-hover:w-full" aria-hidden="true" />
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[11px] font-semibold uppercase tracking-wider text-secondary bg-secondary/10 px-2.5 py-1 rounded-full">{post.readTime}</span>
+                      <span className="text-4xl font-bold text-secondary/15 leading-none">0{i + 1}</span>
+                    </div>
+                    <h3 className="font-semibold text-foreground text-lg mb-2 leading-snug group-hover:text-secondary transition-colors">{post.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed flex-1 line-clamp-3">{post.excerpt}</p>
+                    <div className="flex items-center justify-between mt-6 pt-4 border-t border-border">
+                      <span className="text-xs text-muted-foreground">{post.date}</span>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-secondary">
+                        Read <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                       </span>
-                    </article>
-                  </Link>
-                </motion.div>
+                    </div>
+                  </article>
+                </Link>
               </StaggerItem>
             ))}
           </StaggerList>
@@ -458,39 +499,46 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <ScaleIn>
-        <section className="py-16 bg-secondary/10 border-t border-secondary/20">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Secure Your Home?</h2>
-            <p className="text-muted-foreground mb-8">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity w-full">
-                  Book Free Site Visit
-                </Link>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors w-full">
-                  <Phone className="w-4 h-4" /> Call +91 77801 14547
-                </a>
-              </motion.div>
+      <section className="py-20 bg-white">
+        <ScaleIn>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mkr-cta relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[hsl(38_70%_36%)] via-[hsl(40_62%_46%)] to-[hsl(38_70%_32%)] px-6 py-14 sm:px-14 text-center text-white shadow-2xl">
+              <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-white/10 mkr-float-slow" aria-hidden="true" />
+              <div className="absolute -bottom-28 -left-20 w-72 h-72 rounded-full bg-white/10 mkr-float" aria-hidden="true" />
+              <div className="relative">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4 !text-white">Ready to Secure Your Home?</h2>
+                <p className="text-white/85 mb-9 max-w-2xl mx-auto">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                    <Link href="/contact-us" onClick={trackGoogleAdsConversion} className="btn-shine inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-secondary font-bold rounded-xl shadow-lg w-full">
+                      Book Free Site Visit <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                    <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/60 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors w-full">
+                      <Phone className="w-4 h-4" /> Call +91 77801 14547
+                    </a>
+                  </motion.div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </ScaleIn>
+        </ScaleIn>
+      </section>
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeUp className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
+          <FadeUp className="text-center mb-12">
+            <span className="mkr-eyebrow">FAQs</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
             <p className="text-muted-foreground">Everything you need to know about invisible grills in Bangalore</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <Accordion type="single" collapsible className="space-y-3">
               {homeFaqs.map((faq, i) => (
-                <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-4">
-                  <AccordionTrigger className="text-left font-medium text-sm py-4 hover:no-underline">
+                <AccordionItem key={i} value={`faq-${i}`} className="mkr-faq">
+                  <AccordionTrigger className="text-left font-semibold text-sm py-5 hover:no-underline">
                     {faq.q}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground text-sm pb-4 leading-relaxed">
