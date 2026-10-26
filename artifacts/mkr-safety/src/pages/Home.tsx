@@ -187,7 +187,6 @@ export default function Home() {
             />
           </AnimatePresence>
           <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent md:hidden" />
-          <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-white/92 via-white/60 to-transparent lg:via-white/40" />
         </div>
 
         {/* Slide Label Pill */}
