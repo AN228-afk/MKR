@@ -6,6 +6,7 @@ import { FloatingCTA } from "./FloatingCTA";
 import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { SocialLinks } from "./SocialLinks";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const taglines = ["Invisible Grills", "Child Safety Experts", "15-Year Warranty", "Free Site Visit"];
 
@@ -35,6 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [location] = useLocation();
+  useScrollReveal(location);
   const [tagIdx, setTagIdx] = useState(0);
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border shadow-sm">
+      <header className="mkr-header-in sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/" className="flex items-center gap-2.5">
@@ -184,7 +186,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
         )}
       </header>
 
-      <main className="flex-1">{children}</main>
+      <motion.main
+        key={location}
+        className="flex-1"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      >
+        {children}
+      </motion.main>
 
       <footer className="bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

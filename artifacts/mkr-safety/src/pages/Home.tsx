@@ -10,6 +10,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
 import { PriceCalculator } from "@/components/PriceCalculator";
 import { InquiryForm } from "@/components/InquiryForm";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { testimonials, services, blogPosts } from "@/data/services";
 import hero1 from "@assets/MKR_3_1780926061320.webp";
@@ -147,16 +148,6 @@ const faqSchema = {
 };
 
 export default function Home() {
-  const [current, setCurrent] = useState(0);
-  const [direction, setDirection] = useState(1);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setDirection(1);
-      setCurrent((prev) => (prev + 1) % heroSlides.length);
-    }, 4500);
-    return () => clearInterval(timer);
-  }, []);
 
 
   return (
@@ -168,112 +159,7 @@ export default function Home() {
         schema={[localBusinessSchema, faqSchema]}
       />
 
-      {/* Hero Slideshow Section */}
-      <section className="relative md:min-h-[85vh] flex flex-col md:flex-row md:items-center overflow-hidden bg-white md:bg-primary">
-        {/* Slideshow Background */}
-        <div className="relative h-[42vh] min-h-[260px] md:absolute md:inset-0 md:h-auto">
-          <AnimatePresence initial={false} mode="sync">
-            <motion.img
-              key={current}
-              src={heroSlides[current].src}
-              alt={heroSlides[current].alt}
-              initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 1, scale: 1, transition: { duration: 1.1, ease: [0.22, 1, 0.36, 1] } }}
-              exit={{ opacity: 0, transition: { duration: 0.6 } }}
-              className="absolute inset-0 w-full h-full object-cover"
-              width={1200}
-              height={800}
-              fetchPriority="high"
-            />
-          </AnimatePresence>
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent md:hidden" />
-        </div>
-
-        {/* Slide Label Pill */}
-        <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 hidden sm:block">
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={current}
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 8 }}
-              transition={{ duration: 0.35 }}
-              className="px-4 py-1.5 bg-secondary/90 text-secondary-foreground text-xs font-bold rounded-full uppercase tracking-widest shadow"
-            >
-              {heroSlides[current].label}
-            </motion.span>
-          </AnimatePresence>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-2 pb-10 md:py-20 grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wider">
-              <Shield className="w-3 h-3" /> <span className="sm:hidden">Bangalore's Most Trusted</span><span className="hidden sm:inline">Bangalore's Most Trusted Invisible Grill Company</span>
-            </div>
-
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={current}
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -14 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-4">
-                  {heroSlides[current].heading}<br />
-                  <span className="text-secondary">{heroSlides[current].accent}</span>
-                </h1>
-                <p className="text-sm sm:text-base text-primary-foreground/80 leading-relaxed mb-7 max-w-lg">
-                  {heroSlides[current].sub}
-                </p>
-              </motion.div>
-            </AnimatePresence>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/contact-us"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-all text-sm"
-                data-testid="button-hero-quote"
-              >
-                Get Free Quote
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <a
-                href={WA}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-all text-sm"
-                data-testid="button-hero-whatsapp"
-                onClick={trackGoogleAdsConversion}
-              >
-                <MessageCircle className="w-4 h-4" />
-                WhatsApp Us
-              </a>
-            </div>
-
-            <div className="flex flex-wrap gap-6 mt-8">
-              {[["2000+", "Installations"], ["5.0★", "Google Rating"], ["15 Yr", "Warranty"]].map(([num, label]) => (
-                <div key={label}>
-                  <div className="text-xl font-bold text-secondary">{num}</div>
-                  <div className="text-xs text-primary-foreground/70">{label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:block"
-          >
-            <div className="bg-white/95 border border-border shadow-xl rounded-2xl p-6">
-              <InquiryForm title="Book Free Site Visit" compact />
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <HeroSlideshow slides={heroSlides} whatsappUrl={WA} />
 
       <TrustBadges />
 
