@@ -26,7 +26,7 @@ import kidsBalcony from "@assets/mkr-real-kids-balcony.webp";
 import petsBalcony from "@assets/mkr-real-pets-balcony.webp";
 import img8 from "@assets/5_1780926045097.webp";
 import realBalcony from "@assets/mkr-real-balcony-night.webp";
-import realCorner from "@assets/mkr-real-corner-balcony.webp";
+import villaTerrace from "@assets/mkr-real-villa-terrace.webp";
 import realWindow from "@assets/mkr-real-window-view.webp";
 import realSunset from "@assets/mkr-real-sunset-2.webp";
 
@@ -60,8 +60,9 @@ const heroSlides = [
     position: "center 60%",
   },
   {
-    src: realCorner,
-    alt: "Wide corner balcony fitted with invisible grills under an open blue sky",
+    src: villaTerrace,
+    alt: "Long luxury balcony with MKR invisible grills overlooking the city skyline",
+    position: "center 55%",
     label: "Villa Invisible Grills",
     heading: "Luxury Villas Deserve",
     accent: "Invisible Protection.",
