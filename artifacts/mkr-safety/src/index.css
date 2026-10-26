@@ -371,7 +371,7 @@ main .rounded-xl.border:not(.mkr-card):not(.mkr-faq), main .rounded-2xl.border:n
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1 !important; transform: none !important; }
-  .mkr-header-in, .mkr-float, .mkr-float-slow, .mkr-marquee { animation: none !important; }
+  .mkr-header-in, .mkr-float, .mkr-float-slow { animation: none !important; }
 }
 
 /* WhatsApp bubble ping */
@@ -379,9 +379,9 @@ main .rounded-xl.border:not(.mkr-card):not(.mkr-faq), main .rounded-2xl.border:n
 .mkr-ping { animation: mkr-ping 2s cubic-bezier(0,0,.2,1) infinite; z-index: -1; }
 
 /* Trust strip marquee */
-@keyframes mkr-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.mkr-marquee { animation: mkr-marquee 32s linear infinite; }
-.mkr-marquee:hover { animation-play-state: paused; }
+@keyframes mkr-marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+.mkr-marquee { animation: mkr-marquee 30s linear infinite !important; will-change: transform; }
+@media (hover: hover) and (pointer: fine) { .mkr-marquee:hover { animation-play-state: paused; } }
 
 /* Gold underline that draws in under section headings */
 main section h2 { position: relative; }
