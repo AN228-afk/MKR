@@ -451,6 +451,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Yelahanka",
   },
+  {
+    title: "Invisible Grill for Corner Balcony: Solving the Tricky Angles Right",
+    slug: "invisible-grill-for-corner-balcony",
+    excerpt: "Corner and L-shaped balconies aren't just bigger balconies - they need different anchoring and wire handling. Here's what to know before you install.",
+    date: "2026-10-25",
+    readTime: "6 min read",
+    keyword: "invisible grill for corner balcony",
+  },
 ];
 
 export const testimonials = [
