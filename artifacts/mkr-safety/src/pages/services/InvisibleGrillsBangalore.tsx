@@ -9,6 +9,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { testimonials, services, locations } from "@/data/services";
 import hero from "@assets/MKR_3_1780926061320.webp";
 import img2 from "@assets/MKR_2_1780926061320.webp";
+import realBalcony from "@assets/mkr-real-balcony-night.webp";
+import realWindow from "@assets/mkr-real-window-view.webp";
+import kidsBalcony from "@assets/mkr-real-kids-balcony.webp";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
@@ -95,10 +98,10 @@ export default function InvisibleGrillsBangalore() {
           <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto">Comprehensive invisible grill solutions for every application — from individual apartments to large villas.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills", price: "₹100–160/sq ft", img: hero },
-              { label: "Window Invisible Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: img2 },
+              { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills", price: "₹100–160/sq ft", img: realBalcony },
+              { label: "Window Invisible Grills", href: "/window-invisible-grills", price: "₹100–160/sq ft", img: realWindow },
               { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills", price: "₹100–160/sq ft", img: hero },
-              { label: "Child Safety Grills", href: "/child-safety-grills", price: "₹100–160/sq ft", img: img2 },
+              { label: "Child Safety Grills", href: "/child-safety-grills", price: "₹100–160/sq ft", img: kidsBalcony },
             ].map(s => (
               <Link key={s.href} href={s.href}>
                 <div className="group border border-border rounded-xl overflow-hidden hover:shadow-md transition-shadow">

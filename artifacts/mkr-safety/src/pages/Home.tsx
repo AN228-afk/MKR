@@ -209,7 +209,7 @@ export default function Home() {
                 tag: "Most Popular",
                 href: "/balcony-invisible-grills",
                 desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
-                img: hero1,
+                img: realBalcony,
                 waMsg: "Hi, I need Balcony Invisible Grills in Bangalore. Please share details.",
               },
               {
@@ -217,7 +217,7 @@ export default function Home() {
                 tag: "Light & Air",
                 href: "/window-invisible-grills",
                 desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
-                img: img4Card,
+                img: realWindow,
                 waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
               },
               {
@@ -233,7 +233,7 @@ export default function Home() {
                 tag: "Custom Built",
                 href: "/villa-invisible-grills",
                 desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
-                img: img2Card,
+                img: villaTerrace,
                 waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
               },
             ].map(({ title, tag, href, desc, img, waMsg }) => (
