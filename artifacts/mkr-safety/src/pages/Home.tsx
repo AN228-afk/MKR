@@ -24,7 +24,7 @@ import img4Card from "@assets/MKR_4_thumb_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import img7 from "@assets/6_1780926045097.jpg";
 import img8 from "@assets/5_1780926045097.webp";
-import realDay from "@assets/mkr-real-balcony-day.webp";
+import realBalcony from "@assets/mkr-real-balcony-night.webp";
 import realCorner from "@assets/mkr-real-corner-balcony.webp";
 import realNight from "@assets/mkr-real-night-view.webp";
 import realSunset from "@assets/mkr-real-sunset.webp";
@@ -33,8 +33,8 @@ const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grill
 
 const heroSlides = [
   {
-    src: realDay,
-    alt: "High-rise balcony with MKR invisible grills and a clear city and lake view",
+    src: realBalcony,
+    alt: "Apartment balcony fitted with MKR invisible grills overlooking the Bangalore city lights at night",
     label: "Balcony Invisible Grills",
     heading: "Protect Your Balcony.",
     accent: "Keep The View Forever.",
