@@ -27,7 +27,7 @@ import img8 from "@assets/5_1780926045097.webp";
 import realBalcony from "@assets/mkr-real-balcony-night.webp";
 import realCorner from "@assets/mkr-real-corner-balcony.webp";
 import realWindow from "@assets/mkr-real-window-view.webp";
-import realSunset from "@assets/mkr-real-sunset.webp";
+import realSunset from "@assets/mkr-real-sunset-2.webp";
 
 const WA = "https://wa.me/917780114547?text=Hi%2C%20I%20need%20invisible%20grills%20in%20Bangalore.";
 
@@ -82,7 +82,7 @@ const heroSlides = [
   },
   {
     src: realSunset,
-    alt: "Horizontal invisible grill cables on a balcony overlooking the city at sunset",
+    alt: "Balcony with MKR invisible grills and a golden sunset view in Bangalore",
     label: "15-Year Warranty",
     heading: "316 Marine SS Steel.",
     accent: "Zero Rust. Ever.",
