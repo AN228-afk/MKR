@@ -459,6 +459,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for corner balcony",
   },
+  {
+    title: "Invisible Grill for Sliding Windows: Safety That Doesn't Block the Slide",
+    slug: "invisible-grill-for-sliding-windows",
+    excerpt: "Sliding windows have a moving track, not a fixed frame - which means invisible grills need a different approach. Here's how it's done right.",
+    date: "2026-10-26",
+    readTime: "6 min read",
+    keyword: "invisible grill for sliding windows",
+  },
 ];
 
 export const testimonials = [

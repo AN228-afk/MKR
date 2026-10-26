@@ -1117,6 +1117,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-sliding-windows": {
+    slug: "invisible-grill-for-sliding-windows",
+    title: "Invisible Grill for Sliding Windows: Safety That Doesn't Block the Slide",
+    seoTitle: "Invisible Grill for Sliding Windows Bangalore | MKR Safety Solutions",
+    seoDesc: "Invisible grill for sliding windows in Bangalore homes - safe, slide-friendly installation that keeps your window fully functional. Call 077801 14547.",
+    date: "2026-10-26",
+    readTime: "6 min read",
+    keyword: "invisible grill for sliding windows",
+    content: [
+      { body: "Sliding windows are everywhere in Bangalore apartments - living rooms, bedrooms, kitchens, balconies with sliding doors that double as windows. But most safety grill advice online is written for fixed windows or French windows with hinges. Sliding windows are different: they have a track, overlapping panels, and a mechanism that needs to keep working after the grill goes up. Get the installation wrong and you either compromise safety or you end up with a window that won't slide properly anymore. Here's what actually matters when fitting invisible grills on sliding windows." },
+      { heading: "Why sliding windows need a different installation approach", body: "A fixed window has one plane to work with - the grill goes straight across the opening. A sliding window has two or three panels moving independently on a track, which means the grill has to be anchored on the fixed outer frame, not on the sliding sash itself. If the cables are run on the moving panel, the window will jam or the cables will loosen every time it's opened. Our installers fix the anchor points to the window's outer frame or the wall/mullion on either side, so the sliding panels continue to move freely behind or alongside the grill without any interference." },
+      { heading: "Where the grill sits relative to the track", body: "For most Bangalore apartments, the invisible grill is fitted on the outer face of the sliding window, just in front of the track, so it doesn't sit inside the channel where the panels run. This keeps the grill completely clear of the sliding mechanism. If your sliding window opens onto a balcony or a narrow sit-out, we also check the clearance so the grill doesn't interfere with the window handle or the mosquito mesh panel, if you have one fitted separately." },
+      { heading: "Horizontal cables work best for wide sliding windows", body: "Sliding windows are usually wider than they are tall, especially in living rooms and balconies. Horizontal cable runs suit this shape well because they span the width in fewer, longer runs and keep the view largely uninterrupted - you're still looking out at eye level without a vertical cable every few inches. Vertical cables can be used too, particularly on taller sliding windows or where the building's safety norms specify vertical orientation. Our team will recommend what works based on the actual window size and your preference." },
+      { heading: "Gap spacing still applies, even on a moving frame", body: "The safety standard for gap spacing between cables doesn't change just because the window slides. Whether it's a fixed window or a sliding one, cables are spaced close enough that a child's head or limb cannot pass through. This matters even more on ground-floor and lower-floor sliding windows where kids are more likely to lean or push against the glass while playing." },
+      { heading: "Common sliding window situations we handle in Bangalore homes", body: "Three-panel sliding windows in 2BHK and 3BHK apartments, sliding windows that open onto balconies (where the grill needs to work with the balcony grill too), kitchen sliding windows above the counter, and sliding French-style windows in villas - each has a slightly different anchor point and cable run, but the principle stays the same: protect the opening, don't touch the track. We've installed invisible grills on sliding windows across Bangalore, from compact apartments to larger villa openings, and the approach is adjusted on-site to the exact window type." },
+      { heading: "Pricing for sliding window grills", body: "Invisible grills for sliding windows are priced the same as any other invisible grill installation - \u20b9100 to \u20b9160 per sq ft, with no difference between 2.5mm and 3mm cable. The exact cost depends on the window's size and the number of panels. For a precise quote on your sliding windows, call or WhatsApp 077801 14547, or book a free site visit and we'll measure and advise on the best cable orientation for your home." },
+    ],
+    relatedServices: [
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Book a Site Visit", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1214,3 +1238,5 @@ export function InvisibleGrillWarrantyWhatToCheckBlogPost() { return <BlogPostPa
 export function InvisibleGrillYelahankaBlogPost() { return <BlogPostPage data={posts["invisible-grill-yelahanka"]} />; }
 
 export function InvisibleGrillForCornerBalconyBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-corner-balcony"]} />; }
+
+export function InvisibleGrillForSlidingWindowsBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-sliding-windows"]} />; }
