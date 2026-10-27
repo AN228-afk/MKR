@@ -163,6 +163,17 @@ const faqSchema = {
   })),
 };
 
+function GoogleG({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" className={className} aria-label="Google">
+      <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/>
+      <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
+      <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/>
+      <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/>
+    </svg>
+  );
+}
+
 export default function Home() {
 
 
@@ -212,6 +223,7 @@ export default function Home() {
                 title: "Balcony Invisible Grills",
                 tag: "Most Popular",
                 href: "/balcony-invisible-grills",
+                points: ["3mm 316 marine SS cables", "Load-tested to 250 kg/m"],
                 desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
                 img: balconyCard,
                 waMsg: "Hi, I need Balcony Invisible Grills in Bangalore. Please share details.",
@@ -220,6 +232,7 @@ export default function Home() {
                 title: "Window Invisible Grills",
                 tag: "Light & Air",
                 href: "/window-invisible-grills",
+                points: ["Full light & ventilation", "No heavy iron bars"],
                 desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
                 img: windowCard,
                 waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
@@ -228,6 +241,7 @@ export default function Home() {
                 title: "Staircase Invisible Grills",
                 tag: "Child Safe",
                 href: "/staircase-invisible-grills",
+                points: ["Child & pet safe", "Modern vertical look"],
                 desc: "Elegant vertical cable railings for open staircases — child-safe, pet-safe, and stunning in modern interiors.",
                 img: staircaseCard,
                 waMsg: "Hi, I need Staircase Invisible Grills in Bangalore. Please share details.",
@@ -236,15 +250,16 @@ export default function Home() {
                 title: "Villa Invisible Grills",
                 tag: "Custom Built",
                 href: "/villa-invisible-grills",
+                points: ["Custom designs", "Large spans & terraces"],
                 desc: "Bespoke cable grill systems for independent villas with large balconies, terraces, and custom architectural needs.",
                 img: villaCard,
                 waMsg: "Hi, I need Villa Invisible Grills in Bangalore. Please share details.",
               },
-            ].map(({ title, tag, href, desc, img, waMsg }) => (
+            ].map(({ title, tag, href, desc, img, waMsg, points }) => (
               <StaggerItem key={href} className="h-full">
                 <div className="mkr-card group flex flex-col h-full">
                   <Link href={href} data-testid={`card-service-${href}`} className="block p-2 pb-0">
-                    <div className="relative h-52 overflow-hidden rounded-xl">
+                    <div className="relative h-60 overflow-hidden rounded-[1.1rem]">
                       <img
                         src={img}
                         alt={`${title} in Bangalore by MKR Safety Solutions`}
@@ -253,41 +268,52 @@ export default function Home() {
                         width={400}
                         height={300}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                       <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur text-[10px] font-bold uppercase tracking-wider text-secondary shadow-sm">{tag}</span>
                       <span className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur flex items-center justify-center text-foreground shadow-sm transition-all duration-300 group-hover:bg-secondary group-hover:text-white group-hover:-rotate-45">
                         <ArrowRight className="w-4 h-4" />
                       </span>
-                      <h3 className="absolute bottom-3 left-3 right-3 text-white font-bold text-base leading-tight">{title}</h3>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h3 className="text-white font-bold text-lg leading-tight">{title}</h3>
+                        <div className="mt-1 text-[12px] font-medium text-white/85">From <b className="text-white">₹100/sq.ft</b> · 15-yr warranty</div>
+                      </div>
                     </div>
                   </Link>
-                  <div className="p-5 flex flex-col flex-1">
-                    <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
-                    <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
-                      <Link href={href} className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary group/lm">
-                        Learn more<span className="sr-only"> about {title}</span>
-                        <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/lm:translate-x-1" />
+                  <div className="p-5 pt-4 flex flex-col flex-1">
+                    <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                    <ul className="mt-4 space-y-2 flex-1">
+                      {points.map((pt) => (
+                        <li key={pt} className="flex items-center gap-2 text-[13px] font-medium text-foreground">
+                          <span className="w-5 h-5 rounded-full bg-secondary/12 text-secondary flex items-center justify-center shrink-0"><BadgeCheck className="w-3.5 h-3.5" /></span>
+                          {pt}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-5 flex items-center gap-2">
+                      <Link
+                        href={href}
+                        className="flex-1 inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-secondary text-secondary-foreground text-sm font-semibold"
+                      >
+                        View Details<span className="sr-only"> about {title}</span> <ArrowRight className="w-4 h-4" />
                       </Link>
-                      <div className="flex items-center gap-2">
-                        <a
-                          href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`WhatsApp about ${title}`}
-                          onClick={trackGoogleAdsConversion}
-                          className="w-9 h-9 flex items-center justify-center rounded-full bg-[#25D366]/10 text-[#128C7E] hover:bg-[#25D366] hover:text-white hover:scale-110 transition-all"
-                        >
-                          <MessageCircle className="w-4 h-4" />
-                        </a>
-                        <a
-                          href="tel:+917780114547"
-                          onClick={trackGoogleAdsConversion}
-                          aria-label={`Call about ${title}`}
-                          className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary/10 text-secondary hover:bg-secondary hover:text-white hover:scale-110 transition-all"
-                        >
-                          <Phone className="w-4 h-4" />
-                        </a>
-                      </div>
+                      <a
+                        href={`https://wa.me/917780114547?text=${encodeURIComponent(waMsg)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`WhatsApp about ${title}`}
+                        onClick={trackGoogleAdsConversion}
+                        className="w-11 h-11 flex items-center justify-center rounded-xl bg-[#25D366]/12 text-[#128C7E] hover:bg-[#25D366] hover:text-white transition-colors"
+                      >
+                        <MessageCircle className="w-4 h-4" />
+                      </a>
+                      <a
+                        href="tel:+917780114547"
+                        onClick={trackGoogleAdsConversion}
+                        aria-label={`Call about ${title}`}
+                        className="w-11 h-11 flex items-center justify-center rounded-xl border border-border text-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-colors"
+                      >
+                        <Phone className="w-4 h-4" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -386,44 +412,68 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-white via-[hsl(40_40%_97%)] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="mkr-eyebrow">Reviews</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">What Bangalore Families Say</h2>
-            <p className="text-muted-foreground">Real reviews from real customers across Bangalore</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.slice(0, 6).map((t, i) => (
-              <motion.figure
-                key={i}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: (i % 3) * 0.1, duration: 0.6 }}
-                className="mkr-card relative p-7 flex flex-col"
-                data-testid={`card-testimonial-${i}`}
-              >
-                <Quote className="absolute top-5 right-5 w-10 h-10 text-secondary/15 fill-secondary/10" aria-hidden="true" />
-                <div className="flex items-center gap-0.5 mb-4">
-                  {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+            <div className="text-center lg:text-left">
+              <span className="mkr-eyebrow">Reviews</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">What Bangalore Families Say</h2>
+              <p className="text-muted-foreground">Real reviews from real customers across Bangalore</p>
+            </div>
+            {/* Rating summary */}
+            <Link
+              href="/reviews"
+              className="mkr-card mx-auto lg:mx-0 flex items-center gap-5 px-6 py-5 !rounded-2xl"
+            >
+              <GoogleG className="w-10 h-10 shrink-0" />
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl font-bold text-foreground leading-none">5.0</span>
+                  <span className="flex">{[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 text-[#FBBC05] fill-[#FBBC05]" />)}</span>
                 </div>
-                <blockquote className="text-foreground/90 text-[14.5px] leading-relaxed mb-6 flex-1">"{t.text}"</blockquote>
-                <figcaption className="flex items-center gap-3 pt-5 border-t border-border">
-                  <span className="w-11 h-11 rounded-full bg-gradient-to-br from-[hsl(40_62%_58%)] to-secondary text-white font-bold flex items-center justify-center shadow-md">
-                    {t.name.trim().charAt(0).toUpperCase()}
-                  </span>
-                  <div className="min-w-0">
-                    <div className="font-semibold text-sm text-foreground flex items-center gap-1.5">
-                      {t.name} <BadgeCheck className="w-4 h-4 text-[#1a73e8]" aria-label="Verified" />
-                    </div>
-                    <div className="text-xs text-muted-foreground truncate">{t.location} · {t.service}</div>
-                  </div>
-                </figcaption>
-              </motion.figure>
-            ))}
+                <div className="text-xs text-muted-foreground mt-1.5">Based on <b className="text-foreground">13 Google reviews</b></div>
+              </div>
+            </Link>
           </div>
-          <div className="text-center mt-10">
+
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
+            {testimonials.slice(0, 6).map((t, i) => {
+              const short = t.text.length < 60;
+              return (
+                <motion.figure
+                  key={i}
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ delay: (i % 3) * 0.08, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  className={`mkr-review break-inside-avoid mb-6 ${i === 0 ? "mkr-review--gold" : ""}`}
+                  data-testid={`card-testimonial-${i}`}
+                >
+                  <div className="flex items-center justify-between mb-5">
+                    <span className="inline-flex items-center gap-0.5 px-2.5 py-1 rounded-full bg-[#FBBC05]/12 mkr-stars">
+                      {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-3.5 h-3.5 text-[#FBBC05] fill-[#FBBC05]" />)}
+                    </span>
+                    <GoogleG className="w-5 h-5 opacity-90" />
+                  </div>
+                  <span className="mkr-review-quote" aria-hidden="true">“</span>
+                  <blockquote className={`relative text-foreground/90 leading-relaxed mb-7 ${short ? "text-xl font-semibold" : "text-[15px]"}`}>
+                    {t.text}
+                  </blockquote>
+                  <figcaption className="flex items-center gap-3">
+                    <span className="mkr-avatar">{t.name.trim().charAt(0).toUpperCase()}</span>
+                    <div className="min-w-0">
+                      <div className="font-semibold text-sm text-foreground flex items-center gap-1.5">
+                        {t.name} <BadgeCheck className="w-4 h-4 text-[#1a73e8]" aria-label="Verified" />
+                      </div>
+                      <div className="text-xs text-muted-foreground truncate">{t.location} · {t.service}</div>
+                    </div>
+                  </figcaption>
+                </motion.figure>
+              );
+            })}
+          </div>
+
+          <div className="text-center mt-6">
             <Link href="/reviews" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-secondary/40 text-secondary font-semibold hover:bg-secondary hover:text-white transition-colors">
               Read All Reviews <ArrowRight className="w-4 h-4" />
             </Link>
