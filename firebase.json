@@ -54,7 +54,7 @@
                     ]
                 },
                 {
-                    "regex": "^/(?!assets/).*$",
+                    "regex": "^[^.]*$",
                     "headers": [
                         {
                             "key": "Cache-Control",
