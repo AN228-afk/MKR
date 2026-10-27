@@ -467,6 +467,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for sliding windows",
   },
+  {
+    title: "Invisible Grill for Gated Community Apartments: What Changes When You Live in a Complex",
+    slug: "invisible-grill-for-gated-community-apartments",
+    excerpt: "Living in a gated community adds layers that a standalone house never has - shared facades, RWA expectations, and multiple families installing at once. Here's what actually changes.",
+    date: "2026-10-27",
+    readTime: "6 min read",
+    keyword: "invisible grill for gated community apartments",
+  },
 ];
 
 export const testimonials = [
