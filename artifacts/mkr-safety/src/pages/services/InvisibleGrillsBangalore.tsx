@@ -10,7 +10,7 @@ import { testimonials, services, locations } from "@/data/services";
 import hero from "@assets/MKR_3_1780926061320.webp";
 import img2 from "@assets/MKR_2_1780926061320.webp";
 import realBalcony from "@assets/mkr-real-balcony-night-card.webp";
-import realWindow from "@assets/MKR_4_1780926061320.webp";
+import realWindow from "@assets/mkr-real-window-view-card.webp";
 import kidsBalcony from "@assets/mkr-real-kids-balcony-card.webp";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
