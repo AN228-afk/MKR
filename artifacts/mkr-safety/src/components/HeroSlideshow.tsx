@@ -103,7 +103,7 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
       }}
     >
       {/* ---------- Photo layer ---------- */}
-      <div className="relative h-[58vh] min-h-[340px] md:absolute md:inset-0 md:h-auto overflow-hidden rounded-b-[2rem] md:rounded-none bg-[#e9e5dc]">
+      <div className="relative h-[44vh] min-h-[280px] max-h-[460px] md:max-h-none md:absolute md:inset-0 md:h-auto overflow-hidden bg-[#e9e5dc]">
         <AnimatePresence initial={false} custom={dir}>
           <motion.div
             key={current}
@@ -151,13 +151,13 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
       </div>
 
       {/* ---------- Glass card with text ---------- */}
-      <div className="relative z-10 -mt-16 px-4 pb-8 md:mt-0 md:p-0 md:absolute md:inset-0 md:flex md:items-end">
+      <div className="relative z-10 px-5 pt-6 pb-8 md:p-0 md:absolute md:inset-0 md:flex md:items-end md:pointer-events-none">
         <div className="md:w-full md:max-w-7xl md:mx-auto md:px-8 md:pb-10">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease, delay: 0.15 }}
-            className="relative max-w-xl rounded-[1.75rem] bg-white/95 md:bg-white/75 md:backdrop-blur-2xl md:backdrop-saturate-150 border border-white/70 shadow-[0_30px_60px_-25px_rgba(30,25,10,.45)] p-6 sm:p-8"
+            className="relative max-w-xl bg-white md:pointer-events-auto md:rounded-[1.75rem] md:bg-white/80 md:backdrop-blur-2xl md:backdrop-saturate-150 md:border md:border-white/70 md:shadow-[0_30px_60px_-25px_rgba(30,25,10,.45)] md:p-8"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-[11px] font-bold uppercase tracking-wider mb-4">
               <Shield className="w-3.5 h-3.5" /> <span className="sm:hidden">Bangalore's Most Trusted</span><span className="hidden sm:inline">Bangalore's Most Trusted Invisible Grills</span>

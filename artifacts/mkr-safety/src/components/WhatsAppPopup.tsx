@@ -193,7 +193,7 @@ export function WhatsAppPopup() {
         transition={{ type: "spring", stiffness: 260, damping: 18, delay: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.92 }}
-        className="pointer-events-auto relative w-14 h-14 rounded-full bg-[#25D366] text-white shadow-[0_10px_25px_-5px_rgba(37,211,102,.6)] flex items-center justify-center"
+        className="pointer-events-auto relative hidden sm:flex w-14 h-14 rounded-full bg-[#25D366] text-white shadow-[0_10px_25px_-5px_rgba(37,211,102,.6)] items-center justify-center"
         data-testid="button-wa-bubble"
       >
         {!open && <span className="absolute inset-0 rounded-full bg-[#25D366] mkr-ping" />}

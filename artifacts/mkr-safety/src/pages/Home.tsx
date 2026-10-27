@@ -23,14 +23,11 @@ import img5Card from "@assets/MKR_5_1780926061320.webp";
 import img4Card from "@assets/MKR_4_1780926061320.webp";
 import img6 from "@assets/2_1780926045097.webp";
 import kidsBalcony from "@assets/mkr-real-kids-balcony.webp";
-import petsBalcony from "@assets/mkr-real-pets-balcony.webp";
 import img8 from "@assets/5_1780926045097.webp";
 import realBalcony from "@assets/mkr-real-balcony-night.webp";
 import villaTerrace from "@assets/mkr-real-villa-terrace.webp";
-import realWindow from "@assets/mkr-real-window-view.webp";
 import realSunset from "@assets/mkr-real-sunset-2.webp";
 import balconyCard from "@assets/mkr-real-balcony-night-card.webp";
-import windowCard from "@assets/mkr-real-window-view-card.webp";
 import villaCard from "@assets/mkr-real-villa-terrace-card.webp";
 import staircaseCard from "@assets/MKR_5_1780926061320.webp";
 
@@ -55,15 +52,6 @@ const heroSlides = [
     sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by Bangalore families in high-rise apartments.",
   },
   {
-    src: petsBalcony,
-    alt: "Golden retriever and cat relaxing beside a high-rise balcony secured with MKR invisible grills",
-    label: "Pet Safety Grills",
-    heading: "Let Your Pets Enjoy",
-    accent: "The View, Safely.",
-    sub: "Closely spaced 316-grade SS cables keep cats and dogs safely inside while they relax by the balcony or window.",
-    position: "center 60%",
-  },
-  {
     src: villaTerrace,
     alt: "Long luxury balcony with MKR invisible grills overlooking the city skyline",
     position: "center 55%",
@@ -73,8 +61,8 @@ const heroSlides = [
     sub: "Bespoke cable grill systems designed for large villa balconies and terraces — seamlessly blending with premium architecture.",
   },
   {
-    src: realWindow,
-    alt: "Apartment window fitted with MKR invisible grills overlooking the Bangalore skyline on a sunny day",
+    src: img4,
+    alt: "Large window fitted with MKR invisible grills overlooking green trees and the Bangalore skyline",
     label: "Window Invisible Grills",
     heading: "Maximum Light.",
     accent: "Maximum Safety.",
@@ -221,7 +209,7 @@ export default function Home() {
                 tag: "Light & Air",
                 href: "/window-invisible-grills",
                 desc: "Replace heavy iron grills with nearly invisible cables. Maximum light, ventilation, and safety for every window.",
-                img: windowCard,
+                img: img4,
                 waMsg: "Hi, I need Window Invisible Grills in Bangalore. Please share details.",
               },
               {
