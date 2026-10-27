@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Send } from "lucide-react";
+import { X, Send, Phone } from "lucide-react";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
 
@@ -33,7 +33,11 @@ export function WhatsAppPopup() {
   useEffect(() => {
     let closed = false;
     try { closed = sessionStorage.getItem(KEY) === "1"; } catch { /* ignore */ }
-    if (closed) { const h = setTimeout(() => setHint(true), 4000); return () => clearTimeout(h); }
+    if (closed) {
+      const h1 = setTimeout(() => setHint(true), 4000);
+      const h2 = setTimeout(() => setHint(false), 12000);
+      return () => { clearTimeout(h1); clearTimeout(h2); };
+    }
     const t = setTimeout(() => setOpen(true), 6000);
     return () => clearTimeout(t);
   }, []);
@@ -155,12 +159,30 @@ export function WhatsAppPopup() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
-            className="pointer-events-auto hidden sm:block bg-white text-foreground text-xs font-medium px-3 py-2 rounded-xl shadow-lg border border-border"
+            className="pointer-events-auto hidden sm:flex items-center gap-2 bg-white text-foreground text-xs font-semibold pl-3 pr-4 py-2 rounded-full shadow-lg border border-border"
           >
-            Need help? Chat with us 💬
+            <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" /> Chat with us
           </motion.button>
         )}
       </AnimatePresence>
+
+      {/* Call button (desktop) */}
+      {!open && (
+        <motion.a
+          href="tel:+917780114547"
+          onClick={trackGoogleAdsConversion}
+          aria-label="Call MKR Safety Solutions"
+          data-testid="button-float-call"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.8 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.92 }}
+          className="pointer-events-auto hidden sm:flex w-12 h-12 mr-1 rounded-full bg-white text-secondary border border-border shadow-lg items-center justify-center hover:bg-secondary hover:text-white transition-colors"
+        >
+          <Phone className="w-5 h-5" />
+        </motion.a>
+      )}
 
       {/* Floating WhatsApp bubble */}
       <motion.button

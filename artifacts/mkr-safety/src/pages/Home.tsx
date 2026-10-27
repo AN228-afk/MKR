@@ -511,7 +511,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-2 pb-20 bg-white">
         <ScaleIn>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mkr-cta relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[hsl(38_70%_36%)] via-[hsl(40_62%_46%)] to-[hsl(38_70%_32%)] px-6 py-14 sm:px-14 text-center text-white shadow-2xl">

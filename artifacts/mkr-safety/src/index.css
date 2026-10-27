@@ -406,3 +406,10 @@ html, body { max-width: 100%; overflow-x: clip; }
 @media (max-width: 767px) {
   input, select, textarea { font-size: 16px !important; }
 }
+
+/* Footer */
+.mkr-foot-h { font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: hsl(38 70% 36%); margin-bottom: 1.25rem; }
+.mkr-foot-link { position: relative; display: inline-flex; align-items: center; font-size: .9rem; color: hsl(215 14% 18% / .78); transition: color .25s, transform .25s; }
+.mkr-foot-link::before { content: ""; width: 0; height: 2px; margin-right: 0; border-radius: 2px; background: hsl(38 70% 36%); transition: width .25s, margin .25s; }
+.mkr-foot-link:hover { color: hsl(38 70% 36%); }
+.mkr-foot-link:hover::before { width: 10px; margin-right: 6px; }

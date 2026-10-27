@@ -1,5 +1,4 @@
 import { Phone, MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { WhatsAppPopup } from "./WhatsAppPopup";
 
@@ -10,25 +9,6 @@ export function FloatingCTA() {
   return (
     <>
       <WhatsAppPopup />
-      {/* Floating round icons — right side, vertically centered — all screen sizes */}
-      <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 hidden sm:flex flex-col gap-3 items-center">
-        <motion.a
-          href={`tel:${PHONE}`}
-          data-testid="button-float-call"
-          aria-label="Call MKR Safety Solutions"
-          onClick={trackGoogleAdsConversion}
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          whileHover={{ scale: 1.12 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-12 h-12 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground shadow-lg hover:shadow-xl"
-        >
-          <Phone className="w-5 h-5" />
-        </motion.a>
-
-      </div>
-
       {/* Mobile sticky bottom bar */}
       <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-white border-t border-border flex">
         <a

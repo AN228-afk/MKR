@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, Mail, MapPin } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
 import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
@@ -199,46 +199,61 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </motion.main>
 
-      <footer className="bg-primary text-primary-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="lg:col-span-1">
-              <div className="inline-block bg-white rounded-xl px-3 py-2 mb-4">
-                <img
-                  src={logoPath}
-                  alt="MKR Safety Solutions"
-                  className="h-10 w-auto object-contain"
-                  width={120}
-                  height={40}
-                />
+      <footer className="relative bg-primary text-primary-foreground overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-transparent via-secondary to-transparent" aria-hidden="true" />
+        <div className="absolute -top-40 -right-40 w-[28rem] h-[28rem] rounded-full bg-secondary/[0.06]" aria-hidden="true" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 sm:pb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+            {/* Brand */}
+            <div className="lg:col-span-4">
+              <div className="inline-flex items-center bg-white rounded-2xl px-4 py-3 mb-5 shadow-[0_10px_30px_-15px_rgba(60,45,10,.35)] border border-border">
+                <img src={logoPath} alt="MKR Safety Solutions" className="h-12 w-auto object-contain" width={140} height={48} />
               </div>
-              <p className="text-sm text-primary-foreground/80 leading-relaxed mb-4">
+              <p className="text-sm text-primary-foreground/75 leading-relaxed mb-5 max-w-sm">
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
               </p>
-              <div className="flex flex-col gap-1 text-sm text-primary-foreground/80">
-                <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="hover:text-secondary transition-colors">+91 77801 14547</a>
-                <a href="mailto:mkrsafetysolutions@gmail.com" className="hover:text-secondary transition-colors">mkrsafetysolutions@gmail.com</a>
-                <span>Bangalore, Karnataka, India</span>
-              </div>
-              <SocialLinks className="mt-5" />
+              <Link href="/reviews" className="inline-flex items-center gap-3 bg-white border border-border rounded-xl px-4 py-2.5 mb-6 hover:border-secondary transition-colors">
+                <span className="text-lg font-bold text-foreground">5.0</span>
+                <span className="flex text-yellow-400">{"★★★★★"}</span>
+                <span className="text-xs text-muted-foreground">13 Google reviews</span>
+              </Link>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="group flex items-center gap-3 text-primary-foreground/85 hover:text-secondary transition-colors">
+                    <span className="w-9 h-9 rounded-xl bg-white border border-border flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white group-hover:border-secondary transition-colors"><Phone className="w-4 h-4" /></span>
+                    +91 77801 14547
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:mkrsafetysolutions@gmail.com" className="group flex items-center gap-3 text-primary-foreground/85 hover:text-secondary transition-colors break-all">
+                    <span className="w-9 h-9 shrink-0 rounded-xl bg-white border border-border flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white group-hover:border-secondary transition-colors"><Mail className="w-4 h-4" /></span>
+                    mkrsafetysolutions@gmail.com
+                  </a>
+                </li>
+                <li className="flex items-center gap-3 text-primary-foreground/85">
+                  <span className="w-9 h-9 rounded-xl bg-white border border-border flex items-center justify-center text-secondary"><MapPin className="w-4 h-4" /></span>
+                  Bangalore, Karnataka, India
+                </li>
+              </ul>
+              <SocialLinks className="mt-6" />
             </div>
 
-            <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Services</h3>
-              <ul className="space-y-2">
+            {/* Services */}
+            <div className="lg:col-span-3">
+              <h3 className="mkr-foot-h">Services</h3>
+              <ul className="space-y-2.5">
                 {services.map((s) => (
                   <li key={s.href}>
-                    <Link href={s.href} className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
-                      {s.label}
-                    </Link>
+                    <Link href={s.href} className="mkr-foot-link">{s.label}</Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Locations</h3>
-              <ul className="space-y-2">
+            {/* Locations */}
+            <div className="lg:col-span-3">
+              <h3 className="mkr-foot-h">Locations</h3>
+              <ul className="grid grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-2.5">
                 {[
                   ["Whitefield", "/invisible-grills-whitefield"],
                   ["Koramangala", "/invisible-grills-koramangala"],
@@ -250,44 +265,41 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   ["Hebbal", "/invisible-grills-hebbal"],
                 ].map(([label, href]) => (
                   <li key={href}>
-                    <Link href={href} className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
-                      {label}
-                    </Link>
+                    <Link href={href} className="mkr-foot-link">{label}</Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wide text-secondary mb-4">Quick Links</h3>
-              <ul className="space-y-2">
+            {/* Quick links */}
+            <div className="lg:col-span-2">
+              <h3 className="mkr-foot-h">Quick Links</h3>
+              <ul className="grid grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-2.5">
                 {[
                   ["About Us", "/about-us"],
                   ["Pricing", "/pricing"],
                   ["Projects", "/projects"],
                   ["Gallery", "/gallery"],
-                  ["Customer Reviews", "/reviews"],
+                  ["Reviews", "/reviews"],
                   ["FAQs", "/faqs"],
                   ["Blog", "/blog"],
                   ["Contact Us", "/contact-us"],
                 ].map(([label, href]) => (
                   <li key={href}>
-                    <Link href={href} className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
-                      {label}
-                    </Link>
+                    <Link href={href} className="mkr-foot-link">{label}</Link>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          <div className="mt-10 pt-8 border-t border-primary-foreground/20">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div className="mt-12 pt-6 border-t border-border">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left md:pr-20">
               <p className="text-xs text-primary-foreground/60">
-                © {new Date().getFullYear()} MKR Safety Solutions. All rights reserved. Bangalore, Karnataka, India.
+                © {new Date().getFullYear()} MKR Safety Solutions. All rights reserved.
               </p>
               <p className="text-xs text-primary-foreground/60">
-                Invisible Grills | Balcony Safety | Child Protection | Bangalore
+                Invisible Grills · Balcony Safety · Child Protection · Bangalore
               </p>
             </div>
           </div>
