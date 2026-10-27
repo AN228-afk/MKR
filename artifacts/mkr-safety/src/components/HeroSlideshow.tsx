@@ -75,13 +75,6 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
 
   const slide = slides[current];
   const headingWords = slide.heading.split(" ").length;
-  // Alternate the slow camera move per slide
-  const moves = [
-    { from: { scale: 1.18, x: "-2%" }, to: { scale: 1.04, x: "0%" } },
-    { from: { scale: 1.04, y: "2%" }, to: { scale: 1.16, y: "0%" } },
-    { from: { scale: 1.18, x: "2%" }, to: { scale: 1.04, x: "0%" } },
-  ];
-  const move = moves[current % moves.length];
 
   const Bars = ({ className = "" }: { className?: string }) => (
     <div className={`flex gap-1.5 ${className}`}>
@@ -117,26 +110,24 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
             custom={dir}
             className="absolute inset-0"
             variants={{
-              enter: (d: number) => ({ clipPath: d > 0 ? "inset(0 0 0 100%)" : "inset(0 100% 0 0)", zIndex: 2, filter: "brightness(1)" }),
-              center: { clipPath: "inset(0 0% 0 0%)", zIndex: 2, filter: "brightness(1)" },
-              exit: { zIndex: 1, filter: "brightness(0.8)", transition: { duration: 1.1 } },
+              enter: (d: number) => ({ clipPath: d > 0 ? "inset(0 0 0 100%)" : "inset(0 100% 0 0)", zIndex: 2, opacity: 1 }),
+              center: { clipPath: "inset(0 0% 0 0%)", zIndex: 2, opacity: 1 },
+              exit: { zIndex: 1, opacity: 0.999, transition: { duration: 1.1 } },
             }}
-            initial={reduce ? { opacity: 0, zIndex: 2, filter: "brightness(1)" } : "enter"}
-            animate={reduce ? { opacity: 1, zIndex: 2, filter: "brightness(1)" } : "center"}
-            exit={reduce ? { zIndex: 1, filter: "brightness(0.97)", transition: { duration: 0.9 } } : "exit"}
+            initial={reduce ? { opacity: 0, zIndex: 2 } : "enter"}
+            animate={reduce ? { opacity: 1, zIndex: 2 } : "center"}
+            exit={reduce ? { zIndex: 1, opacity: 0.999, transition: { duration: 0.9 } } : "exit"}
             transition={{ clipPath: { duration: 1.1, ease: [0.77, 0, 0.18, 1] }, opacity: { duration: 0.8 }, zIndex: { duration: 0 } }}
           >
-            <motion.img
+            <img
               src={slide.src}
               alt={slide.alt}
               className="w-full h-full object-cover"
               style={{ objectPosition: slide.position ?? "center" }}
-              width={1600}
-              height={1000}
+              width={2000}
+              height={1500}
+              decoding="async"
               fetchPriority={current === 0 ? "high" : "auto"}
-              initial={reduce ? false : move.from}
-              animate={reduce ? undefined : move.to}
-              transition={{ duration: SLIDE_MS / 1000 + 2, ease: "linear" }}
             />
           </motion.div>
         </AnimatePresence>
