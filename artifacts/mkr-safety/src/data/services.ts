@@ -475,6 +475,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for gated community apartments",
   },
+  {
+    title: "Invisible Grill vs Aluminium Grill: Which One Actually Suits Your Bangalore Home?",
+    slug: "invisible-grill-vs-aluminium-grill",
+    excerpt: "Aluminium grills and invisible grills solve the same problem but look and behave very differently over time. Here's an honest, practical comparison for Bangalore homeowners deciding between the two.",
+    date: "2026-10-28",
+    readTime: "7 min read",
+    keyword: "invisible grill vs aluminium grill",
+  },
 ];
 
 export const testimonials = [
