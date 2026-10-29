@@ -483,6 +483,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill vs aluminium grill",
   },
+  {
+    title: "Invisible Grill Hebbal: A Local Guide for Balconies, Windows, and Staircases",
+    slug: "invisible-grill-hebbal",
+    excerpt: "Hebbal's mix of lakeside apartments, busy flyovers, and new high-rises creates safety needs that are a little different from the rest of Bangalore. Here's what local homeowners should know before installing invisible grills.",
+    date: "2026-10-29",
+    readTime: "6 min read",
+    keyword: "invisible grill Hebbal",
+  },
 ];
 
 export const testimonials = [
