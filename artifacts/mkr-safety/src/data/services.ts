@@ -491,6 +491,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Hebbal",
   },
+  {
+    title: "15 Practical Child Safety Balcony Ideas for Bangalore Homes",
+    slug: "child-safety-balcony-ideas",
+    excerpt: "Beyond grills and gates, here are practical, easy-to-implement child safety balcony ideas that Bangalore parents can start using this week.",
+    date: "2026-10-30",
+    readTime: "7 min read",
+    keyword: "child safety balcony ideas",
+  },
 ];
 
 export const testimonials = [
