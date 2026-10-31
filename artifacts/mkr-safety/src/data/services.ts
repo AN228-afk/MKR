@@ -499,6 +499,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "child safety balcony ideas",
   },
+  {
+    title: "Invisible Grill Installation in Bellandur: A Local Resident's Guide",
+    slug: "invisible-grill-bellandur",
+    excerpt: "Bellandur's high-rise towers and IT crowd bring their own balcony safety challenges. Here's what homeowners in this part of Bangalore should know before installing invisible grills.",
+    date: "2026-10-31",
+    readTime: "6 min read",
+    keyword: "invisible grill Bellandur",
+  },
 ];
 
 export const testimonials = [
