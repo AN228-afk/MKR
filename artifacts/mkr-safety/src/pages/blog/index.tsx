@@ -1258,6 +1258,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Get a Free Site Visit", href: "/contact-us" },
     ],
   },
+  "invisible-grill-thickness-guide": {
+    slug: "invisible-grill-thickness-guide",
+    title: "Invisible Grill Thickness Guide: Choosing Between 2mm, 2.5mm, 3mm and 4mm Cables",
+    seoTitle: "Invisible Grill Thickness Guide: 2mm vs 2.5mm vs 3mm vs 4mm | MKR Safety Solutions",
+    seoDesc: "Confused about invisible grill thickness? Our guide explains 2mm, 2.5mm, 3mm and 4mm cable options so Bangalore homeowners pick the right one.",
+    date: "2026-11-01",
+    readTime: "7 min read",
+    keyword: "invisible grill thickness guide",
+    content: [
+      { body: "When homeowners start researching invisible grills, most conversations jump straight to price or steel grade. But one question quietly decides how safe and how long-lasting your grill actually is: what thickness of cable are you using? Invisible grill cables commonly come in 2mm, 2.5mm, 3mm and 4mm diameters, and picking the wrong one for a given space can mean either unnecessary visual bulk or a grill that isn't suited to the opening it's protecting. This guide breaks down what each thickness is actually for, so you can have an informed conversation with your installer instead of just picking a number." },
+      { heading: "Why Thickness Matters More Than People Realise", body: "The whole appeal of an invisible grill is that it disappears into the background while still holding firm against pressure. Cable thickness affects three things at once: how visible the wires are, how much tension and load the grill can handle, and how far apart the support points can be. A thinner cable looks cleaner but needs tighter spacing and shorter spans to stay rigid. A thicker cable can span wider openings with fewer anchor points but is marginally more visible up close. The right choice depends on the size of the opening, how it's used, and what's on the other side of it \u2014 a toddler's hands, a monsoon gust, or a curious pet." },
+      { heading: "2mm and 2.5mm Cables: Where They Work Best", body: "The thinner end of the range is typically used for smaller openings and lower-exposure areas \u2014 think window grills, French windows, or short balcony stretches where spans between anchor points are not very wide. These cables sit almost invisibly against most backgrounds and are a popular choice when homeowners are prioritising an unobstructed view over maximum reach. They still go through the same tensioning process as thicker cables, so don't mistake 'thinner' for 'weaker in finish' \u2014 it simply means the cable is better suited to shorter, more controlled spans rather than long open stretches." },
+      { heading: "3mm Cables: The Common Choice for Balconies and Terraces", body: "3mm is the thickness most Bangalore homes end up choosing for standard balconies, terraces, and larger window openings. It strikes a practical balance \u2014 strong enough for wider spans and everyday pressure (a child leaning against it, a pet jumping up, strong winds during the monsoon) while still staying visually unobtrusive from a normal viewing distance. If your balcony has a long uninterrupted stretch or an irregular shape with wide gaps between corners, 3mm is usually the safer structural choice over the thinner options, without jumping to a noticeably thicker cable." },
+      { heading: "4mm and Thicker Cables: When Extra Strength Is Needed", body: "For larger terraces, duplex staircases with long open flights, or openings that see heavier daily use \u2014 like a villa's wide terrace railing or a lift shaft opening \u2014 a thicker 4mm cable (or reinforced spacing with 3mm cables) may be recommended. This isn't about the cable being 'better' in a general sense; it's about matching cable strength to span length and expected load. An experienced installer will usually assess the actual width and height of your opening on-site rather than defaulting to the thickest available option, since over-speccing adds cost without adding real safety benefit for a small window or short balcony edge." },
+      { heading: "A Quick Note on MKR's Pricing", body: "A common question we get is whether thicker cable costs more. At MKR Safety Solutions, invisible grills are priced at \u20b9100\u2013\u20b9160 per sq ft, and this price range stays the same whether we use 3mm or 2.5mm cable \u2014 the thickness is chosen based on what your space actually needs, not as an upsell. For an exact quote based on your balcony, window, staircase or terrace dimensions, call or WhatsApp us at 077801 14547, or book a free site visit and we'll recommend the right cable thickness on the spot." },
+      { heading: "How to Decide: A Simple Checklist", body: "Before you finalise a thickness, ask your installer three things: What is the actual span between anchor points? What is this grill protecting against \u2014 a child, a pet, wind load, or all three? And is there anything about the location (high floor, exposed terrace, wide staircase flight) that calls for extra strength? A good installer will walk through these with you during a site visit rather than quoting a thickness over the phone. If you're unsure where to start, our team at MKR Safety Solutions can assess your space and suggest the right cable thickness along with transparent pricing, with no guesswork involved." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1367,3 +1391,5 @@ export function InvisibleGrillHebbalBlogPost() { return <BlogPostPage data={post
 export function ChildSafetyBalconyIdeasBlogPost() { return <BlogPostPage data={posts["child-safety-balcony-ideas"]} />; }
 
 export function InvisibleGrillBellandurBlogPost() { return <BlogPostPage data={posts["invisible-grill-bellandur"]} />; }
+
+export function InvisibleGrillThicknessGuideBlogPost() { return <BlogPostPage data={posts["invisible-grill-thickness-guide"]} />; }

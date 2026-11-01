@@ -507,6 +507,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Bellandur",
   },
+  {
+    title: "Invisible Grill Thickness Guide: Choosing Between 2mm, 2.5mm, 3mm and 4mm Cables",
+    slug: "invisible-grill-thickness-guide",
+    excerpt: "Not all invisible grill cables are the same thickness. Here's a straightforward guide to choosing the right cable diameter for your balcony, window, staircase or terrace.",
+    date: "2026-11-01",
+    readTime: "7 min read",
+    keyword: "invisible grill thickness guide",
+  },
 ];
 
 export const testimonials = [
