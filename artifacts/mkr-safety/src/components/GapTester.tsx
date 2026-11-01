@@ -6,18 +6,25 @@ import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 /** Approximate sizes (inches) used only for this illustration. */
 const ITEMS = [
-  { key: "toddler", label: "Toddler", size: 4, emoji: "🧒" },
+  { key: "toddler", label: "Toddler", size: 4.5, emoji: "🧒" },
   { key: "cat", label: "Small cat", size: 3, emoji: "🐈" },
-  { key: "pigeon", label: "Pigeon", size: 2, emoji: "🐦" },
+  { key: "pigeon", label: "Pigeon", size: 2.5, emoji: "🐦" },
+];
+
+const OPTIONS = [
+  { gap: 2, name: "2-inch spacing", note: "Pets, pigeons and toddlers" },
+  { gap: 4, name: "4-inch spacing", note: "Standard child safety, more open view" },
 ];
 
 export function GapTester() {
-  const [gap, setGap] = useState(3);
+  const [gap, setGap] = useState(2);
   const cables = 9;
   const pxPerIn = 22;
   const blocks = ITEMS.map((it) => ({ ...it, blocked: gap < it.size }));
   const advice =
-    gap <= 2 ? "Best for pigeons, pets and toddlers." : gap <= 3 ? "Great for toddlers and most pets." : gap < 4 ? "Okay for toddlers, but small pets may slip through." : "Too wide for safety. We'd suggest a closer spacing.";
+    gap === 2
+      ? "2-inch spacing blocks toddlers, cats and pigeons. Best if you have pets or a pigeon problem."
+      : "4-inch spacing keeps toddlers safe with a more open view. Choose 2-inch if you have cats or pigeons.";
   const wa = `https://wa.me/917780114547?text=${encodeURIComponent(`Hi MKR, I'd like invisible grills with about ${gap}-inch cable spacing. Please share a quote.`)}`;
 
   return (
@@ -26,17 +33,27 @@ export function GapTester() {
         <div>
           <span className="mkr-eyebrow">Try it yourself</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">How close should <Accent>the cables be?</Accent></h2>
-          <p className="text-muted-foreground mb-8">Move the slider to change the gap between cables and see who can and can't get through. We recommend a spacing based on your home at the free site visit.</p>
+          <p className="text-muted-foreground mb-8">We install invisible grills with 2-inch or 4-inch gaps between cables. Tap each one to see who can and can't get through.</p>
 
-          <label htmlFor="gap" className="flex items-center justify-between text-sm font-semibold text-foreground mb-2">
-            Gap between cables <span className="text-2xl font-bold text-secondary tabular-nums">{gap.toFixed(1)}″</span>
-          </label>
-          <input
-            id="gap" type="range" min={1.5} max={5} step={0.5} value={gap}
-            onChange={(e) => setGap(parseFloat(e.target.value))}
-            className="mkr-range w-full"
-          />
-          <div className="flex justify-between text-xs text-muted-foreground mt-1"><span>1.5″ close</span><span>5″ wide</span></div>
+          <div role="radiogroup" aria-label="Cable spacing" className="grid grid-cols-2 gap-3">
+            {OPTIONS.map((o) => {
+              const on = gap === o.gap;
+              return (
+                <button
+                  key={o.gap}
+                  type="button"
+                  role="radio"
+                  aria-checked={on}
+                  onClick={() => setGap(o.gap)}
+                  className={`rounded-2xl border-2 p-4 text-left transition-all duration-300 ${on ? "border-secondary bg-secondary/[0.07] shadow-[0_14px_30px_-18px_rgba(155,111,32,.6)]" : "border-border bg-white hover:border-secondary/40"}`}
+                >
+                  <div className={`text-3xl font-bold tabular-nums ${on ? "text-secondary" : "text-foreground/70"}`}>{o.gap}″</div>
+                  <div className="text-sm font-semibold text-foreground mt-1">{o.name}</div>
+                  <div className="text-xs text-muted-foreground mt-0.5">{o.note}</div>
+                </button>
+              );
+            })}
+          </div>
 
           <div className="grid grid-cols-3 gap-3 mt-8">
             {blocks.map((b) => (
@@ -87,7 +104,7 @@ export function GapTester() {
               </motion.div>
             ))}
           </div>
-          <div className="absolute top-6 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-white/90 text-xs font-bold text-secondary shadow">Gap: {gap.toFixed(1)}″</div>
+          <div className="absolute top-6 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-white/90 text-xs font-bold text-secondary shadow">Gap: {gap}″</div>
         </div>
       </div>
     </section>
