@@ -457,3 +457,14 @@ html, body { max-width: 100%; overflow-x: clip; }
 }
 .mkr-accent { font-size: 1.07em; line-height: 1; }
 .mkr-cta .mkr-accent { color: #fff; }
+
+/* ---------- Creative pieces ---------- */
+.mkr-gold-text { background: linear-gradient(90deg, hsl(38 70% 32%), hsl(40 62% 56%), hsl(38 70% 32%)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mkr-outline-text { -webkit-text-stroke: 1.5px hsl(38 70% 36% / .55); color: transparent; }
+.mkr-range { -webkit-appearance: none; appearance: none; height: 8px; border-radius: 9999px; background: linear-gradient(90deg, hsl(40 62% 58%), hsl(38 70% 36%)); outline: none; }
+.mkr-range::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 3px solid hsl(38 70% 36%); box-shadow: 0 6px 14px -4px rgba(60,45,10,.45); cursor: grab; }
+.mkr-range::-moz-range-thumb { width: 24px; height: 24px; border-radius: 50%; background: #fff; border: 3px solid hsl(38 70% 36%); cursor: grab; }
+[data-tilt] { transition: transform .25s ease-out, box-shadow .45s ease; will-change: transform; }
+[data-tilt]::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), hsl(40 62% 70% / .18), transparent 45%); }
+[data-tilt]:hover::after { opacity: 1; }

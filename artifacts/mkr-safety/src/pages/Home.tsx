@@ -14,6 +14,10 @@ import { InquiryForm } from "@/components/InquiryForm";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { CableStrings } from "@/components/CableStrings";
 import { WorkReel } from "@/components/WorkReel";
+import { InstallStory } from "@/components/InstallStory";
+import { GapTester } from "@/components/GapTester";
+import { BigWords } from "@/components/BigWords";
+import { useTilt } from "@/lib/useTilt";
 import kidsCard from "@assets/mkr-real-kids-balcony-card.webp";
 import petsCard from "@assets/mkr-real-pets-balcony-card.webp";
 import sunsetCard from "@assets/mkr-real-sunset-2-card.webp";
@@ -182,6 +186,7 @@ function GoogleG({ className = "" }: { className?: string }) {
 }
 
 export default function Home() {
+  useTilt("home");
 
 
   return (
@@ -264,7 +269,7 @@ export default function Home() {
               },
             ].map(({ title, tag, href, desc, img, waMsg, points }) => (
               <StaggerItem key={href} className="h-full">
-                <div className="mkr-card group flex flex-col h-full">
+                <div data-tilt className="mkr-card group flex flex-col h-full">
                   <Link href={href} data-testid={`card-service-${href}`} className="block p-2 pb-0">
                     <div className="relative h-60 overflow-hidden rounded-[1.1rem]">
                       <img
@@ -334,6 +339,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BigWords />
 
       <WorkReel
         items={[
@@ -429,6 +436,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <InstallStory />
+
+      <GapTester />
 
       <CableStrings />
 
