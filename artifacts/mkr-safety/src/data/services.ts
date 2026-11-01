@@ -467,6 +467,46 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for sliding windows",
   },
+  {
+    title: "Invisible Grill for Gated Community Apartments: What Changes When You Live in a Complex",
+    slug: "invisible-grill-for-gated-community-apartments",
+    excerpt: "Living in a gated community adds layers that a standalone house never has - shared facades, RWA expectations, and multiple families installing at once. Here's what actually changes.",
+    date: "2026-10-27",
+    readTime: "6 min read",
+    keyword: "invisible grill for gated community apartments",
+  },
+  {
+    title: "Invisible Grill vs Aluminium Grill: Which One Actually Suits Your Bangalore Home?",
+    slug: "invisible-grill-vs-aluminium-grill",
+    excerpt: "Aluminium grills and invisible grills solve the same problem but look and behave very differently over time. Here's an honest, practical comparison for Bangalore homeowners deciding between the two.",
+    date: "2026-10-28",
+    readTime: "7 min read",
+    keyword: "invisible grill vs aluminium grill",
+  },
+  {
+    title: "Invisible Grill Hebbal: A Local Guide for Balconies, Windows, and Staircases",
+    slug: "invisible-grill-hebbal",
+    excerpt: "Hebbal's mix of lakeside apartments, busy flyovers, and new high-rises creates safety needs that are a little different from the rest of Bangalore. Here's what local homeowners should know before installing invisible grills.",
+    date: "2026-10-29",
+    readTime: "6 min read",
+    keyword: "invisible grill Hebbal",
+  },
+  {
+    title: "15 Practical Child Safety Balcony Ideas for Bangalore Homes",
+    slug: "child-safety-balcony-ideas",
+    excerpt: "Beyond grills and gates, here are practical, easy-to-implement child safety balcony ideas that Bangalore parents can start using this week.",
+    date: "2026-10-30",
+    readTime: "7 min read",
+    keyword: "child safety balcony ideas",
+  },
+  {
+    title: "Invisible Grill Installation in Bellandur: A Local Resident's Guide",
+    slug: "invisible-grill-bellandur",
+    excerpt: "Bellandur's high-rise towers and IT crowd bring their own balcony safety challenges. Here's what homeowners in this part of Bangalore should know before installing invisible grills.",
+    date: "2026-10-31",
+    readTime: "6 min read",
+    keyword: "invisible grill Bellandur",
+  },
 ];
 
 export const testimonials = [

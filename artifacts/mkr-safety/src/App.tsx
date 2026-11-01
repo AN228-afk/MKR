@@ -85,6 +85,11 @@ const InvisibleGrillWarrantyWhatToCheckBlogPost = lazy(() => import("@/pages/blo
 const InvisibleGrillYelahankaBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillYelahankaBlogPost })));
 const InvisibleGrillForCornerBalconyBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForCornerBalconyBlogPost })));
 const InvisibleGrillForSlidingWindowsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForSlidingWindowsBlogPost })));
+const InvisibleGrillForGatedCommunityApartmentsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForGatedCommunityApartmentsBlogPost })));
+const InvisibleGrillVsAluminiumGrillBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsAluminiumGrillBlogPost })));
+const InvisibleGrillHebbalBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillHebbalBlogPost })));
+const ChildSafetyBalconyIdeasBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.ChildSafetyBalconyIdeasBlogPost })));
+const InvisibleGrillBellandurBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillBellandurBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -209,6 +214,16 @@ function Router() {
       <Route path="/blog/invisible-grill-for-corner-balcony" component={InvisibleGrillForCornerBalconyBlogPost} />
 
       <Route path="/blog/invisible-grill-for-sliding-windows" component={InvisibleGrillForSlidingWindowsBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-gated-community-apartments" component={InvisibleGrillForGatedCommunityApartmentsBlogPost} />
+
+      <Route path="/blog/invisible-grill-vs-aluminium-grill" component={InvisibleGrillVsAluminiumGrillBlogPost} />
+
+      <Route path="/blog/invisible-grill-hebbal" component={InvisibleGrillHebbalBlogPost} />
+
+      <Route path="/blog/child-safety-balcony-ideas" component={ChildSafetyBalconyIdeasBlogPost} />
+
+      <Route path="/blog/invisible-grill-bellandur" component={InvisibleGrillBellandurBlogPost} />
 
       <Route component={NotFound} />
     </Switch>
