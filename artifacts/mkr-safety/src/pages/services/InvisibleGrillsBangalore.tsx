@@ -145,7 +145,7 @@ export default function InvisibleGrillsBangalore() {
             {[
               "8+ years of experience in Bangalore's invisible grill market",
               "316-grade marine stainless steel — the highest available grade",
-              "Load tested to 250kg per linear meter — certified safe",
+              "Load tested to 400kg per linear meter — certified safe",
               "5.0-star Google rating from 10+ genuine Bangalore customers",
               "Free site visit with transparent, itemized quotations",
               "Same-day site visits available across all Bangalore areas",

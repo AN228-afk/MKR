@@ -37,7 +37,7 @@ export default function About() {
                 From a single balcony project in Koramangala to over 1,000 completed installations across 12 neighborhoods, our journey has been built on one principle — safety without compromise.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We use only 316-grade marine stainless steel, the same grade trusted in boats and coastal buildings. Every cable is tensioned to withstand 250kg per linear meter and backed by a 15-year warranty.
+                We use only 316-grade marine stainless steel, the same grade trusted in boats and coastal buildings. Every cable is tensioned to withstand 400kg per linear meter and backed by a 15-year warranty.
               </p>
               <div className="space-y-3">
                 {["8+ years of installation expertise", "316-grade marine SS cables only", "Free site visits with no obligation", "15-year comprehensive warranty", "Serving 12+ Bangalore neighborhoods"].map(f => (
@@ -62,7 +62,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-foreground text-center mb-12">Our Values</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Shield, title: "Safety First", desc: "Every installation meets the highest safety standards, tested to 250kg per linear meter." },
+              { icon: Shield, title: "Safety First", desc: "Every installation meets the highest safety standards, tested to 400kg per linear meter." },
               { icon: Award, title: "Uncompromising Quality", desc: "We only use 316-grade marine stainless steel — never inferior substitutes." },
               { icon: Users, title: "Customer Trust", desc: "5.0 stars on Google from 13 reviews. We earn trust one family at a time." },
               { icon: MapPin, title: "Local Expertise", desc: "Deep knowledge of Bangalore's construction styles, weather, and apartment types." },

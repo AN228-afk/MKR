@@ -5,7 +5,7 @@ export const faqData = [
   },
   {
     question: "Are invisible grills safe for children and pets?",
-    answer: "Yes, they are highly safe. The cables are tensioned to withstand up to 250kg of impact per linear meter. The standard 3mm gap prevents children and pets from squeezing through while providing a clear view."
+    answer: "Yes, they are highly safe. The cables are tensioned to withstand up to 400kg of impact per linear meter. The standard 3mm gap prevents children and pets from squeezing through while providing a clear view."
   },
   {
     question: "Can invisible grills be cut with scissors or normal tools?",

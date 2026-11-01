@@ -15,7 +15,7 @@ export const services: Service[] = [
     description: "Transform your balcony into a safe, open space with ultra-fine 316-grade stainless steel cables that blend seamlessly with any architectural design.",
     price: "₹100–160/sq ft",
     icon: "Shield",
-    features: ["3mm cable spacing", "250kg load tested", "Weather resistant", "Custom fit"],
+    features: ["3mm cable spacing", "400kg load tested", "Weather resistant", "Custom fit"],
     image: "MKR_3",
   },
   {

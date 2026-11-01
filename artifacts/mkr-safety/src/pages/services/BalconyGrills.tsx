@@ -5,11 +5,11 @@ const data = {
   title: "Balcony Invisible Grills",
   slug: "balcony-invisible-grills",
   seoTitle: "Balcony Invisible Grills Bangalore | MKR Safety Solutions | Best Price",
-  seoDesc: "Premium balcony invisible grills in Bangalore. 316-grade SS cables, 250kg load tested, 15-year warranty. Free site visit. Serving all Bangalore areas. Call now.",
+  seoDesc: "Premium balcony invisible grills in Bangalore. 316-grade SS cables, 400kg load tested, 15-year warranty. Free site visit. Serving all Bangalore areas. Call now.",
   h1: "Balcony Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Invisible grills on apartment balcony with panoramic Bangalore city view",
-  intro: "Transform your balcony into a safe, open sanctuary with ultra-fine 316-grade marine stainless steel cables. Nearly invisible from a distance, load-tested to 250kg, and backed by a 15-year warranty.",
+  intro: "Transform your balcony into a safe, open sanctuary with ultra-fine 316-grade marine stainless steel cables. Nearly invisible from a distance, load-tested to 400kg, and backed by a 15-year warranty.",
   price: "100–160 per sq ft",
   benefits: [
     "Complete unobstructed views from your balcony — cables disappear visually",
@@ -24,7 +24,7 @@ const data = {
   features: [
     { title: "316-Grade Marine SS Cables", desc: "The highest grade stainless steel used in marine environments. Immune to rust and corrosion in any weather." },
     { title: "3mm Cable Spacing", desc: "Precisely spaced to prevent children and pets from passing through while maximizing air flow and view." },
-    { title: "250kg Load Rating", desc: "Each cable is tension-tested to withstand 250kg per linear meter — certified safe for the whole family." },
+    { title: "400kg Load Rating", desc: "Each cable is tension-tested to withstand 400kg per linear meter — certified safe for the whole family." },
     { title: "Custom Fit Installation", desc: "Every balcony is unique. We measure, fabricate, and install to your exact dimensions for a perfect fit." },
     { title: "Invisible from Distance", desc: "The 3mm ultra-thin cables virtually disappear against any backdrop, preserving your view completely." },
   ],

@@ -49,7 +49,7 @@ const heroSlides = [
     label: "Balcony Invisible Grills",
     heading: "Protect Your Balcony.",
     accent: "Keep The View Forever.",
-    sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested to 250 kg/m.",
+    sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested up to 400 kg.",
   },
   {
     src: kidsBalcony,
@@ -115,7 +115,7 @@ const heroSlides = [
 const homeFaqs = [
   {
     q: "What are invisible grills and how do they work?",
-    a: "Invisible grills use ultra-fine 316-grade marine stainless steel cables (3mm diameter) tensioned between a top channel and bottom anchors. The cables are so thin and precisely spaced that they are nearly invisible from a distance while providing a robust safety barrier rated at 250kg per linear meter.",
+    a: "Invisible grills use ultra-fine 316-grade marine stainless steel cables (3mm diameter) tensioned between a top channel and bottom anchors. The cables are so thin and precisely spaced that they are nearly invisible from a distance while providing a robust safety barrier rated at 400kg per linear meter.",
   },
   {
     q: "How much do invisible grills cost in Bangalore?",
@@ -123,7 +123,7 @@ const homeFaqs = [
   },
   {
     q: "Are invisible grills safe for children and pets?",
-    a: "Yes. Our grills use 3mm cable spacing (2.5mm for child safety variants), load-tested to 250kg per linear meter. They are certified safe for children, toddlers, and pets. Over 1000 Bangalore families trust MKR for their child safety needs.",
+    a: "Yes. Our grills use 3mm cable spacing (2.5mm for child safety variants), load-tested to 400kg per linear meter. They are certified safe for children, toddlers, and pets. Over 1000 Bangalore families trust MKR for their child safety needs.",
   },
   {
     q: "How long does invisible grill installation take?",
@@ -229,8 +229,8 @@ export default function Home() {
                 title: "Balcony Invisible Grills",
                 tag: "Most Popular",
                 href: "/balcony-invisible-grills",
-                points: ["3mm 316 marine SS cables", "Load-tested to 250 kg/m"],
-                desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested to 250 kg/m. Panoramic views fully preserved.",
+                points: ["3mm 316 marine SS cables", "Load-tested up to 400 kg"],
+                desc: "Secure open balconies with 3mm ultra-fine 316-grade SS cables. Load-tested up to 400 kg. Panoramic views fully preserved.",
                 img: balconyCard,
                 waMsg: "Hi, I need Balcony Invisible Grills in Bangalore. Please share details.",
               },
@@ -358,7 +358,7 @@ export default function Home() {
               <StaggerList className="grid sm:grid-cols-2 gap-4">
                 {[
                   { icon: Shield, title: "316 Grade Marine Stainless Steel", desc: "The highest grade used in marine environments — zero rust even after years of Bangalore rain and humidity." },
-                  { icon: Award, title: "250kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 250kg per linear meter. Certified, not just claimed." },
+                  { icon: Award, title: "400kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 400kg per linear meter. Certified, not just claimed." },
                   { icon: Eye, title: "Nearly Invisible From Any Angle", desc: "3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust." },
                   { icon: Ruler, title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and give a transparent quote — no obligation." },
                   { icon: BadgeCheck, title: "15-Year Warranty", desc: "Every installation is backed by 15 years of warranty covering cables, anchors, and fittings.", wide: true },

@@ -129,14 +129,14 @@ export function CableStrings() {
           <div className="text-center max-w-2xl rounded-[2rem] px-6 py-10 sm:px-12 bg-[hsl(40_40%_96%)]/70 backdrop-blur-[2px]">
             <span className="mkr-eyebrow">Go on, touch the cables</span>
             <h2 className="text-3xl sm:text-5xl font-bold text-foreground leading-tight mb-5">
-              Strong enough to <span className="text-secondary">hold 250 kg/m.</span>
+              Strong enough to <span className="text-secondary">hold up to 400 kg.</span>
               <br className="hidden sm:block" /> Light enough to disappear.
             </h2>
             <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
               Move your mouse or finger across the cables. Each 316-grade marine steel cable is tensioned by hand, so it flexes, springs back and stays put for years.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["3mm SS 316 cables", "250 kg/m load-tested", "15-year warranty", "Rust-free"].map((t) => (
+              {["3mm SS 316 cables", "Up to 400 kg load-tested", "15-year warranty", "Rust-free"].map((t) => (
                 <span key={t} className="px-4 py-2 rounded-full bg-white border border-border text-sm font-semibold text-foreground shadow-sm">{t}</span>
               ))}
             </div>

@@ -13,7 +13,7 @@ const data = {
   price: "100–160 per sq ft",
   benefits: [
     "2.5mm ultra-tight cable spacing — prevents even toddlers from squeezing through",
-    "Load-tested to 250kg per linear meter — withstands any child impact",
+    "Load-tested to 400kg per linear meter — withstands any child impact",
     "Designed specifically for homes with children aged 6 months to 6 years",
     "Installed on balconies, windows, staircases, and terraces",
     "Internationally recognized safety specifications followed",

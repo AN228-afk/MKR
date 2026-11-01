@@ -50,3 +50,5 @@ Thumbs.db
 
 # old inner copy of the site (separate repo) - never commit it
 MKR/
+_to_delete/
+.fuse_hidden*

@@ -131,7 +131,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
                 {[
                   `Same-day site visit available in ${data.area}`,
                   "316-grade marine stainless steel cables",
-                  "Load-tested to 250kg per linear meter",
+                  "Load-tested to 400kg per linear meter",
                   "Free measurement and transparent quote",
                   "Installation completed in 3–5 hours",
                   "15-year warranty on all installations",

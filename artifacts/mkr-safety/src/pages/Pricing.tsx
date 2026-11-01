@@ -32,7 +32,7 @@ const included = [
   "316-grade marine stainless steel cables",
   "Aluminium top channel & anchors",
   "Professional installation by certified team",
-  "Load testing to 250 kg per linear metre",
+  "Load testing to 400 kg per linear metre",
   "15-year warranty on materials & workmanship",
   "Post-installation cleaning",
   "Warranty documentation",
@@ -43,7 +43,7 @@ const faqs = [
   { q: "Are there any hidden charges?", a: "No. Our quotes are fully itemised — materials, labour, and installation are all included. The only variable is if the site requires special structural anchoring (rare), which we identify and quote for during the free site visit." },
   { q: "Is 2.5mm more expensive than 3mm?", a: "No. Both 3mm and 2.5mm cables are priced the same — ₹100 to ₹160 per sq ft. Choose 3mm for the most invisible look, or 2.5mm for extra child and pet safety. Our team will recommend the right option during the free site visit." },
   { q: "Do you offer discounts for large projects?", a: "Yes. Villa full-home projects, school and institutional installations, and multi-apartment building projects all qualify for volume pricing. Contact us for a custom quote for projects above 1,000 sq ft." },
-  { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 250 kg/lm, post-installation cleanup, and a 15-year warranty with documentation." },
+  { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 400 kg/lm, post-installation cleanup, and a 15-year warranty with documentation." },
 ];
 
 export default function Pricing() {
