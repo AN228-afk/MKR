@@ -11,6 +11,12 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { PriceCalculator } from "@/components/PriceCalculator";
 import { InquiryForm } from "@/components/InquiryForm";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
+import { CableStrings } from "@/components/CableStrings";
+import { WorkReel } from "@/components/WorkReel";
+import kidsCard from "@assets/mkr-real-kids-balcony-card.webp";
+import petsCard from "@assets/mkr-real-pets-balcony-card.webp";
+import sunsetCard from "@assets/mkr-real-sunset-2-card.webp";
+import winCard from "@assets/mkr-real-window-view-card.webp";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { testimonials, services, blogPosts } from "@/data/services";
 import hero1 from "@assets/MKR_3_1780926061320.webp";
@@ -328,6 +334,18 @@ export default function Home() {
         </div>
       </section>
 
+      <WorkReel
+        items={[
+          { src: balconyCard, title: "Night-view balcony", tag: "Balcony" },
+          { src: kidsCard, title: "Safe for the little ones", tag: "Child Safety" },
+          { src: villaCard, title: "Luxury long balcony", tag: "Villa" },
+          { src: petsCard, title: "Pets enjoy the view", tag: "Pet Safety" },
+          { src: winCard, title: "City-view windows", tag: "Window" },
+          { src: img5, title: "Open staircase", tag: "Staircase" },
+          { src: sunsetCard, title: "Sunset balcony", tag: "Balcony" },
+        ]}
+      />
+
       {/* Why Choose MKR */}
       <section className="py-20 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -410,6 +428,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <CableStrings />
 
       {/* Testimonials */}
       <section className="py-20 bg-gradient-to-b from-white via-[hsl(40_40%_97%)] to-white">

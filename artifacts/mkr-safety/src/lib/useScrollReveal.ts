@@ -17,6 +17,7 @@ export function useScrollReveal(key: string) {
       const sections = Array.from(main.querySelectorAll<HTMLElement>(":scope section, :scope > * > section")).slice(1);
       const targets: HTMLElement[] = [];
       sections.forEach((sec) => {
+        if (sec.hasAttribute("data-no-reveal")) return;
         // Stagger the direct grid/list children (cards), otherwise reveal the section
         const grids = sec.querySelectorAll<HTMLElement>(".grid, ul, ol");
         let hasCards = false;
