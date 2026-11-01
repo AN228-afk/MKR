@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
+import { Accent, accentTail } from "@/components/Accent";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -23,7 +24,7 @@ export default function Contact() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Contact MKR Safety Solutions</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4">Contact <Accent>MKR Safety Solutions</Accent></h1>
             <p className="text-muted-foreground max-w-xl mx-auto">
               Get a free site visit and quote for invisible grills at your home or commercial property in Bangalore.
             </p>

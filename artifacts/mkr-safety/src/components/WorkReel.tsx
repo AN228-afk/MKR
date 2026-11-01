@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Accent, accentTail } from "@/components/Accent";
 import { Link } from "wouter";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -39,7 +40,7 @@ export function WorkReel({ items }: { items: ReelItem[] }) {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 flex items-end justify-between gap-6">
       <div>
         <span className="mkr-eyebrow">Our Work</span>
-        <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Real homes. Real safety.</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Real homes. <Accent>Real safety.</Accent></h2>
         <p className="text-muted-foreground mt-2">A look at invisible grills we've installed across Bangalore.</p>
       </div>
       <Link href="/gallery" className="hidden sm:inline-flex items-center gap-2 text-secondary font-semibold shrink-0">

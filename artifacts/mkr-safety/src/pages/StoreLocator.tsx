@@ -1,4 +1,5 @@
 import { SEOHead } from "@/components/SEOHead";
+import { Accent, accentTail } from "@/components/Accent";
 
 export default function StoreLocator() {
     const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
@@ -13,7 +14,7 @@ export default function StoreLocator() {
                 canonical="/store-locator"
             />
             <div className="max-w-4xl mx-auto px-4 py-10">
-                <h1 className="text-2xl font-bold text-foreground mb-2">Visit MKR Safety Solutions</h1>
+                <h1 className="text-2xl font-bold text-foreground mb-2">Visit <Accent>MKR Safety Solutions</Accent></h1>
                 <p className="text-muted-foreground mb-6">H.No.24/1, 18th A Cross Road, Muthyala Nagar, Mathikere, Bangalore, Karnataka, India</p>
                 <div className="w-full rounded-xl overflow-hidden border border-border" style={{ aspectRatio: "16/9" }}>
                     {apiKey ? (

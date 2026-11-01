@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Accent, accentTail } from "@/components/Accent";
 import { MapPin, CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
@@ -98,7 +99,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase">
               <MapPin className="w-3 h-3" /> Serving {data.area}, Bangalore
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 leading-tight">{data.h1}</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 leading-tight">{accentTail(data.h1, 2)}</h1>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-4">{data.intro}</p>
             <p className="text-primary-foreground/60 text-sm mb-6">Near: {data.landmarks}</p>
             <div className="flex gap-4">

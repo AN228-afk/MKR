@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Accent, accentTail } from "@/components/Accent";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -51,7 +52,7 @@ export default function Gallery() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Our Invisible Grill Projects in Bangalore</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4">Our Invisible Grill Projects <Accent>in Bangalore</Accent></h1>
             <p className="text-muted-foreground max-w-xl mx-auto">Browse our portfolio of 2000+ invisible grill installations across Bangalore's top neighborhoods.</p>
           </div>
 

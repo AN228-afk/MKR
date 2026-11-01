@@ -1,4 +1,5 @@
 import { Layout } from "@/components/Layout";
+import { Accent, accentTail } from "@/components/Accent";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { MapPin, Calendar, ArrowRight } from "lucide-react";
@@ -35,7 +36,7 @@ export default function Projects() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Our Completed Projects</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4">Our Completed <Accent>Projects</Accent></h1>
             <p className="text-muted-foreground max-w-xl mx-auto">Over 1,000 invisible grill installations across Bangalore's most prestigious residential and commercial properties.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

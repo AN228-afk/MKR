@@ -1,4 +1,5 @@
 import { Shield, Award, Users, MapPin, CheckCircle } from "lucide-react";
+import { Accent, accentTail } from "@/components/Accent";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { TrustBadges } from "@/components/TrustBadges";
@@ -28,7 +29,7 @@ export default function About() {
             <div>
               <img src={logoPath} alt="MKR Safety Solutions Logo" className="h-16 w-auto object-contain mb-6" width={160} height={64} />
               <h1 className="text-4xl font-bold text-foreground mb-6">
-                Bangalore's Most Trusted Invisible Grill Specialists
+                Bangalore's Most Trusted <Accent>Invisible Grill Specialists</Accent>
               </h1>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Founded in 2016, MKR Safety Solutions was born from a simple belief: every family in Bangalore deserves to live safely in their home without sacrificing the views they paid for. We've spent over 8 years perfecting the art and science of invisible grill installation.

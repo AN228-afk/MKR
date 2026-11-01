@@ -1,4 +1,5 @@
 import { Layout } from "@/components/Layout";
+import { Accent, accentTail } from "@/components/Accent";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -79,7 +80,7 @@ export default function FAQs() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4">Frequently Asked <Accent>Questions</Accent></h1>
             <p className="text-muted-foreground">Everything you need to know about invisible grills in Bangalore</p>
           </div>
 

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Accent, accentTail } from "@/components/Accent";
 import { CheckCircle, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
@@ -70,7 +71,7 @@ export default function Pricing() {
               Transparent Pricing — No Surprises
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
-              Invisible Grills Price in Bangalore
+              Invisible Grills Price <Accent>in Bangalore</Accent>
             </h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-6">
               All-inclusive pricing starting at ₹100/sq ft. Materials, installation, load testing, and 15-year warranty — everything included.

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Accent, accentTail } from "@/components/Accent";
 import { Shield, Star, CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
@@ -65,7 +66,7 @@ export default function InvisibleGrillsBangalore() {
               <Shield className="w-3 h-3" /> Bangalore's #1 Invisible Grill Company
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
-              Invisible Grills in Bangalore — Premium, Safe & Affordable
+              Invisible Grills in Bangalore — <Accent>Premium, Safe &amp; Affordable</Accent>
             </h1>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-6">
               MKR Safety Solutions is Bangalore's most trusted invisible grill installer. From individual balconies to entire villa complexes, we protect families with ultra-fine 316-grade marine stainless steel cables.

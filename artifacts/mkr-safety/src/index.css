@@ -448,3 +448,12 @@ html, body { max-width: 100%; overflow-x: clip; }
 @media (hover: hover) {
   .mkr-review:hover { transform: translateY(-6px); border-color: hsl(38 70% 36% / .35); box-shadow: 0 2px 4px rgba(60,45,10,.04), 0 28px 50px -24px rgba(60,45,10,.38); }
 }
+
+/* ---------- Heading style B: elegant italic accent ---------- */
+.mkr-accent, h1 .text-secondary, h2 .text-secondary {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-style: italic; font-weight: 700; letter-spacing: 0;
+  color: hsl(38 70% 36%);
+}
+.mkr-accent { font-size: 1.07em; line-height: 1; }
+.mkr-cta .mkr-accent { color: #fff; }

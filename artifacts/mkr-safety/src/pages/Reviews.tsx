@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Accent, accentTail } from "@/components/Accent";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumb } from "@/components/Breadcrumb";
@@ -45,7 +46,7 @@ export default function Reviews() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-foreground mb-4">What Our Customers Say</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4">What Our <Accent>Customers Say</Accent></h1>
             <div className="flex items-center justify-center gap-3 mb-3">
               <div className="flex">{[1,2,3,4,5].map(s => <Star key={s} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}</div>
               <span className="text-2xl font-bold text-foreground">5.0</span>

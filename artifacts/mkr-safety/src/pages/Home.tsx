@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Accent, accentTail } from "@/components/Accent";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Star, ArrowRight, Phone, MessageCircle, Award, Eye, Ruler, BadgeCheck, Quote, MapPin } from "lucide-react";
@@ -217,7 +218,7 @@ export default function Home() {
           <FadeUp className="text-center mb-14">
             <span className="mkr-eyebrow">Our Services</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Invisible Grill Services in Bangalore
+              Invisible Grill Services <Accent>in Bangalore</Accent>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               From balconies to staircases, every space deserves a safety solution that doesn't compromise on beauty or views.
@@ -353,7 +354,7 @@ export default function Home() {
             <FadeLeft>
               <span className="mkr-eyebrow">Why MKR</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
-                Why 2000+ Bangalore Families Choose MKR
+                Why 2000+ Bangalore Families <Accent>Choose MKR</Accent>
               </h2>
               <StaggerList className="grid sm:grid-cols-2 gap-4">
                 {[
@@ -437,7 +438,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
             <div className="text-center lg:text-left">
               <span className="mkr-eyebrow">Reviews</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">What Bangalore Families Say</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">What Bangalore <Accent>Families Say</Accent></h2>
               <p className="text-muted-foreground">Real reviews from real customers across Bangalore</p>
             </div>
             {/* Rating summary */}
@@ -506,7 +507,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp className="text-center mb-12">
             <span className="mkr-eyebrow">Service Areas</span>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-3">Serving All Major Areas in Bangalore</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3">Serving All Major Areas <Accent>in Bangalore</Accent></h2>
             <p className="text-primary-foreground/70">Same-day site visits available across 12+ neighborhoods</p>
           </FadeUp>
           <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-w-5xl mx-auto">
@@ -548,7 +549,7 @@ export default function Home() {
           <FadeUp className="flex justify-between items-end mb-12">
             <div>
               <span className="mkr-eyebrow">Blog</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Latest from Our Blog</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Latest from <Accent>Our Blog</Accent></h2>
               <p className="text-muted-foreground mt-1">Expert tips on invisible grills and home safety</p>
             </div>
             <Link href="/blog" className="hidden sm:flex items-center gap-2 text-secondary font-semibold">
@@ -592,7 +593,7 @@ export default function Home() {
               <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-white/10 mkr-float-slow" aria-hidden="true" />
               <div className="absolute -bottom-28 -left-20 w-72 h-72 rounded-full bg-white/10 mkr-float" aria-hidden="true" />
               <div className="relative">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-4 !text-white">Ready to Secure Your Home?</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4 !text-white">Ready to Secure <Accent>Your Home?</Accent></h2>
                 <p className="text-white/85 mb-9 max-w-2xl mx-auto">Book a free site visit today. Our team will assess your space and provide a transparent, no-obligation quote within 24 hours.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
@@ -617,7 +618,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <FadeLeft>
             <span className="mkr-eyebrow">Free Site Visit</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Get Your Free Quote in 24 Hours</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Get Your Free Quote <Accent>in 24 Hours</Accent></h2>
             <p className="text-muted-foreground mb-6">Tell us about your balcony, window or staircase. Our team visits, measures and gives you a clear price — no obligation.</p>
             <ul className="space-y-3">
               {["Free measurement at your home", "Transparent price per sq.ft", "15-year warranty on every installation"].map((x) => (
@@ -640,7 +641,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp className="text-center mb-12">
             <span className="mkr-eyebrow">FAQs</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">Frequently Asked <Accent>Questions</Accent></h2>
             <p className="text-muted-foreground">Everything you need to know about invisible grills in Bangalore</p>
           </FadeUp>
           <FadeUp delay={0.1}>

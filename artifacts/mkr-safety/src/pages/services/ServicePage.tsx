@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Accent, accentTail } from "@/components/Accent";
 import { CheckCircle, ArrowRight, Phone, Shield, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
@@ -91,7 +92,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase tracking-wide">
               <Shield className="w-3 h-3" /> MKR Safety Solutions
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 leading-tight">{data.h1}</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 leading-tight">{accentTail(data.h1, 2)}</h1>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-6">{data.intro}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact-us" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
