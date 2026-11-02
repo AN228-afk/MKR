@@ -515,6 +515,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill thickness guide",
   },
+  {
+    title: "Invisible Grill in Whitefield: A Practical Guide for Villas, Apartments, and Tech Park Homes",
+    slug: "invisible-grill-whitefield",
+    excerpt: "Whitefield's housing is unlike anywhere else in Bangalore \u2014 sprawling gated communities, independent villas, and tech-park-adjacent apartments all in one stretch. Here's how invisible grill installation actually works across this mix.",
+    date: "2026-11-02",
+    readTime: "7 min read",
+    keyword: "invisible grill Whitefield",
+  },
 ];
 
 export const testimonials = [
