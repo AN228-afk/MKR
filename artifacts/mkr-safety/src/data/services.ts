@@ -523,6 +523,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill Whitefield",
   },
+  {
+    title: "Invisible Grill for Kitchen Window: What Bangalore Homeowners Often Miss",
+    slug: "invisible-grill-for-kitchen-window",
+    excerpt: "Kitchen windows get skipped in most balcony-grill conversations, but they bring their own safety and practical challenges. Here's what to actually think about before installing an invisible grill there.",
+    date: "2026-11-03",
+    readTime: "5 min read",
+    keyword: "invisible grill for kitchen window",
+  },
 ];
 
 export const testimonials = [
