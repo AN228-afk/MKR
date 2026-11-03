@@ -6,7 +6,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, MessageCircle, Phone } from "lucide-react";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const WA_NUMBER = "917780114547";
@@ -45,6 +45,7 @@ interface InquiryFormProps {
 
 export function InquiryForm({ title = "Get a Free Quote", compact = false }: InquiryFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [waLink, setWaLink] = useState("");
 
   const form = useForm<InquiryForm>({
     resolver: zodResolver(inquirySchema),
@@ -66,18 +67,33 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
       .join("\n");
     const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lines)}`;
     trackGoogleAdsConversion();
-    window.open(waUrl, "_blank");
+    setWaLink(waUrl);
     setSubmitted(true);
+    // Phones often block new tabs opened after a form submit; fall back to opening WhatsApp in this tab.
+    const win = window.open(waUrl, "_blank");
+    if (!win) window.location.href = waUrl;
   }
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center py-10 text-center gap-4">
+      <div className="flex flex-col items-center justify-center py-8 text-center gap-4">
         <CheckCircle className="w-12 h-12 text-green-500" />
         <div>
-          <h3 className="text-lg font-semibold text-foreground">Opening WhatsApp…</h3>
-          <p className="text-muted-foreground text-sm mt-1">Your enquiry details have been sent to our team on WhatsApp. We'll respond within 2 hours.</p>
+          <h3 className="text-lg font-semibold text-foreground">Almost done – press Send in WhatsApp</h3>
+          <p className="text-muted-foreground text-sm mt-1">Your details are filled in a WhatsApp message to our team. If WhatsApp didn't open, tap the button below.</p>
         </div>
+        <a
+          href={waLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white font-semibold hover:bg-[#1ebe5b] transition-colors"
+          data-testid="button-inquiry-open-whatsapp"
+        >
+          <MessageCircle className="w-4 h-4" /> Open WhatsApp & send
+        </a>
+        <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center gap-2 text-sm font-semibold text-secondary">
+          <Phone className="w-4 h-4" /> Or call +91 77801 14547
+        </a>
       </div>
     );
   }
