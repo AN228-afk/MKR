@@ -531,6 +531,14 @@ const blogPostsRaw = [
     readTime: "5 min read",
     keyword: "invisible grill for kitchen window",
   },
+  {
+    title: "Invisible Grill for Open Terrace: What Makes These Installations Different",
+    slug: "invisible-grill-for-open-terrace",
+    excerpt: "Open terraces aren't just big balconies - they come with longer perimeters, uneven parapets, and full weather exposure. Here's what to actually plan for before fixing an invisible grill.",
+    date: "2026-11-04",
+    readTime: "7 min read",
+    keyword: "invisible grill for open terrace",
+  },
 ];
 
 export const testimonials = [
