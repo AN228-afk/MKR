@@ -539,6 +539,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill for open terrace",
   },
+  {
+    title: "Invisible Grill for New Flat Handover: The Right Time to Plan Safety in Bangalore",
+    slug: "invisible-grill-for-new-flat-handover",
+    excerpt: "Getting the keys to your new flat is exciting, but it's also the best window to plan safety work before furniture and curtains make everything harder. Here's how to fit invisible grills into your handover timeline.",
+    date: "2026-11-05",
+    readTime: "6 min read",
+    keyword: "invisible grill for new flat handover",
+  },
 ];
 
 export const testimonials = [

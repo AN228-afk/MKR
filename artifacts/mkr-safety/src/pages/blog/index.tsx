@@ -1352,6 +1352,30 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-new-flat-handover": {
+    slug: "invisible-grill-for-new-flat-handover",
+    title: "Invisible Grill for New Flat Handover: The Right Time to Plan Safety in Bangalore",
+    seoTitle: "Invisible Grill for New Flat Handover in Bangalore | MKR Safety Solutions",
+    seoDesc: "Planning your new flat handover in Bangalore? Here's why invisible grill installation should be on your checklist before you move in, not after.",
+    date: "2026-11-05",
+    readTime: "6 min read",
+    keyword: "invisible grill for new flat handover",
+    content: [
+      { body: "Flat handover day in Bangalore usually means a long checklist: fixtures, fittings, paint, plumbing, electrical points, and the builder's snag list. Safety grills rarely make that list, yet handover is actually the easiest time to plan for them. The balconies and windows are empty, there's no furniture to move around, and you still have time before you shift in. This post looks at why timing matters and how to fit invisible grill planning into your handover process without delaying your move." },
+      { heading: "Why Handover Time Is the Best Time", body: "Once you move in with sofas, curtains, plants, and a dining table on the balcony, every installation becomes slower and messier. During handover, rooms are bare, balcony floors are clear, and window grooves are accessible. Installers can take measurements and even complete work in a single visit without working around your belongings. If you have small children or are planning a family, doing this before move-in means the home is safety-ready from day one, not retrofitted later." },
+      { heading: "What to Check During the Builder Walkthrough", body: "When you do your handover walkthrough, take note of balcony railing height, any open gaps near the railing top, window openings that don't have grills, and utility area ledges. Builders in Bangalore often provide only a standard railing height, which may not be enough on its own for child safety. Mark these spots mentally (or on your snag sheet) so you can get exact measurements for invisible grills before interior work like false ceiling or flooring finishing begins." },
+      { heading: "Getting Society Approval Early", body: "If your flat is in a gated community or apartment complex, many associations require approval for any external fitting, including invisible grills, even though they don't change the building's facade visibly. Starting this conversation right after handover gives you enough lead time to get the nod before your move-in date, instead of scrambling for approval while living out of boxes. Most associations in Bangalore are familiar with invisible grills by now and approve quickly once they see the thin cable design doesn't alter the building's look." },
+      { heading: "Sequencing With Other Interior Work", body: "A common question new owners ask is when invisible grills should happen relative to painting, flooring, and modular kitchen work. Ideally, grills are installed after major civil and painting work is done, but before you move in furniture. This avoids dust interfering with the installation and avoids drilling near finished furniture or fittings. If your interior work is spread over weeks, ask your installer to time the visit for a day when the balcony and window areas are fully accessible and dust-free." },
+      { heading: "Covering Every Open Area, Not Just the Main Balcony", body: "New flats often have more than one open area that needs attention: the main balcony, a utility balcony, French windows in the bedroom, and sometimes a sit-out or study balcony. During handover, it's easy to focus only on the main balcony and forget the smaller utility area or kitchen window. Walking through every room with safety in mind, right when the flat is empty, helps you spot every gap that needs an invisible grill before you settle in." },
+      { heading: "Budgeting for Handover-Stage Installation", body: "MKR Safety Solutions prices invisible grills at \u20b9100\u2013\u20b9160 per sq ft, and this rate stays the same whether you choose 3mm or 2.5mm cables. Knowing this upfront helps you budget alongside your other handover-stage expenses like painting or modular furniture. For an exact quote based on your flat's balcony and window dimensions, call or WhatsApp 077801 14547, or book a site visit so our team can measure while your flat is still empty and easy to access." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1469,3 +1493,5 @@ export function InvisibleGrillWhitefieldBlogPost() { return <BlogPostPage data={
 export function InvisibleGrillForKitchenWindowBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-kitchen-window"]} />; }
 
 export function InvisibleGrillForOpenTerraceBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-open-terrace"]} />; }
+
+export function InvisibleGrillForNewFlatHandoverBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-new-flat-handover"]} />; }
