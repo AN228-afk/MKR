@@ -547,6 +547,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for new flat handover",
   },
+  {
+    title: "Invisible Grill for Balcony with AC Unit: Getting the Layout Right",
+    slug: "invisible-grill-for-balcony-with-ac-unit",
+    excerpt: "Most balconies in Bangalore apartments double up as AC outdoor unit space. Here's how to plan an invisible grill that keeps the balcony safe without blocking the compressor or its servicing.",
+    date: "2026-11-06",
+    readTime: "6 min read",
+    keyword: "invisible grill for balcony with AC unit",
+  },
 ];
 
 export const testimonials = [

@@ -1376,6 +1376,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-balcony-with-ac-unit": {
+    slug: "invisible-grill-for-balcony-with-ac-unit",
+    title: "Invisible Grill for Balcony with AC Unit: Getting the Layout Right",
+    seoTitle: "Invisible Grill for Balcony with AC Unit in Bangalore | MKR Safety Solutions",
+    seoDesc: "Planning an invisible grill for balcony with AC unit? Learn how to design around the outdoor unit, drain pipe, and service access in Bangalore homes.",
+    date: "2026-11-06",
+    readTime: "6 min read",
+    keyword: "invisible grill for balcony with AC unit",
+    content: [
+      { body: "Walk into any apartment in Bangalore and chances are the balcony isn't just a balcony anymore - it's also home to the split AC outdoor unit, its drain pipe, and the technician's access point for the yearly service. When homeowners come to us for an invisible grill, this is one of the most common practical questions: will the grill come in the way of the AC unit, or worse, will the AC unit come in the way of the grill? The good news is that with the right layout, both can coexist perfectly. Here's what actually needs to be planned." },
+      { heading: "Why AC Units Change the Grill Layout", body: "A standard invisible grill is a grid of horizontal (or vertical) stainless steel cables anchored to the floor, ceiling, or side walls of the balcony. When there's an AC outdoor unit sitting on the balcony floor or mounted on a bracket, the cable run can't simply pass through the space where the unit sits, its fan exhaust blows, or the service technician needs to stand once a year. We map out the AC unit's position, the direction of airflow, and the space needed around it before deciding where each cable row starts and ends. This is a site-specific decision - no two balconies with an AC unit are laid out the same way." },
+      { heading: "Planning Around the Compressor and Drain Pipe", body: "Two things usually need extra attention: the compressor unit itself and the condensate drain pipe. If the AC unit sits on a stand that overlaps part of the grill area, we often create a small opening or step down the cable rows around that section, while still keeping the overall gap too small for a child to slip through anywhere else on the balcony. The drain pipe is usually routed along the wall or floor edge, so we simply avoid anchoring cables directly over its path, keeping it accessible for cleaning and preventing water from collecting on the cables over time." },
+      { heading: "Keeping Service Access Easy", body: "AC units need yearly servicing, and sometimes a gas top-up or part replacement in between. A badly planned invisible grill can make this a headache if the technician can't reach the unit without removing cables. We design the layout so the panel in front of or around the AC unit can be worked on without disturbing the rest of the grill. In most balconies, this just means leaving a slightly wider top or bottom row near the unit, or adjusting the anchor points so that single cables can be loosened and retightened quickly if ever needed - not cut or replaced." },
+      { heading: "Dealing with Vibration and Moisture", body: "AC outdoor units vibrate constantly when running, and they also release condensate water that can splash onto nearby surfaces. This is one more reason we only recommend 316 grade stainless steel cables with a nano coating for balconies with an AC unit - they handle Bangalore's humidity and the extra moisture from AC drainage without rusting or weakening over months of use. Mounting points near the unit are also checked to make sure the constant low-level vibration doesn't loosen them over time." },
+      { heading: "What This Means for Your Quote", body: "Invisible grills for balconies with an AC unit are priced the same way as any other balcony installation - between \u20b9100 and \u20b9160 per sq ft, and this rate stays the same whether you choose 3mm or 2.5mm cable. The AC unit itself doesn't add a separate cost; it simply changes how the layout is planned during the site visit, which is why we recommend getting someone to measure your balcony in person rather than estimating over a call. For an exact quote based on your balcony's layout and AC unit placement, call or WhatsApp us at 077801 14547, or book a free site visit." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Invisible Grill Maintenance", href: "/invisible-grills-bangalore" },
+      { label: "Gated Community Installations", href: "/invisible-grills-bangalore" },
+      { label: "Book a Site Visit", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1495,3 +1518,5 @@ export function InvisibleGrillForKitchenWindowBlogPost() { return <BlogPostPage 
 export function InvisibleGrillForOpenTerraceBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-open-terrace"]} />; }
 
 export function InvisibleGrillForNewFlatHandoverBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-new-flat-handover"]} />; }
+
+export function InvisibleGrillForBalconyWithAcUnitBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-balcony-with-ac-unit"]} />; }
