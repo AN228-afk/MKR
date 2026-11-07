@@ -96,6 +96,7 @@ const InvisibleGrillForKitchenWindowBlogPost = lazy(() => import("@/pages/blog/i
 const InvisibleGrillForOpenTerraceBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForOpenTerraceBlogPost })));
 const InvisibleGrillForNewFlatHandoverBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForNewFlatHandoverBlogPost })));
 const InvisibleGrillForBalconyWithAcUnitBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForBalconyWithAcUnitBlogPost })));
+const BalconySafetyBangaloreBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyBangaloreBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -242,6 +243,8 @@ function Router() {
       <Route path="/blog/invisible-grill-for-new-flat-handover" component={InvisibleGrillForNewFlatHandoverBlogPost} />
 
       <Route path="/blog/invisible-grill-for-balcony-with-ac-unit" component={InvisibleGrillForBalconyWithAcUnitBlogPost} />
+
+      <Route path="/blog/balcony-safety-bangalore" component={BalconySafetyBangaloreBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

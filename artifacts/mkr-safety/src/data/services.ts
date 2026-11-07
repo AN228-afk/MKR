@@ -555,6 +555,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for balcony with AC unit",
   },
+  {
+    title: "Balcony Safety Bangalore: Why Your Building Type Changes What You Actually Need",
+    slug: "balcony-safety-bangalore",
+    excerpt: "Not every Bangalore home needs the same balcony safety setup. Here's how building age, design, and location change what actually keeps your family safe.",
+    date: "2026-11-07",
+    readTime: "6 min read",
+    keyword: "balcony safety Bangalore",
+  },
 ];
 
 export const testimonials = [
