@@ -1422,6 +1422,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-indiranagar": {
+    slug: "invisible-grill-indiranagar",
+    title: "Invisible Grill Installation in Indiranagar: A Local Resident's Guide",
+    seoTitle: "Invisible Grill Indiranagar | MKR Safety Solutions",
+    seoDesc: "Planning invisible grill Indiranagar installation? Learn what's different about Indiranagar homes, pricing, and how to choose the right setup.",
+    date: "2026-11-08",
+    readTime: "6 min read",
+    keyword: "invisible grill Indiranagar",
+    content: [
+      { body: "Indiranagar is one of Bangalore's oldest and most lived-in neighbourhoods, and that history shows up in its buildings. You've got 1970s and 80s independent houses with narrow balconies, newer apartment blocks off 100 Feet Road and CMH Road, duplex homes tucked into the residential cross streets, and even converted ground-floor homes now running as cafes or boutiques with open frontages. If you're searching for invisible grill Indiranagar installation, the right setup depends heavily on which of these you actually live in." },
+      { heading: "Old Independent Houses: Different Walls, Different Drilling", body: "A large number of Indiranagar homes are older independent houses, often with balconies and sit-outs built decades ago. The walls and parapets here are sometimes plastered brick with uneven finishes, unlike the standardised RCC parapets in newer apartments. Before installation, our team checks the parapet condition and drilling points carefully, because older structures sometimes need extra care with anchor placement to avoid cracking plaster or weakening an aging ledge. This is a quick on-site check, not a major delay, but it's something apartment-only installers sometimes miss." },
+      { heading: "Compact Balconies and Narrow Sit-Outs", body: "Many Indiranagar homes, especially in the older layouts, have smaller balconies and sit-outs compared to newer gated communities. This actually works in your favour cost-wise, since invisible grills are priced per square foot. Smaller balcony area means a smaller bill, and you still get the same unobstructed view that makes invisible grills popular here in the first place. Narrow spaces also mean cable spacing and anchor points need to be planned precisely so the grill doesn't look cramped or cluttered." },
+      { heading: "Access and Parking for Installation Day", body: "Indiranagar's narrow residential lanes and constant traffic on the main roads mean installation logistics matter more here than in newer layouts with wider internal roads. We plan installation visits with this in mind, scheduling vehicle access and material movement to avoid blocking lanes during peak hours. If you live on one of the busier cross streets, mentioning this when you book helps us plan the visit smoothly." },
+      { heading: "Commercial-Residential Mix: Cafes, Offices, and Homes Above Shops", body: "Indiranagar has a unique mix of residential and commercial spaces, with many homes located above shops, cafes, or offices. If your balcony or terrace overlooks a busy commercial street, invisible grills are a practical choice because they add safety without blocking the view that makes these spaces desirable, whether that's a rooftop seating area or a home balcony above a storefront. The same applies to upper-floor residences near 100 Feet Road and Double Road, where balcony views are part of the appeal." },
+      { heading: "Pricing and Getting Your Quote", body: "Invisible grills for Indiranagar homes are priced the same as anywhere else we work in Bangalore, between \u20b9100 and \u20b9160 per sq ft, and this rate stays the same whether you choose 2.5mm or 3mm cable. The final cost depends on your balcony or window dimensions and layout complexity, not the neighbourhood. For an exact quote based on your home's measurements, call or WhatsApp us at 077801 14547, or book a free site visit and we'll assess your space in person." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Invisible Grills in Bangalore", href: "/invisible-grills-bangalore" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1545,3 +1568,5 @@ export function InvisibleGrillForNewFlatHandoverBlogPost() { return <BlogPostPag
 export function InvisibleGrillForBalconyWithAcUnitBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-balcony-with-ac-unit"]} />; }
 
 export function BalconySafetyBangaloreBlogPost() { return <BlogPostPage data={posts["balcony-safety-bangalore"]} />; }
+
+export function InvisibleGrillIndiranagarBlogPost() { return <BlogPostPage data={posts["invisible-grill-indiranagar"]} />; }

@@ -563,6 +563,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "balcony safety Bangalore",
   },
+  {
+    title: "Invisible Grill Installation in Indiranagar: A Local Resident's Guide",
+    slug: "invisible-grill-indiranagar",
+    excerpt: "Indiranagar's mix of old independent houses, narrow lanes, and modern apartments means invisible grill installation here has its own quirks. Here's what local homeowners should know before booking.",
+    date: "2026-11-08",
+    readTime: "6 min read",
+    keyword: "invisible grill Indiranagar",
+  },
 ];
 
 export const testimonials = [
