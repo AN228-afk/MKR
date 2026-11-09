@@ -571,6 +571,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Indiranagar",
   },
+  {
+    title: "Invisible Grill for Cats: Keeping Curious Climbers Safe in Bangalore Apartments",
+    slug: "invisible-grill-for-cats",
+    excerpt: "Cats don't just sit near a balcony edge like dogs do, they climb, balance, and jump onto railings, which changes what a safe invisible grill setup needs to look like.",
+    date: "2026-11-09",
+    readTime: "6 min read",
+    keyword: "invisible grill for cats",
+  },
 ];
 
 export const testimonials = [

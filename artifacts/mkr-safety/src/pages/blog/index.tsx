@@ -1445,6 +1445,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-cats": {
+    slug: "invisible-grill-for-cats",
+    title: "Invisible Grill for Cats: Keeping Curious Climbers Safe in Bangalore Apartments",
+    seoTitle: "Invisible Grill for Cats in Bangalore | MKR Safety Solutions",
+    seoDesc: "Looking for an invisible grill for cats in Bangalore? Learn how cat behaviour affects grill design, gap size, and placement choices.",
+    date: "2026-11-09",
+    readTime: "6 min read",
+    keyword: "invisible grill for cats",
+    content: [
+      { body: "If you have a cat at home, you already know they see every ledge, railing, and windowsill as a perch waiting to be explored. Unlike dogs, cats can jump several times their own height, balance on narrow railings, and squeeze through gaps that look far too small to matter. This changes what 'pet-safe' actually means when you're planning an invisible grill for balconies and windows in a Bangalore apartment. This post looks specifically at cat behaviour and how it should shape your grill choices, rather than treating cats as a smaller version of a dog safety problem." },
+      { heading: "Why Cats Need a Different Safety Approach Than Dogs", body: "Most pet safety grills are designed with a dog's habits in mind, an animal that walks, sits, and rarely attempts to climb a railing. Cats behave completely differently. They jump onto parapet walls, balance on the top rail, and sometimes try to squeeze between a railing and the wall to reach a ledge or a neighbouring balcony. A grill that stops a dog from nudging through a gap may still leave room for a cat to wriggle through sideways, especially kittens and smaller breeds. The spacing, tension, and coverage of the installation need to account for this climbing and squeezing behaviour, not just a simple barrier at floor level." },
+      { heading: "Covering the Full Height, Not Just the Lower Railing", body: "A common mistake pet owners make is grilling only the bottom portion of a balcony, assuming a cat won't attempt the upper sections. In reality, cats often use furniture, AC units, or even window sills as stepping points to reach higher spots. An invisible grill for cats should run the full height of the balcony opening, from floor to the top of the railing or parapet, so there's no gap a cat can reach by climbing onto something nearby. This is one of the first things our team checks during a site visit, looking at what furniture or fixtures sit close to the balcony edge that a cat could use as a launch point." },
+      { heading: "Gap Spacing That Accounts for Kittens and Adult Cats", body: "Cats, especially kittens, can fit through surprisingly narrow gaps because of their flexible bodies. If you're getting an invisible grill specifically for a cat, it's worth asking for tighter wire spacing than a standard installation, particularly if you have a young or small-breed cat at home. The cable thickness itself, whether 2.5mm or 3mm, doesn't change the price, so there's no cost reason to compromise on spacing. What matters is how closely the horizontal or vertical wires are set, and this should be discussed clearly with your installer before work begins." },
+      { heading: "Windows Matter as Much as Balconies", body: "Cats are just as likely to attempt an open window as a balcony, especially if there's a ledge, grille, or AC unit outside that looks climbable. If your cat has access to any window that opens onto a drop, that window needs the same attention as your balcony. Many pet owners in Bangalore focus entirely on the balcony and overlook a bedroom or kitchen window that the cat can reach by jumping onto a cot or counter. A complete cat safety plan covers every opening the cat can physically get to, not just the obvious ones." },
+      { heading: "Getting the Right Setup for Your Home", body: "Every balcony and window layout is different, and the right configuration for a cat depends on your furniture placement, railing height, and how adventurous your particular cat is. MKR Safety Solutions installs invisible grills across Bangalore starting at \u20b9100\u2013\u20b9160 per sq ft, with the same pricing whether you choose 2.5mm or 3mm cable. For an exact quote based on your balcony or window dimensions, call or WhatsApp 077801 14547, or book a site visit so we can assess the layout with your cat's habits in mind." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1570,3 +1593,5 @@ export function InvisibleGrillForBalconyWithAcUnitBlogPost() { return <BlogPostP
 export function BalconySafetyBangaloreBlogPost() { return <BlogPostPage data={posts["balcony-safety-bangalore"]} />; }
 
 export function InvisibleGrillIndiranagarBlogPost() { return <BlogPostPage data={posts["invisible-grill-indiranagar"]} />; }
+
+export function InvisibleGrillForCatsBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-cats"]} />; }
