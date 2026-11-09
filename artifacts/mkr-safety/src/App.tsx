@@ -90,6 +90,14 @@ const InvisibleGrillVsAluminiumGrillBlogPost = lazy(() => import("@/pages/blog/i
 const InvisibleGrillHebbalBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillHebbalBlogPost })));
 const ChildSafetyBalconyIdeasBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.ChildSafetyBalconyIdeasBlogPost })));
 const InvisibleGrillBellandurBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillBellandurBlogPost })));
+const InvisibleGrillThicknessGuideBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillThicknessGuideBlogPost })));
+const InvisibleGrillWhitefieldBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillWhitefieldBlogPost })));
+const InvisibleGrillForKitchenWindowBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForKitchenWindowBlogPost })));
+const InvisibleGrillForOpenTerraceBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForOpenTerraceBlogPost })));
+const InvisibleGrillForNewFlatHandoverBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForNewFlatHandoverBlogPost })));
+const InvisibleGrillForBalconyWithAcUnitBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForBalconyWithAcUnitBlogPost })));
+const BalconySafetyBangaloreBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconySafetyBangaloreBlogPost })));
+const InvisibleGrillIndiranagarBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillIndiranagarBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -224,6 +232,22 @@ function Router() {
       <Route path="/blog/child-safety-balcony-ideas" component={ChildSafetyBalconyIdeasBlogPost} />
 
       <Route path="/blog/invisible-grill-bellandur" component={InvisibleGrillBellandurBlogPost} />
+
+      <Route path="/blog/invisible-grill-thickness-guide" component={InvisibleGrillThicknessGuideBlogPost} />
+
+      <Route path="/blog/invisible-grill-whitefield" component={InvisibleGrillWhitefieldBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-kitchen-window" component={InvisibleGrillForKitchenWindowBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-open-terrace" component={InvisibleGrillForOpenTerraceBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-new-flat-handover" component={InvisibleGrillForNewFlatHandoverBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-balcony-with-ac-unit" component={InvisibleGrillForBalconyWithAcUnitBlogPost} />
+
+      <Route path="/blog/balcony-safety-bangalore" component={BalconySafetyBangaloreBlogPost} />
+
+      <Route path="/blog/invisible-grill-indiranagar" component={InvisibleGrillIndiranagarBlogPost} />
 
       <Route component={NotFound} />
     </Switch>
