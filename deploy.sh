@@ -39,7 +39,7 @@ cd ../..
 
 echo "✅ Build completed"
 echo "📤 Deploying to Firebase Hosting..."
-firebase deploy --only hosting:mkr-safety
+firebase deploy --only hosting:mkr-safety --project mkr-1-34060 --account mkrsafetysolutions@gmail.com
 
 echo "✅ Deployment successful!"
 echo "🎉 Your application is now live on Firebase Hosting"
