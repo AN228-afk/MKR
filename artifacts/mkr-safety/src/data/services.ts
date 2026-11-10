@@ -579,6 +579,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for cats",
   },
+  {
+    title: "Invisible Grill for Rented Apartment: What Tenants in Bangalore Should Know Before Installing",
+    slug: "invisible-grill-for-rented-apartment",
+    excerpt: "Renting doesn't mean you have to skip balcony safety. Here's a practical, no-nonsense look at installing invisible grills in a rented Bangalore apartment - from landlord conversations to moving day.",
+    date: "2026-11-10",
+    readTime: "6 min read",
+    keyword: "invisible grill for rented apartment",
+  },
 ];
 
 export const testimonials = [
