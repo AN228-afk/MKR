@@ -587,6 +587,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for rented apartment",
   },
+  {
+    title: "Invisible Grill vs Pigeon Net: Which One Actually Solves Your Balcony Problem?",
+    slug: "invisible-grill-vs-pigeon-net",
+    excerpt: "Pigeon nets and invisible grills look similar from a distance, but they solve completely different problems. Here's an honest comparison to help you pick the right one.",
+    date: "2026-11-11",
+    readTime: "7 min read",
+    keyword: "invisible grill vs pigeon net",
+  },
 ];
 
 export const testimonials = [
