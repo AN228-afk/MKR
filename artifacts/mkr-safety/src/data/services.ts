@@ -595,6 +595,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "invisible grill vs pigeon net",
   },
+  {
+    title: "Invisible Grill for Toddlers: Safety Planning for the 1-3 Year Stage",
+    slug: "invisible-grill-for-toddlers",
+    excerpt: "Toddlers move differently from older kids - they climb, pull up on anything, and test gaps with their whole body. Here's how to plan invisible grills around that specific stage.",
+    date: "2026-11-12",
+    readTime: "6 min read",
+    keyword: "invisible grill for toddlers",
+  },
 ];
 
 export const testimonials = [
