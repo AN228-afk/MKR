@@ -571,6 +571,38 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Indiranagar",
   },
+  {
+    title: "Invisible Grill for Cats: Keeping Curious Climbers Safe in Bangalore Apartments",
+    slug: "invisible-grill-for-cats",
+    excerpt: "Cats don't just sit near a balcony edge like dogs do, they climb, balance, and jump onto railings, which changes what a safe invisible grill setup needs to look like.",
+    date: "2026-11-09",
+    readTime: "6 min read",
+    keyword: "invisible grill for cats",
+  },
+  {
+    title: "Invisible Grill for Rented Apartment: What Tenants in Bangalore Should Know Before Installing",
+    slug: "invisible-grill-for-rented-apartment",
+    excerpt: "Renting doesn't mean you have to skip balcony safety. Here's a practical, no-nonsense look at installing invisible grills in a rented Bangalore apartment - from landlord conversations to moving day.",
+    date: "2026-11-10",
+    readTime: "6 min read",
+    keyword: "invisible grill for rented apartment",
+  },
+  {
+    title: "Invisible Grill vs Pigeon Net: Which One Actually Solves Your Balcony Problem?",
+    slug: "invisible-grill-vs-pigeon-net",
+    excerpt: "Pigeon nets and invisible grills look similar from a distance, but they solve completely different problems. Here's an honest comparison to help you pick the right one.",
+    date: "2026-11-11",
+    readTime: "7 min read",
+    keyword: "invisible grill vs pigeon net",
+  },
+  {
+    title: "Invisible Grill for Toddlers: Safety Planning for the 1-3 Year Stage",
+    slug: "invisible-grill-for-toddlers",
+    excerpt: "Toddlers move differently from older kids - they climb, pull up on anything, and test gaps with their whole body. Here's how to plan invisible grills around that specific stage.",
+    date: "2026-11-12",
+    readTime: "6 min read",
+    keyword: "invisible grill for toddlers",
+  },
 ];
 
 export const testimonials = [
