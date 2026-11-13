@@ -154,8 +154,8 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
       <div className="relative z-10 px-5 pt-6 pb-8 md:p-0 md:absolute md:inset-0 md:flex md:items-end md:pointer-events-none">
         <div className="md:w-full md:max-w-7xl md:mx-auto md:px-8 md:pb-10">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 40 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.9, ease, delay: 0.15 }}
             className="relative max-w-xl bg-white md:pointer-events-auto md:rounded-[1.75rem] md:bg-white/80 md:backdrop-blur-2xl md:backdrop-saturate-150 md:border md:border-white/70 md:shadow-[0_30px_60px_-25px_rgba(30,25,10,.45)] md:p-8"
           >
