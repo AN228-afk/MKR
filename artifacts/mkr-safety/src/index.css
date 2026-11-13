@@ -468,3 +468,12 @@ html, body { max-width: 100%; overflow-x: clip; }
 [data-tilt]::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s;
   background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), hsl(40 62% 70% / .18), transparent 45%); }
 [data-tilt]:hover::after { opacity: 1; }
+
+/* ---------- Prerendered page text (shown only if the app hasn't loaded after 2.5s) ---------- */
+.mkr-prerender { max-width: 60rem; margin: 0 auto; padding: 6rem 1.25rem 3rem; line-height: 1.7; opacity: 0; animation: mkr-pr-show 0.3s ease 2.5s forwards; }
+.mkr-prerender h1 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
+.mkr-prerender h2 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 .5rem; }
+.mkr-prerender h3 { font-weight: 600; margin-top: 1rem; }
+.mkr-prerender ul { list-style: disc; padding-left: 1.25rem; }
+.mkr-prerender a { color: hsl(38 70% 36%); text-decoration: underline; }
+@keyframes mkr-pr-show { to { opacity: 1; } }
