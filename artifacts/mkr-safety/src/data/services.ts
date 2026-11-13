@@ -603,6 +603,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for toddlers",
   },
+  {
+    title: "Balcony Garden with Invisible Grill: Growing Your Green Space Safely in Bangalore",
+    slug: "balcony-garden-with-invisible-grill",
+    excerpt: "Turning your balcony into a garden doesn't mean choosing between greenery and safety. Here's how invisible grills let Bangalore homeowners grow freely while keeping the view and the family safe.",
+    date: "2026-11-13",
+    readTime: "7 min read",
+    keyword: "balcony garden with invisible grill",
+  },
 ];
 
 export const testimonials = [
