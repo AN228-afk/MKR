@@ -611,6 +611,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "balcony garden with invisible grill",
   },
+  {
+    title: "Invisible Grill for Bedroom Window: Why Bangalore Homeowners Are Rethinking Bedroom Safety",
+    slug: "invisible-grill-for-bedroom-window",
+    excerpt: "Bedroom windows have needs that balconies and living rooms don't - here's how to plan invisible grills for safe sleep, ventilation and peace of mind.",
+    date: "2026-11-14",
+    readTime: "6 min read",
+    keyword: "invisible grill for bedroom window",
+  },
 ];
 
 export const testimonials = [
