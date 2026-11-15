@@ -619,6 +619,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for bedroom window",
   },
+  {
+    title: "Invisible Grill in Koramangala: A Practical Guide for Bangalore's Most Mixed-Up Neighbourhood",
+    slug: "invisible-grill-koramangala",
+    excerpt: "Koramangala isn't one kind of building, it's five kinds stacked next to each other. Here's how that affects your invisible grill decision.",
+    date: "2026-11-15",
+    readTime: "6 min read",
+    keyword: "invisible grill Koramangala",
+  },
 ];
 
 export const testimonials = [
