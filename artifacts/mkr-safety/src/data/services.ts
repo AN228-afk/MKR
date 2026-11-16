@@ -627,6 +627,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill Koramangala",
   },
+  {
+    title: "Invisible Grill for Independent House Compound Walls: Closing the Perimeter Gap Bangalore Homeowners Miss",
+    slug: "invisible-grill-for-independent-house-compound-walls",
+    excerpt: "Most independent house owners in Bangalore grill their balconies and windows but forget the compound wall itself. Here's why that boundary matters and how invisible grills solve it cleanly.",
+    date: "2026-11-16",
+    readTime: "7 min read",
+    keyword: "Invisible Grill for Independent House Compound Walls",
+  },
 ];
 
 export const testimonials = [
