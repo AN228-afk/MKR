@@ -635,6 +635,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "Invisible Grill for Independent House Compound Walls",
   },
+  {
+    title: "Invisible Grill for Swimming Pool Balconies: Protecting the View You Pay Extra For",
+    slug: "invisible-grill-for-swimming-pool-balconies",
+    excerpt: "Pool-facing apartments in Bangalore's gated communities come with a specific safety problem: kids and adults lean further over railings to see the pool below. Here's how invisible grills address that without blocking the view you paid a premium for.",
+    date: "2026-11-17",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Swimming Pool Balconies",
+  },
 ];
 
 export const testimonials = [
