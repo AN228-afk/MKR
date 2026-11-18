@@ -643,6 +643,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "Invisible Grill for Swimming Pool Balconies",
   },
+  {
+    title: "Invisible Grill for Row Houses: A Safety Plan for Every Floor and Facade",
+    slug: "invisible-grill-for-row-houses",
+    excerpt: "Row houses have a layout all their own - multiple floors, independent facades, and more open points than a typical apartment. Here's how to plan invisible grills that cover the whole house, not just one balcony.",
+    date: "2026-11-18",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Row Houses",
+  },
 ];
 
 export const testimonials = [

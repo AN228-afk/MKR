@@ -1655,6 +1655,29 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-row-houses": {
+    slug: "invisible-grill-for-row-houses",
+    title: "Invisible Grill for Row Houses: A Safety Plan for Every Floor and Facade",
+    seoTitle: "Invisible Grill for Row Houses in Bangalore | MKR Safety Solutions",
+    seoDesc: "Planning an invisible grill for row houses in Bangalore? Here's how to cover every balcony, window, and staircase across multiple floors.",
+    date: "2026-11-18",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Row Houses",
+    content: [
+      { body: "Row houses sit in an odd middle ground between apartments and independent villas. You share side walls with your neighbours, but every floor, window, and balcony on your facade belongs entirely to you - there's no common area committee deciding what gets installed where. That freedom is great, but it also means the full safety planning falls on you. A lot of row house owners in Bangalore end up grilling just the main balcony and forgetting the rest of the house has just as many open edges." },
+      { heading: "Why Row Houses Need a Different Approach", body: "Most row houses in Bangalore are G+1 or G+2 structures - ground floor living areas, bedrooms on the upper floors, and often a small terrace on top. That means you're not dealing with one balcony like in a typical apartment flat. You're dealing with a front sit-out, two or three bedroom windows per floor, an internal staircase, and a terrace - all on a single plot. Each of these is a separate fall risk, and each needs to be looked at individually rather than assuming one grill order covers the house." },
+      { heading: "Mapping Every Open Point Before You Call an Installer", body: "Before you get a quote, walk through the house floor by floor and list every opening: the front balcony or sit-out, upper-floor windows facing the street, any side windows if you're in an end unit, the internal staircase if it has an open side, and the terrace parapet. Row house layouts vary a lot from one community to the next, so there's no standard checklist that fits every house - but doing this walk-through yourself means you won't end up calling the installer back for a spot you missed." },
+      { heading: "End-Unit vs Middle-Unit Row Houses", body: "If your row house is at the end of the row, you likely have side-facing windows that middle-unit houses don't. These side openings are easy to overlook because they don't face the street or the common pathway, but they're just as much a fall risk, especially if there's a kitchen or utility window on an upper floor. Middle-unit houses have fewer openings to plan for, but the front facade usually carries more weight - multiple windows and a balcony stacked across two or three floors that all need covering." },
+      { heading: "Planning Grills Across Multiple Floors", body: "Because row houses have more floors than a typical flat, owners often ask whether they can install grills floor by floor instead of all at once. This is possible - you can start with the floor where young children or elderly parents spend the most time, and cover the rest later. The one thing to keep consistent is the cable spacing and finish, so the house looks uniform once every floor is done, rather than looking like it was patched together over time." },
+      { heading: "What It Costs for a Full Row House", body: "MKR's invisible grills are priced at \u20b9100\u2013\u20b9160 per sq ft, and this rate stays the same whether you choose 2.5mm or 3mm cable - the thickness you pick doesn't change the price. Because row houses have several openings across multiple floors, the total often works out higher than a single apartment balcony simply due to the extra area covered, not because of a different rate. For an exact quote based on your house's floors and openings, call or WhatsApp 077801 14547, or book a site visit so we can measure the actual facade." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1798,3 +1821,5 @@ export function InvisibleGrillKoramangalaBlogPost() { return <BlogPostPage data=
 export function InvisibleGrillForIndependentHouseCompoundWallsBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-independent-house-compound-walls"]} />; }
 
 export function InvisibleGrillForSwimmingPoolBalconiesBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-swimming-pool-balconies"]} />; }
+
+export function InvisibleGrillForRowHousesBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-row-houses"]} />; }
