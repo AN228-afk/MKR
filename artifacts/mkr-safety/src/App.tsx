@@ -102,6 +102,11 @@ const InvisibleGrillForCatsBlogPost = lazy(() => import("@/pages/blog/index").th
 const InvisibleGrillForRentedApartmentBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForRentedApartmentBlogPost })));
 const InvisibleGrillVsPigeonNetBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillVsPigeonNetBlogPost })));
 const InvisibleGrillForToddlersBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForToddlersBlogPost })));
+const BalconyGardenWithInvisibleGrillBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BalconyGardenWithInvisibleGrillBlogPost })));
+const InvisibleGrillForBedroomWindowBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForBedroomWindowBlogPost })));
+const InvisibleGrillKoramangalaBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillKoramangalaBlogPost })));
+const InvisibleGrillForIndependentHouseCompoundWallsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForIndependentHouseCompoundWallsBlogPost })));
+const InvisibleGrillForSwimmingPoolBalconiesBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForSwimmingPoolBalconiesBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -260,6 +265,16 @@ function Router() {
       <Route path="/blog/invisible-grill-vs-pigeon-net" component={InvisibleGrillVsPigeonNetBlogPost} />
 
       <Route path="/blog/invisible-grill-for-toddlers" component={InvisibleGrillForToddlersBlogPost} />
+
+      <Route path="/blog/balcony-garden-with-invisible-grill" component={BalconyGardenWithInvisibleGrillBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-bedroom-window" component={InvisibleGrillForBedroomWindowBlogPost} />
+
+      <Route path="/blog/invisible-grill-koramangala" component={InvisibleGrillKoramangalaBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-independent-house-compound-walls" component={InvisibleGrillForIndependentHouseCompoundWallsBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-swimming-pool-balconies" component={InvisibleGrillForSwimmingPoolBalconiesBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

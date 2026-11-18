@@ -603,6 +603,46 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "invisible grill for toddlers",
   },
+  {
+    title: "Balcony Garden with Invisible Grill: Growing Your Green Space Safely in Bangalore",
+    slug: "balcony-garden-with-invisible-grill",
+    excerpt: "Turning your balcony into a garden doesn't mean choosing between greenery and safety. Here's how invisible grills let Bangalore homeowners grow freely while keeping the view and the family safe.",
+    date: "2026-11-13",
+    readTime: "7 min read",
+    keyword: "balcony garden with invisible grill",
+  },
+  {
+    title: "Invisible Grill for Bedroom Window: Why Bangalore Homeowners Are Rethinking Bedroom Safety",
+    slug: "invisible-grill-for-bedroom-window",
+    excerpt: "Bedroom windows have needs that balconies and living rooms don't - here's how to plan invisible grills for safe sleep, ventilation and peace of mind.",
+    date: "2026-11-14",
+    readTime: "6 min read",
+    keyword: "invisible grill for bedroom window",
+  },
+  {
+    title: "Invisible Grill in Koramangala: A Practical Guide for Bangalore's Most Mixed-Up Neighbourhood",
+    slug: "invisible-grill-koramangala",
+    excerpt: "Koramangala isn't one kind of building, it's five kinds stacked next to each other. Here's how that affects your invisible grill decision.",
+    date: "2026-11-15",
+    readTime: "6 min read",
+    keyword: "invisible grill Koramangala",
+  },
+  {
+    title: "Invisible Grill for Independent House Compound Walls: Closing the Perimeter Gap Bangalore Homeowners Miss",
+    slug: "invisible-grill-for-independent-house-compound-walls",
+    excerpt: "Most independent house owners in Bangalore grill their balconies and windows but forget the compound wall itself. Here's why that boundary matters and how invisible grills solve it cleanly.",
+    date: "2026-11-16",
+    readTime: "7 min read",
+    keyword: "Invisible Grill for Independent House Compound Walls",
+  },
+  {
+    title: "Invisible Grill for Swimming Pool Balconies: Protecting the View You Pay Extra For",
+    slug: "invisible-grill-for-swimming-pool-balconies",
+    excerpt: "Pool-facing apartments in Bangalore's gated communities come with a specific safety problem: kids and adults lean further over railings to see the pool below. Here's how invisible grills address that without blocking the view you paid a premium for.",
+    date: "2026-11-17",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Swimming Pool Balconies",
+  },
 ];
 
 export const testimonials = [
