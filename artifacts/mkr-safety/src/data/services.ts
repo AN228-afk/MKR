@@ -651,6 +651,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "Invisible Grill for Row Houses",
   },
+  {
+    title: "Invisible Grill for Jayanagar: A Local Resident's Guide",
+    slug: "invisible-grill-for-jayanagar-a-local-residents-guide",
+    excerpt: "Jayanagar's mix of decades-old independent houses and newer apartment blocks means invisible grill installation here isn't one-size-fits-all. Here's what local residents should actually know.",
+    date: "2026-11-19",
+    readTime: "7 min read",
+    keyword: "Invisible Grill for Jayanagar",
+  },
 ];
 
 export const testimonials = [
