@@ -659,6 +659,14 @@ const blogPostsRaw = [
     readTime: "7 min read",
     keyword: "Invisible Grill for Jayanagar",
   },
+  {
+    title: "Invisible Grill for Balcony Resale Value: Does It Actually Help When You Sell?",
+    slug: "invisible-grill-for-balcony-resale-value",
+    excerpt: "Thinking of selling your Bangalore flat someday? Here's an honest look at whether an invisible grill on your balcony actually helps during resale, and what buyers notice first.",
+    date: "2026-11-20",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Balcony Resale Value",
+  },
 ];
 
 export const testimonials = [
