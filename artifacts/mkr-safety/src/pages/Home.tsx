@@ -12,10 +12,8 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { PriceCalculator } from "@/components/PriceCalculator";
 import { InquiryForm } from "@/components/InquiryForm";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
-import { CableStrings } from "@/components/CableStrings";
 import { WorkReel } from "@/components/WorkReel";
 import { InstallStory } from "@/components/InstallStory";
-import { GapTester } from "@/components/GapTester";
 import { BigWords } from "@/components/BigWords";
 import { useTilt } from "@/lib/useTilt";
 import kidsCard from "@assets/mkr-real-kids-balcony-card.webp";
@@ -439,9 +437,35 @@ export default function Home() {
 
       <InstallStory />
 
-      <GapTester />
-
-      <CableStrings />
+      {/* Our work: simple photo grid */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="mkr-eyebrow">Our work</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Real homes, <Accent>made safe</Accent></h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+            {[
+              { src: balconyCard, t: "Balcony" },
+              { src: kidsCard, t: "Child safety" },
+              { src: villaCard, t: "Villa" },
+              { src: petsCard, t: "Pet safety" },
+              { src: winCard, t: "Window" },
+              { src: sunsetCard, t: "Balcony" },
+            ].map((ph, i) => (
+              <figure key={i} className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <img src={ph.src} alt={`${ph.t} invisible grills by MKR Safety Solutions`} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <figcaption className="absolute bottom-2 left-2 px-2.5 py-1 rounded-full bg-white/90 text-[11px] font-semibold text-foreground">{ph.t}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/gallery" className="inline-flex items-center gap-2 text-secondary font-semibold">
+              View full gallery <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Testimonials */}
       <section className="py-20 bg-gradient-to-b from-white via-[hsl(40_40%_97%)] to-white">
