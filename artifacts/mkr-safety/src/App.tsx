@@ -36,6 +36,7 @@ const IndirangarPage = lazy(() => import("@/pages/locations").then(m => ({ defau
 const YelahankPage = lazy(() => import("@/pages/locations").then(m => ({ default: m.YelahankPage })));
 const HebbalPage = lazy(() => import("@/pages/locations").then(m => ({ default: m.HebbalPage })));
 const KRPuramPage = lazy(() => import("@/pages/locations").then(m => ({ default: m.KRPuramPage })));
+const CityPage = lazy(() => import("@/pages/locations").then(m => ({ default: m.CityPage })));
 
 const BenefitsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.BenefitsBlogPost })));
 const VsTraditionalBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.VsTraditionalBlogPost })));
@@ -149,6 +150,7 @@ function Router() {
       <Route path="/invisible-grills-yelahanka" component={YelahankPage} />
       <Route path="/invisible-grills-hebbal" component={HebbalPage} />
       <Route path="/invisible-grills-kr-puram" component={KRPuramPage} />
+      <Route path="/invisible-grills-:city" component={CityPage} />
 
       {/* Blog Post Pages */}
       <Route path="/blog/benefits-of-invisible-grills" component={BenefitsBlogPost} />

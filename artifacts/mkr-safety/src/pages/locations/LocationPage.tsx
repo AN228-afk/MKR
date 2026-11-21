@@ -23,24 +23,47 @@ export interface LocationPageData {
   localContent: string;
   faqs: { q: string; a: string }[];
   relatedAreas: { label: string; href: string }[];
+  /** For other cities: leave empty so the page says "Hyderabad", not "Hyderabad, Bangalore". */
+  city?: string;
+  state?: string;
 }
 
 export function LocationPage({ data }: { data: LocationPageData }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "MKR Safety Solutions",
-    description: `Invisible grill installation in ${data.area}, Bangalore`,
-    url: `https://mkrsafetysolutions.com/invisible-grills-${data.slug}`,
-    telephone: "+91-77801-14547",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: data.area,
-      addressRegion: "Karnataka",
-      addressCountry: "IN",
-    },
-    areaServed: { "@type": "City", name: data.area },
-  };
+  const city = data.city === undefined ? "Bangalore" : data.city;
+  const place = city ? `${data.area}, ${city}` : data.area;
+  const isOtherCity = !!data.state;
+  const pageUrl = `https://mkrsafetysolutions.com/invisible-grills-${data.slug}`;
+  const schema = isOtherCity
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        serviceType: "Invisible grill installation",
+        name: `Invisible grills in ${data.area}`,
+        url: pageUrl,
+        areaServed: { "@type": "City", name: data.area, containedInPlace: { "@type": "State", name: data.state } },
+        provider: {
+          "@type": "LocalBusiness",
+          name: "MKR Safety Solutions",
+          telephone: "+91-77801-14547",
+          url: "https://mkrsafetysolutions.com/",
+          address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" },
+        },
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "MKR Safety Solutions",
+        description: `Invisible grill installation in ${place}`,
+        url: pageUrl,
+        telephone: "+91-77801-14547",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: data.area,
+          addressRegion: "Karnataka",
+          addressCountry: "IN",
+        },
+        areaServed: { "@type": "City", name: data.area },
+      };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -72,7 +95,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
 
       <div className="bg-muted border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumb items={[
+          <Breadcrumb items={isOtherCity ? [{ label: `Invisible Grills ${data.area}` }] : [
             { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },
             { label: data.area }
           ]} />
@@ -84,7 +107,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
         <div className="absolute inset-0">
           <motion.img
             src={hero}
-            alt={`Invisible grills installation in ${data.area} Bangalore`}
+            alt={`Invisible grills installation in ${place}`}
             initial={{ scale: 1.06, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.22 }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -97,7 +120,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
           <FadeLeft>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold mb-5 uppercase">
-              <MapPin className="w-3 h-3" /> Serving {data.area}, Bangalore
+              <MapPin className="w-3 h-3" /> Serving {place}
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4 leading-tight">{accentTail(data.h1, 2)}</h1>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-4">{data.intro}</p>
@@ -126,7 +149,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <FadeLeft>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Invisible Grills in {data.area}, Bangalore</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Invisible Grills in {place}</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">{data.localContent}</p>
               <StaggerList className="space-y-3">
                 {[
@@ -169,17 +192,17 @@ export function LocationPage({ data }: { data: LocationPageData }) {
       <section className="py-8 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">Service Area: {data.area}, Bangalore</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">Service Area: {place}</h2>
             <div className="aspect-video max-h-64 rounded-xl overflow-hidden border border-border">
               <iframe
-                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.99!2d77.35073!3d12.95384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2s${encodeURIComponent(data.area)}%2C%20Bengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000`}
+                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.99!2d77.35073!3d12.95384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2s${encodeURIComponent(isOtherCity ? `${data.area}, ${data.state}` : `${data.area}, Bengaluru, Karnataka`)}%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title={`MKR Safety Solutions service area in ${data.area} Bangalore`}
+                title={`MKR Safety Solutions service area in ${place}`}
               />
             </div>
           </FadeUp>

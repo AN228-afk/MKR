@@ -293,6 +293,31 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
+          <div className="mt-10 pt-6 border-t border-border">
+            <h3 className="mkr-foot-h !mb-3">Cities we serve</h3>
+            <ul className="flex flex-wrap gap-x-5 gap-y-2">
+              {[
+                ["Bangalore", "/invisible-grills-bangalore"],
+                ["Hyderabad", "/invisible-grills-hyderabad"],
+                ["Chennai", "/invisible-grills-chennai"],
+                ["Kochi", "/invisible-grills-kochi"],
+                ["Thiruvananthapuram", "/invisible-grills-thiruvananthapuram"],
+                ["Vijayawada", "/invisible-grills-vijayawada"],
+                ["Visakhapatnam", "/invisible-grills-visakhapatnam"],
+                ["Mangalore", "/invisible-grills-mangalore"],
+                ["Mysore", "/invisible-grills-mysore"],
+                ["Bhubaneswar", "/invisible-grills-bhubaneswar"],
+                ["Pune", "/invisible-grills-pune"],
+                ["Nellore", "/invisible-grills-nellore"],
+                ["Kadapa", "/invisible-grills-kadapa"],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <Link href={href} className="mkr-foot-link">{label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="mt-12 pt-6 border-t border-border">
             <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left md:pr-20">
               <p className="text-xs text-primary-foreground/60">
