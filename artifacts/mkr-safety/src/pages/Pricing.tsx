@@ -25,7 +25,7 @@ const rows = [
   { service: "Staircase Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "" },
   { service: "Terrace Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "" },
   { service: "Villa Full-Home", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Custom quote" },
-  { service: "Child Safety Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Recommended 2.5mm" },
+  { service: "Child Safety Grills", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Recommended 2-inch" },
   { service: "School / Institution", cable3: "₹100–₹160", cable25: "₹100–₹160", note: "Bulk discount" },
 ];
 
@@ -40,9 +40,9 @@ const included = [
 ];
 
 const faqs = [
-  { q: "What is the price of invisible grills in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100 to ₹160 per sq ft for both 3mm and 2.5mm cable systems. The total cost depends on the area size and space type. MKR Safety Solutions provides transparent itemised quotes after a free site visit." },
+  { q: "What is the price of invisible grills in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100 to ₹160 per sq ft for both 2-inch and 3-inch spacing. The total cost depends on the area size and space type. MKR Safety Solutions provides transparent itemised quotes after a free site visit." },
   { q: "Are there any hidden charges?", a: "No. Our quotes are fully itemised — materials, labour, and installation are all included. The only variable is if the site requires special structural anchoring (rare), which we identify and quote for during the free site visit." },
-  { q: "Is 2.5mm more expensive than 3mm?", a: "No. Both 3mm and 2.5mm cables are priced the same — ₹100 to ₹160 per sq ft. Choose 3mm for the most invisible look, or 2.5mm for extra child and pet safety. Our team will recommend the right option during the free site visit." },
+  { q: "Is 2-inch spacing more expensive than 3-inch?", a: "No. Both 3-inch and 2-inch spacing are priced the same — ₹100 to ₹160 per sq ft. Choose 3-inch for the most invisible look, or 2-inch for extra child and pet safety. Our team will recommend the right option during the free site visit." },
   { q: "Do you offer discounts for large projects?", a: "Yes. Villa full-home projects, school and institutional installations, and multi-apartment building projects all qualify for volume pricing. Contact us for a custom quote for projects above 1,000 sq ft." },
   { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 400 kg/lm, post-installation cleanup, and a 15-year guarantee with documentation." },
 ];
@@ -51,8 +51,8 @@ export default function Pricing() {
   return (
     <Layout>
       <SEOHead
-        title="Invisible Grills Price in Bangalore 2024 | ₹100/sq ft | MKR Safety Solutions"
-        description="Transparent invisible grill prices in Bangalore. 3mm and 2.5mm cables from ₹100–₹160/sq ft. All-inclusive pricing with 15-year guarantee. Free site visit. MKR Safety Solutions."
+        title="Invisible Grill Price in Bangalore: ₹100–₹160 per sq ft | MKR"
+        description="Invisible grill cost in Bangalore starts at ₹100 per sq ft (₹100–₹160 all-inclusive). Balcony price, 2-inch & 3-inch spacing, 316 SS cables, 15-year guarantee. Free site visit & exact quote on WhatsApp."
         canonical="https://mkrsafetysolutions.com/pricing"
         schema={[schema]}
       />
@@ -110,8 +110,8 @@ export default function Pricing() {
                 <thead>
                   <tr className="bg-secondary text-secondary-foreground">
                     <th className="text-left px-5 py-4 font-semibold">Service Type</th>
-                    <th className="text-center px-5 py-4 font-semibold">3mm Cables<br /><span className="text-xs font-normal opacity-80">Standard</span></th>
-                    <th className="text-center px-5 py-4 font-semibold">2.5mm Cables<br /><span className="text-xs font-normal opacity-80">Child Safety</span></th>
+                    <th className="text-center px-5 py-4 font-semibold">3-inch Spacing<br /><span className="text-xs font-normal opacity-80">Standard</span></th>
+                    <th className="text-center px-5 py-4 font-semibold">2-inch Spacing<br /><span className="text-xs font-normal opacity-80">Child Safety</span></th>
                     <th className="text-center px-5 py-4 font-semibold hidden sm:table-cell">Notes</th>
                   </tr>
                 </thead>
@@ -165,12 +165,12 @@ export default function Pricing() {
               </StaggerList>
             </FadeLeft>
             <FadeRight delay={0.1}>
-              <h2 className="text-3xl font-bold text-foreground mb-6">3mm vs 2.5mm — Which to Choose?</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">3-inch vs 2-inch Spacing — Which to Choose?</h2>
               <div className="space-y-4">
                 <div className="bg-white rounded-xl border border-border p-5">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-3 h-3 rounded-full bg-secondary inline-block" />
-                    <span className="font-semibold text-foreground">3mm Standard Cables</span>
+                    <span className="font-semibold text-foreground">3-inch Standard Spacing</span>
                     <span className="ml-auto text-sm font-bold text-foreground">₹100–₹160/sq ft</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Best for most balconies, windows, and terraces. Nearly invisible from 3+ metres. Ideal when aesthetics and views are the top priority.</p>
@@ -179,15 +179,15 @@ export default function Pricing() {
                   <div className="absolute -top-3 left-4 bg-secondary text-secondary-foreground text-xs font-bold px-2 py-0.5 rounded-full">Recommended for Families</div>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="w-3 h-3 rounded-full bg-secondary inline-block" />
-                    <span className="font-semibold text-foreground">2.5mm Ultra-Fine Cables</span>
+                    <span className="font-semibold text-foreground">2-inch Child-Safe Spacing</span>
                     <span className="ml-auto text-sm font-bold text-secondary">₹100–₹160/sq ft</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Tighter 2.5mm spacing — children's fingers and small toys cannot pass through. The gold standard for families with children under 10 or small pets.</p>
+                  <p className="text-sm text-muted-foreground">Tighter 2-inch spacing — children's fingers and small toys cannot pass through. The gold standard for families with children under 10 or small pets.</p>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-secondary/10 rounded-xl border border-secondary/20">
                 <p className="text-sm text-foreground font-medium">
-                  💡 Not sure which to choose? Our site visit team will assess your space and recommend the right cable thickness for your family's needs — for free.
+                  💡 Not sure which to choose? Our site visit team will assess your space and recommend the right spacing for your family's needs — for free.
                 </p>
               </div>
             </FadeRight>

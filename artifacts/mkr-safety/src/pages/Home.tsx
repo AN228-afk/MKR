@@ -190,7 +190,7 @@ export default function Home() {
   return (
     <Layout>
       <SEOHead
-        title="Invisible Grills Bangalore | MKR Safety Solutions | Best Price"
+        title="Invisible Grills in Bangalore from ₹100/sq ft | MKR Safety Solutions"
         description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 2000+ installs, 5.0★ rating, 15-year guarantee. Free site visit."
         canonical="https://mkrsafetysolutions.com/"
         schema={[localBusinessSchema, faqSchema]}

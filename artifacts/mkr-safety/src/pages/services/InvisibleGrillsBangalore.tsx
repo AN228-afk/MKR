@@ -17,10 +17,10 @@ import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
   { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 13 reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 15-year guarantee." },
-  { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹160 per sq ft with MKR Safety Solutions, for both 3mm and 2.5mm cables, across balcony, window, staircase and terrace grills. We provide free site visits with transparent quotes." },
+  { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹160 per sq ft with MKR Safety Solutions, with 2-inch or 3-inch spacing, across balcony, window, staircase and terrace grills. We provide free site visits with transparent quotes." },
   { q: "Which areas in Bangalore does MKR Safety Solutions serve?", a: "MKR Safety Solutions serves all major areas of Bangalore including Whitefield, Koramangala, HSR Layout, Indiranagar, Electronic City, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, Hebbal, Yelahanka, and KR Puram." },
   { q: "How long does invisible grill installation take in Bangalore?", a: "A standard balcony installation takes 3–5 hours. Full apartment installations with multiple balconies and windows are typically completed in 1–2 days. We work around your schedule including weekends." },
-  { q: "Are invisible grills safe for children in Bangalore apartments?", a: "Yes. Our invisible grills — especially our child safety variant with 2.5mm cable spacing — are specifically tested and designed to prevent toddler falls. We have 300+ child safety installations across Bangalore's family apartments." },
+  { q: "Are invisible grills safe for children in Bangalore apartments?", a: "Yes. Our invisible grills — especially our child safety variant with 2-inch cable spacing — are specifically tested and designed to prevent toddler falls. We have 300+ child safety installations across Bangalore's family apartments." },
 ];
 
 const schema = {
@@ -43,8 +43,8 @@ export default function InvisibleGrillsBangalore() {
   return (
     <Layout>
       <SEOHead
-        title="Invisible Grills Bangalore | Best Price, 15-Yr Guarantee | MKR Safety Solutions"
-        description="Bangalore's #1 invisible grill company. Balcony, window, staircase & terrace grills. 316-grade SS, 5.0★ rating, 2000+ installs, 15-year guarantee. Free site visit."
+        title="Invisible Grills in Bangalore | ₹100/sq ft, 15-Yr Guarantee | MKR"
+        description="Invisible grills in Bangalore for balcony, window, staircase & terrace from ₹100 per sq ft. 316 SS cables, 5.0★ rating, 2000+ installs, 15-year guarantee. Free site visit."
         canonical="https://mkrsafetysolutions.com/invisible-grills-bangalore"
         schema={schema}
       />
