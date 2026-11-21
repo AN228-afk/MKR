@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown, Mail, MapPin } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
-import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
+import logoPath from "@assets/mkr-wordmark.png";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { SocialLinks } from "./SocialLinks";
 import { useScrollReveal } from "@/lib/useScrollReveal";
@@ -56,9 +56,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <img
                 src={logoPath}
                 alt="MKR Safety Solutions - Invisible Grills Bangalore"
-                className="h-10 md:h-12 w-auto object-contain flex-shrink-0"
-                width={120}
-                height={48}
+                className="h-8 md:h-10 w-auto object-contain flex-shrink-0"
+                width={105}
+                height={40}
               />
               <div className="lg:hidden flex flex-col leading-tight overflow-hidden">
                 <motion.span
@@ -67,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   transition={{ duration: 0.5 }}
                   className="text-sm font-bold text-foreground whitespace-nowrap"
                 >
-                  MKR Safety Solutions
+                  Safety Solutions
                 </motion.span>
                 <div className="h-4 overflow-hidden">
                   <AnimatePresence mode="wait">

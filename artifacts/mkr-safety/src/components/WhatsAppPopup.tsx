@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send, Phone } from "lucide-react";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
-import logoPath from "@assets/MKR_PHOTO_small_1780926061320.jpeg";
+import logoPath from "@assets/mkr-logo-circle.png";
 
 const NUMBER = "917780114547";
 const wa = (text: string) => `https://wa.me/${NUMBER}?text=${encodeURIComponent(text)}`;
