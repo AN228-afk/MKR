@@ -24,7 +24,7 @@ const data = {
   features: [
     { title: "Fits Any Window Style", desc: "Custom fabricated for your exact window dimensions — sliding, casement, fixed, or louvered windows." },
     { title: "Maximum Light Transmission", desc: "The 3mm ultra-thin cables allow 98%+ of natural light through — significantly more than traditional grills." },
-    { title: "Child Safety Certified", desc: "3mm cable spacing prevents children from putting their head or body through the window." },
+    { title: "Child Safety Certified", desc: "3-inch cable spacing prevents children from putting their head or body through the window." },
     { title: "Weather Sealed", desc: "Marine-grade steel and precision installation ensure no water ingress or cable movement during monsoons." },
     { title: "Silent Operation", desc: "Properly tensioned cables don't vibrate or make noise in wind — unlike loose traditional grill bars." },
   ],
@@ -36,7 +36,7 @@ const data = {
   ],
   faqs: [
     { q: "Can I still open my windows after installing invisible grills?", a: "Yes, absolutely. Our window grill installation is designed to work with your existing window operation. You can open and close sliding, casement, or hopper windows as usual." },
-    { q: "Do window invisible grills reduce airflow?", a: "No. The 3mm cable spacing maintains 97%+ of natural airflow compared to an open window. You'll feel no difference in ventilation." },
+    { q: "Do window invisible grills reduce airflow?", a: "No. The 3-inch cable spacing maintains 97%+ of natural airflow compared to an open window. You'll feel no difference in ventilation." },
     { q: "Are window grills suitable for all floor levels?", a: "We recommend invisible grills for all floors above ground level. They're especially important on floors 2 and above where fall risk is significant, particularly for homes with children." },
     { q: "How many windows can be installed in a day?", a: "Our team can typically install 6–10 windows in a single day depending on size and complexity. A full apartment is usually completed in 1 day." },
   ],

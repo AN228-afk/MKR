@@ -13,7 +13,7 @@ const data = {
   price: "Custom project quote",
   benefits: [
     "Purpose-designed for educational institutions and high-child-traffic environments",
-    "2.5mm cable spacing — maximum child safety for school corridors and classrooms",
+    "2-inch cable spacing — maximum child safety for school corridors and classrooms",
     "Bulk project pricing significantly lower than residential rates",
     "Rapid multi-team deployment to minimize school operations disruption",
     "Complies with school building safety regulations",

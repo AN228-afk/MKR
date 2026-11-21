@@ -5,7 +5,7 @@ const data = {
   title: "Child Safety Invisible Grills",
   slug: "child-safety-grills",
   seoTitle: "Child Safety Invisible Grills Bangalore | Prevent Falls | MKR Safety",
-  seoDesc: "Child safety invisible grills in Bangalore with 2.5mm cable spacing. Prevent toddler falls from balconies and windows. Certified safe. Free site visit. MKR Safety Solutions.",
+  seoDesc: "Child safety invisible grills in Bangalore with 2-inch cable spacing. Prevent toddler falls from balconies and windows. Certified safe. Free site visit. MKR Safety Solutions.",
   h1: "Child Safety Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Child safely exploring Bangalore city view through MKR child safety invisible grills on apartment balcony",
@@ -22,7 +22,7 @@ const data = {
     "15-year guarantee on all child safety installations",
   ],
   features: [
-    { title: "2.5mm Cable Spacing", desc: "Tighter than standard (3mm), our child safety variant prevents toddlers from pushing their head or body through." },
+    { title: "2-inch Cable spacing", desc: "Tighter than standard (3mm), our child safety variant prevents toddlers from pushing their head or body through." },
     { title: "BIS Compliant", desc: "Installed to Bureau of Indian Standards requirements for child fall protection systems." },
     { title: "Toddler-Tested Design", desc: "Cable tension and spacing designed to withstand the exploratory force of active toddlers." },
     { title: "No Sharp Edges", desc: "All cable ends are capped and smooth. No protrusions that could scratch or harm curious children." },
@@ -31,12 +31,12 @@ const data = {
   process: [
     { step: "Child Safety Assessment", desc: "We assess all high-risk areas in your home — balconies, windows, staircases — based on your children's ages and mobility." },
     { step: "Safety-First Design", desc: "We design a comprehensive child safety grill plan prioritizing the highest-risk areas first." },
-    { step: "Certified Installation", desc: "Installation using our child safety specification cables with 2.5mm spacing and extra anchoring." },
+    { step: "Certified Installation", desc: "Installation using our child safety specification cables with 2-inch spacing and extra anchoring." },
     { step: "Safety Handover", desc: "Complete inspection, tensioning verification, and guidance on monthly maintenance checks." },
   ],
   faqs: [
-    { q: "What age children are child safety grills designed for?", a: "Our child safety grills with 2.5mm spacing are designed to protect children from 6 months (when they begin to be mobile) through approximately 8 years of age. The 2.5mm spacing ensures even the smallest toddler heads cannot pass through." },
-    { q: "Are child safety grills different from standard invisible grills?", a: "Yes. Child safety grills use a tighter 2.5mm cable spacing (vs. 3mm standard) and higher tensioning to ensure they can withstand active toddler force. The cables themselves use the same 316-grade marine stainless steel." },
+    { q: "What age children are child safety grills designed for?", a: "Our child safety grills with 2-inch spacing are designed to protect children from 6 months (when they begin to be mobile) through approximately 8 years of age. The 2-inch spacing ensures even the smallest toddler heads cannot pass through." },
+    { q: "Are child safety grills different from standard invisible grills?", a: "Yes. Child safety grills use a tighter 2-inch cable spacing (vs. 3-inch standard) and higher tensioning to ensure they can withstand active toddler force. The cables themselves use the same 316-grade marine stainless steel." },
     { q: "Do child safety grills need to be removed when children grow up?", a: "No. The grills continue to function perfectly as standard safety grills even after children grow up. The investment serves your home for decades." },
     { q: "Can child safety grills be installed in rental apartments?", a: "Yes. Our installation uses minimal drilling that can be easily patched. We also offer removable systems for renters who need to restore the original state at the end of their tenancy." },
   ],
