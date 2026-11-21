@@ -667,6 +667,14 @@ const blogPostsRaw = [
     readTime: "6 min read",
     keyword: "Invisible Grill for Balcony Resale Value",
   },
+  {
+    title: "Invisible Grill for Home Insurance Claims: What Bangalore Homeowners Should Know",
+    slug: "invisible-grill-for-home-insurance-claims",
+    excerpt: "Most Bangalore homeowners never think about insurance until something goes wrong. Here's how invisible grill installation and its paperwork can actually matter when you file a claim.",
+    date: "2026-11-21",
+    readTime: "7 min read",
+    keyword: "Invisible Grill for Home Insurance Claims",
+  },
 ];
 
 export const testimonials = [
