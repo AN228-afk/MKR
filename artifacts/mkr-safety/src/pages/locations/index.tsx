@@ -248,12 +248,12 @@ const locationData: Record<string, LocationPageData> = {
     "slug": "hyderabad",
     "city": "",
     "state": "Telangana",
-    "landmarks": "Gachibowli, Kondapur, Madhapur (HITEC City), Kukatpally, Manikonda, Miyapur, Banjara Hills",
+    "landmarks": "My Home Bhooja (Raidurg), Sobha and Prestige communities, Gachibowli, Kondapur, Madhapur (HITEC City), Kukatpally, Manikonda, Miyapur",
     "seoTitle": "Invisible Grills Hyderabad | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Hyderabad for high-rise balconies, windows & duplex stairs. 316 marine-grade SS cables, 2\" & 4\" spacing, 15-year warranty. Free site visit.",
+    "seoDesc": "Invisible grills in Hyderabad, trusted at My Home Bhooja, Sobha & Prestige. 316 marine SS cables, 2\" & 4\" spacing, 15-yr warranty. Free site visit.",
     "h1": "Invisible Grills in Hyderabad",
-    "intro": "Invisible grill installation for Hyderabad's fast-growing high-rise communities — from Gachibowli and Kondapur to Kukatpally and Miyapur — with 316-grade marine stainless steel cables.",
-    "localContent": "Hyderabad's skyline has changed quickly, with tall gated communities across the IT corridor in Gachibowli, Kondapur, Madhapur and Nanakramguda, and family apartments in Kukatpally, Miyapur and Manikonda. Higher floors mean bigger balconies, sliding windows and duplex staircases that need fall protection for children and pets, without blocking the view. MKR installs nearly invisible 316-grade stainless steel cables with 2-inch spacing (for pets, pigeons and toddlers) or 4-inch spacing (standard child safety), anchored into your balcony slab and ceiling. Hyderabad's hot, dry summers and heavy monsoon bursts are no problem for marine-grade steel, which does not rust or sag.",
+    "intro": "Invisible grill installation for Hyderabad's premium high-rise communities — including My Home Bhooja, Sobha and Prestige projects — from Gachibowli and Kondapur to Kukatpally and Miyapur — with 316-grade marine stainless steel cables.",
+    "localContent": "MKR has installed invisible grills in some of Hyderabad's best-known residential communities, including My Home Bhooja in Raidurg and Sobha and Prestige projects in the city. Hyderabad's skyline has changed quickly, with tall gated communities across the IT corridor in Gachibowli, Kondapur, Madhapur and Nanakramguda, and family apartments in Kukatpally, Miyapur and Manikonda. Higher floors mean bigger balconies, sliding windows and duplex staircases that need fall protection for children and pets, without blocking the view. MKR installs nearly invisible 316-grade stainless steel cables with 2-inch spacing (for pets, pigeons and toddlers) or 4-inch spacing (standard child safety), anchored into your balcony slab and ceiling. Hyderabad's hot, dry summers and heavy monsoon bursts are no problem for marine-grade steel, which does not rust or sag.",
     "faqs": [
         {
             "q": "How much do invisible grills cost in Hyderabad?",
@@ -261,7 +261,7 @@ const locationData: Record<string, LocationPageData> = {
         },
         {
             "q": "Do you install invisible grills in gated communities in Gachibowli and Kondapur?",
-            "a": "Yes. We install in high-rise gated communities across Hyderabad's IT corridor and residential areas. Our team follows your association's work-timing and safety rules, and we can share the product details your association asks for."
+            "a": "Yes. We install in high-rise gated communities across Hyderabad's IT corridor and residential areas, including My Home Bhooja and Sobha and Prestige projects. Our team follows your association's work-timing and safety rules, and we can share the product details your association asks for."
         },
         {
             "q": "Which spacing is best for a Hyderabad high-rise balcony?",
