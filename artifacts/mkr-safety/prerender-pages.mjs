@@ -131,7 +131,9 @@ for (const f of fs.readdirSync(path.resolve("src/pages/services"))) {
   const body = `<h1>${esc(d.h1)}</h1><p>${esc(d.intro)}</p>${d.price ? `<p>Price: ₹${esc(d.price)}</p>` : ""}
 <section><h2>Why choose ${esc(d.title)} from MKR</h2>${list(d.benefits)}</section>
 <section><h2>Features</h2>${list(d.features)}</section>
+${d.priceTable ? `<section><h2>${esc(d.title)} price in Bangalore</h2><table>${d.priceTable.map((r) => `<tr><td>${esc(r.space)}</td><td>${esc(r.size)}</td><td>${esc(r.cost)}</td></tr>`).join("")}</table></section>` : ""}
 <section><h2>Our installation process</h2>${list(d.process)}</section>
+${(d.article || []).map((a) => `<section><h2>${esc(a.h)}</h2><p>${esc(a.p)}</p></section>`).join("")}
 ${faqHtml(d.faqs)}`;
   write(`/${d.slug}`, { title: d.seoTitle, desc: d.seoDesc, schema: faqSchema(d.faqs) }, body, AREAS);
 }

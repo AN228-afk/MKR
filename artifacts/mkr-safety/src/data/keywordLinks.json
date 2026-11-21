@@ -1,0 +1,26 @@
+[
+  {
+    "re": "invisible grills? (?:for (?:a |your )?balcon(?:y|ies)|on (?:a |your )?balcony)|balcony invisible grills?",
+    "href": "/balcony-invisible-grills"
+  },
+  {
+    "re": "invisible grills? (?:price|cost|rate)s?(?: per sq(?:uare)? ?f(?:ee)?t)?|price per sq(?:uare)? ?f(?:oo|ee)?t|₹100[–-]₹?160(?: per sq(?:uare)? ?f(?:oo|ee)?t|/sq ?ft)",
+    "href": "/pricing"
+  },
+  {
+    "re": "invisible grills? (?:in|across) Bangalore|Bangalore invisible grills?",
+    "href": "/invisible-grills-bangalore"
+  },
+  {
+    "re": "window invisible grills?|invisible grills? for windows?",
+    "href": "/window-invisible-grills"
+  },
+  {
+    "re": "child safety grills?",
+    "href": "/child-safety-grills"
+  },
+  {
+    "re": "invisible grills",
+    "href": "/invisible-grills-bangalore"
+  }
+]

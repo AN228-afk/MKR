@@ -159,18 +159,18 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
             transition={{ duration: 0.9, ease, delay: 0.15 }}
             className="relative max-w-xl bg-white md:pointer-events-auto md:rounded-[1.75rem] md:bg-white/80 md:backdrop-blur-2xl md:backdrop-saturate-150 md:border md:border-white/70 md:shadow-[0_30px_60px_-25px_rgba(30,25,10,.45)] md:p-8"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-[11px] font-bold uppercase tracking-wider mb-4">
-              <Shield className="w-3.5 h-3.5" /> <span className="sm:hidden">Bangalore's Most Trusted</span><span className="hidden sm:inline">Bangalore's Most Trusted Invisible Grills</span>
-            </div>
+            <h1 className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-[11px] font-bold uppercase tracking-wider mb-4">
+              <Shield className="w-3.5 h-3.5" /> <span>Invisible Grills in Bangalore</span><span className="hidden sm:inline"> · Most Trusted</span>
+            </h1>
 
             <div className="min-h-[9.5rem] sm:min-h-[11rem]">
               <AnimatePresence mode="wait">
                 <motion.div key={current} exit={{ opacity: 0, y: -10, transition: { duration: 0.3 } }}>
-                  <h1 className="text-[1.75rem] sm:text-4xl lg:text-[2.6rem] font-bold text-foreground leading-[1.12] mb-3">
+                  <h2 className="text-[1.75rem] sm:text-4xl lg:text-[2.6rem] font-bold text-foreground leading-[1.12] mb-3">
                     <RiseWords text={slide.heading} />
                     <br />
                     <RiseWords text={slide.accent} className="text-secondary" delay={headingWords * 0.06 + 0.1} />
-                  </h1>
+                  </h2>
                   <motion.p
                     className="text-sm sm:text-[15px] text-muted-foreground leading-relaxed"
                     initial={{ opacity: 0, y: 10 }}

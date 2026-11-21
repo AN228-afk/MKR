@@ -6,6 +6,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
 import { blogPosts } from "@/data/services";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
+import { makeLinker } from "@/lib/keywordLinks";
 
 export interface BlogPostData {
   slug: string;
@@ -65,14 +66,18 @@ export function BlogPostPage({ data }: { data: BlogPostData }) {
             <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 leading-tight">{data.title}</h1>
 
             <div className="prose prose-slate max-w-none">
-              {data.content.map((section, i) => (
+              {(() => { const link = makeLinker(`/blog/${data.slug}`); return data.content.map((section, i) => (
                 <div key={i} className="mb-6">
                   {section.heading && (
                     <h2 className="text-xl font-bold text-foreground mb-3 mt-8 first:mt-0">{section.heading}</h2>
                   )}
-                  <p className="text-muted-foreground leading-relaxed">{section.body}</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {link(section.body).map((seg, j) => seg.href
+                      ? <Link key={j} href={seg.href} className="text-secondary font-medium underline underline-offset-2">{seg.text}</Link>
+                      : <span key={j}>{seg.text}</span>)}
+                  </p>
                 </div>
-              ))}
+              )); })()}
             </div>
 
             <div className="mt-8 pt-6 border-t border-border">

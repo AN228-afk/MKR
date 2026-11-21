@@ -135,17 +135,17 @@ const blogPostsRaw = [
     readTime: "6 min read",
   },
   {
-    title: "Invisible Grill vs Iron Grill: Which One Should You Choose for Your Bangalore Home?",
+    title: "Invisible Grill vs Normal (Iron) Grill: Which Is Better for Your Home?",
     slug: "invisible-grill-vs-iron-grill",
     excerpt: "Comparing invisible grill vs iron grill for safety, looks & maintenance. Find out which works best for Bangalore homes, balconies & windows.",
     date: "2026-09-13",
     readTime: "6 min read",
   },
   {
-    title: "Invisible Grill Cost in Bangalore: A Complete Pricing Guide for 2024",
+    title: "Invisible Grill Cost in Bangalore (2026): ₹100–₹160 per sq ft, Explained",
     slug: "invisible-grill-cost-bangalore",
     excerpt: "Wondering about invisible grill cost in Bangalore? Get a clear breakdown of pricing factors, per sq ft rates, and tips to choose the right installer.",
-    date: "2026-09-13",
+    date: "2026-11-21",
     readTime: "6 min read",
   },
   {
@@ -332,10 +332,10 @@ const blogPostsRaw = [
     keyword: "invisible grill strength and load capacity",
   },
   {
-    title: "Invisible Grill Price Per Square Foot: How the Math Actually Works",
+    title: "Invisible Grill Price per Sq Ft in Bangalore (2026): How It Is Calculated",
     slug: "invisible-grill-price-per-square-feet",
     excerpt: "Confused about how invisible grill price per square foot actually translates into your final bill? Here's how to measure your balcony and calculate a realistic estimate yourself.",
-    date: "2026-10-10",
+    date: "2026-11-21",
     readTime: "6 min read",
     keyword: "invisible grill price per square feet",
   },

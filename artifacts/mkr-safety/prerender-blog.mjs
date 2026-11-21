@@ -1,4 +1,30 @@
 // Prerender blog posts to static HTML so Google sees the full article
+
+import fs from "fs";
+import path from "path";
+
+// keyword → page internal links (same rules as src/lib/keywordLinks.ts)
+const KW = JSON.parse(fs.readFileSync(new URL("./src/data/keywordLinks.json", import.meta.url), "utf8")).map((r) => ({ re: new RegExp(r.re, "i"), href: r.href }));
+function makeLinker(self, max = 3) {
+  const used = new Set();
+  return (text) => {
+    const out = []; let rest = text;
+    while (used.size < max) {
+      let best = null;
+      for (const r of KW) {
+        if (used.has(r.href) || r.href === self) continue;
+        const m = r.re.exec(rest);
+        if (m && (!best || m.index < best.i)) best = { i: m.index, len: m[0].length, href: r.href };
+      }
+      if (!best) break;
+      if (best.i) out.push({ text: rest.slice(0, best.i) });
+      out.push({ text: rest.slice(best.i, best.i + best.len), href: best.href });
+      used.add(best.href); rest = rest.slice(best.i + best.len);
+    }
+    if (rest) out.push({ text: rest });
+    return out;
+  };
+}
 // (title, description, canonical, headings, text) without running JavaScript.
 //
 // Runs after `vite build`. For every post in src/pages/blog/index.tsx it writes
@@ -7,8 +33,6 @@
 // Firebase "cleanUrls" serves /blog/<slug> from blog/<slug>.html; React then
 // loads and takes over the page as usual (createRoot replaces #root content).
 
-import fs from "fs";
-import path from "path";
 
 const SITE = "https://mkrsafetysolutions.com";
 const distDir = path.resolve("dist/public");
@@ -81,8 +105,9 @@ for (const p of list) {
     publisher: { "@type": "Organization", name: "MKR Safety Solutions", url: SITE },
     mainEntityOfPage: url,
   };
+  const link = makeLinker(`/blog/${p.slug}`);
   const sections = p.content
-    .map((s) => `${s.heading ? `<h2>${esc(s.heading)}</h2>` : ""}<p>${esc(s.body)}</p>`)
+    .map((s) => `${s.heading ? `<h2>${esc(s.heading)}</h2>` : ""}<p>${link(s.body).map((g) => (g.href ? `<a href="${g.href}">${esc(g.text)}</a>` : esc(g.text))).join("")}</p>`)
     .join("\n");
   const related = (p.relatedServices || [])
     .map((r) => `<li><a href="${esc(r.href)}">${esc(r.label)}</a></li>`)

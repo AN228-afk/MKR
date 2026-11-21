@@ -52,7 +52,7 @@ const heroSlides = [
     label: "Balcony Invisible Grills",
     heading: "Protect Your Balcony.",
     accent: "Keep The View Forever.",
-    sub: "Ultra-fine 316-grade marine SS cables secured at 3mm spacing — nearly invisible from a distance, load-tested up to 400 kg.",
+    sub: "Invisible grills in Bangalore made of 316-grade marine SS cables at 3-inch spacing — nearly invisible from a distance, load-tested up to 400 kg.",
   },
   {
     src: kidsBalcony,
@@ -61,7 +61,7 @@ const heroSlides = [
     label: "Child Safety Grills",
     heading: "Your Child Deserves",
     accent: "A Safe, Open World.",
-    sub: "2.5mm child-safe cable variants certified for toddlers and pets. Trusted by Bangalore families in high-rise apartments.",
+    sub: "2-inch child-safe spacing for toddlers and pets. Trusted by Bangalore families in high-rise apartments.",
   },
   {
     src: petsBalcony,
@@ -122,11 +122,11 @@ const homeFaqs = [
   },
   {
     q: "How much do invisible grills cost in Bangalore?",
-    a: "Invisible grill prices in Bangalore range from ₹100 to ₹160 per square foot for both 3mm and 2.5mm cables, depending on the type (balcony, window, staircase). MKR Safety Solutions provides free site visits and transparent quotations with no hidden charges.",
+    a: "Invisible grill prices in Bangalore range from ₹100 to ₹160 per square foot for both 2-inch and 3-inch spacing, depending on the type (balcony, window, staircase). MKR Safety Solutions provides free site visits and transparent quotations with no hidden charges.",
   },
   {
     q: "Are invisible grills safe for children and pets?",
-    a: "Yes. Our grills use 3mm cable spacing (2.5mm for child safety variants), load-tested to 400kg per linear meter. They are certified safe for children, toddlers, and pets. Over 1000 Bangalore families trust MKR for their child safety needs.",
+    a: "Yes. Our grills use 3-inch cable spacing (2-inch for child safety), load-tested to 400kg per linear meter. They are certified safe for children, toddlers, and pets. Over 1000 Bangalore families trust MKR for their child safety needs.",
   },
   {
     q: "How long does invisible grill installation take?",

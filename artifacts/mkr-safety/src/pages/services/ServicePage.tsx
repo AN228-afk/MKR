@@ -28,6 +28,9 @@ export interface ServicePageData {
   relatedServices: { label: string; href: string }[];
   relatedLocations: { label: string; href: string }[];
   price: string;
+  priceTable?: { space: string; size: string; cost: string }[];
+  gallery?: { src: string; alt: string }[];
+  article?: { h: string; p: string }[];
 }
 
 export function ServicePage({ data }: { data: ServicePageData }) {
@@ -147,6 +150,53 @@ export function ServicePage({ data }: { data: ServicePageData }) {
         </div>
       </section>
 
+      {/* Price table */}
+      {data.priceTable && (
+        <section className="py-16 bg-muted">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <FadeUp>
+              <h2 className="text-3xl font-bold text-foreground text-center mb-3">{data.title} Price in Bangalore</h2>
+              <p className="text-center text-muted-foreground text-sm mb-8">₹{data.price} · 2-inch or 3-inch spacing, same price · installation included</p>
+            </FadeUp>
+            <div className="overflow-x-auto rounded-2xl border border-border bg-white shadow-sm">
+              <table className="w-full text-sm">
+                <thead className="bg-primary text-white">
+                  <tr><th className="text-left px-4 py-3 font-semibold">Balcony type</th><th className="text-left px-4 py-3 font-semibold">Typical size</th><th className="text-right px-4 py-3 font-semibold">Approx. cost</th></tr>
+                </thead>
+                <tbody>
+                  {data.priceTable.map((r) => (
+                    <tr key={r.space} className="border-t border-border">
+                      <td className="px-4 py-3 font-medium text-foreground">{r.space}</td>
+                      <td className="px-4 py-3 text-muted-foreground">{r.size}</td>
+                      <td className="px-4 py-3 text-right font-semibold text-secondary whitespace-nowrap">{r.cost}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground text-center mt-3">Final price after a free site visit. See full <Link href="/pricing" className="text-secondary underline">invisible grill price list</Link>.</p>
+          </div>
+        </section>
+      )}
+
+      {/* Real installs gallery */}
+      {data.gallery && (
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <FadeUp>
+              <h2 className="text-3xl font-bold text-foreground text-center mb-8">Real {data.title} by MKR</h2>
+            </FadeUp>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+              {data.gallery.map((g) => (
+                <div key={g.src} className="aspect-[4/5] rounded-xl overflow-hidden bg-muted">
+                  <img src={g.src} alt={g.alt} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Installation Process */}
       <section className="py-16 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,6 +220,20 @@ export function ServicePage({ data }: { data: ServicePageData }) {
           </StaggerList>
         </div>
       </section>
+
+      {/* Guide */}
+      {data.article && (
+        <section className="py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            {data.article.map((a) => (
+              <div key={a.h} className="mb-8">
+                <h2 className="text-2xl font-bold text-foreground mb-3">{a.h}</h2>
+                <p className="text-muted-foreground leading-relaxed">{a.p}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Testimonials */}
       <section className="py-16 bg-white">
