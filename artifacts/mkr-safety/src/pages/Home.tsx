@@ -437,33 +437,34 @@ export default function Home() {
 
       <InstallStory />
 
-      {/* Our work: simple photo grid */}
+      {/* Price & options at a glance */}
       <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <span className="mkr-eyebrow">Our work</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Real homes, <Accent>made safe</Accent></h2>
+            <span className="mkr-eyebrow">Price & options</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Simple, clear <Accent>pricing</Accent></h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+          <div className="grid sm:grid-cols-2 gap-5">
             {[
-              { src: balconyCard, t: "Balcony" },
-              { src: kidsCard, t: "Child safety" },
-              { src: villaCard, t: "Villa" },
-              { src: petsCard, t: "Pet safety" },
-              { src: winCard, t: "Window" },
-              { src: sunsetCard, t: "Balcony" },
-            ].map((ph, i) => (
-              <figure key={i} className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
-                <img src={ph.src} alt={`${ph.t} invisible grills by MKR Safety Solutions`} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <figcaption className="absolute bottom-2 left-2 px-2.5 py-1 rounded-full bg-white/90 text-[11px] font-semibold text-foreground">{ph.t}</figcaption>
-              </figure>
+              { g: "2″", t: "2-inch spacing", who: "Best for pets, pigeons and toddlers", msg: "Hi MKR, I'd like invisible grills with 2-inch spacing. Please share the price." },
+              { g: "4″", t: "4-inch spacing", who: "Standard child safety with a more open view", msg: "Hi MKR, I'd like invisible grills with 4-inch spacing. Please share the price." },
+            ].map((o) => (
+              <div key={o.g} className="mkr-card p-6 sm:p-7 flex flex-col">
+                <div className="flex items-center justify-between">
+                  <span className="text-4xl font-bold text-secondary">{o.g}</span>
+                  <span className="text-xs font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full">{o.t}</span>
+                </div>
+                <p className="text-sm text-muted-foreground mt-3">{o.who}</p>
+                <p className="mt-5 text-foreground"><span className="text-sm text-muted-foreground">From </span><span className="text-3xl font-bold">₹100</span><span className="text-sm text-muted-foreground"> / sq ft</span></p>
+                <a href={`https://wa.me/917780114547?text=${encodeURIComponent(o.msg)}`} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center justify-center gap-2 h-11 rounded-xl bg-[#25D366] text-white text-sm font-semibold hover:bg-[#1ebe5b] transition-colors">
+                  <MessageCircle className="w-4 h-4" /> Get exact price
+                </a>
+              </div>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Link href="/gallery" className="inline-flex items-center gap-2 text-secondary font-semibold">
-              View full gallery <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <p className="text-center text-sm text-muted-foreground mt-6">
+            Always included: 316 marine-grade SS cables · installation · free site visit · 15-year warranty
+          </p>
         </div>
       </section>
 
