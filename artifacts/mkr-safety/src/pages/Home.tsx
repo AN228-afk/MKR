@@ -437,33 +437,41 @@ export default function Home() {
 
       <InstallStory />
 
-      {/* Price & options at a glance */}
-      <section className="py-16 bg-white">
+      {/* Price & options at a glance — classic */}
+      <section className="mkr-luxe-bg py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
+          <div className="text-center mb-12">
             <span className="mkr-eyebrow">Price & options</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Simple, clear <Accent>pricing</Accent></h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Simple, honest <Accent>pricing</Accent></h2>
+            <div className="mkr-divider mx-auto mt-5" aria-hidden="true"><span /></div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
             {[
-              { g: "2″", t: "2-inch spacing", who: "Best for pets, pigeons and toddlers", msg: "Hi MKR, I'd like invisible grills with 2-inch spacing. Please share the price." },
-              { g: "4″", t: "4-inch spacing", who: "Standard child safety with a more open view", msg: "Hi MKR, I'd like invisible grills with 4-inch spacing. Please share the price." },
+              { g: "2″", t: "Two-inch spacing", who: "For homes with pets, toddlers or a pigeon problem", msg: "Hi MKR, I'd like invisible grills with 2-inch spacing. Please share the price.", tag: "Most chosen" },
+              { g: "4″", t: "Four-inch spacing", who: "Standard child safety with a more open view", msg: "Hi MKR, I'd like invisible grills with 4-inch spacing. Please share the price.", tag: "" },
             ].map((o) => (
-              <div key={o.g} className="mkr-card p-6 sm:p-7 flex flex-col">
-                <div className="flex items-center justify-between">
-                  <span className="text-4xl font-bold text-secondary">{o.g}</span>
-                  <span className="text-xs font-semibold text-muted-foreground bg-muted px-2.5 py-1 rounded-full">{o.t}</span>
-                </div>
-                <p className="text-sm text-muted-foreground mt-3">{o.who}</p>
-                <p className="mt-5 text-foreground"><span className="text-sm text-muted-foreground">From </span><span className="text-3xl font-bold">₹100</span><span className="text-sm text-muted-foreground"> / sq ft</span></p>
-                <a href={`https://wa.me/917780114547?text=${encodeURIComponent(o.msg)}`} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center justify-center gap-2 h-11 rounded-xl bg-[#25D366] text-white text-sm font-semibold hover:bg-[#1ebe5b] transition-colors">
+              <div key={o.g} className="mkr-luxe-card text-center">
+                {o.tag && <span className="mkr-ribbon">{o.tag}</span>}
+                <div className="mkr-serif text-6xl text-secondary leading-none">{o.g}</div>
+                <div className="mt-3 text-[11px] font-bold uppercase tracking-[0.25em] text-foreground/70">{o.t}</div>
+                <div className="mkr-divider mx-auto my-5" aria-hidden="true"><span /></div>
+                <p className="text-sm text-muted-foreground max-w-[15rem] mx-auto">{o.who}</p>
+                <p className="mt-6 text-foreground">
+                  <span className="block text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-1">Starting from</span>
+                  <span className="mkr-serif text-4xl">₹100</span><span className="text-sm text-muted-foreground"> / sq ft</span>
+                </p>
+                <a
+                  href={`https://wa.me/917780114547?text=${encodeURIComponent(o.msg)}`}
+                  target="_blank" rel="noopener noreferrer"
+                  className="btn-shine mt-7 inline-flex items-center justify-center gap-2 px-7 h-12 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold tracking-wide"
+                >
                   <MessageCircle className="w-4 h-4" /> Get exact price
                 </a>
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-muted-foreground mt-6">
-            Always included: 316 marine-grade SS cables · installation · free site visit · 15-year warranty
+          <p className="text-center text-sm text-muted-foreground mt-10">
+            <span className="mkr-serif italic text-secondary text-base">Always included</span> &nbsp;·&nbsp; 316 marine-grade SS cables &nbsp;·&nbsp; installation &nbsp;·&nbsp; free site visit &nbsp;·&nbsp; 15-year warranty
           </p>
         </div>
       </section>

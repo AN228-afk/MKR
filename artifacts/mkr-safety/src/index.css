@@ -476,3 +476,27 @@ html, body { max-width: 100%; overflow-x: clip; }
 .mkr-prerender h3 { font-weight: 600; margin-top: 1rem; }
 .mkr-prerender ul { list-style: disc; padding-left: 1.25rem; }
 .mkr-prerender a { color: hsl(38 70% 36%); text-decoration: underline; }
+
+/* ---------- Classic & rich: pricing ---------- */
+.mkr-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+.mkr-luxe-bg { background: radial-gradient(ellipse at 50% 0%, hsl(40 62% 58% / .14), transparent 60%), hsl(40 40% 97%); }
+.mkr-luxe-card {
+  position: relative; padding: 2.75rem 2rem 2.5rem; border-radius: 1.5rem;
+  background: linear-gradient(180deg, #fffdf8, #fbf6ea);
+  border: 1px solid hsl(38 70% 36% / .45);
+  box-shadow: 0 30px 60px -35px rgba(80,58,12,.45);
+  transition: transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s ease;
+}
+.mkr-luxe-card::before { /* inner gold frame */
+  content: ""; position: absolute; inset: 8px; border-radius: 1.1rem; pointer-events: none;
+  border: 1px solid hsl(38 70% 36% / .22);
+}
+@media (hover: hover) { .mkr-luxe-card:hover { transform: translateY(-6px); box-shadow: 0 40px 70px -35px rgba(80,58,12,.55); } }
+.mkr-divider { position: relative; width: 120px; height: 1px; background: linear-gradient(90deg, transparent, hsl(38 70% 36% / .7), transparent); }
+.mkr-divider span { position: absolute; left: 50%; top: 50%; width: 7px; height: 7px; transform: translate(-50%, -50%) rotate(45deg); background: hsl(38 70% 36%); }
+.mkr-ribbon {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  padding: .3rem 1rem; border-radius: 9999px; font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+  color: #fff; background: linear-gradient(90deg, hsl(38 70% 34%), hsl(40 62% 52%), hsl(38 70% 34%));
+  box-shadow: 0 8px 18px -8px hsl(38 70% 36% / .8);
+}
