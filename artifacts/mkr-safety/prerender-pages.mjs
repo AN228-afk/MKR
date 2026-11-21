@@ -31,7 +31,7 @@ function sliceObject(file, marker) {
 
 // Pull plain text out of JSX: drop {expressions} and tags, collapse spaces.
 const jsxText = (s) =>
-  s.replace(/\{[^{}]*\}/g, " ").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+  s.replace(/\{[^{}]*\}/g, " ").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&middot;/g, "·").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
 
 // ---------- shared HTML ----------
 const shellPath = path.join(distDir, "index.html");

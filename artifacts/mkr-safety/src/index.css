@@ -471,6 +471,8 @@ html, body { max-width: 100%; overflow-x: clip; }
 
 /* ---------- Prerendered page text (visible until the app takes over) ---------- */
 .mkr-prerender { max-width: 60rem; margin: 0 auto; padding: 6rem 1.25rem 3rem; line-height: 1.7; }
+.js .mkr-prerender { visibility: hidden; animation: mkr-pr-show 0s linear 4s forwards; }
+@keyframes mkr-pr-show { to { visibility: visible; } }
 .mkr-prerender h1 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
 .mkr-prerender h2 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 .5rem; }
 .mkr-prerender h3 { font-weight: 600; margin-top: 1rem; }
