@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown, Mail, MapPin } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import { FloatingCTA } from "./FloatingCTA";
-import logoPath from "@assets/mkr-wordmark.png";
+import logoPath from "@assets/mkr-logo-circle.png";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { SocialLinks } from "./SocialLinks";
 import { useScrollReveal } from "@/lib/useScrollReveal";
@@ -56,9 +56,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <img
                 src={logoPath}
                 alt="MKR Safety Solutions - Invisible Grills Bangalore"
-                className="h-8 md:h-10 w-auto object-contain flex-shrink-0"
-                width={105}
-                height={40}
+                className="h-11 w-11 md:h-14 md:w-14 rounded-full object-contain flex-shrink-0"
+                width={56}
+                height={56}
               />
               <div className="lg:hidden flex flex-col leading-tight overflow-hidden">
                 <motion.span
@@ -67,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   transition={{ duration: 0.5 }}
                   className="text-sm font-bold text-foreground whitespace-nowrap"
                 >
-                  Safety Solutions
+                  MKR Safety Solutions
                 </motion.span>
                 <div className="h-4 overflow-hidden">
                   <AnimatePresence mode="wait">
@@ -206,8 +206,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
             {/* Brand */}
             <div className="lg:col-span-4">
-              <div className="inline-flex items-center bg-white rounded-2xl px-4 py-3 mb-5 shadow-[0_10px_30px_-15px_rgba(60,45,10,.35)] border border-border">
-                <img src={logoPath} alt="MKR Safety Solutions" className="h-12 w-auto object-contain" width={140} height={48} />
+              <div className="inline-flex mb-5 rounded-full bg-white shadow-[0_10px_30px_-15px_rgba(60,45,10,.35)]">
+                <img src={logoPath} alt="MKR Safety Solutions" className="h-16 w-16 rounded-full object-contain" width={64} height={64} />
               </div>
               <p className="text-sm text-primary-foreground/75 leading-relaxed mb-5 max-w-sm">
                 Bangalore's most trusted invisible grill installer. Protecting families without compromising views since 2016.
