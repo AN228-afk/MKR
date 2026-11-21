@@ -502,3 +502,7 @@ html, body { max-width: 100%; overflow-x: clip; }
   color: #fff; background: linear-gradient(90deg, hsl(38 70% 34%), hsl(40 62% 52%), hsl(38 70% 34%));
   box-shadow: 0 8px 18px -8px hsl(38 70% 36% / .8);
 }
+
+.mkr-luxe-card--sm { padding: 1.75rem 1rem 1.5rem; border-radius: 1.25rem; }
+.mkr-luxe-card--sm::before { inset: 6px; border-radius: .9rem; }
+.mkr-luxe-card--sm .mkr-ribbon { font-size: 9px; padding: .25rem .7rem; top: -10px; white-space: nowrap; }

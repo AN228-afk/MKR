@@ -170,7 +170,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
                   `Free site visit in ${data.area}: call or WhatsApp to schedule`,
                   "316-grade marine stainless steel cables",
                   "Load-tested up to 400 kg",
-                  "2-inch or 4-inch cable spacing",
+                  "2-inch or 3-inch cable spacing",
                   "Free measurement and transparent quote",
                   "15-year guarantee on all installations",
                 ] : [
@@ -200,7 +200,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
                 <div className="grid grid-cols-2 gap-3">
                   {[
                     { g: "2″", t: "2-inch spacing", d: "Pets, pigeons and toddlers" },
-                    { g: "4″", t: "4-inch spacing", d: "Standard child safety, more open view" },
+                    { g: "3″", t: "3-inch spacing", d: "Standard child safety, more open view" },
                   ].map((o) => (
                     <div key={o.g} className="rounded-2xl border-2 border-secondary/30 bg-secondary/[0.05] p-4">
                       <div className="text-3xl font-bold text-secondary">{o.g}</div>
@@ -250,7 +250,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { img: imgBalcony, t: "Balcony invisible grills", d: `Keep your ${data.area} balcony view open while children and pets stay safe.`, p: ["316 marine-grade SS cables", "2″ or 4″ spacing"] },
+                  { img: imgBalcony, t: "Balcony invisible grills", d: `Keep your ${data.area} balcony view open while children and pets stay safe.`, p: ["316 marine-grade SS cables", "2″ or 3″ spacing"] },
                   { img: imgWindow, t: "Window invisible grills", d: "A slim, rust-free replacement for heavy iron window grills. Full light and air.", p: ["Openable and sliding windows", "No painting, no rust"] },
                   { img: imgStair, t: "Staircase & duplex grills", d: "Vertical cable railings for open staircases, duplex landings and mezzanines.", p: ["Child and pet safe", "Modern, open look"] },
                   { img: imgKids, t: "Child safety grills", d: "Closely spaced cables for homes with toddlers and young children.", p: ["2″ spacing for toddlers", "Load-tested up to 400 kg"] },

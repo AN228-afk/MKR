@@ -250,10 +250,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Telangana",
     "landmarks": "My Home Bhooja (Raidurg), Sobha and Prestige communities, Gachibowli, Kondapur, Madhapur (HITEC City), Kukatpally, Manikonda, Miyapur",
     "seoTitle": "Invisible Grills Hyderabad | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Hyderabad, trusted at My Home Bhooja, Sobha & Prestige. 316 marine SS cables, 2\" & 4\" spacing, 15-yr guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Hyderabad, trusted at My Home Bhooja, Sobha & Prestige. 316 marine SS cables, 2\" & 3\" spacing, 15-yr guarantee. Free site visit.",
     "h1": "Invisible Grills in Hyderabad",
     "intro": "Invisible grill installation for Hyderabad's premium high-rise communities — including My Home Bhooja, Sobha and Prestige projects — from Gachibowli and Kondapur to Kukatpally and Miyapur — with 316-grade marine stainless steel cables.",
-    "localContent": "MKR has installed invisible grills in some of Hyderabad's best-known residential communities, including My Home Bhooja in Raidurg and Sobha and Prestige projects in the city. Hyderabad's skyline has changed quickly, with tall gated communities across the IT corridor in Gachibowli, Kondapur, Madhapur and Nanakramguda, and family apartments in Kukatpally, Miyapur and Manikonda. Higher floors mean bigger balconies, sliding windows and duplex staircases that need fall protection for children and pets, without blocking the view. MKR installs nearly invisible 316-grade stainless steel cables with 2-inch spacing (for pets, pigeons and toddlers) or 4-inch spacing (standard child safety), anchored into your balcony slab and ceiling. Hyderabad's hot, dry summers and heavy monsoon bursts are no problem for marine-grade steel, which does not rust or sag.",
+    "localContent": "MKR has installed invisible grills in some of Hyderabad's best-known residential communities, including My Home Bhooja in Raidurg and Sobha and Prestige projects in the city. Hyderabad's skyline has changed quickly, with tall gated communities across the IT corridor in Gachibowli, Kondapur, Madhapur and Nanakramguda, and family apartments in Kukatpally, Miyapur and Manikonda. Higher floors mean bigger balconies, sliding windows and duplex staircases that need fall protection for children and pets, without blocking the view. MKR installs nearly invisible 316-grade stainless steel cables with 2-inch spacing (for pets, pigeons and toddlers) or 3-inch spacing (standard child safety), anchored into your balcony slab and ceiling. Hyderabad's hot, dry summers and heavy monsoon bursts are no problem for marine-grade steel, which does not rust or sag.",
     "faqs": [
         {
             "q": "How much do invisible grills cost in Hyderabad?",
@@ -265,7 +265,7 @@ const locationData: Record<string, LocationPageData> = {
         },
         {
             "q": "Which spacing is best for a Hyderabad high-rise balcony?",
-            "a": "For families with toddlers, cats or a pigeon problem we recommend 2-inch spacing. 4-inch spacing gives standard child safety with a more open view. We confirm the right option at the site visit."
+            "a": "For families with toddlers, cats or a pigeon problem we recommend 2-inch spacing. 3-inch spacing gives standard child safety with a more open view. We confirm the right option at the site visit."
         }
     ],
     "relatedAreas": [
@@ -294,10 +294,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Tamil Nadu",
     "landmarks": "Shriram Park, OMR, Sholinganallur, Velachery, Anna Nagar, Porur, Adyar, Tambaram",
     "seoTitle": "Invisible Grills Chennai | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Chennai, trusted at Shriram Park. Rust-proof 316 marine SS cables for balconies & windows. 2\" & 4\" spacing, 15-yr guarantee.",
+    "seoDesc": "Invisible grills in Chennai, trusted at Shriram Park. Rust-proof 316 marine SS cables for balconies & windows. 2\" & 3\" spacing, 15-yr guarantee.",
     "h1": "Invisible Grills in Chennai",
     "intro": "Rust-proof invisible grills for Chennai homes — including Shriram Park — from OMR and Sholinganallur high-rises to Anna Nagar and Adyar apartments — built for coastal humidity and salty sea air.",
-    "localContent": "MKR has installed invisible grills at Shriram Park and other residential communities in Chennai. Chennai's salty, humid coastal air is hard on ordinary metal: iron grills and lower-grade steel rust and stain within a few seasons. That is why MKR uses only 316-grade marine stainless steel — the grade used on boats and seafront buildings. Along OMR, Sholinganallur, Perungudi and Velachery, new towers come with wide balconies and full-height windows; in Anna Nagar, Adyar and T. Nagar, older apartments are replacing heavy box grills. Invisible grills keep children and pets safe while letting in the sea breeze and light, with 2-inch or 4-inch cable spacing to suit your family.",
+    "localContent": "MKR has installed invisible grills at Shriram Park and other residential communities in Chennai. Chennai's salty, humid coastal air is hard on ordinary metal: iron grills and lower-grade steel rust and stain within a few seasons. That is why MKR uses only 316-grade marine stainless steel — the grade used on boats and seafront buildings. Along OMR, Sholinganallur, Perungudi and Velachery, new towers come with wide balconies and full-height windows; in Anna Nagar, Adyar and T. Nagar, older apartments are replacing heavy box grills. Invisible grills keep children and pets safe while letting in the sea breeze and light, with 2-inch or 3-inch cable spacing to suit your family.",
     "faqs": [
         {
             "q": "Will invisible grills rust in Chennai's sea air?",
@@ -338,10 +338,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Kerala",
     "landmarks": "Kakkanad, Edappally, Vyttila, Kaloor, Marine Drive, Panampilly Nagar, Aluva",
     "seoTitle": "Invisible Grills Kochi | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Kochi — monsoon-proof 316 marine SS cables for flats & villas. Child, pet & pigeon safe (2\" / 4\" spacing). 15-year guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Kochi — monsoon-proof 316 marine SS cables for flats & villas. Child, pet & pigeon safe (2\" / 3\" spacing). 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Kochi",
     "intro": "Invisible grills for Kochi flats and villas — from Kakkanad and Edappally to Marine Drive and Panampilly Nagar — made to handle Kerala's long monsoon and coastal humidity.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Kochi, from small residential buildings to family flats. Kochi gets one of India's longest and heaviest monsoons, and homes near the backwaters and Marine Drive face constant humidity and salt in the air. Painted iron grills rust and need regular repainting; MKR's 316-grade marine stainless steel cables do not. High-rise flats in Kakkanad, Edappally, Vyttila and Kaloor, waterfront apartments along Marine Drive and independent villas across the city all benefit from nearly invisible protection for balconies, windows, utility areas and open staircases. Choose 2-inch spacing to keep out pigeons and protect pets and toddlers, or 4-inch for standard child safety with a more open view.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Kochi, from small residential buildings to family flats. Kochi gets one of India's longest and heaviest monsoons, and homes near the backwaters and Marine Drive face constant humidity and salt in the air. Painted iron grills rust and need regular repainting; MKR's 316-grade marine stainless steel cables do not. High-rise flats in Kakkanad, Edappally, Vyttila and Kaloor, waterfront apartments along Marine Drive and independent villas across the city all benefit from nearly invisible protection for balconies, windows, utility areas and open staircases. Choose 2-inch spacing to keep out pigeons and protect pets and toddlers, or 3-inch for standard child safety with a more open view.",
     "faqs": [
         {
             "q": "Are invisible grills suitable for Kerala's heavy rain?",
@@ -382,10 +382,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Kerala",
     "landmarks": "Kazhakoottam, Technopark, Pattom, Kowdiar, Vazhuthacaud, Sasthamangalam, Ulloor",
     "seoTitle": "Invisible Grills Thiruvananthapuram | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Thiruvananthapuram (Trivandrum) — 316 marine SS, rust-free in coastal monsoon weather. 2\" & 4\" spacing, 15-year guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Thiruvananthapuram (Trivandrum) — 316 marine SS, rust-free in coastal monsoon weather. 2\" & 3\" spacing, 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Thiruvananthapuram",
     "intro": "Invisible grills for Thiruvananthapuram (Trivandrum) homes — from Technopark and Kazhakoottam flats to Kowdiar and Pattom houses — safe, open and rust-free.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Thiruvananthapuram, from small residential buildings to family flats. Trivandrum combines coastal air, two monsoon seasons and a mix of new apartment towers around Technopark and Kazhakoottam with independent houses in Kowdiar, Pattom, Sasthamangalam and Vazhuthacaud. Traditional grills darken rooms and rust in this climate. MKR's invisible grills use 316-grade marine stainless steel cables that stay rust-free, keep children and pets safe on balconies, windows and staircases, and keep the greenery and light that Trivandrum homes are known for. We offer 2-inch spacing for pets, pigeons and toddlers, and 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Thiruvananthapuram, from small residential buildings to family flats. Trivandrum combines coastal air, two monsoon seasons and a mix of new apartment towers around Technopark and Kazhakoottam with independent houses in Kowdiar, Pattom, Sasthamangalam and Vazhuthacaud. Traditional grills darken rooms and rust in this climate. MKR's invisible grills use 316-grade marine stainless steel cables that stay rust-free, keep children and pets safe on balconies, windows and staircases, and keep the greenery and light that Trivandrum homes are known for. We offer 2-inch spacing for pets, pigeons and toddlers, and 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Do you install invisible grills in Trivandrum?",
@@ -426,10 +426,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Andhra Pradesh",
     "landmarks": "Benz Circle, Labbipet, Gunadala, Patamata, Governorpet, Poranki, Kanuru",
     "seoTitle": "Invisible Grills Vijayawada | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Vijayawada for apartments & houses. 316 SS cables that won't rust or sag in the heat. 2\" & 4\" spacing, 15-year guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Vijayawada for apartments & houses. 316 SS cables that won't rust or sag in the heat. 2\" & 3\" spacing, 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Vijayawada",
     "intro": "Invisible grills for Vijayawada apartments and independent houses — from Benz Circle and Labbipet to Gunadala and Poranki — strong, nearly invisible and built for the heat.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Vijayawada, from small residential buildings to family flats. Vijayawada's new apartment blocks around Benz Circle, Labbipet, Patamata and Gunadala, and the growing areas towards Poranki and Kanuru, bring taller buildings and bigger balconies. Summers here are very hot, and iron grills heat up, need repainting and make rooms feel closed in. MKR's 316-grade stainless steel invisible grills do not rust, sag or need painting, and keep balconies and windows open for breeze and light. Choose 2-inch spacing for pets, pigeons and toddlers or 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Vijayawada, from small residential buildings to family flats. Vijayawada's new apartment blocks around Benz Circle, Labbipet, Patamata and Gunadala, and the growing areas towards Poranki and Kanuru, bring taller buildings and bigger balconies. Summers here are very hot, and iron grills heat up, need repainting and make rooms feel closed in. MKR's 316-grade stainless steel invisible grills do not rust, sag or need painting, and keep balconies and windows open for breeze and light. Choose 2-inch spacing for pets, pigeons and toddlers or 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Are invisible grills good for Vijayawada's summer heat?",
@@ -470,10 +470,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Andhra Pradesh",
     "landmarks": "MVP Colony, Madhurawada, Rushikonda, Seethammadhara, Gajuwaka, Beach Road, Yendada",
     "seoTitle": "Invisible Grills Visakhapatnam | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Visakhapatnam (Vizag) — 316 marine SS cables for sea-facing balconies. Rust-free, 2\" & 4\" spacing, 15-year guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Visakhapatnam (Vizag) — 316 marine SS cables for sea-facing balconies. Rust-free, 2\" & 3\" spacing, 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Visakhapatnam",
     "intro": "Invisible grills for Vizag's sea-facing apartments — from Beach Road and MVP Colony to Rushikonda, Madhurawada and Yendada — keep the view, lose the risk.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Visakhapatnam, from small residential buildings to family flats. Many Visakhapatnam homes are built for the sea view, especially along Beach Road, Rushikonda, Yendada and MVP Colony, with high-rise growth in Madhurawada and Seethammadhara. Salty sea air and cyclone-season winds are tough on ordinary grills, which rust and block the view people paid for. MKR's invisible grills use 316-grade marine stainless steel cables that stay rust-free and nearly disappear from a distance, so balconies and windows stay open and safe for children and pets. Pick 2-inch spacing to keep pigeons out or 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Visakhapatnam, from small residential buildings to family flats. Many Visakhapatnam homes are built for the sea view, especially along Beach Road, Rushikonda, Yendada and MVP Colony, with high-rise growth in Madhurawada and Seethammadhara. Salty sea air and cyclone-season winds are tough on ordinary grills, which rust and block the view people paid for. MKR's invisible grills use 316-grade marine stainless steel cables that stay rust-free and nearly disappear from a distance, so balconies and windows stay open and safe for children and pets. Pick 2-inch spacing to keep pigeons out or 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Will invisible grills block my sea view in Vizag?",
@@ -514,10 +514,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Karnataka",
     "landmarks": "Kadri, Bejai, Kankanady, Bendurwell, Kodialbail, Surathkal, Derebail",
     "seoTitle": "Invisible Grills Mangalore | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Mangalore (Mangaluru) — monsoon & sea-air proof 316 marine SS. Balconies, windows, stairs. 2\" & 4\" spacing, 15-year guarantee.",
+    "seoDesc": "Invisible grills in Mangalore (Mangaluru) — monsoon & sea-air proof 316 marine SS. Balconies, windows, stairs. 2\" & 3\" spacing, 15-year guarantee.",
     "h1": "Invisible Grills in Mangalore",
     "intro": "Invisible grills for Mangaluru apartments and houses — from Kadri, Bejai and Kankanady to Bendurwell and Surathkal — rust-free through the coastal monsoon.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Mangaluru, from small residential buildings to family flats. Mangaluru sits on the coast with very heavy monsoon rain and high humidity for much of the year, which quickly rusts painted iron grills. New apartments in Kadri, Bejai, Kankanady, Bendurwell and Derebail, and homes towards Surathkal, need balcony and window safety that survives the weather. MKR's 316-grade marine stainless steel invisible grills stay rust-free, need no painting and keep homes bright and airy. We offer 2-inch spacing for pets, pigeons and toddlers and 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Mangaluru, from small residential buildings to family flats. Mangaluru sits on the coast with very heavy monsoon rain and high humidity for much of the year, which quickly rusts painted iron grills. New apartments in Kadri, Bejai, Kankanady, Bendurwell and Derebail, and homes towards Surathkal, need balcony and window safety that survives the weather. MKR's 316-grade marine stainless steel invisible grills stay rust-free, need no painting and keep homes bright and airy. We offer 2-inch spacing for pets, pigeons and toddlers and 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Do invisible grills work in Mangalore's heavy rain?",
@@ -558,10 +558,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Karnataka",
     "landmarks": "Vijayanagar, Kuvempunagar, Saraswathipuram, Gokulam, Hebbal (Mysuru), Jayalakshmipuram, Bogadi",
     "seoTitle": "Invisible Grills Mysore | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Mysore (Mysuru) for houses & apartments. 316 SS cables, child & pet safe (2\" / 4\" spacing), 15-year guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Mysore (Mysuru) for houses & apartments. 316 SS cables, child & pet safe (2\" / 3\" spacing), 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Mysore",
     "intro": "Invisible grills for Mysuru homes — from Vijayanagar and Kuvempunagar to Gokulam and Jayalakshmipuram — modern safety that suits the city's calm, open homes.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Mysuru, from small residential buildings to family flats. Mysuru has many independent houses with terraces, open staircases and big windows in areas like Vijayanagar, Kuvempunagar, Saraswathipuram, Gokulam and Jayalakshmipuram, alongside newer apartments towards Bogadi and Hebbal (Mysuru). Families want to keep children and pets safe without covering their homes in heavy iron. MKR's invisible grills use 316-grade stainless steel cables that are nearly invisible, rust-free and need no painting, for balconies, terraces, windows and staircases. Choose 2-inch spacing for pets, pigeons and toddlers or 4-inch for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Mysuru, from small residential buildings to family flats. Mysuru has many independent houses with terraces, open staircases and big windows in areas like Vijayanagar, Kuvempunagar, Saraswathipuram, Gokulam and Jayalakshmipuram, alongside newer apartments towards Bogadi and Hebbal (Mysuru). Families want to keep children and pets safe without covering their homes in heavy iron. MKR's invisible grills use 316-grade stainless steel cables that are nearly invisible, rust-free and need no painting, for balconies, terraces, windows and staircases. Choose 2-inch spacing for pets, pigeons and toddlers or 3-inch for standard child safety.",
     "faqs": [
         {
             "q": "Do you install invisible grills in Mysore?",
@@ -602,10 +602,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Odisha",
     "landmarks": "Patia, Chandrasekharpur, Saheed Nagar, Nayapalli, Jaydev Vihar, Khandagiri, Infocity",
     "seoTitle": "Invisible Grills Bhubaneswar | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Bhubaneswar for apartments & houses. Rust-free 316 SS cables, strong and nearly invisible. 2\" & 4\" spacing, 15-year guarantee.",
+    "seoDesc": "Invisible grills in Bhubaneswar for apartments & houses. Rust-free 316 SS cables, strong and nearly invisible. 2\" & 3\" spacing, 15-year guarantee.",
     "h1": "Invisible Grills in Bhubaneswar",
     "intro": "Invisible grills for Bhubaneswar apartments — from Patia, Infocity and Chandrasekharpur to Saheed Nagar and Nayapalli — safe balconies that stay open and bright.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Bhubaneswar, from small residential buildings to family flats. Bhubaneswar's newer apartment towers around Patia, Infocity, Chandrasekharpur and Jaydev Vihar, and established areas like Saheed Nagar, Nayapalli and Khandagiri, mean more families living on higher floors. The city's humid summers and strong monsoon and cyclone-season weather are hard on ordinary grills. MKR's 316-grade stainless steel invisible grills are rust-free, firmly anchored and nearly invisible, protecting children and pets on balconies, windows and staircases without closing in your home. Choose 2-inch spacing for pets, pigeons and toddlers or 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Bhubaneswar, from small residential buildings to family flats. Bhubaneswar's newer apartment towers around Patia, Infocity, Chandrasekharpur and Jaydev Vihar, and established areas like Saheed Nagar, Nayapalli and Khandagiri, mean more families living on higher floors. The city's humid summers and strong monsoon and cyclone-season weather are hard on ordinary grills. MKR's 316-grade stainless steel invisible grills are rust-free, firmly anchored and nearly invisible, protecting children and pets on balconies, windows and staircases without closing in your home. Choose 2-inch spacing for pets, pigeons and toddlers or 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Do you install invisible grills in Bhubaneswar?",
@@ -646,10 +646,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Maharashtra",
     "landmarks": "Hinjewadi, Wakad, Baner, Kharadi, Viman Nagar, Hadapsar, Kothrud",
     "seoTitle": "Invisible Grills Pune | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Pune for high-rise balconies & windows — Hinjewadi, Wakad, Baner, Kharadi. 316 SS, 2\" & 4\" spacing, 15-year guarantee. Free site visit.",
+    "seoDesc": "Invisible grills in Pune for high-rise balconies & windows — Hinjewadi, Wakad, Baner, Kharadi. 316 SS, 2\" & 3\" spacing, 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Pune",
     "intro": "Invisible grills for Pune's high-rise homes — from Hinjewadi, Wakad and Baner to Kharadi, Viman Nagar and Hadapsar — safety for kids and pets without losing the view.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Pune, from small residential buildings to family flats. Pune's IT hubs in Hinjewadi, Kharadi and Magarpatta have brought tall gated societies to Wakad, Baner, Balewadi, Viman Nagar and Hadapsar, while Kothrud and Aundh have many established apartments. Many societies restrict outside grills that change the building's look, which is why invisible grills are popular: from a distance they are nearly invisible. MKR installs 316-grade stainless steel cables with 2-inch spacing (pets, pigeons, toddlers) or 4-inch spacing (standard child safety), rust-free through Pune's monsoon.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Pune, from small residential buildings to family flats. Pune's IT hubs in Hinjewadi, Kharadi and Magarpatta have brought tall gated societies to Wakad, Baner, Balewadi, Viman Nagar and Hadapsar, while Kothrud and Aundh have many established apartments. Many societies restrict outside grills that change the building's look, which is why invisible grills are popular: from a distance they are nearly invisible. MKR installs 316-grade stainless steel cables with 2-inch spacing (pets, pigeons, toddlers) or 3-inch spacing (standard child safety), rust-free through Pune's monsoon.",
     "faqs": [
         {
             "q": "Will my housing society allow invisible grills?",
@@ -690,10 +690,10 @@ const locationData: Record<string, LocationPageData> = {
     "state": "Andhra Pradesh",
     "landmarks": "Magunta Layout, Dargamitta, Balaji Nagar, Vedayapalem, Haranathapuram, Ramalingapuram",
     "seoTitle": "Invisible Grills Nellore | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Nellore for houses & apartments. Rust-free 316 SS cables for balconies, windows & stairs. 2\" & 4\" spacing, 15-year guarantee.",
+    "seoDesc": "Invisible grills in Nellore for houses & apartments. Rust-free 316 SS cables for balconies, windows & stairs. 2\" & 3\" spacing, 15-year guarantee.",
     "h1": "Invisible Grills in Nellore",
     "intro": "Invisible grills for Nellore homes — from Magunta Layout and Dargamitta to Balaji Nagar and Vedayapalem — strong, rust-free and nearly invisible.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Nellore, from small residential buildings to family flats. Nellore's mix of independent houses and newer apartment buildings in areas like Magunta Layout, Dargamitta, Balaji Nagar, Vedayapalem and Haranathapuram means many homes with terraces, open staircases and balconies. The coastal humidity and hot summers here rust and heat up iron grills. MKR's 316-grade stainless steel invisible grills stay rust-free, need no painting and keep homes airy, while protecting children and pets. Choose 2-inch spacing for pets, pigeons and toddlers or 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Nellore, from small residential buildings to family flats. Nellore's mix of independent houses and newer apartment buildings in areas like Magunta Layout, Dargamitta, Balaji Nagar, Vedayapalem and Haranathapuram means many homes with terraces, open staircases and balconies. The coastal humidity and hot summers here rust and heat up iron grills. MKR's 316-grade stainless steel invisible grills stay rust-free, need no painting and keep homes airy, while protecting children and pets. Choose 2-inch spacing for pets, pigeons and toddlers or 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Do you install invisible grills in Nellore?",
@@ -737,7 +737,7 @@ const locationData: Record<string, LocationPageData> = {
     "seoDesc": "Invisible grills in Kadapa for houses & apartments. 316 SS cables that won't rust or sag in the heat. Child & pet safe, 15-year guarantee. Free site visit.",
     "h1": "Invisible Grills in Kadapa",
     "intro": "Invisible grills for Kadapa homes — from Co-operative Colony and Prakash Nagar to Yerramukkapalli — strong safety that keeps homes cool, open and bright.",
-    "localContent": "MKR has already installed invisible grills in apartments and homes across Kadapa, from small residential buildings to family flats. Kadapa has very hot summers, and many homes are independent houses with terraces, open staircases and wide windows, along with newer apartment buildings. Heavy iron grills absorb heat, need repainting and make rooms feel closed in. MKR's 316-grade stainless steel invisible grills are thin, strong and rust-free, letting breeze and light in while keeping children and pets safe on terraces, balconies, windows and stairs. Choose 2-inch spacing for pets, pigeons and toddlers or 4-inch spacing for standard child safety.",
+    "localContent": "MKR has already installed invisible grills in apartments and homes across Kadapa, from small residential buildings to family flats. Kadapa has very hot summers, and many homes are independent houses with terraces, open staircases and wide windows, along with newer apartment buildings. Heavy iron grills absorb heat, need repainting and make rooms feel closed in. MKR's 316-grade stainless steel invisible grills are thin, strong and rust-free, letting breeze and light in while keeping children and pets safe on terraces, balconies, windows and stairs. Choose 2-inch spacing for pets, pigeons and toddlers or 3-inch spacing for standard child safety.",
     "faqs": [
         {
             "q": "Do you install invisible grills in Kadapa?",

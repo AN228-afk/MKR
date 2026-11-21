@@ -13,7 +13,7 @@ const ITEMS = [
 
 const OPTIONS = [
   { gap: 2, name: "2-inch spacing", note: "Pets, pigeons and toddlers" },
-  { gap: 4, name: "4-inch spacing", note: "Standard child safety, more open view" },
+  { gap: 3, name: "3-inch spacing", note: "Standard child safety, more open view" },
 ];
 
 export function GapTester() {
@@ -23,7 +23,7 @@ export function GapTester() {
   const advice =
     gap === 2
       ? "2-inch spacing blocks toddlers, cats and pigeons. Best if you have pets or a pigeon problem."
-      : "4-inch spacing keeps toddlers safe with a more open view. Choose 2-inch if you have cats or pigeons.";
+      : "3-inch spacing keeps toddlers safe with a more open view. Choose 2-inch if you have cats or pigeons.";
   const wa = `https://wa.me/917780114547?text=${encodeURIComponent(`Hi MKR, I'd like invisible grills with about ${gap}-inch cable spacing. Please share a quote.`)}`;
 
   return (
@@ -31,7 +31,7 @@ export function GapTester() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <span className="mkr-eyebrow">Choose your spacing</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">2-inch or <Accent>4-inch?</Accent></h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">2-inch or <Accent>3-inch?</Accent></h2>
         </div>
         <div className="mkr-card mkr-nolift p-5 sm:p-8 grid md:grid-cols-[1fr_300px] gap-6 items-center">
           <div>
