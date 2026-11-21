@@ -5,11 +5,11 @@ const data = {
   title: "Balcony Invisible Grills",
   slug: "balcony-invisible-grills",
   seoTitle: "Balcony Invisible Grills Bangalore | MKR Safety Solutions | Best Price",
-  seoDesc: "Premium balcony invisible grills in Bangalore. 316-grade SS cables, 400kg load tested, 15-year warranty. Free site visit. Serving all Bangalore areas. Call now.",
+  seoDesc: "Premium balcony invisible grills in Bangalore. 316-grade SS cables, 400kg load tested, 15-year guarantee. Free site visit. Serving all Bangalore areas. Call now.",
   h1: "Balcony Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Invisible grills on apartment balcony with panoramic Bangalore city view",
-  intro: "Transform your balcony into a safe, open sanctuary with ultra-fine 316-grade marine stainless steel cables. Nearly invisible from a distance, load-tested to 400kg, and backed by a 15-year warranty.",
+  intro: "Transform your balcony into a safe, open sanctuary with ultra-fine 316-grade marine stainless steel cables. Nearly invisible from a distance, load-tested to 400kg, and backed by a 15-year guarantee.",
   price: "100–160 per sq ft",
   benefits: [
     "Complete unobstructed views from your balcony — cables disappear visually",
@@ -19,7 +19,7 @@ const data = {
     "Withstands Bangalore's monsoon rains and humidity perfectly",
     "No maintenance required beyond occasional wipe-down",
     "Professional installation completed in 3–5 hours",
-    "15-year comprehensive warranty on materials and installation",
+    "15-year comprehensive guarantee on materials and installation",
   ],
   features: [
     { title: "316-Grade Marine SS Cables", desc: "The highest grade stainless steel used in marine environments. Immune to rust and corrosion in any weather." },
@@ -32,7 +32,7 @@ const data = {
     { step: "Free Site Visit", desc: "Our technician visits your balcony, takes precise measurements and assesses installation requirements." },
     { step: "Custom Fabrication", desc: "We fabricate your invisible grill system to exact measurements using 316-grade marine SS cables." },
     { step: "Expert Installation", desc: "Our certified team installs the top channel, threads cables, and applies precision tensioning in 3–5 hours." },
-    { step: "Quality Check", desc: "Every cable is load-tested and inspected. We clean up completely and hand over with warranty documentation." },
+    { step: "Quality Check", desc: "Every cable is load-tested and inspected. We clean up completely and hand over with guarantee documentation." },
   ],
   faqs: [
     { q: "How much do balcony invisible grills cost in Bangalore?", a: "Balcony invisible grills in Bangalore typically cost ₹100–₹160 per square foot with MKR Safety Solutions. The exact price depends on the balcony size and complexity. We provide free site visits with transparent, itemized quotes." },

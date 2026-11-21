@@ -5,7 +5,7 @@ const steps = [
   { icon: Ruler, title: "Free site visit", text: "We measure every opening and suggest the right spacing." },
   { icon: Wrench, title: "Channel & anchors", text: "A slim top channel and strong base anchors, fixed neatly." },
   { icon: Cable, title: "Cables tensioned", text: "316 marine-grade cables, tensioned by hand and load-tested." },
-  { icon: ShieldCheck, title: "15-year warranty", text: "We clean up, hand over and back it for 15 years." },
+  { icon: ShieldCheck, title: "15-year guarantee", text: "We clean up, hand over and back it for 15 years." },
 ];
 
 /** How it works: four simple steps. */

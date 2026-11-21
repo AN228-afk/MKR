@@ -5,7 +5,7 @@ const data = {
   title: "Window Invisible Grills",
   slug: "window-invisible-grills",
   seoTitle: "Window Invisible Grills Bangalore | Child Safety | MKR Safety Solutions",
-  seoDesc: "Window invisible grills in Bangalore. Protect your windows without blocking light or views. 316 SS cables, free site visit, 15-year warranty. Call MKR today.",
+  seoDesc: "Window invisible grills in Bangalore. Protect your windows without blocking light or views. 316 SS cables, free site visit, 15-year guarantee. Call MKR today.",
   h1: "Window Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Window invisible grills with panoramic view of Bangalore greens and cityscape",
@@ -19,7 +19,7 @@ const data = {
     "Easy to open and close windows with grills installed",
     "Transparent pricing — no hidden charges",
     "Same-day site visit available across Bangalore",
-    "15-year warranty covering all materials and installation",
+    "15-year guarantee covering all materials and installation",
   ],
   features: [
     { title: "Fits Any Window Style", desc: "Custom fabricated for your exact window dimensions — sliding, casement, fixed, or louvered windows." },
@@ -32,7 +32,7 @@ const data = {
     { step: "Free Site Visit", desc: "We visit your home, measure all windows requiring grills, and provide a transparent written quote." },
     { step: "Custom Fabrication", desc: "Window frames are custom-fabricated using 316-grade marine SS cables to match your exact dimensions." },
     { step: "Clean Installation", desc: "Installation is completed in 1–2 hours per window. We minimize drilling and protect your walls." },
-    { step: "Final Inspection", desc: "Each window grill is tension-tested and inspected before handover with full warranty documentation." },
+    { step: "Final Inspection", desc: "Each window grill is tension-tested and inspected before handover with full guarantee documentation." },
   ],
   faqs: [
     { q: "Can I still open my windows after installing invisible grills?", a: "Yes, absolutely. Our window grill installation is designed to work with your existing window operation. You can open and close sliding, casement, or hopper windows as usual." },

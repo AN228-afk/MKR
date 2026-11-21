@@ -19,7 +19,7 @@ const data = {
     "Complies with school building safety regulations",
     "Institutional-grade durability — designed for higher traffic and impact resistance",
     "5-year annual maintenance program available",
-    "Comprehensive warranty covering all installations",
+    "Comprehensive guarantee covering all installations",
   ],
   features: [
     { title: "Institutional Grade", desc: "Heavier cable gauges and reinforced anchoring designed for the higher wear of institutional environments." },

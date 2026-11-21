@@ -5,7 +5,7 @@ const data = {
   title: "Terrace Invisible Grills",
   slug: "terrace-invisible-grills",
   seoTitle: "Terrace Invisible Grills Bangalore | Rooftop Safety | MKR Safety Solutions",
-  seoDesc: "Terrace invisible grills in Bangalore for full rooftop perimeter safety. 316 SS cables, weather-resistant, free site visit, 15-year warranty. MKR Safety Solutions.",
+  seoDesc: "Terrace invisible grills in Bangalore for full rooftop perimeter safety. 316 SS cables, weather-resistant, free site visit, 15-year guarantee. MKR Safety Solutions.",
   h1: "Terrace Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Terrace invisible grill installation with panoramic ocean and pool view from rooftop",
@@ -19,7 +19,7 @@ const data = {
     "UV-resistant — cables maintain their appearance in direct sunlight",
     "Ideal for penthouses, independent villas, and terrace apartments",
     "Free site survey with professional assessment of terrace structure",
-    "15-year warranty on the complete installation",
+    "15-year guarantee on the complete installation",
   ],
   features: [
     { title: "Full Perimeter Coverage", desc: "We install cable systems around the complete terrace perimeter — no gaps, no compromises." },
@@ -32,7 +32,7 @@ const data = {
     { step: "Terrace Survey", desc: "We assess your terrace structure, parapet condition, and take precise measurements of the entire perimeter." },
     { step: "Custom Design", desc: "We design the cable system for your specific terrace layout and provide a transparent written quote." },
     { step: "Installation", desc: "Cables are installed around the complete perimeter, properly anchored to structural elements and tensioned precisely." },
-    { step: "Inspection", desc: "Complete perimeter inspection, load testing, and warranty documentation before handover." },
+    { step: "Inspection", desc: "Complete perimeter inspection, load testing, and guarantee documentation before handover." },
   ],
   faqs: [
     { q: "Can invisible grills be installed on open terraces without parapets?", a: "Yes. For terraces without parapets, we install a structural post system that anchors to the terrace slab. Our team assesses each terrace individually to determine the best anchoring method." },

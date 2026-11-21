@@ -8,7 +8,7 @@ import { trackGoogleAdsConversion } from "@/lib/gtag";
 import { SocialLinks } from "./SocialLinks";
 import { useScrollReveal } from "@/lib/useScrollReveal";
 
-const taglines = ["Invisible Grills", "Child Safety Experts", "15-Year Warranty", "Free Site Visit"];
+const taglines = ["Invisible Grills", "Child Safety Experts", "15-Year Guarantee", "Free Site Visit"];
 
 const services = [
   { label: "Invisible Grills Bangalore", href: "/invisible-grills-bangalore" },

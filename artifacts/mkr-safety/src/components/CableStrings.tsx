@@ -130,7 +130,7 @@ export function CableStrings() {
             </h2>
             <p className="text-sm text-muted-foreground mb-5">Move your mouse or finger across the cables.</p>
             <div className="flex flex-wrap justify-center gap-2 mb-6">
-              {["SS 316 cables", "15-year warranty", "Rust-free"].map((t) => (
+              {["SS 316 cables", "15-year guarantee", "Rust-free"].map((t) => (
                 <span key={t} className="px-3 py-1.5 rounded-full bg-white border border-border text-xs font-semibold text-foreground">{t}</span>
               ))}
             </div>

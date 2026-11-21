@@ -5,7 +5,7 @@ const data = {
   title: "Villa Invisible Grills",
   slug: "villa-invisible-grills",
   seoTitle: "Villa Invisible Grills Bangalore | Bespoke Safety Solutions | MKR",
-  seoDesc: "Premium villa invisible grills in Bangalore. Custom solutions for independent houses, villas, and bungalows. Full project management. 15-year warranty. MKR Safety Solutions.",
+  seoDesc: "Premium villa invisible grills in Bangalore. Custom solutions for independent houses, villas, and bungalows. Full project management. 15-year guarantee. MKR Safety Solutions.",
   h1: "Villa Invisible Grills in Bangalore",
   heroImg,
   heroAlt: "Luxury villa balcony with invisible grill cable system and panoramic view",
@@ -19,7 +19,7 @@ const data = {
     "Large area pricing advantages — more cost-effective than piecemeal installation",
     "Minimal disruption — we coordinate around your household schedule",
     "Trusted by 50+ premium villas across Bangalore's best neighborhoods",
-    "15-year warranty covering all installations",
+    "15-year guarantee covering all installations",
   ],
   features: [
     { title: "Full Villa Coverage", desc: "We handle all grill types in a single project — balcony, window, staircase, terrace, and courtyard." },
@@ -32,7 +32,7 @@ const data = {
     { step: "Project Assessment", desc: "Comprehensive villa assessment — we map every space requiring grills and discuss design preferences." },
     { step: "Design & Quote", desc: "Detailed project design with material specifications and a transparent, itemized quote for the complete villa." },
     { step: "Project Execution", desc: "Coordinated installation across all areas, managed by a dedicated project coordinator." },
-    { step: "Final Handover", desc: "Complete inspection of all installations, load testing, and comprehensive warranty documentation." },
+    { step: "Final Handover", desc: "Complete inspection of all installations, load testing, and comprehensive guarantee documentation." },
   ],
   faqs: [
     { q: "How long does a full villa invisible grill project take?", a: "A typical villa project covering all balconies, windows, and staircases takes 2–4 days depending on the size and complexity. Our dedicated project manager keeps you updated throughout." },

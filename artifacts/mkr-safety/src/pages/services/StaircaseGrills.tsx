@@ -19,7 +19,7 @@ const data = {
     "316-grade SS — maintenance-free and rust-proof for 20+ years",
     "Vertical and horizontal cable patterns available",
     "Complements modern, contemporary, and minimalist interiors",
-    "15-year warranty on materials and installation",
+    "15-year guarantee on materials and installation",
   ],
   features: [
     { title: "Vertical Cable Design", desc: "Clean vertical lines that enhance the visual height of your staircase while maintaining complete transparency." },
@@ -32,7 +32,7 @@ const data = {
     { step: "Design Consultation", desc: "We assess your staircase design, suggest cable pattern options, and provide a detailed quote." },
     { step: "Custom Fabrication", desc: "Stainless steel channel systems and cables are custom fabricated for your exact staircase dimensions." },
     { step: "Expert Installation", desc: "Our team installs with precision — correctly aligned cables, properly tensioned, and architecturally matched." },
-    { step: "Handover", desc: "Full inspection, load test, and warranty documentation. Your staircase is now safe and stunning." },
+    { step: "Handover", desc: "Full inspection, load test, and guarantee documentation. Your staircase is now safe and stunning." },
   ],
   faqs: [
     { q: "Can staircase invisible grills be installed on existing railings?", a: "Yes, in most cases. Our team assesses your existing handrail and post structure and integrates the cable system accordingly. In some cases, a new horizontal handrail may be recommended." },

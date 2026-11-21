@@ -103,12 +103,12 @@ const heroSlides = [
     label: "2000+ Installations",
     heading: "Bangalore's Most",
     accent: "Trusted Grill Brand.",
-    sub: "5-Star rated by our customers on Google. Every installation backed by a 15-year warranty and lifetime customer support.",
+    sub: "5-Star rated by our customers on Google. Every installation backed by a 15-year guarantee and lifetime customer support.",
   },
   {
     src: realSunset,
     alt: "Balcony with MKR invisible grills and a golden sunset view in Bangalore",
-    label: "15-Year Warranty",
+    label: "15-Year Guarantee",
     heading: "316 Marine SS Steel.",
     accent: "Zero Rust. Ever.",
     sub: "The same grade used in marine environments. Resistant to Bangalore humidity, rain, and coastal conditions — guaranteed.",
@@ -134,7 +134,7 @@ const homeFaqs = [
   },
   {
     q: "Do invisible grills rust in Bangalore's climate?",
-    a: "We exclusively use 316-grade marine stainless steel, which is highly resistant to rust, corrosion, and humidity. This is the same grade used in marine environments. We back every installation with a 15-year warranty.",
+    a: "We exclusively use 316-grade marine stainless steel, which is highly resistant to rust, corrosion, and humidity. This is the same grade used in marine environments. We back every installation with a 15-year guarantee.",
   },
 ];
 
@@ -142,7 +142,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "MKR Safety Solutions",
-  description: "Premium invisible grill installation in Bangalore. Balcony, window, staircase, terrace, and villa grills. 316-grade marine SS cables. 15-year warranty.",
+  description: "Premium invisible grill installation in Bangalore. Balcony, window, staircase, terrace, and villa grills. 316-grade marine SS cables. 15-year guarantee.",
   url: "https://mkrsafetysolutions.com",
   telephone: "+91-77801-14547",
   email: "mkrsafetysolutions@gmail.com",
@@ -191,7 +191,7 @@ export default function Home() {
     <Layout>
       <SEOHead
         title="Invisible Grills Bangalore | MKR Safety Solutions | Best Price"
-        description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 2000+ installs, 5.0★ rating, 15-year warranty. Free site visit."
+        description="Bangalore's #1 invisible grill installer. 316-grade SS cables for balcony, window, staircase & terrace. 2000+ installs, 5.0★ rating, 15-year guarantee. Free site visit."
         canonical="https://mkrsafetysolutions.com/"
         schema={[localBusinessSchema, faqSchema]}
       />
@@ -203,7 +203,7 @@ export default function Home() {
         <div className="mkr-marquee flex w-max gap-10 whitespace-nowrap text-sm font-semibold tracking-wide">
           {[0, 1].map((k) => (
             <div key={k} className="flex gap-10" aria-hidden={k === 1}>
-              {["15-Year Warranty", "2000+ Installations", "5.0★ Google Rating", "Free Site Visit", "Marine-Grade SS 316 Cables", "Child & Pet Safe", "All Bangalore Areas"].map((t) => (
+              {["15-Year Guarantee", "2000+ Installations", "5.0★ Google Rating", "Free Site Visit", "Marine-Grade SS 316 Cables", "Child & Pet Safe", "All Bangalore Areas"].map((t) => (
                 <span key={t} className="inline-flex items-center gap-10">{t}<span className="opacity-60">✦</span></span>
               ))}
             </div>
@@ -285,7 +285,7 @@ export default function Home() {
                       </span>
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-white font-bold text-lg leading-tight">{title}</h3>
-                        <div className="mt-1 text-[12px] font-medium text-white/85">From <b className="text-white">₹100/sq.ft</b> · 15-yr warranty</div>
+                        <div className="mt-1 text-[12px] font-medium text-white/85">From <b className="text-white">₹100/sq.ft</b> · 15-yr guarantee</div>
                       </div>
                     </div>
                   </Link>
@@ -367,7 +367,7 @@ export default function Home() {
                   { icon: Award, title: "400kg Load-Tested Safety", desc: "Each cable is tension-tested to withstand 400kg per linear meter. Certified, not just claimed." },
                   { icon: Eye, title: "Nearly Invisible From Any Angle", desc: "3mm ultra-thin cables spaced precisely to disappear visually while remaining structurally robust." },
                   { icon: Ruler, title: "Free Site Visit & Custom Quote", desc: "We visit your home, measure every corner, and give a transparent quote — no obligation." },
-                  { icon: BadgeCheck, title: "15-Year Warranty", desc: "Every installation is backed by 15 years of warranty covering cables, anchors, and fittings.", wide: true },
+                  { icon: BadgeCheck, title: "15-Year Guarantee", desc: "Every installation is backed by 15 years of guarantee covering cables, anchors, and fittings.", wide: true },
                 ].map(({ icon: Icon, title, desc, wide }) => (
                   <StaggerItem key={title} className={wide ? "sm:col-span-2" : ""}>
                     <div className="mkr-card group h-full p-5 flex gap-4">
@@ -426,7 +426,7 @@ export default function Home() {
                   <div className="mkr-icon !w-10 !h-10"><BadgeCheck className="w-5 h-5" /></div>
                   <div>
                     <div className="text-sm font-bold text-foreground leading-tight">15-Year</div>
-                    <div className="text-xs text-muted-foreground">Warranty</div>
+                    <div className="text-xs text-muted-foreground">Guarantee</div>
                   </div>
                 </motion.div>
               </div>
@@ -471,7 +471,7 @@ export default function Home() {
             ))}
           </div>
           <p className="text-center text-sm text-muted-foreground mt-10">
-            <span className="mkr-serif italic text-secondary text-base">Always included</span> &nbsp;·&nbsp; 316 marine-grade SS cables &nbsp;·&nbsp; installation &nbsp;·&nbsp; free site visit &nbsp;·&nbsp; 15-year warranty
+            <span className="mkr-serif italic text-secondary text-base">Always included</span> &nbsp;·&nbsp; 316 marine-grade SS cables &nbsp;·&nbsp; installation &nbsp;·&nbsp; free site visit &nbsp;·&nbsp; 15-year guarantee
           </p>
         </div>
       </section>
@@ -665,7 +665,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Get Your Free Quote <Accent>in 24 Hours</Accent></h2>
             <p className="text-muted-foreground mb-6">Tell us about your balcony, window or staircase. Our team visits, measures and gives you a clear price — no obligation.</p>
             <ul className="space-y-3">
-              {["Free measurement at your home", "Transparent price per sq.ft", "15-year warranty on every installation"].map((x) => (
+              {["Free measurement at your home", "Transparent price per sq.ft", "15-year guarantee on every installation"].map((x) => (
                 <li key={x} className="flex items-center gap-3 text-sm font-medium text-foreground">
                   <span className="mkr-icon !w-8 !h-8 !rounded-lg"><BadgeCheck className="w-4 h-4" /></span>{x}
                 </li>

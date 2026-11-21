@@ -38,10 +38,10 @@ export default function About() {
                 From a single balcony project in Koramangala to over 1,000 completed installations across 12 neighborhoods, our journey has been built on one principle — safety without compromise.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We use only 316-grade marine stainless steel, the same grade trusted in boats and coastal buildings. Every cable is tensioned to withstand 400kg per linear meter and backed by a 15-year warranty.
+                We use only 316-grade marine stainless steel, the same grade trusted in boats and coastal buildings. Every cable is tensioned to withstand 400kg per linear meter and backed by a 15-year guarantee.
               </p>
               <div className="space-y-3">
-                {["8+ years of installation expertise", "316-grade marine SS cables only", "Free site visits with no obligation", "15-year comprehensive warranty", "Serving 12+ Bangalore neighborhoods"].map(f => (
+                {["8+ years of installation expertise", "316-grade marine SS cables only", "Free site visits with no obligation", "15-year comprehensive guarantee", "Serving 12+ Bangalore neighborhoods"].map(f => (
                   <div key={f} className="flex items-center gap-2 text-sm">
                     <CheckCircle className="w-4 h-4 text-secondary" />
                     <span className="text-foreground">{f}</span>

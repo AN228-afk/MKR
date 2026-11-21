@@ -172,14 +172,14 @@ export function LocationPage({ data }: { data: LocationPageData }) {
                   "Load-tested up to 400 kg",
                   "2-inch or 4-inch cable spacing",
                   "Free measurement and transparent quote",
-                  "15-year warranty on all installations",
+                  "15-year guarantee on all installations",
                 ] : [
                   `Same-day site visit available in ${data.area}`,
                   "316-grade marine stainless steel cables",
                   "Load-tested to 400kg per linear meter",
                   "Free measurement and transparent quote",
                   "Installation completed in 3–5 hours",
-                  "15-year warranty on all installations",
+                  "15-year guarantee on all installations",
                 ]).map((b, i) => (
                   <StaggerItem key={i}>
                     <div className="flex items-center gap-3">
@@ -255,7 +255,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
                   { img: imgStair, t: "Staircase & duplex grills", d: "Vertical cable railings for open staircases, duplex landings and mezzanines.", p: ["Child and pet safe", "Modern, open look"] },
                   { img: imgKids, t: "Child safety grills", d: "Closely spaced cables for homes with toddlers and young children.", p: ["2″ spacing for toddlers", "Load-tested up to 400 kg"] },
                   { img: imgPets, t: "Pet & anti-pigeon grills", d: "2-inch spacing keeps cats, dogs and pigeons where they belong.", p: ["No messy nets", "Stops pigeon nesting"] },
-                  { img: imgVilla, t: "Terrace & villa grills", d: "Custom systems for terraces, sit-outs and large villa openings.", p: ["Measured for each opening", "15-year warranty"] },
+                  { img: imgVilla, t: "Terrace & villa grills", d: "Custom systems for terraces, sit-outs and large villa openings.", p: ["Measured for each opening", "15-year guarantee"] },
                 ].map((sv) => (
                   <div key={sv.t} className="mkr-card group flex flex-col overflow-hidden">
                     <div className="p-2 pb-0">
@@ -300,7 +300,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
                   { i: Ruler, t: "Free site visit", d: `We visit your home in ${data.area}, measure every opening and suggest the right spacing.` },
                   { i: Wrench, t: "Channel & anchors", d: "A slim top channel and strong base anchors are fixed neatly, with no breaking of walls." },
                   { i: Cable, t: "Cables tensioned", d: "316 marine-grade cables are threaded and tensioned one by one, then load-tested." },
-                  { i: ShieldCheck, t: "15-year warranty", d: "We clean up, hand over and back every installation with a 15-year warranty." },
+                  { i: ShieldCheck, t: "15-year guarantee", d: "We clean up, hand over and back every installation with a 15-year guarantee." },
                 ].map((st, n) => (
                   <div key={st.t} className="mkr-card p-6">
                     <div className="flex items-center justify-between mb-4">
@@ -395,7 +395,7 @@ export function LocationPage({ data }: { data: LocationPageData }) {
         <section className="py-12 bg-secondary/10 border-t border-secondary/20">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-2xl font-bold text-foreground mb-3">Get Invisible Grills in {data.area} Today</h2>
-            <p className="text-muted-foreground mb-6">{isOtherCity ? "Free site visit. Free measurement. 15-year warranty. Call or WhatsApp us now." : "Same-day site visit. Free measurement. 15-year warranty. Call or WhatsApp us now."}</p>
+            <p className="text-muted-foreground mb-6">{isOtherCity ? "Free site visit. Free measurement. 15-year guarantee. Call or WhatsApp us now." : "Same-day site visit. Free measurement. 15-year guarantee. Call or WhatsApp us now."}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               {isOtherCity ? (
                 <a href={cityWa} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</a>

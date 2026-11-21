@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const ROW1 = ["SAFE", "INVISIBLE", "RUST-FREE", "15-YEAR WARRANTY", "SS 316"];
+const ROW1 = ["SAFE", "INVISIBLE", "RUST-FREE", "15-YEAR GUARANTEE", "SS 316"];
 const ROW2 = ["BALCONIES", "WINDOWS", "STAIRCASES", "TERRACES", "VILLAS"];
 
 /** Giant gold words that slide in opposite directions as you scroll. */

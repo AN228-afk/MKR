@@ -78,7 +78,7 @@ export const services: Service[] = [
     description: "Bangalore's leading invisible grill installation service. Serving 12+ major neighborhoods with 1000+ successful installations.",
     price: "₹100–160/sq ft",
     icon: "MapPin",
-    features: ["Same-day site visit", "Free estimate", "15-year warranty", "500+ happy customers"],
+    features: ["Same-day site visit", "Free estimate", "15-year guarantee", "500+ happy customers"],
     image: "MKR_1",
   },
 ];
@@ -193,7 +193,7 @@ const blogPostsRaw = [
   {
     title: "Best Invisible Grills in Bangalore: 2024 Buyer's Guide",
     slug: "best-invisible-grills-in-bangalore",
-    excerpt: "How to choose the best invisible grills in Bangalore. What to look for in steel grade, warranty, pricing, and installer quality. Complete 2024 buyer's guide by MKR Safety Solutions.",
+    excerpt: "How to choose the best invisible grills in Bangalore. What to look for in steel grade, guarantee, pricing, and installer quality. Complete 2024 buyer's guide by MKR Safety Solutions.",
     date: "2024-10-01",
     readTime: "9 min read",
   },
@@ -436,12 +436,12 @@ const blogPostsRaw = [
     keyword: "invisible grill maintenance tips",
   },
   {
-    title: "Invisible Grill Warranty: What to Check Before You Sign the Order",
-    slug: "invisible-grill-warranty-what-to-check",
-    excerpt: "Most homeowners only read the warranty card after something goes wrong. Here's exactly what to check before you pay the advance, so there are no surprises later.",
+    title: "Invisible Grill Guarantee: What to Check Before You Sign the Order",
+    slug: "invisible-grill-guarantee-what-to-check",
+    excerpt: "Most homeowners only read the guarantee card after something goes wrong. Here's exactly what to check before you pay the advance, so there are no surprises later.",
     date: "2026-10-23",
     readTime: "7 min read",
-    keyword: "invisible grill warranty what to check",
+    keyword: "invisible grill guarantee what to check",
   },
   {
     title: "Invisible Grill Installation in Yelahanka: A Local Resident's Guide",

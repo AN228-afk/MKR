@@ -216,7 +216,7 @@ export function HeroSlideshow({ slides, whatsappUrl }: { slides: HeroSlide[]; wh
               </div>
               <div>
                 <div className="text-xl sm:text-2xl font-bold text-foreground"><Counter to={15} suffix=" Yr" /></div>
-                <div className="text-[11px] text-muted-foreground">Warranty</div>
+                <div className="text-[11px] text-muted-foreground">Guarantee</div>
               </div>
             </div>
           </motion.div>

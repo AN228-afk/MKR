@@ -34,9 +34,9 @@ const included = [
   "Aluminium top channel & anchors",
   "Professional installation by certified team",
   "Load testing to 400 kg per linear metre",
-  "15-year warranty on materials & workmanship",
+  "15-year guarantee on materials & workmanship",
   "Post-installation cleaning",
-  "Warranty documentation",
+  "Guarantee documentation",
 ];
 
 const faqs = [
@@ -44,7 +44,7 @@ const faqs = [
   { q: "Are there any hidden charges?", a: "No. Our quotes are fully itemised — materials, labour, and installation are all included. The only variable is if the site requires special structural anchoring (rare), which we identify and quote for during the free site visit." },
   { q: "Is 2.5mm more expensive than 3mm?", a: "No. Both 3mm and 2.5mm cables are priced the same — ₹100 to ₹160 per sq ft. Choose 3mm for the most invisible look, or 2.5mm for extra child and pet safety. Our team will recommend the right option during the free site visit." },
   { q: "Do you offer discounts for large projects?", a: "Yes. Villa full-home projects, school and institutional installations, and multi-apartment building projects all qualify for volume pricing. Contact us for a custom quote for projects above 1,000 sq ft." },
-  { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 400 kg/lm, post-installation cleanup, and a 15-year warranty with documentation." },
+  { q: "What is included in the price?", a: "Everything: 316-grade marine SS cables, aluminium top channel, all anchors and fittings, professional installation, load testing to 400 kg/lm, post-installation cleanup, and a 15-year guarantee with documentation." },
 ];
 
 export default function Pricing() {
@@ -52,7 +52,7 @@ export default function Pricing() {
     <Layout>
       <SEOHead
         title="Invisible Grills Price in Bangalore 2024 | ₹100/sq ft | MKR Safety Solutions"
-        description="Transparent invisible grill prices in Bangalore. 3mm and 2.5mm cables from ₹100–₹160/sq ft. All-inclusive pricing with 15-year warranty. Free site visit. MKR Safety Solutions."
+        description="Transparent invisible grill prices in Bangalore. 3mm and 2.5mm cables from ₹100–₹160/sq ft. All-inclusive pricing with 15-year guarantee. Free site visit. MKR Safety Solutions."
         canonical="https://mkrsafetysolutions.com/pricing"
         schema={[schema]}
       />
@@ -74,7 +74,7 @@ export default function Pricing() {
               Invisible Grills Price <Accent>in Bangalore</Accent>
             </h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-6">
-              All-inclusive pricing starting at ₹100/sq ft. Materials, installation, load testing, and 15-year warranty — everything included.
+              All-inclusive pricing starting at ₹100/sq ft. Materials, installation, load testing, and 15-year guarantee — everything included.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">

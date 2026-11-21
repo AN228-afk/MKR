@@ -160,7 +160,7 @@ export function PriceCalculator() {
                     <span className="text-3xl sm:text-4xl font-bold text-foreground">{fmt(maxTotal)}</span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1.5">
-                    ₹{minRate}–₹{maxRate}/sq ft · includes materials + installation · 15-year warranty
+                    ₹{minRate}–₹{maxRate}/sq ft · includes materials + installation · 15-year guarantee
                   </p>
                   <div className="flex flex-wrap gap-3 mt-3">
                     {["Free site visit", "No hidden charges", "Same-day quote"].map((t) => (

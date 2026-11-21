@@ -16,7 +16,7 @@ import kidsBalcony from "@assets/mkr-real-kids-balcony-card.webp";
 import { trackGoogleAdsConversion } from "@/lib/gtag";
 
 const faqs = [
-  { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 13 reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 15-year warranty." },
+  { q: "What is the best invisible grill company in Bangalore?", a: "MKR Safety Solutions is widely recognized as Bangalore's top invisible grill company, with a 5.0-star Google rating from 13 reviews, 2000+ installations, and 8+ years of experience. We use only 316-grade marine stainless steel backed by a 15-year guarantee." },
   { q: "How much do invisible grills cost in Bangalore?", a: "Invisible grill prices in Bangalore range from ₹100–₹160 per sq ft with MKR Safety Solutions, for both 3mm and 2.5mm cables, across balcony, window, staircase and terrace grills. We provide free site visits with transparent quotes." },
   { q: "Which areas in Bangalore does MKR Safety Solutions serve?", a: "MKR Safety Solutions serves all major areas of Bangalore including Whitefield, Koramangala, HSR Layout, Indiranagar, Electronic City, Marathahalli, Bellandur, Sarjapur Road, Jayanagar, Hebbal, Yelahanka, and KR Puram." },
   { q: "How long does invisible grill installation take in Bangalore?", a: "A standard balcony installation takes 3–5 hours. Full apartment installations with multiple balconies and windows are typically completed in 1–2 days. We work around your schedule including weekends." },
@@ -43,8 +43,8 @@ export default function InvisibleGrillsBangalore() {
   return (
     <Layout>
       <SEOHead
-        title="Invisible Grills Bangalore | Best Price, 15-Yr Warranty | MKR Safety Solutions"
-        description="Bangalore's #1 invisible grill company. Balcony, window, staircase & terrace grills. 316-grade SS, 5.0★ rating, 2000+ installs, 15-year warranty. Free site visit."
+        title="Invisible Grills Bangalore | Best Price, 15-Yr Guarantee | MKR Safety Solutions"
+        description="Bangalore's #1 invisible grill company. Balcony, window, staircase & terrace grills. 316-grade SS, 5.0★ rating, 2000+ installs, 15-year guarantee. Free site visit."
         canonical="https://mkrsafetysolutions.com/invisible-grills-bangalore"
         schema={schema}
       />
@@ -72,7 +72,7 @@ export default function InvisibleGrillsBangalore() {
               MKR Safety Solutions is Bangalore's most trusted invisible grill installer. From individual balconies to entire villa complexes, we protect families with ultra-fine 316-grade marine stainless steel cables.
             </p>
             <div className="flex flex-wrap gap-3 mb-6">
-              {["2000+ Installs", "5.0★ Google", "15-Yr Warranty", "Free Site Visit"].map(b => (
+              {["2000+ Installs", "5.0★ Google", "15-Yr Guarantee", "Free Site Visit"].map(b => (
                 <span key={b} className="px-3 py-1.5 bg-secondary/20 border border-secondary/30 rounded-full text-secondary text-xs font-semibold">{b}</span>
               ))}
             </div>
@@ -151,7 +151,7 @@ export default function InvisibleGrillsBangalore() {
               "Free site visit with transparent, itemized quotations",
               "Same-day site visits available across all Bangalore areas",
               "Professional installation completed in 3–5 hours",
-              "15-year comprehensive warranty on all installations",
+              "15-year comprehensive guarantee on all installations",
               "Dedicated after-sales support and annual maintenance",
               "2000+ successful installations across 12+ Bangalore neighborhoods",
             ].map((b, i) => (
@@ -181,7 +181,7 @@ export default function InvisibleGrillsBangalore() {
       <section className="py-12 bg-secondary/10 border-t border-secondary/20">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-foreground mb-3">Get the Best Invisible Grills in Bangalore</h2>
-          <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 15-year warranty. Call or WhatsApp us now.</p>
+          <p className="text-muted-foreground mb-6">Free site visit. Transparent pricing. 15-year guarantee. Call or WhatsApp us now.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/contact-us" className="px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">Book Free Site Visit</Link>
             <a href="tel:+917780114547" onClick={trackGoogleAdsConversion} className="px-6 py-3 border border-foreground/25 text-foreground font-semibold rounded-lg hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2">
