@@ -119,28 +119,22 @@ export function CableStrings() {
 
   return (
     <section data-no-reveal className="relative overflow-hidden bg-[hsl(40_40%_96%)]">
-      <div ref={wrapRef} className="relative h-[560px] sm:h-[600px] cursor-crosshair select-none touch-pan-y">
+      <div ref={wrapRef} className="relative h-[320px] sm:h-[340px] cursor-crosshair select-none touch-pan-y">
         <canvas ref={canvasRef} className="absolute inset-0" aria-hidden="true" />
-        {/* soft fade at top and bottom */}
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[hsl(40_40%_96%)] to-transparent pointer-events-none" />
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[hsl(40_40%_96%)] to-transparent pointer-events-none" />
-
+        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[hsl(40_40%_96%)] to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[hsl(40_40%_96%)] to-transparent pointer-events-none" />
         <div className="relative z-10 h-full flex items-center justify-center px-4 pointer-events-none">
-          <div className="text-center max-w-2xl rounded-[2rem] px-6 py-10 sm:px-12 bg-[hsl(40_40%_96%)]/70 backdrop-blur-[2px]">
-            <span className="mkr-eyebrow">Go on, touch the cables</span>
-            <h2 className="text-3xl sm:text-5xl font-bold text-foreground leading-tight mb-5">
-              Strong enough to <span className="text-secondary">hold up to 400 kg.</span>
-              <br className="hidden sm:block" /> Light enough to disappear.
+          <div className="text-center max-w-xl rounded-3xl px-6 py-7 bg-[hsl(40_40%_96%)]/80 backdrop-blur-[2px]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground leading-snug mb-2">
+              Holds up to <span className="text-secondary">400 kg</span>. Almost invisible.
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-              Move your mouse or finger across the cables. Each 316-grade marine steel cable is tensioned by hand, so it flexes, springs back and stays put for years.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["3mm SS 316 cables", "Up to 400 kg load-tested", "15-year warranty", "Rust-free"].map((t) => (
-                <span key={t} className="px-4 py-2 rounded-full bg-white border border-border text-sm font-semibold text-foreground shadow-sm">{t}</span>
+            <p className="text-sm text-muted-foreground mb-5">Move your mouse or finger across the cables.</p>
+            <div className="flex flex-wrap justify-center gap-2 mb-6">
+              {["SS 316 cables", "15-year warranty", "Rust-free"].map((t) => (
+                <span key={t} className="px-3 py-1.5 rounded-full bg-white border border-border text-xs font-semibold text-foreground">{t}</span>
               ))}
             </div>
-            <Link href="/contact-us" className="pointer-events-auto btn-shine inline-flex items-center gap-2 px-7 py-3.5 bg-secondary text-secondary-foreground font-semibold rounded-xl">
+            <Link href="/contact-us" className="pointer-events-auto btn-shine inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-xl text-sm">
               Book Free Site Visit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

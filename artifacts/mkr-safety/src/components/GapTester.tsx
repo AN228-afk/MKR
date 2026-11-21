@@ -19,7 +19,6 @@ const OPTIONS = [
 export function GapTester() {
   const [gap, setGap] = useState(2);
   const cables = 9;
-  const pxPerIn = 22;
   const blocks = ITEMS.map((it) => ({ ...it, blocked: gap < it.size }));
   const advice =
     gap === 2
@@ -28,84 +27,60 @@ export function GapTester() {
   const wa = `https://wa.me/917780114547?text=${encodeURIComponent(`Hi MKR, I'd like invisible grills with about ${gap}-inch cable spacing. Please share a quote.`)}`;
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <span className="mkr-eyebrow">Try it yourself</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">How close should <Accent>the cables be?</Accent></h2>
-          <p className="text-muted-foreground mb-8">We install invisible grills with 2-inch or 4-inch gaps between cables. Tap each one to see who can and can't get through.</p>
-
-          <div role="radiogroup" aria-label="Cable spacing" className="grid grid-cols-2 gap-3">
-            {OPTIONS.map((o) => {
-              const on = gap === o.gap;
-              return (
-                <button
-                  key={o.gap}
-                  type="button"
-                  role="radio"
-                  aria-checked={on}
-                  onClick={() => setGap(o.gap)}
-                  className={`rounded-2xl border-2 p-4 text-left transition-all duration-300 ${on ? "border-secondary bg-secondary/[0.07] shadow-[0_14px_30px_-18px_rgba(155,111,32,.6)]" : "border-border bg-white hover:border-secondary/40"}`}
-                >
-                  <div className={`text-3xl font-bold tabular-nums ${on ? "text-secondary" : "text-foreground/70"}`}>{o.gap}″</div>
-                  <div className="text-sm font-semibold text-foreground mt-1">{o.name}</div>
-                  <div className="text-xs text-muted-foreground mt-0.5">{o.note}</div>
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="grid grid-cols-3 gap-3 mt-8">
-            {blocks.map((b) => (
-              <div key={b.key} className={`rounded-2xl border p-3 text-center transition-colors duration-300 ${b.blocked ? "border-[#25D366]/40 bg-[#25D366]/[0.06]" : "border-red-300 bg-red-50"}`}>
-                <div className="text-3xl mb-1" aria-hidden="true">{b.emoji}</div>
-                <div className="text-sm font-semibold text-foreground">{b.label}</div>
-                <div className={`mt-1 inline-flex items-center gap-1 text-xs font-bold ${b.blocked ? "text-[#128C7E]" : "text-red-600"}`}>
-                  {b.blocked ? <><Check className="w-3.5 h-3.5" /> Blocked</> : <><X className="w-3.5 h-3.5" /> Can pass</>}
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-5 text-sm font-medium text-foreground">{advice}</p>
-          <p className="mt-1 text-xs text-muted-foreground">Sizes are approximate and for illustration only.</p>
-          <a href={wa} target="_blank" rel="noopener noreferrer" onClick={trackGoogleAdsConversion} className="mt-6 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] text-white font-semibold hover:bg-[#1ebe5b] transition-colors">
-            <MessageCircle className="w-4 h-4" /> Ask about {gap}″ spacing on WhatsApp
-          </a>
+    <section className="py-16 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8">
+          <span className="mkr-eyebrow">Choose your spacing</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">2-inch or <Accent>4-inch?</Accent></h2>
         </div>
-
-        {/* Live picture */}
-        <div className="relative rounded-[2rem] bg-gradient-to-b from-[#eaf3fb] to-[#f6efe1] border border-border h-[380px] overflow-hidden shadow-[0_30px_60px_-30px_rgba(60,45,10,.35)]">
-          <div className="absolute inset-x-0 top-0 h-4 bg-[#c9c3b5]" />
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-[#e8dcc3] border-t-4 border-[#b9a780]" />
-          <div className="absolute inset-0 flex justify-center">
-            <div className="relative h-full flex" style={{ gap: `${gap * pxPerIn}px` }}>
-              {Array.from({ length: cables }).map((_, i) => (
-                <motion.span key={i} layout transition={{ type: "spring", stiffness: 200, damping: 20 }} className="block w-[2px] h-full bg-gradient-to-b from-[#b6bcc4] via-[#8d939b] to-[#b6bcc4]" />
+        <div className="mkr-card mkr-nolift p-5 sm:p-8 grid md:grid-cols-[1fr_300px] gap-6 items-center">
+          <div>
+            <div role="radiogroup" aria-label="Cable spacing" className="grid grid-cols-2 gap-3">
+              {OPTIONS.map((o) => {
+                const on = gap === o.gap;
+                return (
+                  <button
+                    key={o.gap}
+                    type="button"
+                    role="radio"
+                    aria-checked={on}
+                    onClick={() => setGap(o.gap)}
+                    className={`rounded-2xl border-2 p-4 text-left transition-all duration-300 ${on ? "border-secondary bg-secondary/[0.07]" : "border-border bg-white hover:border-secondary/40"}`}
+                  >
+                    <div className={`text-2xl font-bold ${on ? "text-secondary" : "text-foreground/70"}`}>{o.gap}″</div>
+                    <div className="text-xs text-muted-foreground mt-1">{o.note}</div>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="flex flex-wrap gap-2 mt-5">
+              {blocks.map((b) => (
+                <span key={b.key} className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold ${b.blocked ? "bg-[#25D366]/10 text-[#128C7E]" : "bg-red-50 text-red-600"}`}>
+                  <span aria-hidden="true">{b.emoji}</span> {b.label}: {b.blocked ? <><Check className="w-3.5 h-3.5" /> blocked</> : <><X className="w-3.5 h-3.5" /> can pass</>}
+                </span>
               ))}
             </div>
+            <p className="mt-4 text-sm text-foreground">{advice}</p>
+            <a href={wa} target="_blank" rel="noopener noreferrer" onClick={trackGoogleAdsConversion} className="mt-5 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#25D366] text-white text-sm font-semibold hover:bg-[#1ebe5b] transition-colors">
+              <MessageCircle className="w-4 h-4" /> Ask about {gap}″ spacing
+            </a>
           </div>
-          {/* the 3 testers, sized to scale */}
-          <div className="absolute bottom-20 inset-x-0 flex justify-center items-end gap-10">
-            {blocks.map((b) => (
-              <motion.div
-                key={b.key}
-                animate={{ y: b.blocked ? 0 : [0, -6, 0] }}
-                transition={{ duration: 1.2, repeat: b.blocked ? 0 : Infinity }}
-                className="flex flex-col items-center"
-              >
-                <span
-                  className={`rounded-full border-2 flex items-center justify-center text-xl transition-colors ${b.blocked ? "border-[#25D366] bg-white/80" : "border-red-500 bg-red-50/90"}`}
-                  style={{ width: b.size * pxPerIn, height: b.size * pxPerIn }}
-                  aria-hidden="true"
-                >
-                  {b.emoji}
-                </span>
-                <span className="mt-1 text-[11px] font-semibold text-foreground/70">{b.size}″</span>
-              </motion.div>
-            ))}
+
+          {/* Small live picture */}
+          <div className="relative rounded-2xl bg-gradient-to-b from-[#eaf3fb] to-[#f6efe1] border border-border h-[220px] overflow-hidden" aria-hidden="true">
+            <div className="absolute inset-x-0 top-0 h-3 bg-[#c9c3b5]" />
+            <div className="absolute inset-x-0 bottom-0 h-10 bg-[#e8dcc3] border-t-4 border-[#b9a780]" />
+            <div className="absolute inset-0 flex justify-center">
+              <div className="relative h-full flex" style={{ gap: `${gap * 16}px` }}>
+                {Array.from({ length: cables }).map((_, i) => (
+                  <motion.span key={i} layout transition={{ type: "spring", stiffness: 200, damping: 20 }} className="block w-[2px] h-full bg-[#9aa0a8]" />
+                ))}
+              </div>
+            </div>
+            <div className="absolute top-5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-white/90 text-xs font-bold text-secondary shadow">Gap: {gap}″</div>
           </div>
-          <div className="absolute top-6 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-white/90 text-xs font-bold text-secondary shadow">Gap: {gap}″</div>
         </div>
+        <p className="text-center text-xs text-muted-foreground mt-3">Sizes are approximate and for illustration only.</p>
       </div>
     </section>
   );
