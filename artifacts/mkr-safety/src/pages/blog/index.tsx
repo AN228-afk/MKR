@@ -1655,6 +1655,75 @@ const posts: Record<string, BlogPostData> = {
       { label: "Contact Us", href: "/contact-us" },
     ],
   },
+  "invisible-grill-for-row-houses": {
+    slug: "invisible-grill-for-row-houses",
+    title: "Invisible Grill for Row Houses: A Safety Plan for Every Floor and Facade",
+    seoTitle: "Invisible Grill for Row Houses in Bangalore | MKR Safety Solutions",
+    seoDesc: "Planning an invisible grill for row houses in Bangalore? Here's how to cover every balcony, window, and staircase across multiple floors.",
+    date: "2026-11-18",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Row Houses",
+    content: [
+      { body: "Row houses sit in an odd middle ground between apartments and independent villas. You share side walls with your neighbours, but every floor, window, and balcony on your facade belongs entirely to you - there's no common area committee deciding what gets installed where. That freedom is great, but it also means the full safety planning falls on you. A lot of row house owners in Bangalore end up grilling just the main balcony and forgetting the rest of the house has just as many open edges." },
+      { heading: "Why Row Houses Need a Different Approach", body: "Most row houses in Bangalore are G+1 or G+2 structures - ground floor living areas, bedrooms on the upper floors, and often a small terrace on top. That means you're not dealing with one balcony like in a typical apartment flat. You're dealing with a front sit-out, two or three bedroom windows per floor, an internal staircase, and a terrace - all on a single plot. Each of these is a separate fall risk, and each needs to be looked at individually rather than assuming one grill order covers the house." },
+      { heading: "Mapping Every Open Point Before You Call an Installer", body: "Before you get a quote, walk through the house floor by floor and list every opening: the front balcony or sit-out, upper-floor windows facing the street, any side windows if you're in an end unit, the internal staircase if it has an open side, and the terrace parapet. Row house layouts vary a lot from one community to the next, so there's no standard checklist that fits every house - but doing this walk-through yourself means you won't end up calling the installer back for a spot you missed." },
+      { heading: "End-Unit vs Middle-Unit Row Houses", body: "If your row house is at the end of the row, you likely have side-facing windows that middle-unit houses don't. These side openings are easy to overlook because they don't face the street or the common pathway, but they're just as much a fall risk, especially if there's a kitchen or utility window on an upper floor. Middle-unit houses have fewer openings to plan for, but the front facade usually carries more weight - multiple windows and a balcony stacked across two or three floors that all need covering." },
+      { heading: "Planning Grills Across Multiple Floors", body: "Because row houses have more floors than a typical flat, owners often ask whether they can install grills floor by floor instead of all at once. This is possible - you can start with the floor where young children or elderly parents spend the most time, and cover the rest later. The one thing to keep consistent is the cable spacing and finish, so the house looks uniform once every floor is done, rather than looking like it was patched together over time." },
+      { heading: "What It Costs for a Full Row House", body: "MKR's invisible grills are priced at \u20b9100\u2013\u20b9160 per sq ft, and this rate stays the same whether you choose 2.5mm or 3mm cable - the thickness you pick doesn't change the price. Because row houses have several openings across multiple floors, the total often works out higher than a single apartment balcony simply due to the extra area covered, not because of a different rate. For an exact quote based on your house's floors and openings, call or WhatsApp 077801 14547, or book a site visit so we can measure the actual facade." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Staircase Invisible Grills", href: "/staircase-invisible-grills" },
+      { label: "Villa Invisible Grills", href: "/villa-invisible-grills" },
+    ],
+  },
+  "invisible-grill-for-jayanagar-a-local-residents-guide": {
+    slug: "invisible-grill-for-jayanagar-a-local-residents-guide",
+    title: "Invisible Grill for Jayanagar: A Local Resident's Guide",
+    seoTitle: "Invisible Grill for Jayanagar: A Local Resident's Guide | MKR Safety Solutions",
+    seoDesc: "Planning invisible grill installation in Jayanagar? A local guide covering older bungalows, apartment blocks, access roads, and costs for Jayanagar homes.",
+    date: "2026-11-19",
+    readTime: "7 min read",
+    keyword: "Invisible Grill for Jayanagar",
+    content: [
+      { body: "Jayanagar is one of Bangalore's oldest planned localities, and that shows in its buildings. Walk from 4th Block to 9th Block and you'll pass 1970s independent houses with sit-outs, 1990s duplexes, and newer apartment complexes built on redeveloped plots. This mix matters when you're installing invisible grills, because the right approach for a 40-year-old bungalow balcony is often quite different from what a 6-storey apartment needs. This guide looks at invisible grills specifically through a Jayanagar lens." },
+      { heading: "Older Independent Houses Need a Different Survey", body: "Many Jayanagar homes were built well before invisible grill cabling existed as an option, so the original balconies, sit-outs, and terraces often have older MS railings, parapet walls of varying heights, or decorative pillars that weren't designed with grill anchoring in mind. Before any quote, our team checks the condition of the parapet or railing the cables will anchor to, since older masonry sometimes needs reinforcement before hooks and anchors go in. This is a standard part of our site visit for Jayanagar homes and doesn't usually add much time." },
+      { heading: "Narrow Lanes and Access for Installation", body: "Several residential blocks in Jayanagar, especially around the market area and the older cross streets near South End Circle, have narrow approach roads and limited parking. This doesn't affect the grill itself, but it does affect scheduling - our installation team plans visit timings around local traffic and parking availability so the work happens smoothly without disrupting your street or your neighbours." },
+      { heading: "Balconies, Sit-Outs, and Terraces: Jayanagar's Three Common Spaces", body: "Unlike typical high-rise apartments, a lot of Jayanagar homes have three distinct open areas that need safety consideration: the front sit-out (common in independent houses), upper-floor balconies, and open terraces used for drying clothes or informal gatherings. Each has a different grill requirement - sit-outs often need shorter horizontal runs, balconies need standard vertical or horizontal cabling depending on the railing height, and terraces usually need full-perimeter coverage since there's no existing railing to anchor against in some older constructions." },
+      { heading: "Apartment Blocks: Simpler but Still Needs Association Sign-Off", body: "If you live in one of Jayanagar's newer apartment complexes, invisible grill installation is usually more straightforward since balcony dimensions and railing heights are consistent across units. The one thing to check is your apartment association's guidelines - some Jayanagar complexes have rules on external fittings or facade changes, so it's worth getting a quick nod from your association before installation, even though invisible grills don't alter the building's external appearance the way traditional grills do." },
+      { heading: "Cost for Jayanagar Homes", body: "Invisible grill pricing in Jayanagar follows the same structure as everywhere else we serve in Bangalore: \u20b9100 to \u20b9160 per sq ft, and this rate stays the same whether you choose 2.5mm or 3mm cable. The final cost depends on the total running feet across your balconies, sit-out, windows, or terrace, not on which cable thickness you pick. For an exact quote based on your home's layout, call or WhatsApp us at 077801 14547, or book a free site visit and we'll measure everything on the spot." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Terrace Invisible Grills", href: "/terrace-invisible-grills" },
+      { label: "Window Invisible Grills", href: "/window-invisible-grills" },
+      { label: "Book a Site Visit", href: "/contact-us" },
+    ],
+  },
+  "invisible-grill-for-balcony-resale-value": {
+    slug: "invisible-grill-for-balcony-resale-value",
+    title: "Invisible Grill for Balcony Resale Value: Does It Actually Help When You Sell?",
+    seoTitle: "Invisible Grill for Balcony Resale Value | MKR Safety Solutions",
+    seoDesc: "Does an invisible grill improve your Bangalore flat's resale value? Here's how buyers actually react to balcony safety grills during property visits.",
+    date: "2026-11-20",
+    readTime: "6 min read",
+    keyword: "Invisible Grill for Balcony Resale Value",
+    content: [
+      { body: "If you're planning to sell or rent out your Bangalore flat in the next few years, you've probably wondered whether spending on an invisible grill now is worth it later. Most people install invisible grills purely for safety, which is the right reason. But there's a practical side effect worth understanding: how an existing invisible grill affects the way buyers and tenants perceive your home during a property visit. This isn't about certifications or technical specs, it's about what actually happens when someone walks into your balcony for the first time." },
+      { heading: "The First Thing Buyers Notice on a Balcony Visit", body: "When a prospective buyer walks onto a balcony in a high-rise, the first instinct is almost always to check the railing and look down. If there's an invisible grill already fitted, that instinct is answered immediately - they see a safety layer without even having to ask. For buyers with young kids, elderly parents, or pets, this one detail can quietly move the conversation forward. It saves them from mentally adding 'balcony safety' to their post-purchase to-do list, which is a cost and effort they'd otherwise have to plan for themselves." },
+      { heading: "Why It Matters More for Family Buyers", body: "A large share of resale buyers in Bangalore are families upgrading from a 2BHK to a 3BHK, or young parents looking for their first home. For this group, an open balcony on the 8th or 12th floor isn't just a design feature, it's a visible risk they have to account for. A flat that already has an invisible grill removes that worry instantly and signals that the previous owner took safety seriously. That impression often extends to how they view the rest of the home's upkeep too." },
+      { heading: "It's Not a 'Value-Add' Line Item, It's a Convenience Factor", body: "To be clear, an invisible grill isn't going to show up as a separate line in your property's valuation the way a modular kitchen or extra parking slot might. What it does is remove friction. Buyers don't have to budget for it, don't have to research installers, and don't have to wait weeks for installation before they can let their kids or parents use the balcony safely. In a market where buyers are comparing multiple flats in the same layout, these small frictions matter more than people expect." },
+      { heading: "What to Keep in Mind Before Listing Your Flat", body: "If your invisible grill is a few years old, it's worth a quick inspection before you start taking buyers around. Loose cables, a dull finish, or a slightly sagging wire can work against you, since a neglected grill reads as general neglect of the home. If you've had one installed with 316 grade steel and it's been maintained, a quick clean and tension-check is usually enough to have it looking presentation-ready. If it was installed with lower-grade cable years ago, consider getting it reassessed or replaced before buyers start walking through." },
+      { heading: "If You're Installing One Specifically Before Resale", body: "Some owners choose to fit an invisible grill shortly before listing their flat, purely to make the balcony show better. If that's your plan, go with a clean horizontal or vertical layout that doesn't clutter the view, since an open view is still a big part of what sells a balcony in the first place. MKR Safety Solutions prices invisible grills at \u20b9100\u2013\u20b9160 per sq ft, with no difference in rate between 2.5mm and 3mm cable, so there's no trade-off between finish quality and budget. For an exact quote based on your balcony's dimensions, call or WhatsApp 077801 14547, or book a site visit." },
+    ],
+    relatedServices: [
+      { label: "Balcony Invisible Grills", href: "/balcony-invisible-grills" },
+      { label: "Invisible Grills in Bangalore", href: "/invisible-grills-bangalore" },
+      { label: "Child Safety Grills", href: "/child-safety-grills" },
+      { label: "Contact Us", href: "/contact-us" },
+    ],
+  },
 };
 
 export function BenefitsBlogPost() { return <BlogPostPage data={posts["benefits-of-invisible-grills"]} />; }
@@ -1798,3 +1867,9 @@ export function InvisibleGrillKoramangalaBlogPost() { return <BlogPostPage data=
 export function InvisibleGrillForIndependentHouseCompoundWallsBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-independent-house-compound-walls"]} />; }
 
 export function InvisibleGrillForSwimmingPoolBalconiesBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-swimming-pool-balconies"]} />; }
+
+export function InvisibleGrillForRowHousesBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-row-houses"]} />; }
+
+export function InvisibleGrillForJayanagarALocalResidentsGuideBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-jayanagar-a-local-residents-guide"]} />; }
+
+export function InvisibleGrillForBalconyResaleValueBlogPost() { return <BlogPostPage data={posts["invisible-grill-for-balcony-resale-value"]} />; }

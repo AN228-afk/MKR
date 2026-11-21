@@ -108,6 +108,9 @@ const InvisibleGrillForBedroomWindowBlogPost = lazy(() => import("@/pages/blog/i
 const InvisibleGrillKoramangalaBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillKoramangalaBlogPost })));
 const InvisibleGrillForIndependentHouseCompoundWallsBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForIndependentHouseCompoundWallsBlogPost })));
 const InvisibleGrillForSwimmingPoolBalconiesBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForSwimmingPoolBalconiesBlogPost })));
+const InvisibleGrillForRowHousesBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForRowHousesBlogPost })));
+const InvisibleGrillForJayanagarALocalResidentsGuideBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForJayanagarALocalResidentsGuideBlogPost })));
+const InvisibleGrillForBalconyResaleValueBlogPost = lazy(() => import("@/pages/blog/index").then(m => ({ default: m.InvisibleGrillForBalconyResaleValueBlogPost })));
 
 const queryClient = new QueryClient();
 
@@ -150,7 +153,18 @@ function Router() {
       <Route path="/invisible-grills-yelahanka" component={YelahankPage} />
       <Route path="/invisible-grills-hebbal" component={HebbalPage} />
       <Route path="/invisible-grills-kr-puram" component={KRPuramPage} />
-      <Route path="/invisible-grills-:city" component={CityPage} />
+      <Route path="/invisible-grills-hyderabad">{() => <CityPage slug="hyderabad" />}</Route>
+      <Route path="/invisible-grills-chennai">{() => <CityPage slug="chennai" />}</Route>
+      <Route path="/invisible-grills-kochi">{() => <CityPage slug="kochi" />}</Route>
+      <Route path="/invisible-grills-thiruvananthapuram">{() => <CityPage slug="thiruvananthapuram" />}</Route>
+      <Route path="/invisible-grills-vijayawada">{() => <CityPage slug="vijayawada" />}</Route>
+      <Route path="/invisible-grills-visakhapatnam">{() => <CityPage slug="visakhapatnam" />}</Route>
+      <Route path="/invisible-grills-mangalore">{() => <CityPage slug="mangalore" />}</Route>
+      <Route path="/invisible-grills-mysore">{() => <CityPage slug="mysore" />}</Route>
+      <Route path="/invisible-grills-bhubaneswar">{() => <CityPage slug="bhubaneswar" />}</Route>
+      <Route path="/invisible-grills-pune">{() => <CityPage slug="pune" />}</Route>
+      <Route path="/invisible-grills-nellore">{() => <CityPage slug="nellore" />}</Route>
+      <Route path="/invisible-grills-kadapa">{() => <CityPage slug="kadapa" />}</Route>
 
       {/* Blog Post Pages */}
       <Route path="/blog/benefits-of-invisible-grills" component={BenefitsBlogPost} />
@@ -277,6 +291,12 @@ function Router() {
       <Route path="/blog/invisible-grill-for-independent-house-compound-walls" component={InvisibleGrillForIndependentHouseCompoundWallsBlogPost} />
 
       <Route path="/blog/invisible-grill-for-swimming-pool-balconies" component={InvisibleGrillForSwimmingPoolBalconiesBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-row-houses" component={InvisibleGrillForRowHousesBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-jayanagar-a-local-residents-guide" component={InvisibleGrillForJayanagarALocalResidentsGuideBlogPost} />
+
+      <Route path="/blog/invisible-grill-for-balcony-resale-value" component={InvisibleGrillForBalconyResaleValueBlogPost} />
 
       <Route component={NotFound} />
     </Switch>

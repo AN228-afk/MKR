@@ -786,9 +786,9 @@ export function YelahankPage() { return <LocationPage data={locationData.yelahan
 export function HebbalPage() { return <LocationPage data={locationData.hebbal} />; }
 export function KRPuramPage() { return <LocationPage data={locationData["kr-puram"]} />; }
 
-/** Any city page by URL slug, e.g. /invisible-grills-hyderabad */
-export function CityPage({ params }: { params: { city: string } }) {
-  const data = locationData[params.city];
+/** A city page by its slug, e.g. <CityPage slug="hyderabad" /> for /invisible-grills-hyderabad */
+export function CityPage({ slug }: { slug: string }) {
+  const data = locationData[slug];
   if (!data) return <NotFound />;
   return <LocationPage data={data} />;
 }
