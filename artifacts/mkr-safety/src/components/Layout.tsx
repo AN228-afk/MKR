@@ -266,7 +266,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/reviews" className="inline-flex items-center gap-3 bg-white border border-border rounded-xl px-4 py-2.5 mb-6 hover:border-secondary transition-colors">
                 <span className="text-lg font-bold text-foreground">5.0</span>
                 <span className="flex text-yellow-400">{"★★★★★"}</span>
-                <span className="text-xs text-muted-foreground">13 Google reviews</span>
+                <span className="text-xs text-muted-foreground">16 Google reviews</span>
               </Link>
               <ul className="space-y-3 text-sm">
                 <li>

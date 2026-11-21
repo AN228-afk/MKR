@@ -154,7 +154,7 @@ const localBusinessSchema = {
     addressCountry: "IN",
   },
   geo: { "@type": "GeoCoordinates", latitude: 12.9716, longitude: 77.5946 },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "13" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "16" },
   priceRange: "₹₹",
   areaServed: ["Bangalore", "Whitefield", "Koramangala", "HSR Layout", "Indiranagar", "Bellandur", "Marathahalli"],
   openingHours: "Mo-Sa 09:00-19:00",
@@ -495,7 +495,7 @@ export default function Home() {
                   <span className="text-3xl font-bold text-foreground leading-none">5.0</span>
                   <span className="flex">{[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-5 h-5 text-[#FBBC05] fill-[#FBBC05]" />)}</span>
                 </div>
-                <div className="text-xs text-muted-foreground mt-1.5">Based on <b className="text-foreground">13 Google reviews</b></div>
+                <div className="text-xs text-muted-foreground mt-1.5">Based on <b className="text-foreground">16 Google reviews</b></div>
               </div>
             </Link>
           </div>
