@@ -36,6 +36,8 @@ const serviceOptions = [
 interface InquiryFormProps {
   title?: string;
   compact?: boolean;
+  /** City the enquiry is for (default Bangalore). */
+  city?: string;
 }
 
 interface InquiryFormProps {
@@ -43,18 +45,18 @@ interface InquiryFormProps {
   compact?: boolean;
 }
 
-export function InquiryForm({ title = "Get a Free Quote", compact = false }: InquiryFormProps) {
+export function InquiryForm({ title = "Get a Free Quote", compact = false, city = "Bangalore" }: InquiryFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [waLink, setWaLink] = useState("");
 
   const form = useForm<InquiryForm>({
     resolver: zodResolver(inquirySchema),
-    defaultValues: { name: "", phone: "", email: "", service: "", location: "", message: "" },
+    defaultValues: { name: "", phone: "", email: "", service: "", location: city === "Bangalore" ? "" : city, message: "" },
   });
 
   function onSubmit(data: InquiryForm) {
     const lines = [
-      `Hi, I need invisible grills in Bangalore.`,
+      `Hi, I need invisible grills in ${city}.`,
       `Name: ${data.name}`,
       `Phone: ${data.phone}`,
       `Email: ${data.email}`,
@@ -138,7 +140,7 @@ export function InquiryForm({ title = "Get a Free Quote", compact = false }: Inq
               <FormItem>
                 <FormLabel>Your Location / Area</FormLabel>
                 <FormControl>
-                  <Input placeholder="e.g. Whitefield, Koramangala" data-testid="input-location" {...field} />
+                  <Input placeholder={city === "Bangalore" ? "e.g. Whitefield, Koramangala" : `Your area in ${city}`} data-testid="input-location" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
