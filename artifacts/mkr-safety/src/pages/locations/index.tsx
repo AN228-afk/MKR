@@ -292,12 +292,12 @@ const locationData: Record<string, LocationPageData> = {
     "slug": "chennai",
     "city": "",
     "state": "Tamil Nadu",
-    "landmarks": "OMR, Sholinganallur, Velachery, Anna Nagar, Porur, Adyar, Tambaram",
+    "landmarks": "Shriram Park, OMR, Sholinganallur, Velachery, Anna Nagar, Porur, Adyar, Tambaram",
     "seoTitle": "Invisible Grills Chennai | Balcony & Window Safety Grills | MKR Safety Solutions",
-    "seoDesc": "Invisible grills in Chennai — rust-proof 316 marine SS cables for balconies & windows near the coast. 2\" & 4\" spacing, 15-year warranty. Free site visit.",
+    "seoDesc": "Invisible grills in Chennai, trusted at Shriram Park. Rust-proof 316 marine SS cables for balconies & windows. 2\" & 4\" spacing, 15-yr warranty.",
     "h1": "Invisible Grills in Chennai",
-    "intro": "Rust-proof invisible grills for Chennai homes — from OMR and Sholinganallur high-rises to Anna Nagar and Adyar apartments — built for coastal humidity and salty sea air.",
-    "localContent": "Chennai's salty, humid coastal air is hard on ordinary metal: iron grills and lower-grade steel rust and stain within a few seasons. That is why MKR uses only 316-grade marine stainless steel — the grade used on boats and seafront buildings. Along OMR, Sholinganallur, Perungudi and Velachery, new towers come with wide balconies and full-height windows; in Anna Nagar, Adyar and T. Nagar, older apartments are replacing heavy box grills. Invisible grills keep children and pets safe while letting in the sea breeze and light, with 2-inch or 4-inch cable spacing to suit your family.",
+    "intro": "Rust-proof invisible grills for Chennai homes — including Shriram Park — from OMR and Sholinganallur high-rises to Anna Nagar and Adyar apartments — built for coastal humidity and salty sea air.",
+    "localContent": "MKR has installed invisible grills at Shriram Park and other residential communities in Chennai. Chennai's salty, humid coastal air is hard on ordinary metal: iron grills and lower-grade steel rust and stain within a few seasons. That is why MKR uses only 316-grade marine stainless steel — the grade used on boats and seafront buildings. Along OMR, Sholinganallur, Perungudi and Velachery, new towers come with wide balconies and full-height windows; in Anna Nagar, Adyar and T. Nagar, older apartments are replacing heavy box grills. Invisible grills keep children and pets safe while letting in the sea breeze and light, with 2-inch or 4-inch cable spacing to suit your family.",
     "faqs": [
         {
             "q": "Will invisible grills rust in Chennai's sea air?",
