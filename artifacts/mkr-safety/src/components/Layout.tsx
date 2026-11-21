@@ -21,6 +21,22 @@ const services = [
   { label: "School Safety Grills", href: "/school-safety-grills" },
 ];
 
+const cities = [
+  { label: "Bangalore", href: "/invisible-grills-bangalore" },
+  { label: "Hyderabad", href: "/invisible-grills-hyderabad" },
+  { label: "Chennai", href: "/invisible-grills-chennai" },
+  { label: "Kochi", href: "/invisible-grills-kochi" },
+  { label: "Thiruvananthapuram", href: "/invisible-grills-thiruvananthapuram" },
+  { label: "Vijayawada", href: "/invisible-grills-vijayawada" },
+  { label: "Visakhapatnam", href: "/invisible-grills-visakhapatnam" },
+  { label: "Mangalore", href: "/invisible-grills-mangalore" },
+  { label: "Mysore", href: "/invisible-grills-mysore" },
+  { label: "Bhubaneswar", href: "/invisible-grills-bhubaneswar" },
+  { label: "Pune", href: "/invisible-grills-pune" },
+  { label: "Nellore", href: "/invisible-grills-nellore" },
+  { label: "Kadapa", href: "/invisible-grills-kadapa" },
+];
+
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about-us" },
@@ -86,7 +102,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+            <nav className="hidden lg:flex items-center gap-5 xl:gap-6" aria-label="Main navigation">
               <Link href="/" className={`text-sm font-medium transition-colors hover:text-secondary ${location === "/" ? "text-secondary" : "text-foreground"}`}>
                 Home
               </Link>
@@ -107,6 +123,26 @@ export function Layout({ children }: { children: React.ReactNode }) {
                       className="block px-4 py-2.5 text-sm text-foreground hover:bg-muted hover:text-secondary transition-colors first:rounded-t-lg last:rounded-b-lg"
                     >
                       {s.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="relative group">
+                <button
+                  className={`flex items-center gap-1 text-sm font-medium hover:text-secondary transition-colors ${cities.some((c) => c.href === location) ? "text-secondary" : "text-foreground"}`}
+                  aria-haspopup="true"
+                >
+                  Cities <ChevronDown className="w-3 h-3" />
+                </button>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[22rem] p-2 grid grid-cols-2 gap-0.5 bg-white border border-border rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                  {cities.map((c) => (
+                    <Link
+                      key={c.href}
+                      href={c.href}
+                      className={`flex items-center gap-2 px-3 py-2 text-sm rounded-lg hover:bg-muted hover:text-secondary transition-colors ${c.href === location ? "text-secondary font-semibold" : "text-foreground"}`}
+                    >
+                      <MapPin className="w-3.5 h-3.5 text-secondary shrink-0" /> {c.label}
                     </Link>
                   ))}
                 </div>
@@ -174,6 +210,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     {s.label}
                   </Link>
                 ))}
+              </div>
+              <div className="pt-2 border-t border-border">
+                <p className="px-3 py-1 text-xs font-semibold text-muted-foreground uppercase tracking-wide">Cities</p>
+                <div className="grid grid-cols-2">
+                  {cities.map((c) => (
+                    <Link
+                      key={c.href}
+                      href={c.href}
+                      className="flex items-center gap-1.5 py-2 px-3 text-sm text-foreground hover:bg-muted rounded-lg transition-colors"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      <MapPin className="w-3.5 h-3.5 text-secondary shrink-0" /> {c.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
               <div className="pt-3">
                 <Link
